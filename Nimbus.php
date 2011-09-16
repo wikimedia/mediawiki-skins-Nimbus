@@ -27,7 +27,7 @@ $wgExtensionCredits['skin'][] = array(
 	'name' => 'Nimbus',
 	'version' => '2.0',
 	'author' => array( 'Aaron Wright', 'David Pean', 'Inez Korczyński', 'Jack Phoenix' ),
-	'description' => 'Nimbus skin for MediaWiki',
+	'descriptionmsg' => 'nimbus-desc',
 	'url' => 'http://www.mediawiki.org/wiki/Nimbus_skin',
 );
 

@@ -9,6 +9,7 @@ $messages = array();
 /** English */
 $messages['en'] = array(
 	'morewikis' => '', // format for this message is *Page name/Interwiki link/URL|Text to show
+	'nimbus-desc' => 'Nimbus skin for MediaWiki',
 	'nimbus-advertise' => 'Advertise',
 	'nimbus-advertise-url' => '', // set this to an URL if you want an "Advertise" link to show up in the footer
 	'nimbus-contribute' => 'Contribute',
