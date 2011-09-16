@@ -12,21 +12,21 @@ $messages['en'] = array(
 	'nimbus-advertise' => 'Advertise',
 	'nimbus-advertise-url' => '', // set this to an URL if you want an "Advertise" link to show up in the footer
 	'nimbus-contribute' => 'Contribute',
-	'nimbus-didyouknow' => 'Did You Know',
-	'nimbus-featuredimage' => 'Featured Image',
-	'nimbus-featureduser' => 'Featured User',
+	'nimbus-didyouknow' => 'Did you know',
+	'nimbus-featuredimage' => 'Featured image',
+	'nimbus-featureduser' => 'Featured user',
 	'nimbus-login' => 'Login',
-	'nimbus-logout' => 'Log Out?',
-	'nimbus-more-actions' => 'More Actions',
-	'nimbus-more-wikis' => 'More Wikis',
-	'nimbus-pages-can-be-edited' => "{{SITENAME}}'s pages can be edited. <br />
-Is this page incomplete?  Is there anything wrong?<br />
+	'nimbus-logout' => 'Log out?',
+	'nimbus-more-actions' => 'More actions',
+	'nimbus-more-wikis' => 'More wikis',
+	'nimbus-pages-can-be-edited' => "{{SITENAME}}'s pages can be edited.<br />
+Is this page incomplete? Is there anything wrong?<br />
 <b>Change it!</b>",
 	'nimbus-profile' => 'Profile',
 	'nimbus-recent-contributors' => 'Recent contributors to this page',
 	'nimbus-recent-contributors-info' => 'The following people recently contributed to this article.',
 	'nimbus-search' => 'enter search',
-	'nimbus-signup' => 'Sign Up',
+	'nimbus-signup' => 'Sign up',
 	'nimbus-welcome' => 'Welcome $1', // <b></b> tags are passed as $1 along with the actual username
 );
 
