@@ -8,10 +8,10 @@ $messages = array();
 
 /** English */
 $messages['en'] = array(
-	'morewikis' => '', // format for this message is *Page name/Interwiki link/URL|Text to show
+	'morewikis' => '',
 	'nimbus-desc' => 'Nimbus skin for MediaWiki',
 	'nimbus-advertise' => 'Advertise',
-	'nimbus-advertise-url' => '', // set this to an URL if you want an "Advertise" link to show up in the footer
+	'nimbus-advertise-url' => '',
 	'nimbus-contribute' => 'Contribute',
 	'nimbus-didyouknow' => 'Did you know',
 	'nimbus-featuredimage' => 'Featured image',
@@ -28,29 +28,13 @@ Is this page incomplete? Is there anything wrong?<br />
 	'nimbus-recent-contributors-info' => 'The following people recently contributed to this article.',
 	'nimbus-search' => 'enter search',
 	'nimbus-signup' => 'Sign up',
-	'nimbus-welcome' => 'Welcome $1', // <b></b> tags are passed as $1 along with the actual username
+	'nimbus-welcome' => 'Welcome $1',
 );
 
 /** Messages description */
 $messages['qqq'] = array(
 	'morewikis' => 'Format for this message is *Page name/Interwiki link/URL|Text to show',
-	'nimbus-desc' => '',
-	'nimbus-advertise' => '',
 	'nimbus-advertise-url' => 'Set this to an URL if you want an "Advertise" link to show up in the footer',
-	'nimbus-contribute' => '',
-	'nimbus-didyouknow' => '',
-	'nimbus-featuredimage' => '',
-	'nimbus-featureduser' => '',
-	'nimbus-login' => '',
-	'nimbus-logout' => '',
-	'nimbus-more-actions' => '',
-	'nimbus-more-wikis' => '',
-	'nimbus-pages-can-be-edited' => '',
-	'nimbus-profile' => '',
-	'nimbus-recent-contributors' => '',
-	'nimbus-recent-contributors-info' => '',
-	'nimbus-search' => '',
-	'nimbus-signup' => '',
 	'nimbus-welcome' => '<b></b> tags are passed as $1 along with the actual username',
 );
 
