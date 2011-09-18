@@ -9,7 +9,7 @@ $messages = array();
 /** English */
 $messages['en'] = array(
 	'morewikis' => '',
-	'nimbus-desc' => 'Nimbus skin for MediaWiki',
+	'nimbus-desc' => 'Nimbus skin',
 	'nimbus-advertise' => 'Advertise',
 	'nimbus-advertise-url' => '',
 	'nimbus-contribute' => 'Contribute',
@@ -25,7 +25,7 @@ Is this page incomplete? Is there anything wrong?<br />
 <b>Change it!</b>",
 	'nimbus-profile' => 'Profile',
 	'nimbus-recent-contributors' => 'Recent contributors to this page',
-	'nimbus-recent-contributors-info' => 'The following people recently contributed to this article.',
+	'nimbus-recent-contributors-info' => 'The following people recently contributed to this page.',
 	'nimbus-search' => 'enter search',
 	'nimbus-signup' => 'Sign up',
 	'nimbus-welcome' => 'Welcome $1',
