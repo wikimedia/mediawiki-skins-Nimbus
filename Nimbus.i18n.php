@@ -31,6 +31,29 @@ Is this page incomplete? Is there anything wrong?<br />
 	'nimbus-welcome' => 'Welcome $1', // <b></b> tags are passed as $1 along with the actual username
 );
 
+/** Messages description */
+$messages['qqq'] = array(
+	'morewikis' => 'Format for this message is *Page name/Interwiki link/URL|Text to show',
+	'nimbus-desc' => '',
+	'nimbus-advertise' => '',
+	'nimbus-advertise-url' => 'Set this to an URL if you want an "Advertise" link to show up in the footer',
+	'nimbus-contribute' => '',
+	'nimbus-didyouknow' => '',
+	'nimbus-featuredimage' => '',
+	'nimbus-featureduser' => '',
+	'nimbus-login' => '',
+	'nimbus-logout' => '',
+	'nimbus-more-actions' => '',
+	'nimbus-more-wikis' => '',
+	'nimbus-pages-can-be-edited' => '',
+	'nimbus-profile' => '',
+	'nimbus-recent-contributors' => '',
+	'nimbus-recent-contributors-info' => '',
+	'nimbus-search' => '',
+	'nimbus-signup' => '',
+	'nimbus-welcome' => '<b></b> tags are passed as $1 along with the actual username',
+);
+
 /** Finnish (Suomi)
  * @author Jack Phoenix <jack@countervandalism.net>
  */
