@@ -64,10 +64,12 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
 );
 
 /** Breton (Brezhoneg)
+ * @author Fulup
  * @author Y-M D
  */
 $messages['br'] = array(
 	'nimbus-contribute' => 'Kemer perzh',
+	'nimbus-didyouknow' => "Ha gouzout a raec'h",
 	'nimbus-login' => 'Kevreañ',
 	'nimbus-logout' => 'Digevreañ ?',
 	'nimbus-more-actions' => 'Obererezhioù ouzhpenn',
@@ -145,11 +147,22 @@ $messages['fr'] = array(
 	'nimbus-welcome' => 'Bienvenue $1',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'nimbus-profile' => 'Profil',
+	'nimbus-signup' => 'Enscrîde-vos',
+	'nimbus-welcome' => 'Benvegnua $1',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
 $messages['gl'] = array(
 	'nimbus-desc' => 'Aparencia Nimbus de MediaWiki',
+	'nimbus-advertise' => 'Anunciar',
+	'nimbus-contribute' => 'Contribuír',
 	'nimbus-didyouknow' => 'Sabía que',
 	'nimbus-featuredimage' => 'Imaxe destacada',
 	'nimbus-featureduser' => 'Usuario destacado',
@@ -157,7 +170,13 @@ $messages['gl'] = array(
 	'nimbus-logout' => 'Saír',
 	'nimbus-more-actions' => 'Máis accións',
 	'nimbus-more-wikis' => 'Máis wikis',
+	'nimbus-pages-can-be-edited' => 'As páxinas de {{SITENAME}} pódense editar.<br />
+A páxina está incompleta? Hai algo mal?<br />
+<b>Modifíqueo!</b>',
 	'nimbus-profile' => 'Perfil',
+	'nimbus-recent-contributors' => 'Colaboradores recentes nesta páxina',
+	'nimbus-recent-contributors-info' => 'As seguintes persoas colaboraron recentemente neste artigo.',
+	'nimbus-search' => 'escriba a procura',
 	'nimbus-signup' => 'Crear unha conta',
 	'nimbus-welcome' => 'Benvido, $1',
 );
@@ -191,6 +210,8 @@ Iste pagina es incomplete? Contine un error?<br />
  * @author Robby
  */
 $messages['lb'] = array(
+	'nimbus-desc' => 'Nimbus Ausgesi fir MediaWiki',
+	'nimbus-advertise' => 'Inseréieren',
 	'nimbus-didyouknow' => 'Wosst Dir',
 	'nimbus-featuredimage' => 'Interessant Bild',
 	'nimbus-featureduser' => 'Interessante Benotzer',
@@ -230,22 +251,26 @@ $messages['mk'] = array(
 /** Dutch (Nederlands)
  * @author Mitchel Corstjens
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['nl'] = array(
-	'nimbus-desc' => 'Vormgeving "Nimbus" voor MediaWiki',
+	'nimbus-desc' => 'Vormgeving "Nimbus"',
 	'nimbus-advertise' => 'Adverteren',
 	'nimbus-contribute' => 'Bijdragen',
 	'nimbus-didyouknow' => 'Wist u dat',
 	'nimbus-featuredimage' => 'Uitgelichte afbeelding',
 	'nimbus-featureduser' => 'Uitgelichte gebruiker',
-	'nimbus-login' => 'Inloggen',
-	'nimbus-logout' => 'Uitloggen?',
+	'nimbus-login' => 'Aanmelden',
+	'nimbus-logout' => 'Afmelden?',
+	'nimbus-more-actions' => 'Meer handelingen',
 	'nimbus-more-wikis' => "Meer wiki's",
 	'nimbus-pages-can-be-edited' => "Pagina's van {{SITENAME}} kunnen bewerkt worden.<br />
-Is deze pagina onvolledig? Is er iets fout?<br />
+Is deze pagina onvolledig? Is er iets onjuist?<br />
 <b>Wijzig het!</b>",
 	'nimbus-profile' => 'Profiel',
-	'nimbus-search' => 'zoekterm invoeren',
+	'nimbus-recent-contributors' => 'Redacteuren die deze pagina recentelijk hebben bewerkt',
+	'nimbus-recent-contributors-info' => 'De volgende gebruikers hebben deze pagina recentelijk bewerkt.',
+	'nimbus-search' => 'voer een zoekterm in',
 	'nimbus-signup' => 'Registreren',
 	'nimbus-welcome' => 'Welkom $1',
 );
