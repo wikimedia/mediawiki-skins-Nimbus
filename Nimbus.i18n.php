@@ -211,7 +211,7 @@ Iste pagina es incomplete? Contine un error?<br />
  */
 $messages['lb'] = array(
 	'nimbus-desc' => 'Nimbus Ausgesi fir MediaWiki',
-	'nimbus-advertise' => 'Inseréieren',
+	'nimbus-advertise' => 'Bekanntginn',
 	'nimbus-didyouknow' => 'Wosst Dir',
 	'nimbus-featuredimage' => 'Interessant Bild',
 	'nimbus-featureduser' => 'Interessante Benotzer',
