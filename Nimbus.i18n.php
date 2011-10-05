@@ -139,11 +139,29 @@ Onko tämä sivu puutteellinen? Onko siinä jotakin vikaa?<br />
 );
 
 /** French (Français)
+ * @author Gomoko
  * @author Hashar
  * @author Jack Phoenix <jack@countervandalism.net>
  */
 $messages['fr'] = array(
 	'nimbus-desc' => 'Skin Nimbus pour MediaWiki',
+	'nimbus-advertise' => 'Faire de la publicité',
+	'nimbus-contribute' => 'Contribuer',
+	'nimbus-didyouknow' => 'Savez-vous',
+	'nimbus-featuredimage' => 'Image en vedette',
+	'nimbus-featureduser' => 'Utilisateur en vedette',
+	'nimbus-login' => 'Connexion',
+	'nimbus-logout' => 'Se déconnecter?',
+	'nimbus-more-actions' => "Plus d'actions",
+	'nimbus-more-wikis' => 'Plus de wikis',
+	'nimbus-pages-can-be-edited' => 'Les pages de {{SITENAME}} ne peuvent pas être modifiées.<br />
+Cette page est-elle incomplète? Y a-t-il autre chose qui ne va pas?<br />
+<b>Changez-le!</b>',
+	'nimbus-profile' => 'Profil',
+	'nimbus-recent-contributors' => 'Contributeurs récents à cette page',
+	'nimbus-recent-contributors-info' => 'Les personnes suivantes ont récemment contribué à cette page.',
+	'nimbus-search' => 'entrez la recherche',
+	'nimbus-signup' => "S'inscrire",
 	'nimbus-welcome' => 'Bienvenue $1',
 );
 
