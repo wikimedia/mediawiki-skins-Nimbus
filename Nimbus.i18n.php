@@ -142,9 +142,10 @@ Onko tämä sivu puutteellinen? Onko siinä jotakin vikaa?<br />
  * @author Gomoko
  * @author Hashar
  * @author Jack Phoenix <jack@countervandalism.net>
+ * @author Urhixidur
  */
 $messages['fr'] = array(
-	'nimbus-desc' => 'Skin Nimbus pour MediaWiki',
+	'nimbus-desc' => 'Habillage Nimbus pour MediaWiki',
 	'nimbus-advertise' => 'Faire de la publicité',
 	'nimbus-contribute' => 'Contribuer',
 	'nimbus-didyouknow' => 'Savez-vous',
