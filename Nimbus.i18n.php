@@ -342,3 +342,12 @@ $messages['te'] = array(
 	'nimbus-welcome' => '$1 స్వాగతం',
 );
 
+/** Turkish (Türkçe)
+ * @author Karduelis
+ */
+$messages['tr'] = array(
+	'nimbus-login' => 'Oturum aç',
+	'nimbus-profile' => 'Profil',
+	'nimbus-welcome' => 'Hoşgeldiniz $1',
+);
+
