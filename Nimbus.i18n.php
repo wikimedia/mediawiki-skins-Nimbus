@@ -170,7 +170,16 @@ Cette page est-elle incomplète? Y a-t-il autre chose qui ne va pas?<br />
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
+	'nimbus-desc' => 'Habelyâjo « Nimbus »',
+	'nimbus-advertise' => 'Fâre de recllâma',
+	'nimbus-contribute' => 'Contribuar',
+	'nimbus-didyouknow' => 'Sâde-vos',
+	'nimbus-login' => 'Sè branchiér',
+	'nimbus-logout' => 'Sè dèbranchiér ?',
+	'nimbus-more-actions' => 'Més d’accions',
+	'nimbus-more-wikis' => 'Més de vouiquis',
 	'nimbus-profile' => 'Profil',
+	'nimbus-search' => 'buchiéd la rechèrche',
 	'nimbus-signup' => 'Enscrîde-vos',
 	'nimbus-welcome' => 'Benvegnua $1',
 );
