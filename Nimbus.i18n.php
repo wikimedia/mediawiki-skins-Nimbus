@@ -174,6 +174,8 @@ $messages['frp'] = array(
 	'nimbus-advertise' => 'Fâre de recllâma',
 	'nimbus-contribute' => 'Contribuar',
 	'nimbus-didyouknow' => 'Sâde-vos',
+	'nimbus-featuredimage' => 'Émâge remarcâbla',
+	'nimbus-featureduser' => 'Utilisator remarcâblo',
 	'nimbus-login' => 'Sè branchiér',
 	'nimbus-logout' => 'Sè dèbranchiér ?',
 	'nimbus-more-actions' => 'Més d’accions',
@@ -305,8 +307,10 @@ Is deze pagina onvolledig? Is er iets onjuist?<br />
 
 /** Polish (Polski)
  * @author Misiek95
+ * @author Sp5uhe
  */
 $messages['pl'] = array(
+	'nimbus-desc' => 'Skórka nimbus',
 	'nimbus-advertise' => 'Reklamy',
 	'nimbus-contribute' => 'Wnieś swój wkład',
 	'nimbus-didyouknow' => 'Czy wiedziałeś?',
