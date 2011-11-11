@@ -68,6 +68,7 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
  * @author Y-M D
  */
 $messages['br'] = array(
+	'nimbus-advertise' => 'Ober bruderezh',
 	'nimbus-contribute' => 'Kemer perzh',
 	'nimbus-didyouknow' => "Ha gouzout a raec'h",
 	'nimbus-login' => 'Kevreañ',
