@@ -307,6 +307,15 @@ Is deze pagina onvolledig? Is er iets onjuist?<br />
 	'nimbus-welcome' => 'Welkom $1',
 );
 
+/** Deitsch (Deitsch)
+ * @author Xqt
+ */
+$messages['pdc'] = array(
+	'nimbus-login' => 'Kumm nei',
+	'nimbus-logout' => 'Naus geh?',
+	'nimbus-welcome' => 'Wilkum $1',
+);
+
 /** Polish (Polski)
  * @author Misiek95
  * @author Sp5uhe
