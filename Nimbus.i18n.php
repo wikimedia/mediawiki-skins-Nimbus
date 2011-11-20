@@ -213,6 +213,31 @@ A páxina está incompleta? Hai algo mal?<br />
 	'nimbus-welcome' => 'Benvido, $1',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'nimbus-desc' => 'Drasta Nimbus',
+	'nimbus-advertise' => 'Wozjewić',
+	'nimbus-contribute' => 'Přinošować',
+	'nimbus-didyouknow' => 'Sy ty wědźał',
+	'nimbus-featuredimage' => 'Zajimawy wobraz',
+	'nimbus-featureduser' => 'Zajimawy wužiwar',
+	'nimbus-login' => 'Přizjewić',
+	'nimbus-logout' => 'Wotzjewić?',
+	'nimbus-more-actions' => 'Dalše akcije',
+	'nimbus-more-wikis' => 'Dalše wikije',
+	'nimbus-pages-can-be-edited' => 'Strony na {{GRAMMAR:lokatiw|{{SITENAME}}}} dadźa so wobdźěłać.<br />
+Je tuta strona njedospołna? Je něšto wopak?<br />
+<b>Změń to prošu!</b>',
+	'nimbus-profile' => 'Profil',
+	'nimbus-recent-contributors' => 'Najnowši wobdźěłowarjo tuteje strony',
+	'nimbus-recent-contributors-info' => 'Slědowacy wužiwarjo su njedawno k tutej stronje přinošowali.',
+	'nimbus-search' => 'Pytanske zapřijeće zapodać',
+	'nimbus-signup' => 'Registrować',
+	'nimbus-welcome' => 'Witaj $1',
+);
+
 /** Interlingua (Interlingua)
  * @author McDutchie
  */
