@@ -269,6 +269,7 @@ Iste pagina es incomplete? Contine un error?<br />
 $messages['lb'] = array(
 	'nimbus-desc' => 'Nimbus Ausgesi fir MediaWiki',
 	'nimbus-advertise' => 'Bekanntginn',
+	'nimbus-contribute' => 'Matschaffen',
 	'nimbus-didyouknow' => 'Wosst Dir',
 	'nimbus-featuredimage' => 'Interessant Bild',
 	'nimbus-featureduser' => 'Interessante Benotzer',
@@ -276,7 +277,14 @@ $messages['lb'] = array(
 	'nimbus-logout' => 'Ausloggen?',
 	'nimbus-more-actions' => 'Méi Aktiounen',
 	'nimbus-more-wikis' => 'Méi Wikien',
+	'nimbus-pages-can-be-edited' => 'Dës Säiten op {{SITENAME}} ka geännert ginn.<br />
+Ass dës säit komplett? Ass eppes falsch?<br />
+<b>Ännert et!</b>',
 	'nimbus-profile' => 'Profil',
+	'nimbus-recent-contributors' => 'Rezent Mataarbechter vun dëser Säit',
+	'nimbus-recent-contributors-info' => 'Dës Leit huet viru kuerzem un dëser Säit matgeschafft.',
+	'nimbus-search' => 'Gitt a wat Dir sicht',
+	'nimbus-signup' => 'Schreift Iech an',
 	'nimbus-welcome' => 'Wëllkomm $1',
 );
 
