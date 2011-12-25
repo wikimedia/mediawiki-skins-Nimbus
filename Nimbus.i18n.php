@@ -390,6 +390,20 @@ $messages['ps'] = array(
 	'nimbus-welcome' => 'ښه راغلاست $1',
 );
 
+/** Russian (Русский)
+ * @author Eleferen
+ */
+$messages['ru'] = array(
+	'nimbus-contribute' => 'Вклад',
+	'nimbus-didyouknow' => 'Знаете ли вы',
+	'nimbus-login' => 'Вход',
+	'nimbus-logout' => 'Выйти?',
+	'nimbus-more-actions' => 'Дополнительные действия',
+	'nimbus-profile' => 'Профиль',
+	'nimbus-signup' => 'Регистрация',
+	'nimbus-welcome' => 'Добро пожаловать, $1',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
