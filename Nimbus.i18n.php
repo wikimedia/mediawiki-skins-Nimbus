@@ -63,6 +63,13 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
 	'nimbus-welcome' => 'Welkom $1',
 );
 
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'nimbus-desc' => 'Афармленьне «Німбус»',
+);
+
 /** Breton (Brezhoneg)
  * @author Fulup
  * @author Y-M D
