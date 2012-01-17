@@ -68,6 +68,24 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
  */
 $messages['be-tarask'] = array(
 	'nimbus-desc' => 'Афармленьне «Німбус»',
+	'nimbus-advertise' => 'Рэкляма',
+	'nimbus-contribute' => 'Удзельнічайце',
+	'nimbus-didyouknow' => 'Ці ведаеце вы?',
+	'nimbus-featuredimage' => 'Цікавая выява',
+	'nimbus-featureduser' => 'Варты ўвагі ўдзельнік',
+	'nimbus-login' => 'Увайсьці',
+	'nimbus-logout' => 'Выйсьці?',
+	'nimbus-more-actions' => 'Болей дзеяньняў',
+	'nimbus-more-wikis' => 'Іншыя праекты',
+	'nimbus-pages-can-be-edited' => 'Старонкі {{GRAMMAR:родны|{{SITENAME}}}} можна рэдагаваць.<br />
+Маеце, што дадаць на старонку? Заўважылі памылку?<br />
+<b>Выпраўце яе!</b>',
+	'nimbus-profile' => 'Профіль',
+	'nimbus-recent-contributors' => 'Апошнія рэдактары старонкі',
+	'nimbus-recent-contributors-info' => 'Наступныя ўдзельнікі нядаўна зьмянялі гэтую старонку.',
+	'nimbus-search' => 'увядзіце запыт',
+	'nimbus-signup' => 'Зарэгістравацца',
+	'nimbus-welcome' => 'Вітаем, $1',
 );
 
 /** Breton (Brezhoneg)
