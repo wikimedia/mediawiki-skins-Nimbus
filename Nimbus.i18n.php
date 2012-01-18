@@ -32,9 +32,14 @@ Is this page incomplete? Is there anything wrong?<br />
 );
 
 /** Message documentation (Message documentation)
+ * @author EugeneZelenko
  * @author Siebrand
  */
 $messages['qqq'] = array(
+	'nimbus-login' => '{{Identical|Login}}',
+	'nimbus-logout' => '{{Identical|Log out}}',
+	'nimbus-profile' => '{{Identical|Profile}}',
+	'nimbus-signup' => '{{Identical|Sign up}}',
 	'nimbus-welcome' => '&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username',
 );
 
@@ -64,13 +69,14 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
 );
 
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author EugeneZelenko
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'nimbus-desc' => 'Афармленьне «Німбус»',
 	'nimbus-advertise' => 'Рэкляма',
 	'nimbus-contribute' => 'Удзельнічайце',
-	'nimbus-didyouknow' => 'Ці ведаеце вы?',
+	'nimbus-didyouknow' => 'Ці ведаеце Вы?',
 	'nimbus-featuredimage' => 'Цікавая выява',
 	'nimbus-featureduser' => 'Варты ўвагі ўдзельнік',
 	'nimbus-login' => 'Увайсьці',
