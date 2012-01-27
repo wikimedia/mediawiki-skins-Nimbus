@@ -68,6 +68,13 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
 	'nimbus-welcome' => 'Welkom $1',
 );
 
+/** Azerbaijani (Azərbaycanca)
+ * @author Wertuose
+ */
+$messages['az'] = array(
+	'nimbus-login' => 'Daxil ol',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Wizardist
