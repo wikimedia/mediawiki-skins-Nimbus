@@ -428,6 +428,13 @@ $messages['ps'] = array(
 	'nimbus-welcome' => 'ښه راغلاست $1',
 );
 
+/** Portuguese (Português)
+ * @author Luckas Blade
+ */
+$messages['pt'] = array(
+	'nimbus-contribute' => 'Contribuir',
+);
+
 /** Russian (Русский)
  * @author Eleferen
  */
