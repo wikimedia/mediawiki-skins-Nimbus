@@ -439,6 +439,7 @@ $messages['pt'] = array(
  * @author Eleferen
  */
 $messages['ru'] = array(
+	'nimbus-advertise' => 'Реклама',
 	'nimbus-contribute' => 'Вклад',
 	'nimbus-didyouknow' => 'Знаете ли вы',
 	'nimbus-login' => 'Вход',
