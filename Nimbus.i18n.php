@@ -154,6 +154,31 @@ Ist diese Seite unvollständig? Ist etwas falsch?<br />
 <b>Ändern Sie es bitte.</b>',
 );
 
+/** Spanish (Español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'nimbus-desc' => 'Aparencia Nimbus de MediaWiki',
+	'nimbus-advertise' => 'Anunciar',
+	'nimbus-contribute' => 'Contribuir',
+	'nimbus-didyouknow' => '¿Sabía usted?',
+	'nimbus-featuredimage' => 'Imagen destacada',
+	'nimbus-featureduser' => 'Usuario destacado',
+	'nimbus-login' => 'Inicio de sesión',
+	'nimbus-logout' => '¿Cerrar la sesión?',
+	'nimbus-more-actions' => 'Más acciones',
+	'nimbus-more-wikis' => 'Más wikis',
+	'nimbus-pages-can-be-edited' => 'Se pueden editar las páginas de {{SITENAME}}.<br />
+¿Está incompleta esta página? ¿Hay algo mal?<br />
+<b>¡Cámbielo!</b>',
+	'nimbus-profile' => 'Perfil',
+	'nimbus-recent-contributors' => 'Colaboradores recientes a esta página',
+	'nimbus-recent-contributors-info' => 'Recientemente, las siguientes personas contribuyeron a esta página.',
+	'nimbus-search' => 'introducir búsqueda',
+	'nimbus-signup' => 'Registrarse',
+	'nimbus-welcome' => 'Bienvenido $1',
+);
+
 /** Finnish (Suomi)
  * @author Jack Phoenix <jack@countervandalism.net>
  */
