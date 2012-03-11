@@ -453,7 +453,7 @@ class NimbusTemplate extends BaseTemplate {
 		if( $selected ) {
 			$classes[] = 'selected';
 		}
-		if( $checkEdit && $title->getArticleId() == 0 ) {
+		if( $checkEdit && $title->getArticleID() == 0 ) {
 			$query = 'action=edit';
 			$classes[] = ' new';
 		}
@@ -527,7 +527,7 @@ class NimbusTemplate extends BaseTemplate {
 				);
 			}
 
-			if ( $wgTitle->getArticleId() ) {
+			if ( $wgTitle->getArticleID() ) {
 				$content_actions['history'] = array(
 					'class' => ( $action == 'history' ) ? 'selected' : false,
 					'text' => wfMsg( 'history_short' ),
