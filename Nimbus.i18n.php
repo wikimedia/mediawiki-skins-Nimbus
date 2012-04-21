@@ -326,6 +326,29 @@ Iste pagina es incomplete? Contine un error?<br />
 	'nimbus-welcome' => 'Benvenite $1',
 );
 
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'nimbus-desc' => 'ニンバス外装',
+	'nimbus-advertise' => '広告',
+	'nimbus-contribute' => '投稿',
+	'nimbus-didyouknow' => 'ご存じでしたか',
+	'nimbus-login' => 'ログイン',
+	'nimbus-logout' => 'ログアウトしますか?',
+	'nimbus-more-actions' => 'その他の操作',
+	'nimbus-more-wikis' => 'その他のウィキ',
+	'nimbus-pages-can-be-edited' => '{{SITENAME}}のページを編集できません。<br />
+このページは不完全ですか? 何か誤りがありますか?<br />
+<b>変更してください!</b>',
+	'nimbus-profile' => 'プロフィール',
+	'nimbus-recent-contributors' => 'このページの最近の更新',
+	'nimbus-recent-contributors-info' => 'このページを最近更新したのは以下の人たちです。',
+	'nimbus-search' => '検索に入る',
+	'nimbus-signup' => 'サインアップ',
+	'nimbus-welcome' => 'ようこそ $1',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
