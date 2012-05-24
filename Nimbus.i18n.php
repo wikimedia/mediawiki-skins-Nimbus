@@ -181,8 +181,10 @@ $messages['es'] = array(
 
 /** Finnish (Suomi)
  * @author Jack Phoenix <jack@countervandalism.net>
+ * @author Linnea
  */
 $messages['fi'] = array(
+	'nimbus-desc' => 'Nimbus-teema',
 	'nimbus-advertise' => 'Mainosta',
 	'nimbus-contribute' => 'Muokkaa',
 	'nimbus-didyouknow' => 'Tiesitkö, että...',
