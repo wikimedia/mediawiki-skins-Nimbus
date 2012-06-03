@@ -179,7 +179,7 @@ $messages['es'] = array(
 	'nimbus-welcome' => 'Bienvenido $1',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Linnea
  */
