@@ -68,7 +68,7 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
 	'nimbus-welcome' => 'Welkom $1',
 );
 
-/** Azerbaijani (Azərbaycanca)
+/** Azerbaijani (azərbaycanca)
  * @author Wertuose
  */
 $messages['az'] = array(
@@ -101,7 +101,7 @@ $messages['be-tarask'] = array(
 	'nimbus-welcome' => 'Вітаем, $1',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -154,7 +154,7 @@ Ist diese Seite unvollständig? Ist etwas falsch?<br />
 <b>Ändern Sie es bitte.</b>',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
@@ -205,7 +205,7 @@ Onko tämä sivu puutteellinen? Onko siinä jotakin vikaa?<br />
 	'nimbus-welcome' => 'Tervetuloa $1',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  * @author Hashar
  * @author Jack Phoenix <jack@countervandalism.net>
@@ -233,7 +233,7 @@ Cette page est-elle incomplète? Y a-t-il autre chose qui ne va pas?<br />
 	'nimbus-welcome' => 'Bienvenue $1',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -303,7 +303,7 @@ Je tuta strona njedospołna? Je něšto wopak?<br />
 	'nimbus-welcome' => 'Witaj $1',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -376,7 +376,7 @@ Ass dës säit komplett? Ass eppes falsch?<br />
 	'nimbus-welcome' => 'Wëllkomm $1',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -437,7 +437,7 @@ $messages['pdc'] = array(
 	'nimbus-welcome' => 'Wilkum $1',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Misiek95
  * @author Sp5uhe
  */
@@ -478,14 +478,14 @@ $messages['ps'] = array(
 	'nimbus-welcome' => 'ښه راغلاست $1',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Luckas Blade
  */
 $messages['pt'] = array(
 	'nimbus-contribute' => 'Contribuir',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Eleferen
  */
 $messages['ru'] = array(
