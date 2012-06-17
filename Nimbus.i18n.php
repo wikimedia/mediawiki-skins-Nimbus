@@ -154,6 +154,13 @@ Ist diese Seite unvollständig? Ist etwas falsch?<br />
 <b>Ändern Sie es bitte.</b>',
 );
 
+/** Zazaki (Zazaki)
+ * @author Mirzali
+ */
+$messages['diq'] = array(
+	'nimbus-logout' => 'Bıveciyên',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
