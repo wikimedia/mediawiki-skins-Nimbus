@@ -75,7 +75,7 @@ $messages['az'] = array(
 	'nimbus-login' => 'Daxil ol',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Wizardist
  */
@@ -260,7 +260,7 @@ $messages['frp'] = array(
 	'nimbus-welcome' => 'Benvegnua $1',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -285,7 +285,7 @@ A páxina está incompleta? Hai algo mal?<br />
 	'nimbus-welcome' => 'Benvido, $1',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
