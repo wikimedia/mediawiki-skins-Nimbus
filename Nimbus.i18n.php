@@ -32,10 +32,12 @@ Is this page incomplete? Is there anything wrong?<br />
 );
 
 /** Message documentation (Message documentation)
+ * @author Beta16
  * @author EugeneZelenko
  * @author Siebrand
  */
 $messages['qqq'] = array(
+	'nimbus-desc' => '{{desc}}',
 	'nimbus-login' => '{{Identical|Login}}',
 	'nimbus-logout' => '{{Identical|Log out}}',
 	'nimbus-profile' => '{{Identical|Profile}}',
@@ -333,6 +335,31 @@ Iste pagina es incomplete? Contine un error?<br />
 	'nimbus-search' => 'entra parolas a cercar',
 	'nimbus-signup' => 'Crear conto',
 	'nimbus-welcome' => 'Benvenite $1',
+);
+
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'nimbus-desc' => 'Skin Nimbus',
+	'nimbus-advertise' => 'Pubblicizza',
+	'nimbus-contribute' => 'Contribuisci',
+	'nimbus-didyouknow' => 'Lo sapevate',
+	'nimbus-featuredimage' => 'Immagine in vetrina',
+	'nimbus-featureduser' => 'Utente in evidenza',
+	'nimbus-login' => 'Entra',
+	'nimbus-logout' => 'Esci?',
+	'nimbus-more-actions' => 'Altre azioni',
+	'nimbus-more-wikis' => 'Altri wiki',
+	'nimbus-pages-can-be-edited' => "Le pagine di {{SITENAME}} possono essere modificate.<br />
+Questa pagina è incompleta? C'è qualcosa di sbagliato?<br />
+<b>Cambialo!</b>",
+	'nimbus-profile' => 'Profilo',
+	'nimbus-recent-contributors' => 'Contributori recenti a questa pagina',
+	'nimbus-recent-contributors-info' => 'Le seguenti persone hanno contribuito di recente a questa pagina.',
+	'nimbus-search' => 'termini da cercare',
+	'nimbus-signup' => 'Iscriviti',
+	'nimbus-welcome' => 'Benvenuto $1',
 );
 
 /** Japanese (日本語)
