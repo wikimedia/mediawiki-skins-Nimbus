@@ -188,6 +188,21 @@ $messages['es'] = array(
 	'nimbus-welcome' => 'Bienvenido $1',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'nimbus-didyouknow' => 'آیا می دانستید',
+	'nimbus-featuredimage' => 'تصویر برگزیده',
+	'nimbus-featureduser' => 'کاربر برگزیده',
+	'nimbus-login' => 'ورود به سامانه',
+	'nimbus-logout' => 'می‌خواهید خارج شوید؟',
+	'nimbus-more-actions' => 'اقدامات بیشتر',
+	'nimbus-profile' => 'نمایه',
+	'nimbus-signup' => 'ثبت نام',
+	'nimbus-welcome' => 'خوش آمدی $1',
+);
+
 /** Finnish (suomi)
  * @author Jack Phoenix <jack@countervandalism.net>
  * @author Linnea
@@ -534,6 +549,15 @@ $messages['ru'] = array(
 	'nimbus-welcome' => 'Добро пожаловать, $1',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'nimbus-didyouknow' => 'ඔබ දන්නවාද',
+	'nimbus-login' => 'පිවිසෙන්න',
+	'nimbus-profile' => 'පැතිකඩ',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
@@ -550,5 +574,16 @@ $messages['tr'] = array(
 	'nimbus-login' => 'Oturum aç',
 	'nimbus-profile' => 'Profil',
 	'nimbus-welcome' => 'Hoşgeldiniz $1',
+);
+
+/** Traditional Chinese (‪中文（繁體）‬)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'nimbus-contribute' => '貢獻',
+	'nimbus-login' => '登入',
+	'nimbus-logout' => '登出？',
+	'nimbus-more-actions' => '更多操作',
+	'nimbus-welcome' => '歡迎$1',
 );
 
