@@ -400,6 +400,21 @@ $messages['ja'] = array(
 	'nimbus-welcome' => 'ようこそ $1',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'nimbus-contribute' => 'წვლილი',
+	'nimbus-didyouknow' => 'იცით თუ არა',
+	'nimbus-featuredimage' => 'რჩეული სურათი',
+	'nimbus-featureduser' => 'რჩეული მომხმარებელი',
+	'nimbus-login' => 'შესვლა',
+	'nimbus-logout' => 'გასვლა?',
+	'nimbus-profile' => 'პროფილი',
+	'nimbus-signup' => 'რეგისტრაცია',
+	'nimbus-welcome' => 'მოგესალმებით $1',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -532,6 +547,21 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'nimbus-contribute' => 'Contribuir',
+);
+
+/** Romanian (română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'nimbus-contribute' => 'Contribuie',
+	'nimbus-didyouknow' => 'Știai că',
+	'nimbus-login' => 'Autentifică-te',
+	'nimbus-more-actions' => 'Mai multe acțiuni',
+	'nimbus-more-wikis' => 'Mai multe wikiuri',
+	'nimbus-profile' => 'Profil',
+	'nimbus-recent-contributors' => 'Contribuitorii recenți ai acestei pagini',
+	'nimbus-signup' => 'Înregistrează-te',
+	'nimbus-welcome' => 'Bun venit $1',
 );
 
 /** Russian (русский)
