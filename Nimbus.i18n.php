@@ -125,7 +125,7 @@ $messages['br'] = array(
  * @author Kghbln
  */
 $messages['de'] = array(
-	'nimbus-desc' => 'Ermöglicht die Benutzeroberfläche Nimbus',
+	'nimbus-desc' => 'Ermöglicht die Nutzung der Benutzeroberfläche Nimbus',
 	'nimbus-advertise' => 'Inserieren',
 	'nimbus-contribute' => 'Mitmachen',
 	'nimbus-didyouknow' => 'Wusstest du',
@@ -415,6 +415,13 @@ $messages['ka'] = array(
 	'nimbus-welcome' => 'მოგესალმებით $1',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'nimbus-desc' => 'De Bedeen-Bovverfläsch Nimbus.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -595,6 +602,31 @@ $messages['te'] = array(
 	'nimbus-more-actions' => 'మరిన్ని చర్యలు',
 	'nimbus-more-wikis' => 'మరిన్ని వికీలు',
 	'nimbus-welcome' => '$1 స్వాగతం',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'nimbus-desc' => 'Pabalat ng Nimbus',
+	'nimbus-advertise' => 'Ipatalastas',
+	'nimbus-contribute' => 'Mag-ambag',
+	'nimbus-didyouknow' => 'Alam ba ninyo',
+	'nimbus-featuredimage' => 'Tampok na larawan',
+	'nimbus-featureduser' => 'Tampok na tagagamit',
+	'nimbus-login' => 'Lumagda',
+	'nimbus-logout' => 'Umalis sa pagkakalagda?',
+	'nimbus-more-actions' => 'Marami pang mga galaw',
+	'nimbus-more-wikis' => 'Marami pang mga wiki',
+	'nimbus-pages-can-be-edited' => 'Mapapatnugutan ang mga pahina ng {{SITENAME}}.<br />
+Hindi pa ba kumpleto ang pahinang ito? Mayroon bang anumang kamalian?<br />
+<b>Baguhin ito!</b>',
+	'nimbus-profile' => 'Balangkas ng katangian',
+	'nimbus-recent-contributors' => 'Kamakailang mga tagapag-ambag sa pahinang ito',
+	'nimbus-recent-contributors-info' => 'Ang sumusunod na mga tao ay kamakailang nag-ambag sa pahinang ito.',
+	'nimbus-search' => 'ipasok ang paghahanap',
+	'nimbus-signup' => 'Magparehistro',
+	'nimbus-welcome' => 'Maligayang pagdating $1',
 );
 
 /** Turkish (Türkçe)
