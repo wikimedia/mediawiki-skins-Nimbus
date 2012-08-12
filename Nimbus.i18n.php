@@ -404,12 +404,15 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'nimbus-advertise' => 'რეკლამა',
 	'nimbus-contribute' => 'წვლილი',
 	'nimbus-didyouknow' => 'იცით თუ არა',
 	'nimbus-featuredimage' => 'რჩეული სურათი',
 	'nimbus-featureduser' => 'რჩეული მომხმარებელი',
 	'nimbus-login' => 'შესვლა',
 	'nimbus-logout' => 'გასვლა?',
+	'nimbus-more-actions' => 'მეტი მოქმედება',
+	'nimbus-more-wikis' => 'მეტი ვიკი',
 	'nimbus-profile' => 'პროფილი',
 	'nimbus-signup' => 'რეგისტრაცია',
 	'nimbus-welcome' => 'მოგესალმებით $1',
@@ -593,6 +596,31 @@ $messages['si'] = array(
 	'nimbus-didyouknow' => 'ඔබ දන්නවාද',
 	'nimbus-login' => 'පිවිසෙන්න',
 	'nimbus-profile' => 'පැතිකඩ',
+);
+
+/** Tamil (தமிழ்)
+ * @author Karthi.dr
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'nimbus-advertise' => 'விளம்பரப்படுத்து',
+	'nimbus-contribute' => 'பங்களி',
+	'nimbus-didyouknow' => 'உங்களுக்கு தெரியுமா',
+	'nimbus-featuredimage' => 'சிறப்புப் படம்',
+	'nimbus-featureduser' => 'சிறப்பு பயனர்',
+	'nimbus-login' => 'புகுபதிகை',
+	'nimbus-logout' => 'விடுபதிகை?',
+	'nimbus-more-actions' => 'மேலும் செயல்கள்',
+	'nimbus-more-wikis' => 'மேலும் விக்கிகள்',
+	'nimbus-pages-can-be-edited' => '{{SITENAME}} தளத்தை தொகுக்கலாம்.<br />
+இந்தப் பக்கம் முடிவுறாமல் உள்ளதா? ஏதாவது தவறாக உள்ளதா?<br />
+<b>அதை மாற்றுங்கள்!</b>',
+	'nimbus-profile' => 'சுயவிவரம்',
+	'nimbus-recent-contributors' => 'இந்தப் பக்கத்திற்கான அண்மைய பங்களிப்புகள்',
+	'nimbus-recent-contributors-info' => 'கீழ்காணும் நபர்கள் அண்மையில் இந்தப் பக்கத்திற்கு பங்களித்துள்ளனர்.',
+	'nimbus-search' => 'தேடலை உள்ளிடு',
+	'nimbus-signup' => 'பதிவுசெய்',
+	'nimbus-welcome' => 'வருக $1',
 );
 
 /** Telugu (తెలుగు)
