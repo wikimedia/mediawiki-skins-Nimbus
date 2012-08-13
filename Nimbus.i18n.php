@@ -188,6 +188,16 @@ $messages['es'] = array(
 	'nimbus-welcome' => 'Bienvenido $1',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'nimbus-didyouknow' => 'Kas teadsid, et...',
+	'nimbus-login' => 'Logi sisse',
+	'nimbus-logout' => 'Logi välja?',
+	'nimbus-profile' => 'Profiil',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  */
@@ -414,6 +424,8 @@ $messages['ka'] = array(
 	'nimbus-more-actions' => 'მეტი მოქმედება',
 	'nimbus-more-wikis' => 'მეტი ვიკი',
 	'nimbus-profile' => 'პროფილი',
+	'nimbus-recent-contributors' => 'ამ გვერდის ბოლო რედაქტორები',
+	'nimbus-search' => 'ძიების შეყვანა',
 	'nimbus-signup' => 'რეგისტრაცია',
 	'nimbus-welcome' => 'მოგესალმებით $1',
 );
@@ -473,6 +485,26 @@ $messages['mk'] = array(
 	'nimbus-search' => 'пребарајте нешто',
 	'nimbus-signup' => 'Регистрација',
 	'nimbus-welcome' => 'Добредојдовте $1',
+);
+
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'nimbus-advertise' => 'Irreklama',
+	'nimbus-contribute' => 'Ikkontribwixxi',
+	'nimbus-didyouknow' => 'Kon taf li',
+	'nimbus-featuredimage' => 'Stampa fil-vetrina',
+	'nimbus-featureduser' => 'Utent fil-vetrina',
+	'nimbus-login' => 'Idħol',
+	'nimbus-logout' => 'Oħroġ?',
+	'nimbus-more-actions' => 'Aktar azzjonijiet',
+	'nimbus-more-wikis' => 'Wikis oħrajn',
+	'nimbus-profile' => 'Profil',
+	'nimbus-recent-contributors' => "Kontributuri riċenti f'din il-paġna",
+	'nimbus-recent-contributors-info' => "Il-persuni segwenti riċentament taw il-kontribut tagħhom f'din il-paġna.",
+	'nimbus-signup' => 'Irreġistra',
+	'nimbus-welcome' => 'Merħba $1',
 );
 
 /** Dutch (Nederlands)
@@ -593,9 +625,40 @@ $messages['ru'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'nimbus-advertise' => 'ප්‍රචාරණය කරන්න',
+	'nimbus-contribute' => 'දායකවන්න',
 	'nimbus-didyouknow' => 'ඔබ දන්නවාද',
+	'nimbus-featuredimage' => 'විශේෂාංග පින්තූරය',
+	'nimbus-featureduser' => 'විශේෂාංග පරිශීලක',
 	'nimbus-login' => 'පිවිසෙන්න',
+	'nimbus-logout' => 'නික්මෙනවාද?',
+	'nimbus-more-actions' => 'තවත් ක්‍රියාවන්',
+	'nimbus-more-wikis' => 'තවත් විකියන්',
 	'nimbus-profile' => 'පැතිකඩ',
+	'nimbus-welcome' => 'ආයුබෝවන් $1',
+);
+
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'nimbus-advertise' => 'Annonsera',
+	'nimbus-contribute' => 'Bidra',
+	'nimbus-didyouknow' => 'Visste du att',
+	'nimbus-featuredimage' => 'Utmärkt bild',
+	'nimbus-featureduser' => 'Utmärkt användare',
+	'nimbus-login' => 'Logga in',
+	'nimbus-logout' => 'Logga ut?',
+	'nimbus-more-actions' => 'Fler åtgärder',
+	'nimbus-more-wikis' => 'Fler wikis',
+	'nimbus-pages-can-be-edited' => '{{SITENAME}}s sidor kan redigeras.<br />
+Är denna sida ofullständig? Är det något fel?<br />
+<b>Ändra det!</b>',
+	'nimbus-profile' => 'Profil',
+	'nimbus-recent-contributors' => 'Senaste bidragsgivare till denna sida',
+	'nimbus-recent-contributors-info' => 'Följande personer har nyligen bidragit till denna sida.',
+	'nimbus-signup' => 'Registrera',
+	'nimbus-welcome' => 'Välkommen $1',
 );
 
 /** Tamil (தமிழ்)
