@@ -606,6 +606,22 @@ $messages['ro'] = array(
 	'nimbus-welcome' => 'Bun venit $1',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'nimbus-advertise' => 'Pubblecitate',
+	'nimbus-contribute' => 'Condrebbute',
+	'nimbus-didyouknow' => "'U canusce?",
+	'nimbus-featuredimage' => 'Immaggine dettagliate',
+	'nimbus-featureduser' => 'Utende dettagliate',
+	'nimbus-login' => 'Tràse',
+	'nimbus-logout' => 'Isse?',
+	'nimbus-more-actions' => 'Cchiù aziune',
+	'nimbus-more-wikis' => 'Cchiù uicchi',
+	'nimbus-profile' => 'Profile',
+);
+
 /** Russian (русский)
  * @author Eleferen
  */
