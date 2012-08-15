@@ -287,6 +287,13 @@ $messages['frp'] = array(
 	'nimbus-welcome' => 'Benvegnua $1',
 );
 
+/** Irish (Gaeilge)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ga'] = array(
+	'nimbus-login' => 'Logáil isteach',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
