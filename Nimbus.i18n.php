@@ -198,6 +198,14 @@ $messages['et'] = array(
 	'nimbus-profile' => 'Profiil',
 );
 
+/** Basque (euskara)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['eu'] = array(
+	'nimbus-login' => 'Saioa hasi',
+	'nimbus-profile' => 'Profila',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  */
@@ -750,6 +758,14 @@ $messages['tr'] = array(
 	'nimbus-login' => 'Oturum aç',
 	'nimbus-profile' => 'Profil',
 	'nimbus-welcome' => 'Hoşgeldiniz $1',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['vi'] = array(
+	'nimbus-login' => 'Đăng nhập',
+	'nimbus-profile' => 'Hồ sơ',
 );
 
 /** Traditional Chinese (‪中文（繁體）‬)
