@@ -760,6 +760,21 @@ $messages['tr'] = array(
 	'nimbus-welcome' => 'Hoşgeldiniz $1',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'nimbus-advertise' => 'کی تشہیر',
+	'nimbus-contribute' => 'میں شراکت',
+	'nimbus-didyouknow' => 'کیا آپ جانتے ہیں',
+	'nimbus-featuredimage' => 'نمایاں تصویر',
+	'nimbus-featureduser' => 'نمایاں صارف',
+	'nimbus-login' => 'لاگ ان کریں',
+	'nimbus-profile' => 'پروفائل',
+	'nimbus-recent-contributors' => 'اس صفحے کو حال ہی میں مددگاروں کو',
+	'nimbus-signup' => 'سائن اپ کریں',
+);
+
 /** Vietnamese (Tiếng Việt)
  * @author පසිඳු කාවින්ද
  */
