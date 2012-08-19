@@ -45,6 +45,13 @@ $messages['qqq'] = array(
 	'nimbus-welcome' => '&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username',
 );
 
+/** Achinese (Acèh)
+ * @author Si Gam Acèh
+ */
+$messages['ace'] = array(
+	'nimbus-search' => 'Mita',
+);
+
 /** Afrikaans (Afrikaans)
  * @author Naudefj
  */
