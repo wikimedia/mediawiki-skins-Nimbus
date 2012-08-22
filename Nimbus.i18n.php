@@ -614,18 +614,19 @@ $messages['pt'] = array(
 );
 
 /** Romanian (română)
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
 	'nimbus-contribute' => 'Contribuie',
-	'nimbus-didyouknow' => 'Știai că',
-	'nimbus-login' => 'Autentifică-te',
+	'nimbus-didyouknow' => 'Știați că',
+	'nimbus-login' => 'Autentificare',
 	'nimbus-more-actions' => 'Mai multe acțiuni',
 	'nimbus-more-wikis' => 'Mai multe wikiuri',
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Contribuitorii recenți ai acestei pagini',
-	'nimbus-signup' => 'Înregistrează-te',
-	'nimbus-welcome' => 'Bun venit $1',
+	'nimbus-signup' => 'Înregistrare',
+	'nimbus-welcome' => 'Bun venit, $1',
 );
 
 /** tarandíne (tarandíne)
