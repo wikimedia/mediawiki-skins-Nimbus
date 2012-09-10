@@ -613,6 +613,24 @@ $messages['pt'] = array(
 	'nimbus-contribute' => 'Contribuir',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Luckas Blade
+ */
+$messages['pt-br'] = array(
+	'nimbus-advertise' => 'Anunciar',
+	'nimbus-contribute' => 'Contribuir',
+	'nimbus-didyouknow' => 'Você sabia',
+	'nimbus-featuredimage' => 'Imagem destacada',
+	'nimbus-featureduser' => 'Usuário destacado',
+	'nimbus-login' => 'Entrar',
+	'nimbus-logout' => 'Sair',
+	'nimbus-more-actions' => 'Mais ações',
+	'nimbus-more-wikis' => 'Mais wikis',
+	'nimbus-pages-can-be-edited' => 'Criar',
+	'nimbus-profile' => 'Perfil',
+	'nimbus-recent-contributors' => 'Colaboradores recentes nesta página',
+);
+
 /** Romanian (română)
  * @author Minisarm
  * @author Stelistcristi
