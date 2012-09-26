@@ -809,6 +809,15 @@ $messages['vi'] = array(
 	'nimbus-profile' => 'Hồ sơ',
 );
 
+/** Simplified Chinese (中文（简体）‎) */
+$messages['zh-hans'] = array(
+	'nimbus-contribute' => '贡献',
+	'nimbus-login' => '登入',
+	'nimbus-logout' => '登出？',
+	'nimbus-more-actions' => '更多操作',
+	'nimbus-welcome' => '欢迎$1',
+);
+
 /** Traditional Chinese (‪中文（繁體）‬)
  * @author Simon Shek
  */
