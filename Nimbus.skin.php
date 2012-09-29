@@ -10,9 +10,6 @@
  *
  * @file
  */
-if( !defined( 'MEDIAWIKI' ) ) {
-	die( -1 );
-}
 
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
@@ -48,7 +45,7 @@ class NimbusTemplate extends BaseTemplate {
 	 * outputs a formatted page.
 	 */
 	public function execute() {
-		global $wgContLang, $wgLogo, $wgOut, $wgStylePath, $wgTitle, $wgUser;
+		global $wgContLang, $wgLogo, $wgOut, $wgStylePath, $wgUser;
 		global $wgLangToCentralMap, $wgSupressPageTitle, $wgSupressSubTitle, $wgSupressPageCategories;
 		global $wgUserLevels;
 
@@ -67,7 +64,7 @@ class NimbusTemplate extends BaseTemplate {
 		$recent_changes_link = SpecialPage::getTitleFor( 'Recentchanges' );
 		$top_fans_link = SpecialPage::getTitleFor( 'TopUsers' );
 		$special_pages_link = SpecialPage::getTitleFor( 'Specialpages' );
-		$help_link = Title::newFromText( wfMsgForContent( 'helppage' ) );
+		$help_link = Title::newFromText( wfMessage( 'helppage' )->inContentLanguage()->text() );
 		$upload_file = SpecialPage::getTitleFor( 'Upload' );
 		$what_links_here = SpecialPage::getTitleFor( 'Whatlinkshere' );
 		$preferences_link = SpecialPage::getTitleFor( 'Preferences' );
@@ -86,7 +83,7 @@ class NimbusTemplate extends BaseTemplate {
 			<span id="sw-category">ShoutWiki</span>
 		</div>
 		<div id="sw-more-category">
-			<div class="positive-button"><span><?php echo wfMsg( 'nimbus-more-wikis' ) ?></span></div>
+			<div class="positive-button"><span><?php echo wfMessage( 'nimbus-more-wikis' )->text() ?></span></div>
 		</div>
 		<div id="more-wikis-menu" style="display:none;">
 		<?php
@@ -111,13 +108,13 @@ class NimbusTemplate extends BaseTemplate {
 <?php
 	if ( $wgUser->isLoggedIn() ) {
 		echo '<div id="login-message">' .
-				wfMsg( 'nimbus-welcome', '<b>' . $wgUser->getName() . '</b>' ) .
+			wfMessage( 'nimbus-welcome', '<b>' . $wgUser->getName() . '</b>' )->text() .
 			'</div>
-			<a class="positive-button" href="' . $profile_link->escapeFullURL() . '" rel="nofollow"><span>' . wfMsg( 'nimbus-profile' ) . '</span></a>
-			<a class="negative-button" href="' . $logout_link->escapeFullURL() . '"><span>' . wfMsg( 'nimbus-logout' ) . '</span></a>';
+			<a class="positive-button" href="' . $profile_link->escapeFullURL() . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->text() . '</span></a>
+			<a class="negative-button" href="' . $logout_link->escapeFullURL() . '"><span>' . wfMessage( 'nimbus-logout' )->text() . '</span></a>';
 	} else {
-		echo '<a class="positive-button" href="' . $register_link->escapeFullURL() . '" rel="nofollow"><span>' . wfMsg( 'nimbus-signup' ) . '</span></a>
-		<a class="positive-button" href="' . $login_link->escapeFullURL() . '" id="nimbusLoginButton"><span>' . wfMsg( 'nimbus-login' ) . '</span></a>';
+		echo '<a class="positive-button" href="' . $register_link->escapeFullURL() . '" rel="nofollow"><span>' . wfMessage( 'nimbus-signup' )->text() . '</span></a>
+		<a class="positive-button" href="' . $login_link->escapeFullURL() . '" id="nimbusLoginButton"><span>' . wfMessage( 'nimbus-login' )->text() . '</span></a>';
 	}
 ?>
 		</div><!-- #wiki-login -->
@@ -131,7 +128,7 @@ class NimbusTemplate extends BaseTemplate {
 	</div>
 	<div id="side-bar">
 		<div id="navigation">
-			<div id="navigation-title"><?php echo wfMsg( 'navigation' ) ?></div>
+			<div id="navigation-title"><?php echo wfMessage( 'navigation' )->text() ?></div>
 			<script type="text/javascript">
 				var submenu_array = new Array();
 				var menuitem_array = new Array();
@@ -147,26 +144,26 @@ class NimbusTemplate extends BaseTemplate {
 				<?php
 					// Only show the link to Special:TopUsers if wAvatar class exists and $wgUserLevels is an array
 					if ( class_exists( 'wAvatar' ) && is_array( $wgUserLevels ) ) {
-						echo '<a href="' . $top_fans_link->escapeFullURL() . '">' . wfMsg( 'topusers' ) . '</a>';
+						echo '<a href="' . $top_fans_link->escapeFullURL() . '">' . wfMessage( 'topusers' )->text() . '</a>';
 					}
 				?>
-					<a href="<?php echo $recent_changes_link->escapeFullURL() ?>"><?php echo wfMsg( 'recentchanges' ) ?></a>
+					<a href="<?php echo $recent_changes_link->escapeFullURL() ?>"><?php echo wfMessage( 'recentchanges' )->text() ?></a>
 					<div class="cleared"></div>
 					<?php if ( $wgUser->isLoggedIn() ) { ?>
-					<a href="<?php echo $watchlist_link->escapeFullURL() ?>"><?php echo wfMsg( 'watchlist' ) ?></a>
-					<a href="<?php echo $preferences_link->escapeFullURL() ?>"><?php echo wfMsg( 'preferences' ) ?></a>
+					<a href="<?php echo $watchlist_link->escapeFullURL() ?>"><?php echo wfMessage( 'watchlist' )->text() ?></a>
+					<a href="<?php echo $preferences_link->escapeFullURL() ?>"><?php echo wfMessage( 'preferences' )->text() ?></a>
 					<div class="cleared"></div>
 					<?php } ?>
-					<a href="<?php echo $help_link->escapeFullURL() ?>"><?php echo wfMsg( 'help' ) ?></a>
-					<a href="<?php echo $special_pages_link->escapeFullURL() ?>"><?php echo wfMsg( 'specialpages' ) ?></a>
+					<a href="<?php echo $help_link->escapeFullURL() ?>"><?php echo wfMessage( 'help' )->text() ?></a>
+					<a href="<?php echo $special_pages_link->escapeFullURL() ?>"><?php echo wfMessage( 'specialpages' )->text() ?></a>
 					<div class="cleared"></div>
 				</div>
 			</div>
 		</div>
 		<div id="search-box">
-			<div id="search-title"><?php echo wfMsg( 'search' ) ?></div>
+			<div id="search-title"><?php echo wfMessage( 'search' )->text() ?></div>
 			<form method="get" action="<?php echo $this->text( 'wgScript' ) ?>" name="search_form" id="searchform">
-				<input id="searchInput" type="text" class="search-field" name="search" value="<?php echo wfMsg( 'nimbus-search' ) ?>" onclick="this.value=''" />
+				<input id="searchInput" type="text" class="search-field" name="search" value="<?php echo wfMessage( 'nimbus-search' )->text() ?>" onclick="this.value=''" />
 				<input type="image" src="<?php echo $wgStylePath ?>/Nimbus/nimbus/search_button.gif" class="search-button" alt="search" />
 			</form>
 			<div class="cleared"></div>
@@ -177,7 +174,7 @@ class NimbusTemplate extends BaseTemplate {
 			}
 			?>
 				<div class="bottom-left-nav-container">
-					<h2><?php echo wfMsg( 'nimbus-didyouknow' ) ?></h2>
+					<h2><?php echo wfMessage( 'nimbus-didyouknow' )->text() ?></h2>
 					<?php echo $wgOut->parse( '{{Didyouknow}}' ) ?>
 				</div>
 			<?php
@@ -187,7 +184,7 @@ class NimbusTemplate extends BaseTemplate {
 						false
 					);
 					echo '<div class="bottom-left-nav-container">
-					<h2>' . wfMsg( 'nimbus-featuredimage' ) . '</h2>' .
+					<h2>' . wfMessage( 'nimbus-featuredimage' )->text() . '</h2>' .
 					$randomImage . '</div>';
 				}
 
@@ -197,7 +194,7 @@ class NimbusTemplate extends BaseTemplate {
 						false
 					);
 					echo '<div class="bottom-left-nav-container">
-						<h2>' . wfMsg( 'nimbus-featureduser' ) . '</h2>' .
+						<h2>' . wfMessage( 'nimbus-featureduser' )->text() . '</h2>' .
 						$randomUser . '</div>';
 				}
 			?>
@@ -243,9 +240,9 @@ class NimbusTemplate extends BaseTemplate {
 	 */
 	private function getNavigationMenu() {
 		$message_key = 'sidebar';
-		$message = trim( wfMsg( $message_key ) );
+		$message = trim( wfMessage( $message_key )->text() );
 
-		if( wfEmptyMsg( $message_key, $message ) ) {
+		if( wfMessage( $message_key, $message )->isDisabled() ) {
 			return array();
 		}
 
@@ -308,18 +305,18 @@ class NimbusTemplate extends BaseTemplate {
 		$line_temp = explode( '|', trim( $line, '* ' ), 2 );
 		if( count( $line_temp ) > 1 ) {
 			$line = $line_temp[1];
-			$link = wfMsgForContent( $line_temp[0] );
+			$link = wfMessage( $line_temp[0] )->inContentLanguage()->text();
 		} else {
 			$line = $line_temp[0];
 			$link = $line_temp[0];
 		}
 
-		if( wfEmptyMsg( $line, $text = wfMsg( $line ) ) ) {
+		if( wfMessage( $line, $text = wfMessage( $line )->text() )->isDisabled() ) {
 			$text = $line;
 		}
 
 		if( $link != null ) {
-			if( wfEmptyMsg( $line_temp[0], $link ) ) {
+			if( wfMessage( $line_temp[0], $link )->isDisabled() ) {
 				$link = $line_temp[0];
 			}
 			if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $link ) ) {
@@ -344,9 +341,9 @@ class NimbusTemplate extends BaseTemplate {
 	 */
 	private function buildMoreWikis() {
 		$messageKey = 'morewikis';
-		$message = trim( wfMsg( $messageKey ) );
+		$message = trim( wfMessage( $messageKey )->text() );
 
-		if( wfEmptyMsg( $messageKey, $message ) ) {
+		if( wfMessage( $messageKey, $message )->isDisabled() ) {
 			return array();
 		}
 
@@ -458,8 +455,8 @@ class NimbusTemplate extends BaseTemplate {
 			$classes[] = ' new';
 		}
 
-		$text = wfMsg( $message );
-		if ( wfEmptyMsg( $message, $text ) ) {
+		$text = wfMessage( $message )->text();
+		if ( wfMessage( $message, $text )->isDisabled() ) {
 			global $wgContLang;
 			$text = $wgContLang->getFormattedNsText(
 				MWNamespace::getSubject( $title->getNamespace() )
@@ -508,21 +505,21 @@ class NimbusTemplate extends BaseTemplate {
 
 				$content_actions['edit'] = array(
 					'class' => ( ( ( $action == 'edit' || $action == 'submit' ) && $section != 'new' ) ? 'selected' : '' ) . $isTalkClass,
-					'text' => wfMsg( 'edit' ),
+					'text' => wfMessage( 'edit' )->text(),
 					'href' => $wgTitle->getLocalURL( $this->skin->editUrlOptions() )
 				);
 
 				if ( $isTalk || $wgOut->showNewSectionLink() ) {
 					$content_actions['addsection'] = array(
 						'class' => $section == 'new' ? 'selected' : false,
-						'text' => wfMsg( 'addsection' ),
+						'text' => wfMessage( 'addsection' )->text(),
 						'href' => $wgTitle->getLocalURL( 'action=edit&section=new' )
 					);
 				}
 			} else {
 				$content_actions['viewsource'] = array(
 					'class' => ( $action == 'edit' ) ? 'selected' : false,
-					'text' => wfMsg( 'viewsource' ),
+					'text' => wfMessage( 'viewsource' )->text(),
 					'href' => $wgTitle->getLocalURL( $this->skin->editUrlOptions() )
 				);
 			}
@@ -530,7 +527,7 @@ class NimbusTemplate extends BaseTemplate {
 			if ( $wgTitle->getArticleID() ) {
 				$content_actions['history'] = array(
 					'class' => ( $action == 'history' ) ? 'selected' : false,
-					'text' => wfMsg( 'history_short' ),
+					'text' => wfMessage( 'history_short' )->text(),
 					'href' => $wgTitle->getLocalURL( 'action=history' )
 				);
 
@@ -538,14 +535,14 @@ class NimbusTemplate extends BaseTemplate {
 					if( !$wgTitle->isProtected() ) {
 						$content_actions['protect'] = array(
 							'class' => ( $action == 'protect' ) ? 'selected' : false,
-							'text' => wfMsg( 'protect' ),
+							'text' => wfMessage( 'protect' )->text(),
 							'href' => $wgTitle->getLocalURL( 'action=protect' )
 						);
 
 					} else {
 						$content_actions['unprotect'] = array(
 							'class' => ( $action == 'unprotect' ) ? 'selected' : false,
-							'text' => wfMsg( 'unprotect' ),
+							'text' => wfMessage( 'unprotect' )->text(),
 							'href' => $wgTitle->getLocalURL( 'action=unprotect' )
 						);
 					}
@@ -553,7 +550,7 @@ class NimbusTemplate extends BaseTemplate {
 				if( $wgUser->isAllowed( 'delete' ) ) {
 					$content_actions['delete'] = array(
 						'class' => ( $action == 'delete' ) ? 'selected' : false,
-						'text' => wfMsg( 'delete' ),
+						'text' => wfMessage( 'delete' )->text(),
 						'href' => $wgTitle->getLocalURL( 'action=delete' )
 					);
 				}
@@ -561,7 +558,7 @@ class NimbusTemplate extends BaseTemplate {
 					$moveTitle = SpecialPage::getTitleFor( 'Movepage', $wgTitle->getPrefixedDBkey() );
 					$content_actions['move'] = array(
 						'class' => $wgTitle->isSpecial( 'Movepage' ) ? 'selected' : false,
-						'text' => wfMsg( 'move' ),
+						'text' => wfMessage( 'move' )->text(),
 						'href' => $moveTitle->getLocalURL()
 					);
 				}
@@ -569,7 +566,7 @@ class NimbusTemplate extends BaseTemplate {
 				$whatlinkshereTitle = SpecialPage::getTitleFor( 'Whatlinkshere', $wgTitle->getPrefixedDBkey() );
 				$content_actions['whatlinkshere'] = array(
 					'class' => $wgTitle->isSpecial( 'Whatlinkshere' ) ? 'selected' : false,
-					'text' => wfMsg( 'whatlinkshere' ),
+					'text' => wfMessage( 'whatlinkshere' )->text(),
 					'href' => $whatlinkshereTitle->getLocalURL()
 				);
 
@@ -580,7 +577,7 @@ class NimbusTemplate extends BaseTemplate {
 						$undelTitle = SpecialPage::getTitleFor( 'Undelete' );
 						$content_actions['undelete'] = array(
 							'class' => false,
-							'text' => wfMsgExt( 'undelete_short', array( 'parsemag' ), $n ),
+							'text' => wfMessage( 'undelete_short', $n )->parse(),
 							'href' => $undelTitle->getLocalURL( 'target=' . urlencode( $wgTitle->getPrefixedDBkey() ) )
 							#'href' => self::makeSpecialUrl( "Undelete/$this->thispage" )
 						);
@@ -594,13 +591,13 @@ class NimbusTemplate extends BaseTemplate {
 				$quiz = SpecialPage::getTitleFor( 'QuizGameHome' );
 				$content_actions[$wgTitle->getNamespaceKey()] = array(
 					'class' => 'selected',
-					'text' => wfMsg( 'nstab-special' ),
+					'text' => wfMessage( 'nstab-special' )->text(),
 					'href' => $quiz->getFullURL( 'questionGameAction=renderPermalink&permalinkID=' . $wgQuizID ),
 				);
 			} else {
 				$content_actions[$wgTitle->getNamespaceKey()] = array(
 					'class' => 'selected',
-					'text' => wfMsg( 'nstab-special' ),
+					'text' => wfMessage( 'nstab-special' )->text(),
 					'href' => $wgRequest->getRequestURL(), // @bug 2457, 2510
 				);
 			}
@@ -610,7 +607,7 @@ class NimbusTemplate extends BaseTemplate {
 				$quiz = SpecialPage::getTitleFor( 'QuizGameHome' );
 				$content_actions['edit'] = array(
 					'class' => ( $wgRequest->getVal( 'questionGameAction' ) == 'editItem' ) ? 'selected' : false,
-					'text' => wfMsg( 'edit' ),
+					'text' => wfMessage( 'edit' )->text(),
 					'href' => $quiz->getFullURL( 'questionGameAction=editItem&quizGameId=' . $wgQuizID ), // @bug 2457, 2510
 				);
 			}
@@ -619,7 +616,7 @@ class NimbusTemplate extends BaseTemplate {
 				$quiz = SpecialPage::getTitleFor( 'PictureGameHome' );
 				$content_actions['edit'] = array(
 					'class' => ( $wgRequest->getVal( 'picGameAction' ) == 'editPanel' ) ? 'selected' : false,
-					'text' => wfMsg( 'edit' ),
+					'text' => wfMessage( 'edit' )->text(),
 					'href' => $quiz->getFullURL( 'picGameAction=editPanel&id=' . $wgPictureGameID ), // @bug 2457, 2510
 				);
 			}
@@ -679,14 +676,14 @@ class NimbusTemplate extends BaseTemplate {
 			if ( !$wgTitle->userIsWatching() ) {
 				$output .= '<a id="ca-watch" class="mw-watchlink" href="' .
 					$full_title->escapeFullURL( 'action=watch' ) . '" title="' .
-						wfMsg( 'tooltip-ca-watch' ) . '">' .
-					wfMsg( 'watch' ) .
+					wfMessage( 'tooltip-ca-watch' )->text() . '">' .
+					wfMessage( 'watch' )->text() .
 				'</a>';
 			} else {
 				$output .= '<a id="ca-unwatch" class="mw-watchlink" href="' .
 					$full_title->escapeFullURL( 'action=unwatch' ) . '" title="' .
-						wfMsg( 'tooltip-ca-unwatch' ) . '">' .
-					wfMsg( 'unwatch' ) .
+					wfMessage( 'tooltip-ca-unwatch' )->text() . '">' .
+					wfMessage( 'unwatch' )->text() .
 				'</a>';
 			}
 
@@ -707,7 +704,7 @@ class NimbusTemplate extends BaseTemplate {
 
 		if ( count( $moreLinks ) > 0 ) {
 			$output .= '<div class="more-tab-off" id="more-tab">
-				<span>' . wfMsg( 'nimbus-more-actions' ) . '</span>';
+				<span>' . wfMessage( 'nimbus-more-actions' )->text() . '</span>';
 
 			$output .= '<div class="article-more-actions" id="article-more-container" style="display:none">';
 
@@ -750,10 +747,11 @@ class NimbusTemplate extends BaseTemplate {
 		$title = Title::makeTitle( $wgTitle->getNamespace(), $wgTitle->getText() );
 		$pageTitleId = $wgTitle->getArticleID();
 		$main_page = Title::newMainPage();
-		$about = Title::makeTitle( wfMsgForContent( 'aboutpage' ) );
+		$about = Title::newFromText( wfMessage( 'aboutpage' )->inContentLanguage()->text() );
 		$special = SpecialPage::getTitleFor( 'Specialpages' );
 		$help = SpecialPage::getTitleFor( 'Userlogin', 'signup' );
-		$disclaimerPage = Title::newFromText( wfMsgForContent( 'disclaimerpage' ) );
+		$disclaimerPage = Title::newFromText( wfMessage( 'disclaimerpage' )->inContentLanguage()->text()
+		);
 
 		$footerShow = array( NS_MAIN, NS_FILE );
 		if ( defined( 'NS_VIDEO' ) ) {
@@ -809,18 +807,19 @@ class NimbusTemplate extends BaseTemplate {
 			if( count( $editors ) > 0 ) {
 				$footer .= '<div id="footer-container">
 					<div id="footer-actions">
-						<h2>' . wfMsg( 'nimbus-contribute' ) . '</h2>'
-							. wfMsgExt( 'nimbus-pages-can-be-edited', 'parsemag' ) .
-						'<a href="' . $title->escapeFullURL( $this->skin->editUrlOptions() ) . '" rel="nofollow" class="edit-action">' . wfMsg( 'editthispage' ) . '</a>
-						<a href="' . $title->getTalkPage()->escapeFullURL() . '" rel="nofollow" class="discuss-action">' . wfMsg( 'talkpage' ) . '</a>
-						<a href="' . $title->escapeFullURL( 'action=history' ) . '" rel="nofollow" class="page-history-action">' . wfMsg( 'pagehist' ) . '</a>';
+						<h2>' . wfMessage( 'nimbus-contribute' )->text() . '</h2>'
+							. wfMessage( 'nimbus-pages-can-be-edited' )->text() .
+						'<a href="' . $title->escapeFullURL( $this->skin->editUrlOptions() ) . '" rel="nofollow" class="edit-action">' . wfMessage( 'editthispage' )->text() . '</a>
+						<a href="' . $title->getTalkPage()->escapeFullURL() . '" rel="nofollow" class="discuss-action">' . wfMessage( 'talkpage' )->text() . '</a>
+						<a href="' . $title->escapeFullURL( 'action=history' ) . '" rel="nofollow" class="page-history-action">' . wfMessage( 'pagehist' )->text()
+					. '</a>';
 				$footer .= '</div>';
 				// Only load the page editors' avatars if wAvatar class exists and $wgUserLevels is an array
 				global $wgUserLevels;
 				if ( class_exists( 'wAvatar' ) && is_array( $wgUserLevels ) ) {
 					$footer .= '<div id="footer-contributors">
-						<h2>' . wfMsg( 'nimbus-recent-contributors' ) . '</h2>'
-						. wfMsg( 'nimbus-recent-contributors-info' );
+						<h2>' . wfMessage( 'nimbus-recent-contributors' )->text() . '</h2>'
+						. wfMessage( 'nimbus-recent-contributors-info' )->text();
 
 					foreach( $editors as $editor ) {
 						$avatar = new wAvatar( $editor['user_id'], 'm' );
@@ -849,23 +848,22 @@ class NimbusTemplate extends BaseTemplate {
 		}
 
 		$footer .= '<div id="footer-bottom">
-			<a href="' . $main_page->escapeLocalURL() . '" rel="nofollow">' . wfMsg( 'mainpage' ) . '</a>
-			<a href="' . $about->escapeLocalURL() . '" rel="nofollow">' . wfMsg( 'about' ) . '</a>
-			<a href="' . $special->escapeLocalURL() . '" rel="nofollow">' . wfMsg( 'specialpages' ) . '</a>
-			<a href="' . $help->escapeLocalURL() . '" rel="nofollow">' . wfMsg( 'help' ) . '</a>
-			<a href="' . $disclaimerPage->escapeLocalURL() . '" rel="nofollow">' . wfMsg( 'disclaimers' ) . '</a>';
+			<a href="' . $main_page->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'mainpage' )->text() . '</a>
+			<a href="' . $about->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'about' )->text() . '</a>
+			<a href="' . $special->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'specialpages' )->text() . '</a>
+			<a href="' . $help->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'help' )->text() . '</a>
+			<a href="' . $disclaimerPage->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'disclaimers' )->text() . '</a>';
 
 		// "Advertise" link on the footer, but only if a URL has been specified
 		// in the MediaWiki:Nimbus-advertise-url system message
-		$adURL = trim( wfMsgForContent( 'nimbus-advertise-url' ) );
-		if( !wfEmptyMsg( 'nimbus-advertise-url', $adURL ) ) {
+		$adURL = trim( wfMessage( 'nimbus-advertise-url' )->inContentLanguage()->text() );
+		if( !wfMessage( 'nimbus-advertise-url', $adURL )->isDisabled() ) {
 			$footer .= '<a href="' . $adURL . '" rel="nofollow">' .
-				wfMsg( 'nimbus-advertise' ) . '</a>';
+				wfMessage( 'nimbus-advertise' )->text() . '</a>';
 		}
 
 		$footer .= '</div>' . "\n";
 
 		return $footer;
 	}
-
-} // end of class
+}
