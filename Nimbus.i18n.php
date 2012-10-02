@@ -84,7 +84,7 @@ $messages['az'] = array(
 	'nimbus-login' => 'Daxil ol',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Wizardist
  */
@@ -153,7 +153,7 @@ Ist diese Seite unvollständig? Ist etwas falsch?<br />
 	'nimbus-welcome' => 'Willkommen $1',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Kghbln
  */
 $messages['de-formal'] = array(
@@ -818,7 +818,7 @@ $messages['zh-hans'] = array(
 	'nimbus-welcome' => '欢迎$1',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
