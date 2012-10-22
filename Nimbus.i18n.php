@@ -35,9 +35,12 @@ Is this page incomplete? Is there anything wrong?<br />
  * @author Beta16
  * @author EugeneZelenko
  * @author Siebrand
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
+	'morewikis' => '{{notranslate}}',
 	'nimbus-desc' => '{{desc}}',
+	'nimbus-advertise-url' => '{{notranslate}}',
 	'nimbus-login' => '{{Identical|Login}}',
 	'nimbus-logout' => '{{Identical|Log out}}',
 	'nimbus-profile' => '{{Identical|Profile}}',
@@ -809,7 +812,8 @@ $messages['vi'] = array(
 	'nimbus-profile' => 'Hồ sơ',
 );
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Simplified Chinese (中文（简体）‎)
+ */
 $messages['zh-hans'] = array(
 	'nimbus-contribute' => '贡献',
 	'nimbus-login' => '登入',
@@ -828,4 +832,3 @@ $messages['zh-hant'] = array(
 	'nimbus-more-actions' => '更多操作',
 	'nimbus-welcome' => '歡迎$1',
 );
-
