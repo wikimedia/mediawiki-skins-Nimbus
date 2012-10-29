@@ -170,7 +170,8 @@ Ist diese Seite unvollständig? Ist etwas falsch?<br />
  * @author Mirzali
  */
 $messages['diq'] = array(
-	'nimbus-logout' => 'Bıveciyên',
+	'nimbus-login' => 'Cıkewtış',
+	'nimbus-logout' => 'Bıveciye?',
 );
 
 /** Spanish (español)
