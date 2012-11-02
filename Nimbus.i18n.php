@@ -814,12 +814,23 @@ $messages['vi'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'nimbus-desc' => 'Nimbus 皮肤',
 	'nimbus-contribute' => '贡献',
+	'nimbus-didyouknow' => '你知道吗',
+	'nimbus-featuredimage' => '精选图像',
+	'nimbus-featureduser' => '精选用户',
 	'nimbus-login' => '登入',
 	'nimbus-logout' => '登出？',
 	'nimbus-more-actions' => '更多操作',
+	'nimbus-more-wikis' => '更多wiki',
+	'nimbus-profile' => '个人资料',
+	'nimbus-recent-contributors' => '最近对此页的贡献',
+	'nimbus-recent-contributors-info' => '以下的人最近对此页作出了贡献。',
+	'nimbus-search' => '请输入搜索',
+	'nimbus-signup' => '注册',
 	'nimbus-welcome' => '欢迎$1',
 );
 
