@@ -167,11 +167,13 @@ Ist diese Seite unvollständig? Ist etwas falsch?<br />
 );
 
 /** Zazaki (Zazaki)
+ * @author Erdemaslancan
  * @author Mirzali
  */
 $messages['diq'] = array(
 	'nimbus-login' => 'Cıkewtış',
 	'nimbus-logout' => 'Bıveciye?',
+	'nimbus-profile' => 'Profile',
 );
 
 /** Spanish (español)
