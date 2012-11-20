@@ -171,9 +171,12 @@ Ist diese Seite unvollständig? Ist etwas falsch?<br />
  * @author Mirzali
  */
 $messages['diq'] = array(
+	'nimbus-contribute' => 'İştıraqi',
 	'nimbus-login' => 'Cıkewtış',
 	'nimbus-logout' => 'Bıveciye?',
 	'nimbus-profile' => 'Profile',
+	'nimbus-signup' => 'Hesabo Newe Ake',
+	'nimbus-welcome' => 'Şıma Weş ameyê $1',
 );
 
 /** Spanish (español)
