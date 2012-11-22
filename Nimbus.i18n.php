@@ -175,8 +175,8 @@ $messages['diq'] = array(
 	'nimbus-login' => 'Cıkewtış',
 	'nimbus-logout' => 'Bıveciye?',
 	'nimbus-profile' => 'Profile',
-	'nimbus-signup' => 'Hesabo Newe Ake',
-	'nimbus-welcome' => 'Şıma Weş ameyê $1',
+	'nimbus-signup' => 'Qeyd be',
+	'nimbus-welcome' => 'Xeyr ameyê $1',
 );
 
 /** Spanish (español)
@@ -437,8 +437,8 @@ $messages['ja'] = array(
 	'nimbus-recent-contributors' => 'このページの最近の更新',
 	'nimbus-recent-contributors-info' => 'このページを最近更新したのは以下の人たちです。',
 	'nimbus-search' => '検索に入る',
-	'nimbus-signup' => 'サインアップ',
-	'nimbus-welcome' => 'ようこそ $1',
+	'nimbus-signup' => '利用者登録',
+	'nimbus-welcome' => 'ようこそ、$1さん',
 );
 
 /** Georgian (ქართული)
