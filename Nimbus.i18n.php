@@ -515,7 +515,7 @@ $messages['mk'] = array(
 	'nimbus-recent-contributors-info' => 'Следниве уредници неодамна придонеле кон оваа статија.',
 	'nimbus-search' => 'пребарајте нешто',
 	'nimbus-signup' => 'Регистрација',
-	'nimbus-welcome' => 'Добредојдовте $1',
+	'nimbus-welcome' => 'Добре дојдовте $1',
 );
 
 /** Maltese (Malti)
@@ -793,6 +793,23 @@ $messages['tr'] = array(
 	'nimbus-login' => 'Oturum aç',
 	'nimbus-profile' => 'Profil',
 	'nimbus-welcome' => 'Hoşgeldiniz $1',
+);
+
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'nimbus-desc' => 'Оформлення Nimbus',
+	'nimbus-advertise' => 'Реклама',
+	'nimbus-contribute' => 'Зробити внесок',
+	'nimbus-didyouknow' => 'Чи знаєте Ви',
+	'nimbus-featuredimage' => 'Вибране зображення',
+	'nimbus-featureduser' => 'Вибраний користувач',
+	'nimbus-login' => 'Лоґін',
+	'nimbus-logout' => 'Вийти?',
+	'nimbus-more-actions' => 'Більше дій',
+	'nimbus-more-wikis' => 'Більше вікі',
+	'nimbus-profile' => 'Профіль',
 );
 
 /** Urdu (اردو)
