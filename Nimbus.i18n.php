@@ -34,12 +34,13 @@ Is this page incomplete? Is there anything wrong?<br />
 /** Message documentation (Message documentation)
  * @author Beta16
  * @author EugeneZelenko
+ * @author Shirayuki
  * @author Siebrand
  * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'morewikis' => '{{notranslate}}',
-	'nimbus-desc' => '{{desc}}',
+	'nimbus-desc' => '{{desc|name=Nimbus|url=http://www.mediawiki.org/wiki/Extension:Nimbus}}',
 	'nimbus-advertise-url' => '{{notranslate}}',
 	'nimbus-login' => '{{Identical|Login}}',
 	'nimbus-logout' => '{{Identical|Log out}}',
