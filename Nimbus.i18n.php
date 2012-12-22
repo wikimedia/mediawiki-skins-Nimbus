@@ -81,6 +81,31 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
 	'nimbus-welcome' => 'Welkom $1',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'nimbus-desc' => 'Apariencia Nimbus',
+	'nimbus-advertise' => 'Anunciar',
+	'nimbus-contribute' => 'Contribuyir',
+	'nimbus-didyouknow' => '¿Sabíes que...?',
+	'nimbus-featuredimage' => 'Imaxe destacada',
+	'nimbus-featureduser' => 'Usuariu destacáu',
+	'nimbus-login' => 'Entrar',
+	'nimbus-logout' => '¿Colar?',
+	'nimbus-more-actions' => 'Más aiciones',
+	'nimbus-more-wikis' => 'Más wikis',
+	'nimbus-pages-can-be-edited' => 'Les páxines de {{SITENAME}} puen editase.<br />
+¿La páxina aá incompleta? ¿Hai daqué mal?<br />
+<b>¡Camudalo!</b>',
+	'nimbus-profile' => 'Perfil',
+	'nimbus-recent-contributors' => 'Collaboradores de recién nesta páxina',
+	'nimbus-recent-contributors-info' => 'Les siguientes persones collaboraron de recién nesta páxina.',
+	'nimbus-search' => 'escribir la gueta',
+	'nimbus-signup' => "Date d'alta",
+	'nimbus-welcome' => 'Bienllegáu, $1',
+);
+
 /** Azerbaijani (azərbaycanca)
  * @author Wertuose
  */
@@ -209,6 +234,7 @@ $messages['es'] = array(
  * @author Avjoska
  */
 $messages['et'] = array(
+	'nimbus-advertise' => 'Teata',
 	'nimbus-didyouknow' => 'Kas teadsid, et...',
 	'nimbus-login' => 'Logi sisse',
 	'nimbus-logout' => 'Logi välja?',
@@ -227,12 +253,14 @@ $messages['eu'] = array(
  * @author Mjbmr
  */
 $messages['fa'] = array(
+	'nimbus-contribute' => 'مشارکت‌کردن',
 	'nimbus-didyouknow' => 'آیا می دانستید',
 	'nimbus-featuredimage' => 'تصویر برگزیده',
 	'nimbus-featureduser' => 'کاربر برگزیده',
 	'nimbus-login' => 'ورود به سامانه',
 	'nimbus-logout' => 'می‌خواهید خارج شوید؟',
 	'nimbus-more-actions' => 'اقدامات بیشتر',
+	'nimbus-more-wikis' => 'ویکی‌های بیشتر',
 	'nimbus-profile' => 'نمایه',
 	'nimbus-signup' => 'ثبت نام',
 	'nimbus-welcome' => 'خوش آمدی $1',
@@ -642,6 +670,7 @@ $messages['pt-br'] = array(
 );
 
 /** Romanian (română)
+ * @author Firilacroco
  * @author Minisarm
  * @author Stelistcristi
  */
@@ -649,6 +678,7 @@ $messages['ro'] = array(
 	'nimbus-contribute' => 'Contribuie',
 	'nimbus-didyouknow' => 'Știați că',
 	'nimbus-login' => 'Autentificare',
+	'nimbus-logout' => 'Deconectare?',
 	'nimbus-more-actions' => 'Mai multe acțiuni',
 	'nimbus-more-wikis' => 'Mai multe wikiuri',
 	'nimbus-profile' => 'Profil',
@@ -702,6 +732,7 @@ $messages['si'] = array(
 	'nimbus-more-actions' => 'තවත් ක්‍රියාවන්',
 	'nimbus-more-wikis' => 'තවත් විකියන්',
 	'nimbus-profile' => 'පැතිකඩ',
+	'nimbus-signup' => 'ලියාපදිංචි වන්න',
 	'nimbus-welcome' => 'ආයුබෝවන් $1',
 );
 
@@ -798,6 +829,7 @@ $messages['tr'] = array(
 
 /** Ukrainian (українська)
  * @author Base
+ * @author Steve.rusyn
  */
 $messages['uk'] = array(
 	'nimbus-desc' => 'Оформлення Nimbus',
@@ -811,6 +843,8 @@ $messages['uk'] = array(
 	'nimbus-more-actions' => 'Більше дій',
 	'nimbus-more-wikis' => 'Більше вікі',
 	'nimbus-profile' => 'Профіль',
+	'nimbus-signup' => 'Зареєструватися',
+	'nimbus-welcome' => 'Вітаємо, $1!',
 );
 
 /** Urdu (اردو)
@@ -858,6 +892,7 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Shirayuki
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
@@ -865,5 +900,6 @@ $messages['zh-hant'] = array(
 	'nimbus-login' => '登入',
 	'nimbus-logout' => '登出？',
 	'nimbus-more-actions' => '更多操作',
+	'nimbus-signup' => '註冊',
 	'nimbus-welcome' => '歡迎$1',
 );
