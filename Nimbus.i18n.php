@@ -139,6 +139,13 @@ $messages['be-tarask'] = array(
 	'nimbus-welcome' => 'Вітаем, $1',
 );
 
+/** Bulgarian (български)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['bg'] = array(
+	'nimbus-profile' => 'Профил',
+);
+
 /** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
@@ -422,6 +429,20 @@ Iste pagina es incomplete? Contine un error?<br />
 	'nimbus-welcome' => 'Benvenite $1',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Farras
+ * @author පසිඳු කාවින්ද
+ */
+$messages['id'] = array(
+	'nimbus-desc' => 'Kulit Nimbus',
+	'nimbus-advertise' => 'Beriklan',
+	'nimbus-contribute' => 'Berkontribusi',
+	'nimbus-didyouknow' => 'Tahukah Anda',
+	'nimbus-login' => 'Masuk log',
+	'nimbus-logout' => 'Keluar log?',
+	'nimbus-profile' => 'Profil',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
@@ -520,6 +541,13 @@ Ass dës säit komplett? Ass eppes falsch?<br />
 	'nimbus-search' => 'Gitt a wat Dir sicht',
 	'nimbus-signup' => 'Schreift Iech an',
 	'nimbus-welcome' => 'Wëllkomm $1',
+);
+
+/** Latvian (latviešu)
+ * @author Papuass
+ */
+$messages['lv'] = array(
+	'nimbus-didyouknow' => 'Vai tu zināji',
 );
 
 /** Macedonian (македонски)
