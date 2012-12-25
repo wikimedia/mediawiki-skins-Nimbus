@@ -792,6 +792,7 @@ $messages['sv'] = array(
  * @author Shanmugamp7
  */
 $messages['ta'] = array(
+	'nimbus-desc' => 'நிம்பஸ் தோல்',
 	'nimbus-advertise' => 'விளம்பரப்படுத்து',
 	'nimbus-contribute' => 'பங்களி',
 	'nimbus-didyouknow' => 'உங்களுக்கு தெரியுமா',
