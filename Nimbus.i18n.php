@@ -212,6 +212,21 @@ $messages['diq'] = array(
 	'nimbus-welcome' => 'Xeyr ameyê $1',
 );
 
+/** Greek (Ελληνικά)
+ * @author ZaDiak
+ */
+$messages['el'] = array(
+	'nimbus-advertise' => 'Διαφημιστείτε',
+	'nimbus-contribute' => 'Συμβάλλετε',
+	'nimbus-didyouknow' => 'Γνωρίζατε ότι',
+	'nimbus-featuredimage' => 'Προτεινόμενη εικόνα',
+	'nimbus-featureduser' => 'Προτεινόμενος χρήστης',
+	'nimbus-login' => 'Είσοδος',
+	'nimbus-logout' => 'Έξοδος;',
+	'nimbus-signup' => 'Εγγραφή',
+	'nimbus-welcome' => 'Καλώς όρισες $1',
+);
+
 /** Spanish (español)
  * @author Armando-Martin
  */
@@ -777,6 +792,7 @@ $messages['ru'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'nimbus-desc' => 'වැසි වළාකුළු සම',
 	'nimbus-advertise' => 'ප්‍රචාරණය කරන්න',
 	'nimbus-contribute' => 'දායකවන්න',
 	'nimbus-didyouknow' => 'ඔබ දන්නවාද',
@@ -787,6 +803,7 @@ $messages['si'] = array(
 	'nimbus-more-actions' => 'තවත් ක්‍රියාවන්',
 	'nimbus-more-wikis' => 'තවත් විකියන්',
 	'nimbus-profile' => 'පැතිකඩ',
+	'nimbus-search' => 'සෙවුම යොදන්න',
 	'nimbus-signup' => 'ලියාපදිංචි වන්න',
 	'nimbus-welcome' => 'ආයුබෝවන් $1',
 );
