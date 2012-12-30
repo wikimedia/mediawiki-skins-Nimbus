@@ -803,6 +803,7 @@ $messages['si'] = array(
 	'nimbus-more-actions' => 'තවත් ක්‍රියාවන්',
 	'nimbus-more-wikis' => 'තවත් විකියන්',
 	'nimbus-profile' => 'පැතිකඩ',
+	'nimbus-recent-contributors' => 'මෙම පිටුව වෙත මෑත දායකයන්',
 	'nimbus-search' => 'සෙවුම යොදන්න',
 	'nimbus-signup' => 'ලියාපදිංචි වන්න',
 	'nimbus-welcome' => 'ආයුබෝවන් $1',
