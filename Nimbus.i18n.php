@@ -164,6 +164,19 @@ $messages['br'] = array(
 	'nimbus-welcome' => 'Degemer mat $1',
 );
 
+/** Czech (česky)
+ * @author Vks
+ */
+$messages['cs'] = array(
+	'nimbus-contribute' => 'Přispět',
+	'nimbus-login' => 'Přihlásit se',
+	'nimbus-profile' => 'Profil',
+	'nimbus-recent-contributors' => 'Poslední přispivatelé do této stránky',
+	'nimbus-search' => 'Zadej vyhledávací dotaz',
+	'nimbus-signup' => 'Zaregistrovat se',
+	'nimbus-welcome' => 'Vítej $1',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
@@ -213,6 +226,7 @@ $messages['diq'] = array(
 );
 
 /** Greek (Ελληνικά)
+ * @author Glavkos
  * @author ZaDiak
  */
 $messages['el'] = array(
@@ -222,7 +236,7 @@ $messages['el'] = array(
 	'nimbus-featuredimage' => 'Προτεινόμενη εικόνα',
 	'nimbus-featureduser' => 'Προτεινόμενος χρήστης',
 	'nimbus-login' => 'Είσοδος',
-	'nimbus-logout' => 'Έξοδος;',
+	'nimbus-logout' => 'Αποσύνδεση;',
 	'nimbus-signup' => 'Εγγραφή',
 	'nimbus-welcome' => 'Καλώς όρισες $1',
 );
@@ -358,7 +372,12 @@ $messages['frp'] = array(
 	'nimbus-logout' => 'Sè dèbranchiér ?',
 	'nimbus-more-actions' => 'Més d’accions',
 	'nimbus-more-wikis' => 'Més de vouiquis',
+	'nimbus-pages-can-be-edited' => 'Les pâges de {{SITENAME}} pôvont étre changiêyes.<br />
+Cela pâge est-el encomplèta ? Y at n’ôtra chousa que vat pas ?<br />
+<b>Changiéd-lo !</b>',
 	'nimbus-profile' => 'Profil',
+	'nimbus-recent-contributors' => 'Novéls contributors a cela pâge',
+	'nimbus-recent-contributors-info' => 'Dês pou cetes gens ont contribuâ a cela pâge.',
 	'nimbus-search' => 'buchiéd la rechèrche',
 	'nimbus-signup' => 'Enscrîde-vos',
 	'nimbus-welcome' => 'Benvegnua $1',
@@ -745,8 +764,11 @@ $messages['pt-br'] = array(
  * @author Stelistcristi
  */
 $messages['ro'] = array(
+	'nimbus-advertise' => 'Faceți publicitate',
 	'nimbus-contribute' => 'Contribuie',
 	'nimbus-didyouknow' => 'Știați că',
+	'nimbus-featuredimage' => 'Imagine recomandată',
+	'nimbus-featureduser' => 'Utilizator recomandat',
 	'nimbus-login' => 'Autentificare',
 	'nimbus-logout' => 'Deconectare?',
 	'nimbus-more-actions' => 'Mai multe acțiuni',
@@ -804,6 +826,7 @@ $messages['si'] = array(
 	'nimbus-more-wikis' => 'තවත් විකියන්',
 	'nimbus-profile' => 'පැතිකඩ',
 	'nimbus-recent-contributors' => 'මෙම පිටුව වෙත මෑත දායකයන්',
+	'nimbus-recent-contributors-info' => 'පහත දැක්වෙන පුද්ගලයන් මෙම පිටුවට මෑතකදී දායකත්වය දෙන ලදී.',
 	'nimbus-search' => 'සෙවුම යොදන්න',
 	'nimbus-signup' => 'ලියාපදිංචි වන්න',
 	'nimbus-welcome' => 'ආයුබෝවන් $1',
