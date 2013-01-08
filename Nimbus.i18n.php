@@ -694,10 +694,11 @@ Strona jest niekompletna? Znalazłeś błąd?<br />
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'nimbus-desc' => 'Skin Nimbus',
+	'nimbus-desc' => 'Pel Nimbus',
 	'nimbus-advertise' => 'Propon-se',
 	'nimbus-contribute' => 'Contribuì',
 	'nimbus-didyouknow' => 'Lo sas-to',
@@ -706,14 +707,14 @@ $messages['pms'] = array(
 	'nimbus-login' => 'Intré ant ël sistema',
 	'nimbus-logout' => 'Seurte dal sistema?',
 	'nimbus-more-actions' => "Pi d'assion",
-	'nimbus-more-wikis' => 'Pi dë wiki',
+	'nimbus-more-wikis' => "Pi 'd wiki",
 	'nimbus-pages-can-be-edited' => "Le pagine ëd {{SITENAME}} a peulo esse modificà.<br />
-Sta pagina a l'é-lo pa completa? A-i é-lo quaicòs ëd falì?<br />
-<b>Cangg-lo!</b>",
+Costa pàgina, é-la incompleta? I-é-lo quaicòs ch'a marcia pa?<br />
+<b>Ch'a lo modìfica!</b>",
 	'nimbus-profile' => 'Profil',
-	'nimbus-recent-contributors' => 'Contribudor recent a sta pagina',
-	'nimbus-recent-contributors-info' => "le përson-e ch'a ven-o a l'han contribuì ëd recent a sta pagina.",
-	'nimbus-search' => 'anseriss arserca',
+	'nimbus-recent-contributors' => 'Contributor recent a costa pàgina',
+	'nimbus-recent-contributors-info' => "Le përson-e sì dapress a l'han contribuì ëd recent a costa pàgina.",
+	'nimbus-search' => "ch'a anserissa l'arserca",
 	'nimbus-signup' => "Ch'as anscriva",
 	'nimbus-welcome' => 'Bin ëvnù $1',
 );
