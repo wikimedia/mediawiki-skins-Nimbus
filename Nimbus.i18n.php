@@ -981,6 +981,9 @@ $messages['zh-hans'] = array(
 	'nimbus-logout' => '登出？',
 	'nimbus-more-actions' => '更多操作',
 	'nimbus-more-wikis' => '更多wiki',
+	'nimbus-pages-can-be-edited' => '{{SITENAME}} 的页面可以编辑。<br />
+此页不完整吗？亦或者有什么错误？
+<b>那快来修改它吧！</b>',
 	'nimbus-profile' => '个人资料',
 	'nimbus-recent-contributors' => '最近对此页的贡献',
 	'nimbus-recent-contributors-info' => '以下的人最近对此页作出了贡献。',
