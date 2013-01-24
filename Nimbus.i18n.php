@@ -794,6 +794,8 @@ $messages['roa-tara'] = array(
 	'nimbus-more-actions' => 'Cchiù aziune',
 	'nimbus-more-wikis' => 'Cchiù uicchi',
 	'nimbus-profile' => 'Profile',
+	'nimbus-signup' => 'Reggistrate',
+	'nimbus-welcome' => 'Bovègne $1',
 );
 
 /** Russian (русский)
