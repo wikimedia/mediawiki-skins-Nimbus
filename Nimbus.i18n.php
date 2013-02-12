@@ -930,6 +930,7 @@ $messages['tr'] = array(
 /** Ukrainian (українська)
  * @author Base
  * @author Steve.rusyn
+ * @author Ата
  */
 $messages['uk'] = array(
 	'nimbus-desc' => 'Оформлення Nimbus',
@@ -942,7 +943,13 @@ $messages['uk'] = array(
 	'nimbus-logout' => 'Вийти?',
 	'nimbus-more-actions' => 'Більше дій',
 	'nimbus-more-wikis' => 'Більше вікі',
+	'nimbus-pages-can-be-edited' => 'Сторінки проекту {{SITENAME}} можна редагувати.<br />
+Ця сторінка неповна? На ній щось не так?<br />
+<b>Змініть її!</b>',
 	'nimbus-profile' => 'Профіль',
+	'nimbus-recent-contributors' => 'Нові дописувачі цієї сторінки',
+	'nimbus-recent-contributors-info' => 'Такі люди нещодавно зробили внесок у цю сторінку.',
+	'nimbus-search' => 'введіть пошуковий запит',
 	'nimbus-signup' => 'Зареєструватися',
 	'nimbus-welcome' => 'Вітаємо, $1!',
 );
