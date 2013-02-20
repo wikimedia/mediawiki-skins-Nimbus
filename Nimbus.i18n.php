@@ -982,6 +982,7 @@ $messages['vi'] = array(
  */
 $messages['zh-hans'] = array(
 	'nimbus-desc' => 'Nimbus 皮肤',
+	'nimbus-advertise' => '广告',
 	'nimbus-contribute' => '贡献',
 	'nimbus-didyouknow' => '你知道吗',
 	'nimbus-featuredimage' => '精选图像',
