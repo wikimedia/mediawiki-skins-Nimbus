@@ -42,6 +42,7 @@ $messages['qqq'] = array(
 	'morewikis' => '{{notranslate}}',
 	'nimbus-desc' => '{{desc|name=Nimbus|url=http://www.mediawiki.org/wiki/Extension:Nimbus}}',
 	'nimbus-advertise-url' => '{{notranslate}}',
+	'nimbus-didyouknow' => '{{Identical|Did you know}}',
 	'nimbus-login' => '{{Identical|Login}}',
 	'nimbus-logout' => '{{Identical|Log out}}',
 	'nimbus-profile' => '{{Identical|Profile}}',
