@@ -785,6 +785,7 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'nimbus-desc' => 'Modelle Nimbus',
 	'nimbus-advertise' => 'Pubblecitate',
 	'nimbus-contribute' => 'Condrebbute',
 	'nimbus-didyouknow' => "'U canusce?",
@@ -794,7 +795,13 @@ $messages['roa-tara'] = array(
 	'nimbus-logout' => 'Isse?',
 	'nimbus-more-actions' => 'Cchiù aziune',
 	'nimbus-more-wikis' => 'Cchiù uicchi',
+	'nimbus-pages-can-be-edited' => "Le pàggene de {{SITENAME}} ponne essere cangiate.<br />
+'A pàgene ste 'ngomblete? Ste quacche cose ca non ge vè?<br />
+<b>Cangiale!</b>",
 	'nimbus-profile' => 'Profile',
+	'nimbus-recent-contributors' => 'Condrebbutore recende de sta pàgene',
+	'nimbus-recent-contributors-info' => 'Le crestiàne seguende onne condrebbuite recendemende a sta pàgene.',
+	'nimbus-search' => "scrive 'a ricerche",
 	'nimbus-signup' => 'Reggistrate',
 	'nimbus-welcome' => 'Bovègne $1',
 );
