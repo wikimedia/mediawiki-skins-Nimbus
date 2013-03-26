@@ -41,11 +41,32 @@ Is this page incomplete? Is there anything wrong?<br />
 $messages['qqq'] = array(
 	'morewikis' => '{{notranslate}}',
 	'nimbus-desc' => '{{desc|name=Nimbus|url=http://www.mediawiki.org/wiki/Extension:Nimbus}}',
+	'nimbus-advertise' => 'Used as link text if the Advertise URL is not empty.',
 	'nimbus-advertise-url' => '{{notranslate}}',
+	'nimbus-contribute' => 'Used as HTML <code><nowiki><h2></nowiki></code> heading.
+
+This heading is followed by the following message:
+* {{msg-mw|nimbus-pages-can-be-edited}}.',
 	'nimbus-didyouknow' => '{{Identical|Did you know}}',
+	'nimbus-featuredimage' => 'Used as HTML <code><nowiki><h2></nowiki></code> heading.
+
+This heading is followed by a featured image at random.',
+	'nimbus-featureduser' => 'Used as HTML <code><nowiki><h2></nowiki></code> heading.
+
+This heading is followed by a featured user at random.',
 	'nimbus-login' => '{{Identical|Login}}',
 	'nimbus-logout' => '{{Identical|Log out}}',
+	'nimbus-more-actions' => 'This message is followed by a list of links.',
+	'nimbus-more-wikis' => 'This message is followed by a list of wikis.',
+	'nimbus-pages-can-be-edited' => 'This message follows the heading {{msg-mw|nimbus-contribute}}.',
 	'nimbus-profile' => '{{Identical|Profile}}',
+	'nimbus-recent-contributors' => 'Used as HTML <code><nowiki><h2></nowiki></code> heading.
+
+This heading is followed by the message {{msg-mw|nimbus-recent-contributors-info}}.',
+	'nimbus-recent-contributors-info' => 'This message follows the heading {{msg-mw|Nimbus-recent-contributors}}.',
+	'nimbus-search' => 'Used as place holder for input box in the Search form.
+
+"enter search" means about "Enter a search phrase here".',
 	'nimbus-signup' => '{{Identical|Sign up}}',
 	'nimbus-welcome' => '&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username',
 );
@@ -523,7 +544,7 @@ $messages['ja'] = array(
 	'nimbus-profile' => 'プロフィール',
 	'nimbus-recent-contributors' => 'このページの最近の更新',
 	'nimbus-recent-contributors-info' => 'このページを最近更新したのは以下の人たちです。',
-	'nimbus-search' => '検索に入る',
+	'nimbus-search' => '検索語句を入力',
 	'nimbus-signup' => '利用者登録',
 	'nimbus-welcome' => 'ようこそ、$1さん',
 );
