@@ -574,6 +574,11 @@ $messages['ka'] = array(
  */
 $messages['ksh'] = array(
 	'nimbus-desc' => 'De Bedeen-Bovverfläsch Nimbus.',
+	'nimbus-contribute' => 'Beijdraare',
+	'nimbus-login' => 'Enlogge',
+	'nimbus-logout' => 'Ußlogge?',
+	'nimbus-more-actions' => 'Mieh Axjhune',
+	'nimbus-more-wikis' => 'Mieh Wikis',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
