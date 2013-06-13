@@ -310,11 +310,12 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Ebraminio
  * @author Mjbmr
  */
 $messages['fa'] = array(
 	'nimbus-contribute' => 'مشارکت‌کردن',
-	'nimbus-didyouknow' => 'آیا می دانستید',
+	'nimbus-didyouknow' => 'آیا می‌دانستید',
 	'nimbus-featuredimage' => 'تصویر برگزیده',
 	'nimbus-featureduser' => 'کاربر برگزیده',
 	'nimbus-login' => 'ورود به سامانه',
