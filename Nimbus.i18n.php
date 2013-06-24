@@ -186,6 +186,13 @@ $messages['br'] = array(
 	'nimbus-welcome' => 'Degemer mat $1',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'nimbus-contribute' => 'Ккъинхьегам',
+);
+
 /** Czech (česky)
  * @author Vks
  */
