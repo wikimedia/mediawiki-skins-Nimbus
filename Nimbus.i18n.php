@@ -330,6 +330,7 @@ $messages['fa'] = array(
 	'nimbus-more-actions' => 'اقدامات بیشتر',
 	'nimbus-more-wikis' => 'ویکی‌های بیشتر',
 	'nimbus-profile' => 'نمایه',
+	'nimbus-recent-contributors' => 'مشارکت‌کنندگان اخیر در این صفحه',
 	'nimbus-signup' => 'ثبت نام',
 	'nimbus-welcome' => 'خوش آمدی $1',
 );
