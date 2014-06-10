@@ -22,14 +22,112 @@ body {
 }
 
 #siteNotice {
+	border: none;
 	padding: 0px;
 }
 
+/*
+** External link styles (from Monobook's main.css)
+** @see http://bugzilla.shoutwiki.com/show_bug.cgi?id=223
+** keep the whitespace in front of the ^=, hides rule from konqueror
+** this is css3, the validator doesn't like it when validating as css2
+*/
+#article-text a.external,
+#article-text a.external[href ^="gopher://"] {
+	/* @embed */
+	background: url(../../monobook/external-ltr.png) center right no-repeat;
+	padding-right: 13px;
+}
+#article-text a.external[href ^="https://"],
+.link-https {
+	/* @embed */
+	background: url(../../monobook/lock_icon.gif) center right no-repeat;
+	padding-right: 16px;
+}
+#article-text a.external[href ^="mailto:"],
+.link-mailto {
+	/* @embed */
+	background: url(../../monobook/mail_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#article-text a.external[href ^="news:"] {
+	/* @embed */
+	background: url(../../monobook/news_icon.png) center right no-repeat;
+	padding-right: 18px;
+}
+#article-text a.external[href ^="ftp://"],
+.link-ftp {
+	/* @embed */
+	background: url(../../monobook/file_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#article-text a.external[href ^="irc://"],
+#article-text a.external[href ^="ircs://"],
+.link-irc {
+	/* @embed */
+	background: url(../../monobook/discussionitem_icon.gif) center right no-repeat;
+	padding-right: 18px;
+}
+#article-text a.external[href $=".ogg"], #article-text a.external[href $=".OGG"],
+#article-text a.external[href $=".mid"], #article-text a.external[href $=".MID"],
+#article-text a.external[href $=".midi"], #article-text a.external[href $=".MIDI"],
+#article-text a.external[href $=".mp3"], #article-text a.external[href $=".MP3"],
+#article-text a.external[href $=".wav"], #article-text a.external[href $=".WAV"],
+#article-text a.external[href $=".wma"], #article-text a.external[href $=".WMA"],
+.link-audio {
+	/* @embed */
+	background: url(../../monobook/audio.png) center right no-repeat;
+	padding-right: 13px;
+}
+#article-text a.external[href $=".ogm"], #article-text a.external[href $=".OGM"],
+#article-text a.external[href $=".avi"], #article-text a.external[href $=".AVI"],
+#article-text a.external[href $=".mpeg"], #article-text a.external[href $=".MPEG"],
+#article-text a.external[href $=".mpg"], #article-text a.external[href $=".MPG"],
+.link-video {
+	/* @embed */
+	background: url(../../monobook/video.png) center right no-repeat;
+	padding-right: 13px;
+}
+#article-text a.external[href $=".pdf"], #article-text a.external[href $=".PDF"],
+#article-text a.external[href *=".pdf#"], #article-text a.external[href *=".PDF#"],
+#article-text a.external[href *=".pdf?"], #article-text a.external[href *=".PDF?"],
+.link-document {
+	/* @embed */
+	background: url(../../monobook/document.png) center right no-repeat;
+	padding-right: 12px;
+}
+
+/* Interwiki Styling */
+#article-text a.extiw,
+#article-text a.extiw:active {
+	color: #36b;
+}
+
+/* External links */
+#article-text a.external {
+	color: #36b;
+}
+
+/* Hide [[MediaWiki:Tagline]] by default, just like how MonoBook & friends do it */
+p.subtitle {
+	display: none;
+}
+
+/* Styling for [[MediaWiki:Noarticletext]], the message shown on nonexistent pages */
+div.noarticletext {
+	border: 1px solid #ccc;
+	background: #fff;
+	padding: .2em 1em;
+	color: #000;
+}
+
+/* clearfix is used by many social tools and the skin itself and it's required
+to make certain things align properly */
 .clearfix:after {
-	content: "."; 
-	display: block; 
-	height: 0; 
-	clear: both; 
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
 	visibility: hidden;
 }
 
@@ -197,8 +295,17 @@ a.positive-button:visited, a.negative-button:visited {
 	width: 100%;
 }
 
+/**
+ * Center the logo image
+ * @see http://bugzilla.shoutwiki.com/show_bug.cgi?id=236
+ */
 #site-logo {
-	margin-left: 2%; /* center the logo image */
+	width: 200px !important;
+}
+
+#site-logo img {
+	display: block;
+	margin: auto;
 }
 
 #top-ad {
@@ -419,9 +526,17 @@ input.search-field {
 	margin: 0px 0px 0px 0px;
 }
 
+#searchInput {
+	width: 15em;
+}
+
 input.search-button {
 	float: left;
-	margin: 0px 0px 0px -5px;
+}
+
+/* Make the search suggestions readable, the default font size is too small */
+.suggestions {
+	font-size: 127% !important;
 }
 
 /** MENU **/
@@ -539,6 +654,10 @@ input.search-button {
 	border-left: 1px solid #D4DFD7;
 	border-right: 1px solid #D4DFD7;
 	height: 140px;
+}
+
+#footer-container, #footer-bottom {
+	margin: 0 10px 0 220px;
 }
 
 #footer-container a, #footer-bottom a {
@@ -786,7 +905,7 @@ img.right-image {
 
 .c-score-title {
 	margin: 0px 10px 0px 0px;
-} 
+}
 
 .c-actions {
 	float: right;
@@ -1532,7 +1651,7 @@ select#message_type {
 	padding: 5px;
 	background-color: #EFF3F0;
 	margin-bottom: 5px;
-	border: 1px solid #D4DFD7;	
+	border: 1px solid #D4DFD7;
 }
 
 .timeline-year {
@@ -1540,7 +1659,7 @@ select#message_type {
 	width: 100px;
 	font-size: 20px;
 	font-weight: 800;
-	color: #D4DFD7;	
+	color: #D4DFD7;
 }
 
 .timeline-month-container {
@@ -1663,7 +1782,6 @@ select#message_type {
 	height: 50px;
 	margin: 0px 8px 8px 0px;
 	width: 50px;
-	
 }
 
 /** MP SITE ACTIVITY **/
@@ -1805,10 +1923,6 @@ select#message_type {
 
 .email-new-article-message {
 	padding: 15px 0px 0px 0px;
-}
-
-#siteNotice {
-	border: none;
 }
 
 textarea#pageBody {

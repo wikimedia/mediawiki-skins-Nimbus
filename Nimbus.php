@@ -8,9 +8,9 @@
  * @author David Pean <david.pean@gmail.com>
  * @author Inez Korczyński <korczynski@gmail.com>
  * @author Jack Phoenix <jack@countervandalism.net>
- * @copyright Copyright © 2008-2011 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
+ * @copyright Copyright © 2008-2013 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
- * @date September 4, 2011
+ * @date July 2, 2013
  *
  * To install place the Nimbus folder (the folder containing this file!) into
  * skins/ and add this line to your wiki's LocalSettings.php:
@@ -25,7 +25,7 @@ if( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['skin'][] = array(
 	'path' => __FILE__,
 	'name' => 'Nimbus',
-	'version' => '2.0',
+	'version' => '2.5',
 	'author' => array( 'Aaron Wright', 'David Pean', 'Inez Korczyński', 'Jack Phoenix' ),
 	'descriptionmsg' => 'nimbus-desc',
 	'url' => 'http://www.mediawiki.org/wiki/Nimbus_skin',

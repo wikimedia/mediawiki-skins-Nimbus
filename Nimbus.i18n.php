@@ -26,8 +26,14 @@ Is this page incomplete? Is there anything wrong?<br />
 	'nimbus-profile' => 'Profile',
 	'nimbus-recent-contributors' => 'Recent contributors to this page',
 	'nimbus-recent-contributors-info' => 'The following people recently contributed to this page.',
-	'nimbus-search' => 'enter search',
 	'nimbus-signup' => 'Sign up',
+	'nimbus-sidebar' => '* navigation
+** mainpage|mainpage-description
+** portal-url|portal
+** currentevents-url|currentevents
+** recentchanges-url|recentchanges
+** randompage-url|randompage
+** helppage|help',
 	'nimbus-welcome' => 'Welcome $1',
 );
 
@@ -64,18 +70,8 @@ This heading is followed by a featured user at random.',
 
 This heading is followed by the message {{msg-mw|nimbus-recent-contributors-info}}.',
 	'nimbus-recent-contributors-info' => 'This message follows the heading {{msg-mw|Nimbus-recent-contributors}}.',
-	'nimbus-search' => 'Used as place holder for input box in the Search form.
-
-"enter search" means about "Enter a search phrase here".',
 	'nimbus-signup' => '{{Identical|Sign up}}',
 	'nimbus-welcome' => '&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username',
-);
-
-/** Achinese (Acèh)
- * @author Si Gam Acèh
- */
-$messages['ace'] = array(
-	'nimbus-search' => 'Mita',
 );
 
 /** Afrikaans (Afrikaans)
@@ -98,7 +94,6 @@ Is die bladsy onvolledig? Is iets verkeerd?<br />
 	'nimbus-profile' => 'Profiel',
 	'nimbus-recent-contributors' => 'Onlangse bydraers tot hierdie bladsy',
 	'nimbus-recent-contributors-info' => 'Die volgende persone het onlangs tot die artikel bygedra.',
-	'nimbus-search' => 'verskaf soekterme',
 	'nimbus-signup' => 'Registreer',
 	'nimbus-welcome' => 'Welkom $1',
 );
@@ -123,7 +118,6 @@ $messages['ast'] = array(
 	'nimbus-profile' => 'Perfil',
 	'nimbus-recent-contributors' => 'Collaboradores de recién nesta páxina',
 	'nimbus-recent-contributors-info' => 'Les siguientes persones collaboraron de recién nesta páxina.',
-	'nimbus-search' => 'escribir la gueta',
 	'nimbus-signup' => "Date d'alta",
 	'nimbus-welcome' => 'Bienllegáu, $1',
 );
@@ -156,7 +150,6 @@ $messages['be-tarask'] = array(
 	'nimbus-profile' => 'Профіль',
 	'nimbus-recent-contributors' => 'Апошнія рэдактары старонкі',
 	'nimbus-recent-contributors-info' => 'Наступныя ўдзельнікі нядаўна зьмянялі гэтую старонку.',
-	'nimbus-search' => 'увядзіце запыт',
 	'nimbus-signup' => 'Зарэгістравацца',
 	'nimbus-welcome' => 'Вітаем, $1',
 );
@@ -201,7 +194,6 @@ $messages['cs'] = array(
 	'nimbus-login' => 'Přihlásit se',
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Poslední přispivatelé do této stránky',
-	'nimbus-search' => 'Zadej vyhledávací dotaz',
 	'nimbus-signup' => 'Zaregistrovat se',
 	'nimbus-welcome' => 'Vítej $1',
 );
@@ -226,7 +218,6 @@ Ist diese Seite unvollständig? Ist etwas falsch?<br />
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Die letzten Bearbeiter dieser Seite',
 	'nimbus-recent-contributors-info' => 'Die folgenden Benutzer haben diesen Artikel zuletzt bearbeitet.',
-	'nimbus-search' => 'Suchbegriff eingeben',
 	'nimbus-signup' => 'Registrieren',
 	'nimbus-welcome' => 'Willkommen $1',
 );
@@ -290,7 +281,6 @@ $messages['es'] = array(
 	'nimbus-profile' => 'Perfil',
 	'nimbus-recent-contributors' => 'Colaboradores recientes a esta página',
 	'nimbus-recent-contributors-info' => 'Recientemente, las siguientes personas contribuyeron a esta página.',
-	'nimbus-search' => 'introducir búsqueda',
 	'nimbus-signup' => 'Registrarse',
 	'nimbus-welcome' => 'Bienvenido $1',
 );
@@ -356,7 +346,6 @@ Onko tämä sivu puutteellinen? Onko siinä jotakin vikaa?<br />
 	'nimbus-profile' => 'Profiili',
 	'nimbus-recent-contributors' => 'Tämän sivun tuoreimmat muokkaajat',
 	'nimbus-recent-contributors-info' => 'Seuraavat henkilöt ovat muokanneet tätä artikkelia äskettäin.',
-	'nimbus-search' => 'anna hakusana',
 	'nimbus-signup' => 'Rekisteröidy',
 	'nimbus-welcome' => 'Tervetuloa $1',
 );
@@ -384,7 +373,6 @@ Cette page est-elle incomplète? Y a-t-il autre chose qui ne va pas?<br />
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Contributeurs récents à cette page',
 	'nimbus-recent-contributors-info' => 'Les personnes suivantes ont récemment contribué à cette page.',
-	'nimbus-search' => 'entrez la recherche',
 	'nimbus-signup' => "S'inscrire",
 	'nimbus-welcome' => 'Bienvenue $1',
 );
@@ -409,7 +397,6 @@ Cela pâge est-el encomplèta ? Y at n’ôtra chousa que vat pas ?<br />
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Novéls contributors a cela pâge',
 	'nimbus-recent-contributors-info' => 'Dês pou cetes gens ont contribuâ a cela pâge.',
-	'nimbus-search' => 'buchiéd la rechèrche',
 	'nimbus-signup' => 'Enscrîde-vos',
 	'nimbus-welcome' => 'Benvegnua $1',
 );
@@ -441,7 +428,6 @@ A páxina está incompleta? Hai algo mal?<br />
 	'nimbus-profile' => 'Perfil',
 	'nimbus-recent-contributors' => 'Colaboradores recentes nesta páxina',
 	'nimbus-recent-contributors-info' => 'As seguintes persoas colaboraron recentemente neste artigo.',
-	'nimbus-search' => 'escriba a procura',
 	'nimbus-signup' => 'Crear unha conta',
 	'nimbus-welcome' => 'Benvido, $1',
 );
@@ -466,7 +452,6 @@ Je tuta strona njedospołna? Je něšto wopak?<br />
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Najnowši wobdźěłowarjo tuteje strony',
 	'nimbus-recent-contributors-info' => 'Slědowacy wužiwarjo su njedawno k tutej stronje přinošowali.',
-	'nimbus-search' => 'Pytanske zapřijeće zapodać',
 	'nimbus-signup' => 'Registrować',
 	'nimbus-welcome' => 'Witaj $1',
 );
@@ -491,7 +476,6 @@ Iste pagina es incomplete? Contine un error?<br />
 	'nimbus-profile' => 'Profilo',
 	'nimbus-recent-contributors' => 'Contributores recente de iste pagina',
 	'nimbus-recent-contributors-info' => 'Le sequente personas recentemente contribueva a iste articulo.',
-	'nimbus-search' => 'entra parolas a cercar',
 	'nimbus-signup' => 'Crear conto',
 	'nimbus-welcome' => 'Benvenite $1',
 );
@@ -530,7 +514,6 @@ Questa pagina è incompleta? C'è qualcosa di sbagliato?<br />
 	'nimbus-profile' => 'Profilo',
 	'nimbus-recent-contributors' => 'Contributori recenti a questa pagina',
 	'nimbus-recent-contributors-info' => 'Le seguenti persone hanno contribuito di recente a questa pagina.',
-	'nimbus-search' => 'termini da cercare',
 	'nimbus-signup' => 'Iscriviti',
 	'nimbus-welcome' => 'Benvenuto $1',
 );
@@ -553,7 +536,6 @@ $messages['ja'] = array(
 	'nimbus-profile' => 'プロフィール',
 	'nimbus-recent-contributors' => 'このページの最近の更新',
 	'nimbus-recent-contributors-info' => 'このページを最近更新したのは以下の人たちです。',
-	'nimbus-search' => '検索語句を入力',
 	'nimbus-signup' => '利用者登録',
 	'nimbus-welcome' => 'ようこそ、$1さん',
 );
@@ -573,7 +555,6 @@ $messages['ka'] = array(
 	'nimbus-more-wikis' => 'მეტი ვიკი',
 	'nimbus-profile' => 'პროფილი',
 	'nimbus-recent-contributors' => 'ამ გვერდის ბოლო რედაქტორები',
-	'nimbus-search' => 'ძიების შეყვანა',
 	'nimbus-signup' => 'რეგისტრაცია',
 	'nimbus-welcome' => 'მოგესალმებით $1',
 );
@@ -610,7 +591,6 @@ Ass dës säit komplett? Ass eppes falsch?<br />
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Rezent Mataarbechter vun dëser Säit',
 	'nimbus-recent-contributors-info' => 'Dës Leit huet viru kuerzem un dëser Säit matgeschafft.',
-	'nimbus-search' => 'Gitt a wat Dir sicht',
 	'nimbus-signup' => 'Schreift Iech an',
 	'nimbus-welcome' => 'Wëllkomm $1',
 );
@@ -642,7 +622,6 @@ $messages['mk'] = array(
 	'nimbus-profile' => 'Профил',
 	'nimbus-recent-contributors' => 'Неодамнешни учесници на страницава',
 	'nimbus-recent-contributors-info' => 'Следниве уредници неодамна придонеле кон оваа статија.',
-	'nimbus-search' => 'пребарајте нешто',
 	'nimbus-signup' => 'Регистрација',
 	'nimbus-welcome' => 'Добре дојдовте $1',
 );
@@ -689,7 +668,6 @@ Is deze pagina onvolledig? Is er iets onjuist?<br />
 	'nimbus-profile' => 'Profiel',
 	'nimbus-recent-contributors' => 'Redacteuren die deze pagina recentelijk hebben bewerkt',
 	'nimbus-recent-contributors-info' => 'De volgende gebruikers hebben deze pagina recentelijk bewerkt.',
-	'nimbus-search' => 'voer een zoekterm in',
 	'nimbus-signup' => 'Registreren',
 	'nimbus-welcome' => 'Welkom $1',
 );
@@ -724,7 +702,6 @@ Strona jest niekompletna? Znalazłeś błąd?<br />
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Ostatni edytorzy tej strony',
 	'nimbus-recent-contributors-info' => 'Te osoby ostatnio edytowały ten artykuł.',
-	'nimbus-search' => 'Wpisz szukane wyrażenie',
 	'nimbus-signup' => 'Zarejestruj się',
 	'nimbus-welcome' => 'Witaj, $1',
 );
@@ -750,7 +727,6 @@ Costa pàgina, é-la incompleta? I-é-lo quaicòs ch'a marcia pa?<br />
 	'nimbus-profile' => 'Profil',
 	'nimbus-recent-contributors' => 'Contributor recent a costa pàgina',
 	'nimbus-recent-contributors-info' => "Le përson-e sì dapress a l'han contribuì ëd recent a costa pàgina.",
-	'nimbus-search' => "ch'a anserissa l'arserca",
 	'nimbus-signup' => "Ch'as anscriva",
 	'nimbus-welcome' => 'Bin ëvnù $1',
 );
@@ -838,7 +814,6 @@ $messages['roa-tara'] = array(
 	'nimbus-profile' => 'Profile',
 	'nimbus-recent-contributors' => 'Condrebbutore recende de sta pàgene',
 	'nimbus-recent-contributors-info' => 'Le crestiàne seguende onne condrebbuite recendemende a sta pàgene.',
-	'nimbus-search' => "scrive 'a ricerche",
 	'nimbus-signup' => 'Reggistrate',
 	'nimbus-welcome' => 'Bovègne $1',
 );
@@ -875,7 +850,6 @@ $messages['si'] = array(
 	'nimbus-profile' => 'පැතිකඩ',
 	'nimbus-recent-contributors' => 'මෙම පිටුව වෙත මෑත දායකයන්',
 	'nimbus-recent-contributors-info' => 'පහත දැක්වෙන පුද්ගලයන් මෙම පිටුවට මෑතකදී දායකත්වය දෙන ලදී.',
-	'nimbus-search' => 'සෙවුම යොදන්න',
 	'nimbus-signup' => 'ලියාපදිංචි වන්න',
 	'nimbus-welcome' => 'ආයුබෝවන් $1',
 );
@@ -924,7 +898,6 @@ $messages['ta'] = array(
 	'nimbus-profile' => 'சுயவிவரம்',
 	'nimbus-recent-contributors' => 'இந்தப் பக்கத்திற்கான அண்மைய பங்களிப்புகள்',
 	'nimbus-recent-contributors-info' => 'கீழ்காணும் நபர்கள் அண்மையில் இந்தப் பக்கத்திற்கு பங்களித்துள்ளனர்.',
-	'nimbus-search' => 'தேடலை உள்ளிடு',
 	'nimbus-signup' => 'பதிவுசெய்',
 	'nimbus-welcome' => 'வருக $1',
 );
@@ -958,7 +931,6 @@ Hindi pa ba kumpleto ang pahinang ito? Mayroon bang anumang kamalian?<br />
 	'nimbus-profile' => 'Balangkas ng katangian',
 	'nimbus-recent-contributors' => 'Kamakailang mga tagapag-ambag sa pahinang ito',
 	'nimbus-recent-contributors-info' => 'Ang sumusunod na mga tao ay kamakailang nag-ambag sa pahinang ito.',
-	'nimbus-search' => 'ipasok ang paghahanap',
 	'nimbus-signup' => 'Magparehistro',
 	'nimbus-welcome' => 'Maligayang pagdating $1',
 );
@@ -994,7 +966,6 @@ $messages['uk'] = array(
 	'nimbus-profile' => 'Профіль',
 	'nimbus-recent-contributors' => 'Нові дописувачі цієї сторінки',
 	'nimbus-recent-contributors-info' => 'Такі люди нещодавно зробили внесок у цю сторінку.',
-	'nimbus-search' => 'введіть пошуковий запит',
 	'nimbus-signup' => 'Зареєструватися',
 	'nimbus-welcome' => 'Вітаємо, $1!',
 );
@@ -1042,7 +1013,6 @@ $messages['zh-hans'] = array(
 	'nimbus-profile' => '个人资料',
 	'nimbus-recent-contributors' => '最近对此页的贡献',
 	'nimbus-recent-contributors-info' => '以下的人最近对此页作出了贡献。',
-	'nimbus-search' => '请输入搜索',
 	'nimbus-signup' => '注册',
 	'nimbus-welcome' => '欢迎$1',
 );
