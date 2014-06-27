@@ -153,18 +153,18 @@ class NimbusTemplate extends BaseTemplate {
 		echo "\t\t\t" . '<div id="login-message">' .
 				wfMessage( 'nimbus-welcome', '<b>' . $user->getName() . '</b>' )->parse() .
 			'</div>
-			<a class="positive-button" href="' . $profile_link->escapeFullURL() . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->plain() . '</span></a>
-			<a class="negative-button" href="' . $logout_link->escapeFullURL() . '"><span>' . wfMessage( 'nimbus-logout' )->plain() . '</span></a>';
+			<a class="positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->plain() . '</span></a>
+			<a class="negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . wfMessage( 'nimbus-logout' )->plain() . '</span></a>';
 	} else {
-		echo '<a class="positive-button" href="' . $register_link->escapeFullURL() . '" rel="nofollow"><span>' . wfMessage( 'nimbus-signup' )->plain() . '</span></a>
-		<a class="positive-button" href="' . $login_link->escapeFullURL() . '" id="nimbusLoginButton"><span>' . wfMessage( 'nimbus-login' )->plain() . '</span></a>';
+		echo '<a class="positive-button" href="' . htmlspecialchars( $register_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-signup' )->plain() . '</span></a>
+		<a class="positive-button" href="' . htmlspecialchars( $login_link->getFullURL() ) . '" id="nimbusLoginButton"><span>' . wfMessage( 'nimbus-login' )->plain() . '</span></a>';
 	}
 ?>
 		</div><!-- #wiki-login -->
 	</div><!-- #header -->
 	<div id="site-header" class="noprint">
 		<div id="site-logo">
-			<a href="<?php echo $main_page_link->escapeFullURL() ?>" title="<?php echo Linker::titleAttrib( 'p-logo', 'withaccess' ) ?>" accesskey="<?php echo Linker::accesskey( 'p-logo' ) ?>" rel="nofollow">
+			<a href="<?php echo htmlspecialchars( $main_page_link->getFullURL() ) ?>" title="<?php echo Linker::titleAttrib( 'p-logo', 'withaccess' ) ?>" accesskey="<?php echo Linker::accesskey( 'p-logo' ) ?>" rel="nofollow">
 				<img src="<?php echo $wgLogo ?>" alt="" />
 			</a>
 		</div>
@@ -187,7 +187,7 @@ class NimbusTemplate extends BaseTemplate {
 				<?php
 					// Only show the link to Special:TopUsers if wAvatar class exists and $wgUserLevels is an array
 					if ( class_exists( 'wAvatar' ) && is_array( $wgUserLevels ) ) {
-						echo '<a href="' . $top_fans_link->escapeFullURL() . '">' . wfMessage( 'topusers' )->plain() . '</a>';
+						echo '<a href="' . htmlspecialchars( $top_fans_link->getFullURL() ) . '">' . wfMessage( 'topusers' )->plain() . '</a>';
 					}
 
 					echo Linker::link(
@@ -220,8 +220,8 @@ class NimbusTemplate extends BaseTemplate {
 						'<div class="cleared"></div>' . "\n";
 					}
 					?>
-					<a href="<?php echo $help_link->escapeFullURL() ?>"><?php echo wfMessage( 'help' )->plain() ?></a>
-					<a href="<?php echo $special_pages_link->escapeFullURL() ?>"><?php echo wfMessage( 'specialpages' )->plain() ?></a>
+					<a href="<?php echo htmlspecialchars( $help_link->getFullURL() ) ?>"><?php echo wfMessage( 'help' )->plain() ?></a>
+					<a href="<?php echo htmlspecialchars( $special_pages_link->getFullURL() ) ?>"><?php echo wfMessage( 'specialpages' )->plain() ?></a>
 					<div class="cleared"></div>
 				</div>
 			</div>
@@ -1019,7 +1019,7 @@ class NimbusTemplate extends BaseTemplate {
 						$avatar = new wAvatar( $editor['user_id'], 'm' );
 						$user_title = Title::makeTitle( NS_USER, $editor['user_name'] );
 
-						$footer .= '<a href="' . $user_title->escapeFullURL() . '" rel="nofollow">';
+						$footer .= '<a href="' . htmlspecialchars( $user_title->getFullURL() ) . '" rel="nofollow">';
 						$footer .= $avatar->getAvatarURL( array(
 							'alt' => htmlspecialchars( $editor['user_name'] ),
 							'title' => htmlspecialchars( $editor['user_name'] )
@@ -1041,11 +1041,11 @@ class NimbusTemplate extends BaseTemplate {
 		}
 
 		$footer .= '<div id="footer-bottom" class="noprint">
-		<a href="' . $main_page->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'mainpage' )->plain() . '</a>
-		<a href="' . $about->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'about' )->parse() . '</a>
-		<a href="' . $special->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'specialpages' )->plain() . '</a>
-		<a href="' . $help->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'help' )->plain() . '</a>
-		<a href="' . $disclaimerPage->escapeLocalURL() . '" rel="nofollow">' . wfMessage( 'disclaimers' )->plain() . '</a>';
+		<a href="' . htmlspecialchars( $main_page->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'mainpage' )->plain() . '</a>
+		<a href="' . htmlspecialchars( $about->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'about' )->parse() . '</a>
+		<a href="' . htmlspecialchars( $special->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'specialpages' )->plain() . '</a>
+		<a href="' . htmlspecialchars( $help->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'help' )->plain() . '</a>
+		<a href="' . htmlspecialchars( $disclaimerPage->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'disclaimers' )->plain() . '</a>';
 
 		// "Advertise" link on the footer, but only if a URL has been specified
 		// in the MediaWiki:Nimbus-advertise-url system message
