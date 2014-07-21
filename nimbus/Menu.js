@@ -4,6 +4,7 @@
  * @file
  * @author Jack Phoenix <jack@countervandalism.net> - cleanup & removal of YUI dependency, etc.
  */
+/* global getElementsByClassName, menuitem_array, submenuitem_array */
 var NimbusSkin = {
 	last_clicked: '',
 	m_timer: '',
@@ -59,7 +60,7 @@ var NimbusSkin = {
 		clearTimeout( NimbusSkin.m_timer );
 
 		if( !e ) {
-			var e = window.event;
+			e = window.event;
 		}
 		e.cancelBubble = true;
 		if( e.stopPropagation ) {
@@ -130,7 +131,7 @@ var NimbusSkin = {
 		clearTimeout( NimbusSkin.m_timer );
 
 		if( !e ) {
-			var e = window.event;
+			e = window.event;
 		}
 		e.cancelBubble = true;
 		if( e.stopPropagation ) {
@@ -152,13 +153,13 @@ var NimbusSkin = {
 					var second_start = source_id.substr( 4 + source_id.indexOf( '_' ) - 1 );
 					var second_uscore = second_start.indexOf( '_' );
 					try {
-						var source_id = source_id.substr( 4, source_id.indexOf( '_' ) + second_uscore-1 );
+						source_id = source_id.substr( 4, source_id.indexOf( '_' ) + second_uscore-1 );
 						if( menuitem_array[source_id] ) {
 							document.getElementById( source_id ).style.backgroundColor = '#FFFCA9';
 						}
 					} catch( ex ) {}
 				} else {
-					var source_id = source_id.substr( 4 );
+					source_id = source_id.substr( 4 );
 					if( menuitem_array[source_id] ) {
 						document.getElementById( source_id ).style.backgroundColor = '#FFFCA9';
 					}
@@ -169,7 +170,7 @@ var NimbusSkin = {
 
 	clearBackground: function( e ) {
 		if( !e ) {
-			var e = window.event;
+			e = window.event;
 		}
 		e.cancelBubble = true;
 		if( e.stopPropagation ) {
@@ -191,7 +192,7 @@ var NimbusSkin = {
 
 	resetMenuBackground: function( e ) {
 		if( !e ) {
-			var e = window.event;
+			e = window.event;
 		}
 		e.cancelBubble = true;
 		if( e.stopPropagation ) {
@@ -212,7 +213,7 @@ var NimbusSkin = {
 
 	clearMenu: function( e ) {
 		if( !e ) {
-			var e = window.event;
+			e = window.event;
 		}
 		e.cancelBubble = true;
 		if( e.stopPropagation ) {
