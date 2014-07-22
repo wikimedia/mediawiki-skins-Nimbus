@@ -4,7 +4,7 @@
  * @file
  * @author Jack Phoenix <jack@countervandalism.net> - cleanup & removal of YUI dependency, etc.
  */
-/* global getElementsByClassName, menuitem_array, submenuitem_array */
+/* global getElementsByClassName, menuitem_array, submenuitem_array, window, document, setTimeout, clearTimeout */
 var NimbusSkin = {
 	last_clicked: '',
 	m_timer: '',
@@ -47,7 +47,7 @@ var NimbusSkin = {
 	editMenuToggle: function() {
 		var submenu = document.getElementById( 'edit-sub-menu-id' );
 
-		if( submenu.style.display == 'block' ) {
+		if( submenu.style.display === 'block' ) {
 			submenu.style.display = 'none';
 		} else {
 			submenu.style.display = 'block';
@@ -94,8 +94,8 @@ var NimbusSkin = {
 
 		if(
 			NimbusSkin.last_displayed === '' ||
-			( ( sub_menu_item.indexOf( NimbusSkin.last_displayed ) != -1 ) &&
-				( sub_menu_item != NimbusSkin.last_displayed ) )
+			( ( sub_menu_item.indexOf( NimbusSkin.last_displayed ) !== -1 ) &&
+				( sub_menu_item !== NimbusSkin.last_displayed ) )
 		)
 		{
 			NimbusSkin.do_menuItemAction( item );
@@ -105,7 +105,7 @@ var NimbusSkin = {
 			var the_last_displayed;
 			while( !exit && NimbusSkin.displayed_menus.length > 0 ) {
 				the_last_displayed = NimbusSkin.displayed_menus.pop();
-				if( ( sub_menu_item.indexOf( the_last_displayed ) == -1 ) ) {
+				if( ( sub_menu_item.indexOf( the_last_displayed ) === -1 ) ) {
 					NimbusSkin.doClear( the_last_displayed, '' );
 				} else {
 					NimbusSkin.displayed_menus.push( the_last_displayed );
@@ -254,7 +254,7 @@ var NimbusSkin = {
 	},
 
 	show_more_category: function( el ) {
-		if( NimbusSkin.show == 'false' ) {
+		if( NimbusSkin.show === 'false' ) {
 			document.getElementById( el ).style.display = 'block';
 			NimbusSkin.show = 'true';
 		} else {
@@ -264,7 +264,7 @@ var NimbusSkin = {
 	},
 
 	show_actions: function( el, type ) {
-		if( type == 'show' ) {
+		if( type === 'show' ) {
 			clearTimeout( NimbusSkin._hide_timer );
 			if( !NimbusSkin._shown ) {
 				jQuery( '#more-tab' ).removeClass( 'more-tab-off' ).addClass( 'more-tab-on' );
