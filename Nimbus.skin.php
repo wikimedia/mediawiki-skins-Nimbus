@@ -19,7 +19,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
  * @ingroup Skins
  */
 class SkinNimbus extends SkinTemplate {
-	var $skinname = 'nimbus', $stylename = 'nimbus',
+	public $skinname = 'nimbus', $stylename = 'nimbus',
 		$template = 'NimbusTemplate', $useHeadElement = true;
 
 	function setupSkinUserCss( OutputPage $out ) {
@@ -46,7 +46,7 @@ class NimbusTemplate extends BaseTemplate {
 	/**
 	 * @var Skin
 	 */
-	var $skin;
+	public $skin;
 
 	/**
 	 * Should we show the page title (the <h1> HTML element) for the current
