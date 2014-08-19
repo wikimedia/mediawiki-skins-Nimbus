@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Chrisportelli"
+		]
+	},
+	"nimbus-advertise": "Irreklama",
+	"nimbus-contribute": "Ikkontribwixxi",
+	"nimbus-didyouknow": "Kon taf li",
+	"nimbus-featuredimage": "Stampa fil-vetrina",
+	"nimbus-featureduser": "Utent fil-vetrina",
+	"nimbus-login": "Idħol",
+	"nimbus-logout": "Oħroġ?",
+	"nimbus-more-actions": "Aktar azzjonijiet",
+	"nimbus-more-wikis": "Wikis oħrajn",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Kontributuri riċenti f'din il-paġna",
+	"nimbus-recent-contributors-info": "Il-persuni segwenti riċentament taw il-kontribut tagħhom f'din il-paġna.",
+	"nimbus-signup": "Irreġistra",
+	"nimbus-welcome": "Merħba $1"
+}

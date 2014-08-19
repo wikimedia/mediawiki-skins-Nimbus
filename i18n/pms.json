@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Borichèt",
+			"Dragonòt"
+		]
+	},
+	"nimbus-desc": "Pel Nimbus",
+	"nimbus-advertise": "Propon-se",
+	"nimbus-contribute": "Contribuì",
+	"nimbus-didyouknow": "Lo sas-to",
+	"nimbus-featuredimage": "Figura an prim pian",
+	"nimbus-featureduser": "Utent an prim pian",
+	"nimbus-login": "Intré ant ël sistema",
+	"nimbus-logout": "Seurte dal sistema?",
+	"nimbus-more-actions": "Pi d'assion",
+	"nimbus-more-wikis": "Pi 'd wiki",
+	"nimbus-pages-can-be-edited": "Le pagine ëd {{SITENAME}} a peulo esse modificà.<br />\r\nCosta pàgina, é-la incompleta? I-é-lo quaicòs ch'a marcia pa?<br />\r\n<b>Ch'a lo modìfica!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Contributor recent a costa pàgina",
+	"nimbus-recent-contributors-info": "Le përson-e sì dapress a l'han contribuì ëd recent a costa pàgina.",
+	"nimbus-signup": "Ch'as anscriva",
+	"nimbus-welcome": "Bin ëvnù $1"
+}

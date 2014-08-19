@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Avjoska"
+		]
+	},
+	"nimbus-advertise": "Teata",
+	"nimbus-didyouknow": "Kas teadsid, et...",
+	"nimbus-login": "Logi sisse",
+	"nimbus-logout": "Logi välja?",
+	"nimbus-profile": "Profiil",
+	"nimbus-signup": "Registreeru",
+	"nimbus-welcome": "Tere tulemast, $1"
+}

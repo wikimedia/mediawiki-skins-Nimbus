@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"nimbus-desc": "Habelyâjo « Nimbus »",
+	"nimbus-advertise": "Fâre de recllâma",
+	"nimbus-contribute": "Contribuar",
+	"nimbus-didyouknow": "Sâde-vos",
+	"nimbus-featuredimage": "Émâge remarcâbla",
+	"nimbus-featureduser": "Usanciér remarcâblo",
+	"nimbus-login": "Sè branchiér",
+	"nimbus-logout": "Sè dèbranchiér ?",
+	"nimbus-more-actions": "Més d’accions",
+	"nimbus-more-wikis": "Més de vouiquis",
+	"nimbus-pages-can-be-edited": "Les pâges de {{SITENAME}} pôvont étre changiêyes.<br />\r\nCela pâge est-el encomplèta ? Y at n’ôtra chousa que vat pas ?<br />\r\n<b>Changiéd-lo !</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Novéls contributors a cela pâge",
+	"nimbus-recent-contributors-info": "Dês pou cetes gens ont contribuâ a cela pâge.",
+	"nimbus-signup": "Enscrîde-vos",
+	"nimbus-welcome": "Benvegnua $1"
+}

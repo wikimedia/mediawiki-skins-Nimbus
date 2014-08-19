@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"nimbus-desc": "Modelle Nimbus",
+	"nimbus-advertise": "Pubblecitate",
+	"nimbus-contribute": "Condrebbute",
+	"nimbus-didyouknow": "'U canusce?",
+	"nimbus-featuredimage": "Immaggine dettagliate",
+	"nimbus-featureduser": "Utende dettagliate",
+	"nimbus-login": "Tràse",
+	"nimbus-logout": "Isse?",
+	"nimbus-more-actions": "Cchiù aziune",
+	"nimbus-more-wikis": "Cchiù uicchi",
+	"nimbus-pages-can-be-edited": "Le pàggene de {{SITENAME}} ponne essere cangiate.<br />\r\n'A pàgene ste 'ngomblete? Ste quacche cose ca non ge vè?<br />\r\n<b>Cangiale!</b>",
+	"nimbus-profile": "Profile",
+	"nimbus-recent-contributors": "Condrebbutore recende de sta pàgene",
+	"nimbus-recent-contributors-info": "Le crestiàne seguende onne condrebbuite recendemende a sta pàgene.",
+	"nimbus-signup": "Reggistrate",
+	"nimbus-welcome": "Bovègne $1"
+}

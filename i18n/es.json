@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Armando-Martin"
+		]
+	},
+	"nimbus-desc": "Aparencia Nimbus de MediaWiki",
+	"nimbus-advertise": "Anunciar",
+	"nimbus-contribute": "Contribuir",
+	"nimbus-didyouknow": "¿Sabía usted?",
+	"nimbus-featuredimage": "Imagen destacada",
+	"nimbus-featureduser": "Usuario destacado",
+	"nimbus-login": "Inicio de sesión",
+	"nimbus-logout": "¿Cerrar la sesión?",
+	"nimbus-more-actions": "Más acciones",
+	"nimbus-more-wikis": "Más wikis",
+	"nimbus-pages-can-be-edited": "Se pueden editar las páginas de {{SITENAME}}.<br />\r\n¿Está incompleta esta página? ¿Hay algo mal?<br />\r\n<b>¡Cámbielo!</b>",
+	"nimbus-profile": "Perfil",
+	"nimbus-recent-contributors": "Colaboradores recientes a esta página",
+	"nimbus-recent-contributors-info": "Recientemente, las siguientes personas contribuyeron a esta página.",
+	"nimbus-signup": "Registrarse",
+	"nimbus-welcome": "Bienvenido $1"
+}

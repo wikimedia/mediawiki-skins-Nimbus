@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"EugeneZelenko",
+			"Wizardist"
+		]
+	},
+	"nimbus-desc": "Афармленьне «Німбус»",
+	"nimbus-advertise": "Рэкляма",
+	"nimbus-contribute": "Удзельнічайце",
+	"nimbus-didyouknow": "Ці ведаеце Вы?",
+	"nimbus-featuredimage": "Цікавая выява",
+	"nimbus-featureduser": "Варты ўвагі ўдзельнік",
+	"nimbus-login": "Увайсьці",
+	"nimbus-logout": "Выйсьці?",
+	"nimbus-more-actions": "Болей дзеяньняў",
+	"nimbus-more-wikis": "Іншыя праекты",
+	"nimbus-pages-can-be-edited": "Старонкі {{GRAMMAR:родны|{{SITENAME}}}} можна рэдагаваць.<br />\r\nМаеце, што дадаць на старонку? Заўважылі памылку?<br />\r\n<b>Выпраўце яе!</b>",
+	"nimbus-profile": "Профіль",
+	"nimbus-recent-contributors": "Апошнія рэдактары старонкі",
+	"nimbus-recent-contributors-info": "Наступныя ўдзельнікі нядаўна зьмянялі гэтую старонку.",
+	"nimbus-signup": "Зарэгістравацца",
+	"nimbus-welcome": "Вітаем, $1"
+}

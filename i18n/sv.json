@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiPhoenix"
+		]
+	},
+	"nimbus-advertise": "Annonsera",
+	"nimbus-contribute": "Bidra",
+	"nimbus-didyouknow": "Visste du att",
+	"nimbus-featuredimage": "Utmärkt bild",
+	"nimbus-featureduser": "Utmärkt användare",
+	"nimbus-login": "Logga in",
+	"nimbus-logout": "Logga ut?",
+	"nimbus-more-actions": "Fler åtgärder",
+	"nimbus-more-wikis": "Fler wikis",
+	"nimbus-pages-can-be-edited": "{{SITENAME}}s sidor kan redigeras.<br />\r\nÄr denna sida ofullständig? Är det något fel?<br />\r\n<b>Ändra det!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Senaste bidragsgivare till denna sida",
+	"nimbus-recent-contributors-info": "Följande personer har nyligen bidragit till denna sida.",
+	"nimbus-signup": "Registrera",
+	"nimbus-welcome": "Välkommen $1"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ebraminio",
+			"Mjbmr"
+		]
+	},
+	"nimbus-contribute": "مشارکت‌کردن",
+	"nimbus-didyouknow": "آیا می‌دانستید",
+	"nimbus-featuredimage": "تصویر برگزیده",
+	"nimbus-featureduser": "کاربر برگزیده",
+	"nimbus-login": "ورود به سامانه",
+	"nimbus-logout": "می‌خواهید خارج شوید؟",
+	"nimbus-more-actions": "اقدامات بیشتر",
+	"nimbus-more-wikis": "ویکی‌های بیشتر",
+	"nimbus-profile": "نمایه",
+	"nimbus-recent-contributors": "مشارکت‌کنندگان اخیر در این صفحه",
+	"nimbus-signup": "ثبت نام",
+	"nimbus-welcome": "خوش آمدی $1"
+}

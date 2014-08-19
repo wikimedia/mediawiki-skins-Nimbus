@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Misiek95",
+			"Sp5uhe"
+		]
+	},
+	"nimbus-desc": "Skórka nimbus",
+	"nimbus-advertise": "Reklamy",
+	"nimbus-contribute": "Wnieś swój wkład",
+	"nimbus-didyouknow": "Czy wiedziałeś?",
+	"nimbus-featuredimage": "Promowany obrazek",
+	"nimbus-featureduser": "Promowany użytkownik",
+	"nimbus-login": "Zaloguj się",
+	"nimbus-logout": "Wylogować?",
+	"nimbus-more-actions": "Inne akcje...",
+	"nimbus-more-wikis": "Więcej wiki...",
+	"nimbus-pages-can-be-edited": "{{SITENAME}} jest wiki, więc strony mogą być edytowane przez każdego.<br />\r\nStrona jest niekompletna? Znalazłeś błąd?<br />\r\n<b>Zmień to!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Ostatni edytorzy tej strony",
+	"nimbus-recent-contributors-info": "Te osoby ostatnio edytowały ten artykuł.",
+	"nimbus-signup": "Zarejestruj się",
+	"nimbus-welcome": "Witaj, $1"
+}

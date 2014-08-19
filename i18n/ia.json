@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"nimbus-desc": "Le apparentia Nimbus pro MediaWiki",
+	"nimbus-advertise": "Publicitate",
+	"nimbus-contribute": "Contribution",
+	"nimbus-didyouknow": "Sapeva tu que...",
+	"nimbus-featuredimage": "Imagine eminente",
+	"nimbus-featureduser": "Usator eminente",
+	"nimbus-login": "Aperir session",
+	"nimbus-logout": "Clauder session?",
+	"nimbus-more-actions": "Plus actiones",
+	"nimbus-more-wikis": "Plus wikis",
+	"nimbus-pages-can-be-edited": "Le paginas de {{SITENAME}} pote esser modificate.<br />\r\nIste pagina es incomplete? Contine un error?<br />\r\n<b>Cambia lo!</b>",
+	"nimbus-profile": "Profilo",
+	"nimbus-recent-contributors": "Contributores recente de iste pagina",
+	"nimbus-recent-contributors-info": "Le sequente personas recentemente contribueva a iste articulo.",
+	"nimbus-signup": "Crear conto",
+	"nimbus-welcome": "Benvenite $1"
+}

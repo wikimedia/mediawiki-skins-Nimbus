@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Naudefj"
+		]
+	},
+	"nimbus-desc": "Nimbus omslag vir MediaWiki",
+	"nimbus-advertise": "Adverteer",
+	"nimbus-contribute": "Dra by",
+	"nimbus-didyouknow": "Het u geweet",
+	"nimbus-featuredimage": "Uitgeligte beeld",
+	"nimbus-featureduser": "Uitgeligte gebruiker",
+	"nimbus-login": "Meld aan",
+	"nimbus-logout": "Meld af?",
+	"nimbus-more-actions": "Meer aksies",
+	"nimbus-more-wikis": "Meer wiki's",
+	"nimbus-pages-can-be-edited": "{{Site Naam}} se bladsye kan gewysig word.<br />\r\nIs die bladsy onvolledig? Is iets verkeerd?<br />\r\n<b>Verbeter dit!</b>",
+	"nimbus-profile": "Profiel",
+	"nimbus-recent-contributors": "Onlangse bydraers tot hierdie bladsy",
+	"nimbus-recent-contributors-info": "Die volgende persone het onlangs tot die artikel bygedra.",
+	"nimbus-signup": "Registreer",
+	"nimbus-welcome": "Welkom $1"
+}

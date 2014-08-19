@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"David1010"
+		]
+	},
+	"nimbus-advertise": "რეკლამა",
+	"nimbus-contribute": "წვლილი",
+	"nimbus-didyouknow": "იცით თუ არა",
+	"nimbus-featuredimage": "რჩეული სურათი",
+	"nimbus-featureduser": "რჩეული მომხმარებელი",
+	"nimbus-login": "შესვლა",
+	"nimbus-logout": "გასვლა?",
+	"nimbus-more-actions": "მეტი მოქმედება",
+	"nimbus-more-wikis": "მეტი ვიკი",
+	"nimbus-profile": "პროფილი",
+	"nimbus-recent-contributors": "ამ გვერდის ბოლო რედაქტორები",
+	"nimbus-signup": "რეგისტრაცია",
+	"nimbus-welcome": "მოგესალმებით $1"
+}

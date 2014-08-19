@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"පසිඳු කාවින්ද"
+		]
+	},
+	"nimbus-desc": "වැසි වළාකුළු සම",
+	"nimbus-advertise": "ප්‍රචාරණය කරන්න",
+	"nimbus-contribute": "දායකවන්න",
+	"nimbus-didyouknow": "ඔබ දන්නවාද",
+	"nimbus-featuredimage": "විශේෂාංග පින්තූරය",
+	"nimbus-featureduser": "විශේෂාංග පරිශීලක",
+	"nimbus-login": "පිවිසෙන්න",
+	"nimbus-logout": "නික්මෙනවාද?",
+	"nimbus-more-actions": "තවත් ක්‍රියාවන්",
+	"nimbus-more-wikis": "තවත් විකියන්",
+	"nimbus-profile": "පැතිකඩ",
+	"nimbus-recent-contributors": "මෙම පිටුව වෙත මෑත දායකයන්",
+	"nimbus-recent-contributors-info": "පහත දැක්වෙන පුද්ගලයන් මෙම පිටුවට මෑතකදී දායකත්වය දෙන ලදී.",
+	"nimbus-signup": "ලියාපදිංචි වන්න",
+	"nimbus-welcome": "ආයුබෝවන් $1"
+}

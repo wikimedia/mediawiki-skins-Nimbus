@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vks"
+		]
+	},
+	"nimbus-contribute": "Přispět",
+	"nimbus-login": "Přihlásit se",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Poslední přispivatelé do této stránky",
+	"nimbus-signup": "Zaregistrovat se",
+	"nimbus-welcome": "Vítej $1"
+}

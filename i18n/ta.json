@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Karthi.dr",
+			"Shanmugamp7"
+		]
+	},
+	"nimbus-desc": "நிம்பஸ் தோல்",
+	"nimbus-advertise": "விளம்பரப்படுத்து",
+	"nimbus-contribute": "பங்களி",
+	"nimbus-didyouknow": "உங்களுக்கு தெரியுமா",
+	"nimbus-featuredimage": "சிறப்புப் படம்",
+	"nimbus-featureduser": "சிறப்பு பயனர்",
+	"nimbus-login": "புகுபதிகை",
+	"nimbus-logout": "விடுபதிகை?",
+	"nimbus-more-actions": "மேலும் செயல்கள்",
+	"nimbus-more-wikis": "மேலும் விக்கிகள்",
+	"nimbus-pages-can-be-edited": "{{SITENAME}} தளத்தை தொகுக்கலாம்.<br />\r\nஇந்தப் பக்கம் முடிவுறாமல் உள்ளதா? ஏதாவது தவறாக உள்ளதா?<br />\r\n<b>அதை மாற்றுங்கள்!</b>",
+	"nimbus-profile": "சுயவிவரம்",
+	"nimbus-recent-contributors": "இந்தப் பக்கத்திற்கான அண்மைய பங்களிப்புகள்",
+	"nimbus-recent-contributors-info": "கீழ்காணும் நபர்கள் அண்மையில் இந்தப் பக்கத்திற்கு பங்களித்துள்ளனர்.",
+	"nimbus-signup": "பதிவுசெய்",
+	"nimbus-welcome": "வருக $1"
+}

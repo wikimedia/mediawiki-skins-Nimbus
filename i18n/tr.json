@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Karduelis"
+		]
+	},
+	"nimbus-login": "Oturum aç",
+	"nimbus-profile": "Profil",
+	"nimbus-welcome": "Hoşgeldiniz $1"
+}

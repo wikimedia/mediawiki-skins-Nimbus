@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"morewikis": "",
+	"nimbus-desc": "Nimbus skin",
+	"nimbus-advertise": "Advertise",
+	"nimbus-advertise-url": "",
+	"nimbus-contribute": "Contribute",
+	"nimbus-didyouknow": "Did you know",
+	"nimbus-featuredimage": "Featured image",
+	"nimbus-featureduser": "Featured user",
+	"nimbus-login": "Login",
+	"nimbus-logout": "Log out?",
+	"nimbus-more-actions": "More actions",
+	"nimbus-more-wikis": "More wikis",
+	"nimbus-pages-can-be-edited": "{{SITENAME}}'s pages can be edited.<br />\r\nIs this page incomplete? Is there anything wrong?<br />\r\n<b>Change it!</b>",
+	"nimbus-profile": "Profile",
+	"nimbus-recent-contributors": "Recent contributors to this page",
+	"nimbus-recent-contributors-info": "The following people recently contributed to this page.",
+	"nimbus-signup": "Sign up",
+	"nimbus-sidebar": "* navigation\r\n** mainpage|mainpage-description\r\n** portal-url|portal\r\n** currentevents-url|currentevents\r\n** recentchanges-url|recentchanges\r\n** randompage-url|randompage\r\n** helppage|help",
+	"nimbus-welcome": "Welcome $1"
+}

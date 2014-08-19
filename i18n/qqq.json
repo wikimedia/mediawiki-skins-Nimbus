@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16",
+			"EugeneZelenko",
+			"Shirayuki",
+			"Siebrand",
+			"Umherirrender"
+		]
+	},
+	"morewikis": "{{notranslate}}",
+	"nimbus-desc": "{{desc|name=Nimbus|url=http://www.mediawiki.org/wiki/Extension:Nimbus}}",
+	"nimbus-advertise": "Used as link text if the Advertise URL is not empty.",
+	"nimbus-advertise-url": "{{notranslate}}",
+	"nimbus-contribute": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\r\n\r\nThis heading is followed by the following message:\r\n* {{msg-mw|nimbus-pages-can-be-edited}}.",
+	"nimbus-didyouknow": "{{Identical|Did you know}}",
+	"nimbus-featuredimage": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\r\n\r\nThis heading is followed by a featured image at random.",
+	"nimbus-featureduser": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\r\n\r\nThis heading is followed by a featured user at random.",
+	"nimbus-login": "{{Identical|Login}}",
+	"nimbus-logout": "{{Identical|Log out}}",
+	"nimbus-more-actions": "This message is followed by a list of links.",
+	"nimbus-more-wikis": "This message is followed by a list of wikis.",
+	"nimbus-pages-can-be-edited": "This message follows the heading {{msg-mw|nimbus-contribute}}.",
+	"nimbus-profile": "{{Identical|Profile}}",
+	"nimbus-recent-contributors": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\r\n\r\nThis heading is followed by the message {{msg-mw|nimbus-recent-contributors-info}}.",
+	"nimbus-recent-contributors-info": "This message follows the heading {{msg-mw|Nimbus-recent-contributors}}.",
+	"nimbus-signup": "{{Identical|Sign up}}",
+	"nimbus-welcome": "&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username"
+}

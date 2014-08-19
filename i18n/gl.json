@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"nimbus-desc": "Aparencia Nimbus de MediaWiki",
+	"nimbus-advertise": "Anunciar",
+	"nimbus-contribute": "Contribuír",
+	"nimbus-didyouknow": "Sabía que",
+	"nimbus-featuredimage": "Imaxe destacada",
+	"nimbus-featureduser": "Usuario destacado",
+	"nimbus-login": "Rexistro",
+	"nimbus-logout": "Saír",
+	"nimbus-more-actions": "Máis accións",
+	"nimbus-more-wikis": "Máis wikis",
+	"nimbus-pages-can-be-edited": "As páxinas de {{SITENAME}} pódense editar.<br />\r\nA páxina está incompleta? Hai algo mal?<br />\r\n<b>Modifíqueo!</b>",
+	"nimbus-profile": "Perfil",
+	"nimbus-recent-contributors": "Colaboradores recentes nesta páxina",
+	"nimbus-recent-contributors-info": "As seguintes persoas colaboraron recentemente neste artigo.",
+	"nimbus-signup": "Crear unha conta",
+	"nimbus-welcome": "Benvido, $1"
+}

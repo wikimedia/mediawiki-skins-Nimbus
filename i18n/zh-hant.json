@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki",
+			"Simon Shek"
+		]
+	},
+	"nimbus-contribute": "貢獻",
+	"nimbus-login": "登入",
+	"nimbus-logout": "登出？",
+	"nimbus-more-actions": "更多操作",
+	"nimbus-signup": "註冊",
+	"nimbus-welcome": "歡迎$1"
+}

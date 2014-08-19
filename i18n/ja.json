@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"nimbus-desc": "ニンバス外装",
+	"nimbus-advertise": "広告",
+	"nimbus-contribute": "投稿",
+	"nimbus-didyouknow": "ご存じでしたか",
+	"nimbus-login": "ログイン",
+	"nimbus-logout": "ログアウトしますか?",
+	"nimbus-more-actions": "その他の操作",
+	"nimbus-more-wikis": "その他のウィキ",
+	"nimbus-pages-can-be-edited": "{{SITENAME}}のページを編集できません。<br />\r\nこのページは不完全ですか? 何か誤りがありますか?<br />\r\n<b>変更してください!</b>",
+	"nimbus-profile": "プロフィール",
+	"nimbus-recent-contributors": "このページの最近の更新",
+	"nimbus-recent-contributors-info": "このページを最近更新したのは以下の人たちです。",
+	"nimbus-signup": "利用者登録",
+	"nimbus-welcome": "ようこそ、$1さん"
+}

@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Base",
+			"Steve.rusyn",
+			"Ата"
+		]
+	},
+	"nimbus-desc": "Оформлення Nimbus",
+	"nimbus-advertise": "Реклама",
+	"nimbus-contribute": "Зробити внесок",
+	"nimbus-didyouknow": "Чи знаєте Ви",
+	"nimbus-featuredimage": "Вибране зображення",
+	"nimbus-featureduser": "Вибраний користувач",
+	"nimbus-login": "Лоґін",
+	"nimbus-logout": "Вийти?",
+	"nimbus-more-actions": "Більше дій",
+	"nimbus-more-wikis": "Більше вікі",
+	"nimbus-pages-can-be-edited": "Сторінки проекту {{SITENAME}} можна редагувати.<br />\r\nЦя сторінка неповна? На ній щось не так?<br />\r\n<b>Змініть її!</b>",
+	"nimbus-profile": "Профіль",
+	"nimbus-recent-contributors": "Нові дописувачі цієї сторінки",
+	"nimbus-recent-contributors-info": "Такі люди нещодавно зробили внесок у цю сторінку.",
+	"nimbus-signup": "Зареєструватися",
+	"nimbus-welcome": "Вітаємо, $1!"
+}

@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"nimbus-desc": "Skin Nimbus",
+	"nimbus-advertise": "Pubblicizza",
+	"nimbus-contribute": "Contribuisci",
+	"nimbus-didyouknow": "Lo sapevate",
+	"nimbus-featuredimage": "Immagine in vetrina",
+	"nimbus-featureduser": "Utente in evidenza",
+	"nimbus-login": "Entra",
+	"nimbus-logout": "Esci?",
+	"nimbus-more-actions": "Altre azioni",
+	"nimbus-more-wikis": "Altri wiki",
+	"nimbus-pages-can-be-edited": "Le pagine di {{SITENAME}} possono essere modificate.<br />\r\nQuesta pagina è incompleta? C'è qualcosa di sbagliato?<br />\r\n<b>Cambialo!</b>",
+	"nimbus-profile": "Profilo",
+	"nimbus-recent-contributors": "Contributori recenti a questa pagina",
+	"nimbus-recent-contributors-info": "Le seguenti persone hanno contribuito di recente a questa pagina.",
+	"nimbus-signup": "Iscriviti",
+	"nimbus-welcome": "Benvenuto $1"
+}

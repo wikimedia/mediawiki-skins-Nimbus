@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Firilacroco",
+			"Minisarm",
+			"Stelistcristi"
+		]
+	},
+	"nimbus-advertise": "Faceți publicitate",
+	"nimbus-contribute": "Contribuie",
+	"nimbus-didyouknow": "Știați că",
+	"nimbus-featuredimage": "Imagine recomandată",
+	"nimbus-featureduser": "Utilizator recomandat",
+	"nimbus-login": "Autentificare",
+	"nimbus-logout": "Deconectare?",
+	"nimbus-more-actions": "Mai multe acțiuni",
+	"nimbus-more-wikis": "Mai multe wikiuri",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Contribuitorii recenți ai acestei pagini",
+	"nimbus-signup": "Înregistrare",
+	"nimbus-welcome": "Bun venit, $1"
+}

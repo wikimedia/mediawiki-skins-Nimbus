@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fulup",
+			"Y-M D"
+		]
+	},
+	"nimbus-desc": "Gwiskadur Nimbus",
+	"nimbus-advertise": "Ober bruderezh",
+	"nimbus-contribute": "Kemer perzh",
+	"nimbus-didyouknow": "Ha gouzout a raec'h",
+	"nimbus-login": "Kevreañ",
+	"nimbus-logout": "Digevreañ ?",
+	"nimbus-more-actions": "Obererezhioù ouzhpenn",
+	"nimbus-more-wikis": "Wikioù ouzhpenn",
+	"nimbus-profile": "Profil",
+	"nimbus-signup": "En em enskrivañ",
+	"nimbus-welcome": "Degemer mat $1"
+}

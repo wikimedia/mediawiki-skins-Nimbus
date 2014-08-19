@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Glavkos",
+			"ZaDiak"
+		]
+	},
+	"nimbus-advertise": "Διαφημιστείτε",
+	"nimbus-contribute": "Συμβάλλετε",
+	"nimbus-didyouknow": "Γνωρίζατε ότι",
+	"nimbus-featuredimage": "Προτεινόμενη εικόνα",
+	"nimbus-featureduser": "Προτεινόμενος χρήστης",
+	"nimbus-login": "Είσοδος",
+	"nimbus-logout": "Αποσύνδεση;",
+	"nimbus-signup": "Εγγραφή",
+	"nimbus-welcome": "Καλώς όρισες $1"
+}
