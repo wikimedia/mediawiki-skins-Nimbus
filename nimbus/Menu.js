@@ -90,7 +90,8 @@ var NimbusSkin = {
 
 	check_item_in_array: function( item ) {
 		clearTimeout( NimbusSkin.m_timer );
-		var sub_menu_item = 'sub-menu' + item;
+		var sub_menu_item = 'sub-menu' + item,
+			exit, count, the_last_displayed;
 
 		if(
 			NimbusSkin.last_displayed === '' ||
@@ -100,9 +101,8 @@ var NimbusSkin = {
 		{
 			NimbusSkin.do_menuItemAction( item );
 		} else {
-			var exit = false;
-			var count = 0;
-			var the_last_displayed;
+			exit = false;
+			count = 0;
 			while( !exit && NimbusSkin.displayed_menus.length > 0 ) {
 				the_last_displayed = NimbusSkin.displayed_menus.pop();
 				if( ( sub_menu_item.indexOf( the_last_displayed ) === -1 ) ) {
@@ -138,7 +138,8 @@ var NimbusSkin = {
 			e.stopPropagation();
 		}
 
-		var source_id = '*';
+		var source_id = '*',
+			second_start, second_uscore;
 		try {
 			source_id = e.target.id;
 		} catch( ex ) {
@@ -150,8 +151,8 @@ var NimbusSkin = {
 
 			if( source_id.indexOf( '_' ) ) {
 				if ( source_id.indexOf( '_', source_id.indexOf( '_' ) ) ) {
-					var second_start = source_id.substr( 4 + source_id.indexOf( '_' ) - 1 );
-					var second_uscore = second_start.indexOf( '_' );
+					second_start = source_id.substr( 4 + source_id.indexOf( '_' ) - 1 );
+					second_uscore = second_start.indexOf( '_' );
 					try {
 						source_id = source_id.substr( 4, source_id.indexOf( '_' ) + second_uscore-1 );
 						if( menuitem_array[source_id] ) {
@@ -238,13 +239,13 @@ var NimbusSkin = {
 	},
 
 	doClearAll: function() {
-		var epicElement = document.getElementById( 'menu-item' + NimbusSkin.displayed_menus[0].substr( NimbusSkin.displayed_menus[0].indexOf( '_' ) ) );
+		var epicElement = document.getElementById( 'menu-item' + NimbusSkin.displayed_menus[0].substr( NimbusSkin.displayed_menus[0].indexOf( '_' ) ) ),
+			the_last_displayed, exit;
 		if(
 			NimbusSkin.displayed_menus.length && epicElement ) {
 			epicElement.style.backgroundColor = '#FFF';
 		}
-		var the_last_displayed;
-		var exit = false;
+		exit = false;
 		while( !exit && NimbusSkin.displayed_menus.length > 0 ) {
 			the_last_displayed = NimbusSkin.displayed_menus.pop();
 			NimbusSkin.doClear( the_last_displayed, '' );
