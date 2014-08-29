@@ -2,19 +2,26 @@
 	"@metadata": {
 		"authors": [
 			"Ebraminio",
-			"Mjbmr"
+			"Mjbmr",
+			"Alirezaaa",
+			"Armin1392",
+			"Reza1615"
 		]
 	},
+	"nimbus-desc": "پوستهٔ اوهام",
+	"nimbus-advertise": "تبلیغات",
 	"nimbus-contribute": "مشارکت‌کردن",
-	"nimbus-didyouknow": "آیا می‌دانستید",
+	"nimbus-didyouknow": "آیا می‌دانستید که",
 	"nimbus-featuredimage": "تصویر برگزیده",
 	"nimbus-featureduser": "کاربر برگزیده",
 	"nimbus-login": "ورود به سامانه",
 	"nimbus-logout": "می‌خواهید خارج شوید؟",
 	"nimbus-more-actions": "اقدامات بیشتر",
 	"nimbus-more-wikis": "ویکی‌های بیشتر",
+	"nimbus-pages-can-be-edited": "صفحات {{SITENAME}} قابل ویرایش هستند.<br />\nآیا این صفحه کامل نیست؟ مشکلی رخ داده؟<br />\n<b>تغییرش دهید!</b>",
 	"nimbus-profile": "نمایه",
 	"nimbus-recent-contributors": "مشارکت‌کنندگان اخیر در این صفحه",
+	"nimbus-recent-contributors-info": "افراد زیر اخیراً به این صفحه کمک کرده‌اند.",
 	"nimbus-signup": "ثبت نام",
 	"nimbus-welcome": "خوش آمدی $1"
 }

@@ -5,18 +5,19 @@
 			"EugeneZelenko",
 			"Shirayuki",
 			"Siebrand",
-			"Umherirrender"
+			"Umherirrender",
+			"Liuxinyu970226"
 		]
 	},
 	"morewikis": "{{notranslate}}",
 	"nimbus-desc": "{{desc|name=Nimbus|url=http://www.mediawiki.org/wiki/Extension:Nimbus}}",
-	"nimbus-advertise": "Used as link text if the Advertise URL is not empty.",
+	"nimbus-advertise": "Used as link text if the Advertise URL is not empty.\n{{Identical|Advertise}}",
 	"nimbus-advertise-url": "{{notranslate}}",
-	"nimbus-contribute": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by the following message:\n* {{msg-mw|nimbus-pages-can-be-edited}}.",
+	"nimbus-contribute": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by the following message:\n* {{msg-mw|nimbus-pages-can-be-edited}}.\n{{Identical|Contribute}}",
 	"nimbus-didyouknow": "{{Identical|Did you know}}",
 	"nimbus-featuredimage": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by a featured image at random.",
 	"nimbus-featureduser": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by a featured user at random.",
-	"nimbus-login": "{{Identical|Login}}",
+	"nimbus-login": "{{Identical|Log in}}",
 	"nimbus-logout": "{{Identical|Log out}}",
 	"nimbus-more-actions": "This message is followed by a list of links.",
 	"nimbus-more-wikis": "This message is followed by a list of wikis.",
@@ -25,5 +26,5 @@
 	"nimbus-recent-contributors": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by the message {{msg-mw|nimbus-recent-contributors-info}}.",
 	"nimbus-recent-contributors-info": "This message follows the heading {{msg-mw|Nimbus-recent-contributors}}.",
 	"nimbus-signup": "{{Identical|Sign up}}",
-	"nimbus-welcome": "&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username"
+	"nimbus-welcome": "&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username\n{{Identical|Welcome}}"
 }

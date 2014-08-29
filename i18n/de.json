@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kghbln"
+			"Kghbln",
+			"Metalhead64"
 		]
 	},
 	"nimbus-desc": "Ermöglicht die Nutzung der Benutzeroberfläche Nimbus",
@@ -14,7 +15,7 @@
 	"nimbus-logout": "Abmelden?",
 	"nimbus-more-actions": "Weitere Aktionen",
 	"nimbus-more-wikis": "Weitere Wikis",
-	"nimbus-pages-can-be-edited": "Die Seiten auf {{SITENAME}} können bearbeitet werden.<br />\r\nIst diese Seite unvollständig? Ist etwas falsch?<br />\r\n<b>Ändere es bitte.</b>",
+	"nimbus-pages-can-be-edited": "Die Seiten auf {{SITENAME}} können bearbeitet werden.<br />\nIst diese Seite unvollständig? Ist etwas falsch?<br />\n<b>Ändere es bitte.</b>",
 	"nimbus-profile": "Profil",
 	"nimbus-recent-contributors": "Die letzten Bearbeiter dieser Seite",
 	"nimbus-recent-contributors-info": "Die folgenden Benutzer haben diesen Artikel zuletzt bearbeitet.",

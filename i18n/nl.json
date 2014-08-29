@@ -3,7 +3,8 @@
 		"authors": [
 			"Mitchel Corstjens",
 			"SPQRobin",
-			"Siebrand"
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"nimbus-desc": "Vormgeving \"Nimbus\"",
@@ -16,7 +17,7 @@
 	"nimbus-logout": "Afmelden?",
 	"nimbus-more-actions": "Meer handelingen",
 	"nimbus-more-wikis": "Meer wiki's",
-	"nimbus-pages-can-be-edited": "Pagina's van {{SITENAME}} kunnen bewerkt worden.<br />\r\nIs deze pagina onvolledig? Is er iets onjuist?<br />\r\n<b>Wijzig het!</b>",
+	"nimbus-pages-can-be-edited": "Pagina's van {{SITENAME}} kunnen bewerkt worden.<br />\nIs deze pagina onvolledig? Is er iets onjuist?<br />\n<b>Wijzig het!</b>",
 	"nimbus-profile": "Profiel",
 	"nimbus-recent-contributors": "Redacteuren die deze pagina recentelijk hebben bewerkt",
 	"nimbus-recent-contributors-info": "De volgende gebruikers hebben deze pagina recentelijk bewerkt.",

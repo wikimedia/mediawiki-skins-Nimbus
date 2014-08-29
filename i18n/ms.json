@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aviator"
+		]
+	},
+	"nimbus-desc": "Rupa Nimbus",
+	"nimbus-didyouknow": "Tahukah anda",
+	"nimbus-login": "Log masuk",
+	"nimbus-logout": "Log keluar?",
+	"nimbus-profile": "Profil",
+	"nimbus-signup": "Daftar",
+	"nimbus-welcome": "Selamat datang $1"
+}

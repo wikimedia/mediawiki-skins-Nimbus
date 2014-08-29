@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Jopparn",
+			"Lokal Profil"
 		]
 	},
+	"nimbus-desc": "Nimbus-utseende",
 	"nimbus-advertise": "Annonsera",
 	"nimbus-contribute": "Bidra",
 	"nimbus-didyouknow": "Visste du att",
@@ -13,10 +16,10 @@
 	"nimbus-logout": "Logga ut?",
 	"nimbus-more-actions": "Fler åtgärder",
 	"nimbus-more-wikis": "Fler wikis",
-	"nimbus-pages-can-be-edited": "{{SITENAME}}s sidor kan redigeras.<br />\r\nÄr denna sida ofullständig? Är det något fel?<br />\r\n<b>Ändra det!</b>",
+	"nimbus-pages-can-be-edited": "{{SITENAME}}s sidor kan redigeras.<br />\nÄr denna sida ofullständig? Är det något fel?<br />\n<b>Ändra det!</b>",
 	"nimbus-profile": "Profil",
 	"nimbus-recent-contributors": "Senaste bidragsgivare till denna sida",
 	"nimbus-recent-contributors-info": "Följande personer har nyligen bidragit till denna sida.",
-	"nimbus-signup": "Registrera",
+	"nimbus-signup": "Skapa ett konto",
 	"nimbus-welcome": "Välkommen $1"
 }

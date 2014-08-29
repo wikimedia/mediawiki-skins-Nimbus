@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yfdyh000"
+			"Yfdyh000",
+			"Liuxinyu970226"
 		]
 	},
 	"nimbus-desc": "Nimbus 皮肤",
@@ -10,11 +11,11 @@
 	"nimbus-didyouknow": "你知道吗",
 	"nimbus-featuredimage": "精选图像",
 	"nimbus-featureduser": "精选用户",
-	"nimbus-login": "登入",
-	"nimbus-logout": "登出？",
+	"nimbus-login": "登录",
+	"nimbus-logout": "退出？",
 	"nimbus-more-actions": "更多操作",
 	"nimbus-more-wikis": "更多wiki",
-	"nimbus-pages-can-be-edited": "{{SITENAME}} 的页面可以编辑。<br />\r\n此页不完整吗？亦或者有什么错误？\r\n<b>那快来修改它吧！</b>",
+	"nimbus-pages-can-be-edited": "{{SITENAME}} 的页面可以编辑。<br />\n此页不完整吗？亦或者有什么错误？\n<b>那快来修改它吧！</b>",
 	"nimbus-profile": "个人资料",
 	"nimbus-recent-contributors": "最近对此页的贡献",
 	"nimbus-recent-contributors-info": "以下的人最近对此页作出了贡献。",

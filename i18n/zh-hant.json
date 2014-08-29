@@ -2,13 +2,23 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Simon Shek"
+			"Simon Shek",
+			"Cwlin0416"
 		]
 	},
+	"nimbus-desc": "Nimbus 外觀",
+	"nimbus-advertise": "廣告",
 	"nimbus-contribute": "貢獻",
+	"nimbus-didyouknow": "您知道嗎",
+	"nimbus-featuredimage": "精選圖片",
 	"nimbus-login": "登入",
 	"nimbus-logout": "登出？",
 	"nimbus-more-actions": "更多操作",
+	"nimbus-more-wikis": "更多 Wiki",
+	"nimbus-pages-can-be-edited": "可編輯 {{SITENAME}} 的頁面。<br />\n此頁不完整？或者有什麼錯誤？<br />\n<b>修改它吧！</b>",
+	"nimbus-profile": "基本資料",
+	"nimbus-recent-contributors": "此頁面最近的貢獻者",
+	"nimbus-recent-contributors-info": "以下為最近於此頁面貢獻的使用者。",
 	"nimbus-signup": "註冊",
 	"nimbus-welcome": "歡迎$1"
 }
