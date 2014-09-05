@@ -1,16 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"Eleferen"
+			"Eleferen",
+			"Okras"
 		]
 	},
+	"nimbus-desc": "Тема оформления Nimbus",
 	"nimbus-advertise": "Реклама",
 	"nimbus-contribute": "Вклад",
 	"nimbus-didyouknow": "Знаете ли вы",
-	"nimbus-login": "Вход",
+	"nimbus-featuredimage": "Рекомендуемое изображение",
+	"nimbus-featureduser": "Рекомендуемый участник",
+	"nimbus-login": "Войти",
 	"nimbus-logout": "Выйти?",
 	"nimbus-more-actions": "Дополнительные действия",
+	"nimbus-more-wikis": "Другие вики-проекты",
+	"nimbus-pages-can-be-edited": "Страницы проекта {{SITENAME}} можно редактировать.<br />\nЭта страница является неполной? Здесь что-нибудь неправильно?<br />\n<b>Измените это!</b>",
 	"nimbus-profile": "Профиль",
+	"nimbus-recent-contributors": "Внёсшие последний вклад в эту страницу",
+	"nimbus-recent-contributors-info": "Следующие люди недавно внесли вклад в эту страницу.",
 	"nimbus-signup": "Регистрация",
 	"nimbus-welcome": "Добро пожаловать, $1"
 }
