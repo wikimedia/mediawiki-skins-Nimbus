@@ -1,9 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Minh Nguyen"
 		]
 	},
+	"nimbus-desc": "Giao diện Mây dông",
+	"nimbus-advertise": "Quảng cáo",
+	"nimbus-contribute": "Đóng góp",
+	"nimbus-didyouknow": "Bạn có biết",
+	"nimbus-featuredimage": "Hình ảnh chọn lọc",
+	"nimbus-featureduser": "Người dùng chọn lọc",
 	"nimbus-login": "Đăng nhập",
-	"nimbus-profile": "Hồ sơ"
+	"nimbus-logout": "Đăng xuất?",
+	"nimbus-more-actions": "Thêm tác vụ",
+	"nimbus-more-wikis": "Thêm wiki",
+	"nimbus-pages-can-be-edited": "Bạn có thể sửa đổi các trang {{SITENAME}}.<br />\nTrang này chưa đầy đủ? Có gì sai?<br />\n<b>Hãy thay đổi nó!</b>",
+	"nimbus-profile": "Hồ sơ",
+	"nimbus-recent-contributors": "Người đóng góp vào trang này gần đây",
+	"nimbus-recent-contributors-info": "Những người sau mới đóng góp vào trang này gần đây.",
+	"nimbus-signup": "Mở tài khoản",
+	"nimbus-welcome": "Hoan nghênh $1"
 }
