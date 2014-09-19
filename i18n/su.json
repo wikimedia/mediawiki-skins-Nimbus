@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kandar"
+		]
+	},
+	"nimbus-desc": "Kulit Nimbus",
+	"nimbus-advertise": "Iklan",
+	"nimbus-contribute": "Ngédit",
+	"nimbus-didyouknow": "Uninga teu",
+	"nimbus-featuredimage": "Gambar petingan",
+	"nimbus-featureduser": "Pamaké petingan",
+	"nimbus-login": "Asup log",
+	"nimbus-logout": "Kaluar log?",
+	"nimbus-more-actions": "Peta lianna",
+	"nimbus-more-wikis": "Wiki lianna",
+	"nimbus-pages-can-be-edited": "Kaca {{SITENAME}} bisa diédit.<br />\nEusi ieu kaca can lengkep? Aya anu salah?<br />\n<b>Mangga édit!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Anu anyar ngédit ieu kaca",
+	"nimbus-recent-contributors-info": "Di handap ieu béréndélan anu anyar ngédit ieu kaca.",
+	"nimbus-signup": "Daptar",
+	"nimbus-welcome": "Bagéa, $1"
+}
