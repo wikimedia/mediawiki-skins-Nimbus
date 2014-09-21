@@ -2,8 +2,24 @@
 	"@metadata": {
 		"authors": [
 			"Luckas",
-			"Luckas Blade"
+			"Luckas Blade",
+			"Vitorvicentevalente"
 		]
 	},
-	"nimbus-contribute": "Contribuir"
+	"nimbus-desc": "Tema Nimbus",
+	"nimbus-advertise": "Anuncie",
+	"nimbus-contribute": "Contribuir",
+	"nimbus-didyouknow": "Sabia que",
+	"nimbus-featuredimage": "Imagem destacada",
+	"nimbus-featureduser": "Utilizador destacado",
+	"nimbus-login": "Entrar",
+	"nimbus-logout": "Sair?",
+	"nimbus-more-actions": "Mais opções",
+	"nimbus-more-wikis": "Mais wikis",
+	"nimbus-pages-can-be-edited": "As páginas {{SITENAME}} podem ser editadas.<br />\nEsta página está incompleta? Há algo de errado nela?<br />\n<b>Altere-a!</b>",
+	"nimbus-profile": "Perfil",
+	"nimbus-recent-contributors": "Contribuidores recentes desta página",
+	"nimbus-recent-contributors-info": "As seguintes pessoas contribuíram recentemente para esta página.",
+	"nimbus-signup": "Registar-se",
+	"nimbus-welcome": "Bem-vindo(a) $1"
 }
