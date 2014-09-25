@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"John Reid"
+		]
+	},
+	"nimbus-desc": "Nimbus skin.",
+	"nimbus-advertise": "Advertise.",
+	"nimbus-contribute": "Contreebute",
+	"nimbus-didyouknow": "Did ye ken",
+	"nimbus-featuredimage": "Featurit eemage.",
+	"nimbus-featureduser": "Featurit uiser",
+	"nimbus-login": "Login",
+	"nimbus-logout": "Log oot?",
+	"nimbus-more-actions": "Mair actions.",
+	"nimbus-more-wikis": "Mair wikis",
+	"nimbus-pages-can-be-edited": "{{SITENAME}}'s pages can be eedited.<br />\nIs the page no compleate? Is thaur oniethin wrang?<br />\n<b>Chynge it!</b>",
+	"nimbus-profile": "Profile",
+	"nimbus-recent-contributors": "Recynt contreebuters tae this page.",
+	"nimbus-recent-contributors-info": "The people ablo recyntlie contreebutit tae this page.",
+	"nimbus-signup": "Sign up",
+	"nimbus-welcome": "Walcome $1"
+}
