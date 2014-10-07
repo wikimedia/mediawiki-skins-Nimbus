@@ -1108,15 +1108,6 @@ input.search-button {
 	margin: 15px 0px 0px !important;
 }
 
-/** Login **/
-.lr-top-link {
-	margin: 15px 0px 5px !important;
-}
-
-.lr-right {
-	margin: 15px 0px 0px !important;
-}
-
 /** Tweak for Special:UserLogin **/
 #userloginForm {
 	margin: 15px 0px 0px 0px;
@@ -1384,11 +1375,6 @@ input.search-button {
 }
 
 .user-home-links-container {
-	padding-top: 15px;
-}
-
-/** Awards **/
-.top-awards {
 	padding-top: 15px;
 }
 
