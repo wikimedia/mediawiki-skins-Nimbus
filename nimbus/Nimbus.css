@@ -1192,7 +1192,6 @@ input.search-button {
 }
 
 .item {
-	color: #666;
 	margin: 2px 25px;
 }
 
@@ -1204,10 +1203,6 @@ input.search-button {
 	border: 1px solid #DCDCDC;
 	padding: 1px;
 	background-color: #FFF;
-}
-
-#recent-all {
-	padding: 0px 0px 25px 0px;
 }
 
 /** Casual Game **/
@@ -1273,45 +1268,24 @@ input.search-button {
 }
 
 /** Edit Profile **/
-.profile-info {
-	background-color: #FFF;
-	padding: 25px 0px;
-}
-
 .profile-tab-bar {
 	padding: 0px;
 }
 
 .profile-update-title {
-	color: #333;
 	padding: 0px;
 }
 
 .profile-tab-bar {
-	margin-top: 20px;
 	border-bottom: none;
 }
 
 .profile-tab {
-	background-color: #68BD46;
 	border: none;
-	margin: 0px 5px 0px 0px;
 }
 
 .profile-tab-on {
-	background-color: #466C2C;
 	border: none;
-	margin: 0px 5px 0px 0px;
-}
-
-.profile-tab-on a, .profile-tab a {
-	color: #FFF;
-	font-weight: normal;
-	text-decoration: none;
-}
-
-.profile-tab a:hover {
-	color: #466C2C;
 }
 
 /** BOTTOM NAV **/
