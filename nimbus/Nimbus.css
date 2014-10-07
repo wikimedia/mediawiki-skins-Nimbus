@@ -1292,37 +1292,6 @@ select#message_type {
 	width: 35%;
 }
 
-/** Image Rating **/
-.image-rating-menu {
-	margin: 15px 0px 0px 0px;
-}
-
-.category-button {
-	color: #002BB8;
-}
-
-.image-categories-add {
-	font-size: 11px;
-}
-
-.featured-image {
-	margin-top: 15px;
-	padding: 5px;
-	width: 65%;
-}
-
-.image-rating-row, .image-rating-row-bottom {
-	width: 65%;
-}
-
-.image-rating-container {
-	width: 40%;
-}
-
-.image-categories-container {
-	width: 60%;
-}
-
 /** Top Lists **/
 .top-users {
 	margin: 15px 0px 0px !important;
