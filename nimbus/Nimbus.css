@@ -1559,26 +1559,6 @@ select#message_type {
 	margin-bottom: -5px !important;
 }
 
-/** Meet the Community **/
-.random-users-avatars {
-	padding: 0px 0px 0px 10px;
-}
-
-.random-users-avatars h2 {
-	border-bottom: none;
-	margin: 0px 0px 0px 0px;
-	padding: 7px 0px 8px 0px;
-}
-
-.random-users-avatars img {
-	border: 1px solid #DCDCDC;
-	display: block;
-	float: left;
-	height: 50px;
-	margin: 0px 8px 8px 0px;
-	width: 50px;
-}
-
 /** MP SITE ACTIVITY **/
 .mp-site-activity h2 {
 	border-bottom: none;
