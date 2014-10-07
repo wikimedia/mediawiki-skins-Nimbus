@@ -1070,27 +1070,6 @@ input.search-button {
 }
 
 /** Board **/
-.user-board-top-links {
-	padding: 15px 0px 0px 0px;
-}
-
-select#message_type {
-	vertical-align: middle;
-	margin: -1px 0px 0px 5px;
-}
-
-.user-board-message {
-	border: 1px solid #D4DFD7;
-}
-
-.user-board-message-from {
-	background-color: #EFF3F0;
-}
-
-.user-page-message-form textarea {
-	width: 80%;
-}
-
 #blast-friends-list div.blast-friend-unselected,
 #blast-friends-list div.blast-foe-unselected {
 	color: #002BB8;
