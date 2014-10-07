@@ -953,27 +953,8 @@ input.search-button {
 }
 
 /** Quiz **/
-.quizgame-right {
-	width: 40%;
-	position: relative;
-	padding-top: 8px;
-}
-
-.quizgame-left {
-	width: 50%;
-	position: relative;
-}
-
 .quiz-leaderboard-top-links {
 	margin: 10px 0px !important;
-}
-
-.user-rank p {
-	position: relative;
-}
-
-.user-rank h2 {
-	border-bottom: none;
 }
 
 .quiz-leaderboard-nav {
