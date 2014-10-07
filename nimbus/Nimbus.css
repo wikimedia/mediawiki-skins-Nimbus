@@ -941,17 +941,6 @@ input.search-button {
 	margin: 0px;
 }
 
-.imgTitle, .quizgame-title {
-	background :transparent none repeat scroll 0%;
-	border-bottom: 1px solid #AAAAAA;
-	color: black;
-	font-weight: normal !important;
-	margin: 0px 0px 15px 0px !important;
-	padding-bottom: 0.17em;
-	padding-top: 0.5em;
-	font-size: 188% !important;
-}
-
 /** Quiz **/
 .quiz-leaderboard-top-links {
 	margin: 10px 0px !important;
