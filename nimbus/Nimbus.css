@@ -895,13 +895,11 @@ input.search-button {
 
 /** Polls **/
 .poll {
-	width: 60%;
 	position: relative;
 }
 
 .poll-right {
-	padding: 8px 0px 0px 0px;
-	width: 30%;
+	padding-top: 8px;
 	position: relative;
 }
 
@@ -911,26 +909,6 @@ input.search-button {
 
 .create-poll-top h1 {
 	padding: 0px;
-	font-weight: bold;
-}
-
-.credit-box h1 {
-	border-bottom: none;
-	margin: 0px !important;
-	padding: 0px 0px 5px 0px;
-}
-
-#edit-image-frame {
-	margin: -10px 0px 0px 0px;
-}
-
-.credit-box-edit {
-	margin: 0px 0px 15px 0px !important;
-}
-
-.credit-box-edit h1 {
-	margin: 0px 0px 5px 0px !important;
-	padding: 0px !important;
 	font-weight: bold;
 }
 
