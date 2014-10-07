@@ -992,27 +992,12 @@ input.search-button {
 }
 
 /** User Page **/
-#profile-top {
-	background-color: #FFF;
-	border-bottom: 1px solid #D4DFD7;
-	padding: 10px 0px;
-	position: relative;
-}
-
 #points-level {
 	margin: 0px;
 }
 
 .no-info-container {
 	background-color: #EFF3F0;
-}
-
-#user-page-left {
-	width: 35%;
-}
-
-#user-page-right {
-	width: 60%;
 }
 
 .relationship-action {
@@ -1028,16 +1013,10 @@ input.search-button {
 }
 
 #profile-toggle-button {
-	position: absolute;
 	top: -29px;
-	right: 0px;
-	background-color: orange;
-	padding: 2px 10px;
 }
 
 #profile-toggle-button a {
-	font-weight: bold;
-	color: #FFF;
 	text-decoration: none;
 }
 
