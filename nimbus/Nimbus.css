@@ -1108,11 +1108,6 @@ input.search-button {
 	margin: 15px 0px 0px !important;
 }
 
-/** Tweak for Special:UserLogin **/
-#userloginForm {
-	margin: 15px 0px 0px 0px;
-}
-
 /** Random Featured user **/
 .random-featured-user {
 	font-size: 11px;
