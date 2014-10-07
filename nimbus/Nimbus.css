@@ -1471,36 +1471,6 @@ select#message_type {
 	margin: 0px 3px 0px 0px;
 }
 
-/** Timeline **/
-.timeline-year-container {
-	padding: 5px;
-	background-color: #EFF3F0;
-	margin-bottom: 5px;
-	border: 1px solid #D4DFD7;
-}
-
-.timeline-year {
-	float: left;
-	width: 100px;
-	font-size: 20px;
-	font-weight: 800;
-	color: #D4DFD7;
-}
-
-.timeline-month-container {
-	float: left;
-}
-
-.timeline-month {
-	font-weight: 800;
-	float: left;
-	width: 100px;
-}
-
-.timeline-data-container {
-	float: left;
-}
-
 /** Edit Profile **/
 .profile-info {
 	background-color: #FFF;
