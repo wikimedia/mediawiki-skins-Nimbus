@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Aftab1995"
+		]
+	},
+	"nimbus-advertise": "বিজ্ঞাপন",
+	"nimbus-contribute": "অবদান",
+	"nimbus-didyouknow": "আপনি জানেন কি",
+	"nimbus-featuredimage": "নির্বাচিত ছবি",
+	"nimbus-featureduser": "নির্বাচিত ব্যবহারকারী",
+	"nimbus-login": "প্রবেশ",
+	"nimbus-logout": "প্রস্থান?",
+	"nimbus-more-wikis": "আরও উইকি",
+	"nimbus-pages-can-be-edited": "{{SITENAME}}-এর পাতা সম্পাদনা করা যাবে।<br />\nএই পাতাটি কি অসম্পূর্ণ? এখানে কি কোন ভুল আছে?<br />\n<b>পরিবর্তন করুন!</b>",
+	"nimbus-profile": "প্রোফাইল",
+	"nimbus-signup": "নিবন্ধন",
+	"nimbus-welcome": "স্বাগতম $1"
+}
