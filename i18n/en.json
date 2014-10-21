@@ -14,7 +14,7 @@
 	"nimbus-logout": "Log out?",
 	"nimbus-more-actions": "More actions",
 	"nimbus-more-wikis": "More wikis",
-	"nimbus-pages-can-be-edited": "{{SITENAME}}'s pages can be edited.<br />\r\nIs this page incomplete? Is there anything wrong?<br />\r\n<b>Change it!</b>",
+	"nimbus-pages-can-be-edited": "This page can be edited.<br />\r\nIs this page incomplete? Is there anything wrong?<br />\r\n<b>Change it!</b>",
 	"nimbus-profile": "Profile",
 	"nimbus-recent-contributors": "Recent contributors to this page",
 	"nimbus-recent-contributors-info": "The following people recently contributed to this page.",
