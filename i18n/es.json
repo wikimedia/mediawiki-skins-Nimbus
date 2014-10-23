@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Armando-Martin"
+			"Armando-Martin",
+			"Macofe"
 		]
 	},
 	"nimbus-desc": "Aparencia Nimbus de MediaWiki",
@@ -14,7 +15,7 @@
 	"nimbus-logout": "¿Cerrar la sesión?",
 	"nimbus-more-actions": "Más acciones",
 	"nimbus-more-wikis": "Más wikis",
-	"nimbus-pages-can-be-edited": "Se pueden editar las páginas de {{SITENAME}}.<br />\r\n¿Está incompleta esta página? ¿Hay algo mal?<br />\r\n<b>¡Cámbielo!</b>",
+	"nimbus-pages-can-be-edited": "Se puede editar esta página.<br />\n¿Está incompleta esta página? ¿Hay algo mal?<br />\n<b>¡Cámbialo!</b>",
 	"nimbus-profile": "Perfil",
 	"nimbus-recent-contributors": "Colaboradores recientes a esta página",
 	"nimbus-recent-contributors-info": "Recientemente, las siguientes personas contribuyeron a esta página.",
