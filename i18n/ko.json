@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Priviet",
+			"아라"
+		]
+	},
+	"nimbus-desc": "님버스 스킨",
+	"nimbus-advertise": "광고",
+	"nimbus-contribute": "기여",
+	"nimbus-didyouknow": "알고 계십니까?",
+	"nimbus-featuredimage": "알찬 그림",
+	"nimbus-featureduser": "알찬 사용자",
+	"nimbus-login": "로그인",
+	"nimbus-logout": "로그아웃하시겠습니까?",
+	"nimbus-more-actions": "다른 명령",
+	"nimbus-more-wikis": "다른 위키",
+	"nimbus-pages-can-be-edited": "{{SITENAME}}의 문서를 편집할 수 있습니다.<br />\n이 문서가 완전하지 못한가요? 잘못된 점이 있나요?<br />\n<b>그렇다면 바꿔주세요!</b>",
+	"nimbus-profile": "프로파일",
+	"nimbus-recent-contributors": "이 문서의 최근 기여자",
+	"nimbus-recent-contributors-info": "다음 사용자가 이 문서에 최근 기여했습니다.",
+	"nimbus-signup": "가입하기",
+	"nimbus-welcome": "$1 님, 환영합니다."
+}

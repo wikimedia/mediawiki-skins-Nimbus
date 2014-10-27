@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Luckas",
-			"Luckas Blade"
+			"Luckas Blade",
+			"Cainamarques"
 		]
 	},
+	"nimbus-desc": "Tema Nimbus",
 	"nimbus-advertise": "Anunciar",
 	"nimbus-contribute": "Contribuir",
 	"nimbus-didyouknow": "Você sabia",
@@ -16,5 +18,8 @@
 	"nimbus-more-wikis": "Mais wikis",
 	"nimbus-pages-can-be-edited": "Criar",
 	"nimbus-profile": "Perfil",
-	"nimbus-recent-contributors": "Colaboradores recentes nesta página"
+	"nimbus-recent-contributors": "Colaboradores recentes nesta página",
+	"nimbus-recent-contributors-info": "As seguintes pessoas contribuíram recentemente para esta página.",
+	"nimbus-signup": "Registar-se",
+	"nimbus-welcome": "Bem vindo $1"
 }

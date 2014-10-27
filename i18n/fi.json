@@ -15,7 +15,7 @@
 	"nimbus-logout": "Kirjaudu ulos?",
 	"nimbus-more-actions": "Lisää toimintoja",
 	"nimbus-more-wikis": "Lisää wikejä",
-	"nimbus-pages-can-be-edited": "{{GRAMMAR:genitive|{{SITENAME}}}} sivuja voi muokata.<br />\r\nOnko tämä sivu puutteellinen? Onko siinä jotakin vikaa?<br />\r\n<b>Muuta sitä!</b>",
+	"nimbus-pages-can-be-edited": "{{GRAMMAR:genitive|{{SITENAME}}}} sivuja voi muokata.<br />\nOnko tämä sivu puutteellinen? Onko siinä jotakin vikaa?<br />\n<b>Muuta sitä!</b>",
 	"nimbus-profile": "Profiili",
 	"nimbus-recent-contributors": "Tämän sivun tuoreimmat muokkaajat",
 	"nimbus-recent-contributors-info": "Seuraavat henkilöt ovat muokanneet tätä artikkelia äskettäin.",
