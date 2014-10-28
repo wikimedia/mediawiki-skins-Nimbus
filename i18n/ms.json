@@ -1,14 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"Aviator"
+			"Aviator",
+			"Anakmalaysia"
 		]
 	},
 	"nimbus-desc": "Rupa Nimbus",
+	"nimbus-advertise": "Siarkan Iklan",
+	"nimbus-contribute": "Berikan Sumbangan",
 	"nimbus-didyouknow": "Tahukah anda",
+	"nimbus-featuredimage": "Gambar pilihan",
+	"nimbus-featureduser": "Pengguna tampilan",
 	"nimbus-login": "Log masuk",
 	"nimbus-logout": "Log keluar?",
+	"nimbus-more-actions": "Lagi tindakan",
+	"nimbus-more-wikis": "Wiki-wiki lain",
+	"nimbus-pages-can-be-edited": "Laman ini boleh disunting.<br />\nAdakah laman ini tak lengkap? Adakah apa-apa yang tak kena?<br />\n<b>Silakan menyunting!</b>",
 	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Para penyumbang terbaru kepada laman ini",
+	"nimbus-recent-contributors-info": "Mereka yang tersenarai berikutnya telah baru-baru ini menyumbang kepada laman ini.",
 	"nimbus-signup": "Daftar",
 	"nimbus-welcome": "Selamat datang $1"
 }
