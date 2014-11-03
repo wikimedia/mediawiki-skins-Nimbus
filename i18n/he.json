@@ -1,8 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"Meni181818"
+			"Meni181818",
+			"Amire80"
 		]
 	},
-	"nimbus-contribute": "תרומה למדיהויקי"
+	"nimbus-desc": "עיצוב נימבוס",
+	"nimbus-advertise": "פרסום",
+	"nimbus-contribute": "תרומה למדיהויקי",
+	"nimbus-didyouknow": "הידעת",
+	"nimbus-featuredimage": "תמונה מומלצת",
+	"nimbus-featureduser": "משתמש מומלץ",
+	"nimbus-login": "כניסה",
+	"nimbus-logout": "לצאת?",
+	"nimbus-more-actions": "פעולות נוספות",
+	"nimbus-more-wikis": "אתרי ויקי נוספים",
+	"nimbus-pages-can-be-edited": "הדף הזה נערך.<br />\nהאם הדף הזה מלא? האם יש משהו שגוי?<br />\n<b>שנו אותו!</b>",
+	"nimbus-profile": "פרופיל",
+	"nimbus-recent-contributors": "תורמים אחרונים לדף הזה",
+	"nimbus-recent-contributors-info": "האנשים הבאים תרמו לאחרונה לדף הזה.",
+	"nimbus-signup": "הרשמה",
+	"nimbus-welcome": "בוף בואך $1"
 }
