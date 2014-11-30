@@ -10,6 +10,17 @@ body {
 	font-family: Arial;
 }
 
+/**
+ * Revert https://gerrit.wikimedia.org/r/#/c/151395/ because it's ugly and
+ * unwanted for this skin, but we get it as a "nice" side-effect of loading
+ * MonoBook's main RL module...
+ */
+div.mw-body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
 #container {
 	margin-left: auto;
 	margin-right: auto;
@@ -24,77 +35,6 @@ body {
 #siteNotice {
 	border: none;
 	padding: 0px;
-}
-
-/*
-** External link styles (from Monobook's main.css)
-** @see http://bugzilla.shoutwiki.com/show_bug.cgi?id=223
-** keep the whitespace in front of the ^=, hides rule from konqueror
-** this is css3, the validator doesn't like it when validating as css2
-*/
-#article-text a.external,
-#article-text a.external[href ^="gopher://"] {
-	/* @embed */
-	background: url(../../monobook/external-ltr.png) center right no-repeat;
-	padding-right: 13px;
-}
-#article-text a.external[href ^="https://"],
-.link-https {
-	/* @embed */
-	background: url(../../monobook/lock_icon.gif) center right no-repeat;
-	padding-right: 16px;
-}
-#article-text a.external[href ^="mailto:"],
-.link-mailto {
-	/* @embed */
-	background: url(../../monobook/mail_icon.gif) center right no-repeat;
-	padding-right: 18px;
-}
-#article-text a.external[href ^="news:"] {
-	/* @embed */
-	background: url(../../monobook/news_icon.png) center right no-repeat;
-	padding-right: 18px;
-}
-#article-text a.external[href ^="ftp://"],
-.link-ftp {
-	/* @embed */
-	background: url(../../monobook/file_icon.gif) center right no-repeat;
-	padding-right: 18px;
-}
-#article-text a.external[href ^="irc://"],
-#article-text a.external[href ^="ircs://"],
-.link-irc {
-	/* @embed */
-	background: url(../../monobook/discussionitem_icon.gif) center right no-repeat;
-	padding-right: 18px;
-}
-#article-text a.external[href $=".ogg"], #article-text a.external[href $=".OGG"],
-#article-text a.external[href $=".mid"], #article-text a.external[href $=".MID"],
-#article-text a.external[href $=".midi"], #article-text a.external[href $=".MIDI"],
-#article-text a.external[href $=".mp3"], #article-text a.external[href $=".MP3"],
-#article-text a.external[href $=".wav"], #article-text a.external[href $=".WAV"],
-#article-text a.external[href $=".wma"], #article-text a.external[href $=".WMA"],
-.link-audio {
-	/* @embed */
-	background: url(../../monobook/audio.png) center right no-repeat;
-	padding-right: 13px;
-}
-#article-text a.external[href $=".ogm"], #article-text a.external[href $=".OGM"],
-#article-text a.external[href $=".avi"], #article-text a.external[href $=".AVI"],
-#article-text a.external[href $=".mpeg"], #article-text a.external[href $=".MPEG"],
-#article-text a.external[href $=".mpg"], #article-text a.external[href $=".MPG"],
-.link-video {
-	/* @embed */
-	background: url(../../monobook/video.png) center right no-repeat;
-	padding-right: 13px;
-}
-#article-text a.external[href $=".pdf"], #article-text a.external[href $=".PDF"],
-#article-text a.external[href *=".pdf#"], #article-text a.external[href *=".PDF#"],
-#article-text a.external[href *=".pdf?"], #article-text a.external[href *=".PDF?"],
-.link-document {
-	/* @embed */
-	background: url(../../monobook/document.png) center right no-repeat;
-	padding-right: 12px;
 }
 
 /* Interwiki Styling */
@@ -132,10 +72,6 @@ to make certain things align properly */
 }
 
 .clearfix { display: inline-block; }
-
-/* Hides from IE-mac \*/
-* html .clearfix { height: 1%; }
-/* End hide from IE-mac */
 
 /** Buttons **/
 .positive-button {

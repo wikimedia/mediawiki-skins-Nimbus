@@ -28,6 +28,7 @@ class SkinNimbus extends SkinTemplate {
 		// Add CSS & JS
 		$out->addModuleStyles( array(
 			'mediawiki.skinning.interface',
+			'mediawiki.skinning.content.externallinks',
 			'skins.monobook.styles',
 			'skins.nimbus'
 		) );
@@ -277,7 +278,7 @@ class NimbusTemplate extends BaseTemplate {
 		<div id="article">
 			<div id="mw-js-message" style="display:none;"></div>
 
-			<div id="article-body">
+			<div id="article-body" class="mw-body">
 				<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div><?php } ?>
 				<div id="article-text" class="clearfix">
 					<?php if ( $this->showPageTitle() ) { ?><h1 class="pagetitle"><?php $this->html( 'title' ) ?></h1><?php } ?>
