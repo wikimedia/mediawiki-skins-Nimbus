@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Khaled"
+		]
+	},
+	"nimbus-desc": "مظهر نيمبوز",
+	"nimbus-advertise": "أعلان",
+	"nimbus-contribute": "المساهمة",
+	"nimbus-didyouknow": "هل تعلم",
+	"nimbus-featuredimage": "صورة مميزة",
+	"nimbus-featureduser": "مستخدم مميز",
+	"nimbus-login": "تسجيل الدخول",
+	"nimbus-logout": "تسجيل الخروج",
+	"nimbus-more-actions": "المزيد من الخيارات",
+	"nimbus-more-wikis": "المزيد من الويكيات",
+	"nimbus-pages-can-be-edited": "يمكن تعديل الصحة.<br />\nهل هذه الصفحة غير مكتملة؟ هل هناك شئ خاطئ؟<br />\n<b>قم بتصويبه!</b>",
+	"nimbus-profile": "المعلومات الشخصية",
+	"nimbus-recent-contributors": "أحدث مساهمات الصفحة",
+	"nimbus-recent-contributors-info": "الأشخاص التالية اسمائهم قامو مؤخرا بالمساهمة في هذه الصفحة.",
+	"nimbus-signup": "أنشئ حسابًا",
+	"nimbus-welcome": "أهلاً بك $1"
+}
