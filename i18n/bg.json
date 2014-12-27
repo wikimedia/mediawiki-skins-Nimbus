@@ -1,8 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"DCLXVI"
 		]
 	},
-	"nimbus-profile": "Профил"
+	"nimbus-login": "Влизане",
+	"nimbus-logout": "Излизане?",
+	"nimbus-more-actions": "Още действия",
+	"nimbus-more-wikis": "Още уикита",
+	"nimbus-profile": "Профил",
+	"nimbus-signup": "Регистриране"
 }
