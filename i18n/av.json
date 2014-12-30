@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Gazimagomedov"
+		]
+	},
+	"nimbus-desc": "Куцалъул тема - Nimbus",
+	"nimbus-advertise": "Реклама",
+	"nimbus-contribute": "ГӀахьалчиясул хӀалтӀи",
+	"nimbus-didyouknow": "Дуда лъалиш",
+	"nimbus-featuredimage": "Беццараб сурат",
+	"nimbus-featureduser": "Веццарав гӀахьалчи",
+	"nimbus-login": "Жаниве лъугьине",
+	"nimbus-logout": "КъватӀиве инзейиш?",
+	"nimbus-more-actions": "Жегиги хӀалтӀаби",
+	"nimbus-more-wikis": "Цогидал вики-проектал",
+	"nimbus-pages-can-be-edited": "Гьаб гьумер хисизабизе бегьула.<br />\nЛъугӀараб гьечӀиш? Мекъаб жо бугиш?<br />\n<b>Батани хисизабе!</b>",
+	"nimbus-profile": "Профиль",
+	"nimbus-recent-contributors": "Ахирисал хиса-басиял гьарурал",
+	"nimbus-recent-contributors-info": "Гьал гӀадамаз цодагьаб цебе хиса-басиял гьаруна гьаб гьумералда.",
+	"nimbus-signup": "Регистрация",
+	"nimbus-welcome": "ЛъикӀ щварав, $1"
+}
