@@ -1,9 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Subi"
 		]
 	},
+	"nimbus-didyouknow": "Ba al zenekien",
 	"nimbus-login": "Saioa hasi",
-	"nimbus-profile": "Profila"
+	"nimbus-more-actions": "Ekintza gehiago",
+	"nimbus-more-wikis": "Wiki gehiago",
+	"nimbus-profile": "Profila",
+	"nimbus-welcome": "Ongi etorri $1"
 }
