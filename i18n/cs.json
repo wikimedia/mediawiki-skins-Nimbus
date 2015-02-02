@@ -1,13 +1,25 @@
 {
 	"@metadata": {
 		"authors": [
-			"Vks"
+			"Vks",
+			"Juandev",
+			"Mormegil"
 		]
 	},
+	"nimbus-desc": "Vzhled Nimbus",
+	"nimbus-advertise": "Propagovat",
 	"nimbus-contribute": "Přispět",
+	"nimbus-didyouknow": "Víte že",
+	"nimbus-featuredimage": "Nejlepší obrázek",
+	"nimbus-featureduser": "Nejlepší uživatel",
 	"nimbus-login": "Přihlásit se",
+	"nimbus-logout": "Odhlásit se?",
+	"nimbus-more-actions": "Více možností",
+	"nimbus-more-wikis": "Více wiki",
+	"nimbus-pages-can-be-edited": "Tato stránka může být editována.<br /> \nJe tato stránka nekompletní? Je zde něco špatně?<br /> \n<b>Změňte to!</b>",
 	"nimbus-profile": "Profil",
 	"nimbus-recent-contributors": "Poslední přispivatelé do této stránky",
+	"nimbus-recent-contributors-info": "Následující lidé nedávno přispěli na tuto stránku.",
 	"nimbus-signup": "Zaregistrovat se",
 	"nimbus-welcome": "Vítej $1"
 }
