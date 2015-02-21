@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Siddhartha Ghai"
+		]
+	},
+	"nimbus-desc": "निम्बस त्वचा",
+	"nimbus-advertise": "इश्तिहार दें",
+	"nimbus-contribute": "योगदान दें",
+	"nimbus-didyouknow": "क्या आप जानते हैं",
+	"nimbus-featuredimage": "निर्वाचित चित्र",
+	"nimbus-featureduser": "निर्वाचित सदस्य",
+	"nimbus-login": "लॉगिन",
+	"nimbus-logout": "लॉग आउट करें?",
+	"nimbus-more-actions": "अधिक किर्याएँ",
+	"nimbus-more-wikis": "अधिक विकी",
+	"nimbus-pages-can-be-edited": "यह पृष्ठ सम्पादित किया जा सकता है।<br />\nक्या यह पृष्ठ अधूरा है? क्या कुछ ग़लत है?<br />\n<b>इसे ठीक करें!</b>",
+	"nimbus-profile": "प्रोफ़ाइल",
+	"nimbus-recent-contributors": "इस पृष्ठ के हाल के योगदानकर्ता",
+	"nimbus-recent-contributors-info": "निम्न व्यक्तियों ने हाल में इस पृष्ठ में योगदान दिया है।",
+	"nimbus-signup": "साइन अप करें",
+	"nimbus-welcome": "आपका स्वागत है, $1!"
+}
