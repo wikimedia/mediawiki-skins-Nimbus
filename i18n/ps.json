@@ -4,13 +4,18 @@
 			"Ahmed-Najib-Biabani-Ibrahimkhel"
 		]
 	},
+	"nimbus-desc": "نيمبوس پوښۍ",
 	"nimbus-advertise": "خبرتيا کول",
 	"nimbus-contribute": "ونډه اخيستل",
 	"nimbus-didyouknow": "آيا ته پوهېدې",
+	"nimbus-featuredimage": "غوره شوی انځور",
+	"nimbus-featureduser": "غوره شوی کارن",
 	"nimbus-login": "ننوتل",
 	"nimbus-logout": "وتل؟",
+	"nimbus-more-actions": "نورې کړنې",
 	"nimbus-more-wikis": "نورې ويکي گانې",
 	"nimbus-profile": "پېژنليک",
+	"nimbus-recent-contributors": "د دې مخ وروستني ونډه وال",
 	"nimbus-signup": "نومليکل",
 	"nimbus-welcome": "ښه راغلاست $1"
 }
