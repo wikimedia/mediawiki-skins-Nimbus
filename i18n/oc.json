@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Cedric31"
+		]
+	},
+	"nimbus-desc": "Aparéncia Nimbus de MediaWiki",
+	"nimbus-advertise": "Far de publicitat",
+	"nimbus-contribute": "Contribuir",
+	"nimbus-didyouknow": "O sabiatz ?",
+	"nimbus-featuredimage": "Imatge remirable",
+	"nimbus-login": "Connexion",
+	"nimbus-logout": "Se desconnectar ?",
+	"nimbus-more-actions": "Mai d'accions",
+	"nimbus-more-wikis": "Mai de wikis",
+	"nimbus-profile": "Perfil",
+	"nimbus-signup": "S'inscriure",
+	"nimbus-welcome": "Benvenguda $1"
+}
