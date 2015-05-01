@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"EileenSanda"
+		]
+	},
+	"nimbus-desc": "Nimbus útsjónd",
+	"nimbus-contribute": "Luttak",
+	"nimbus-didyouknow": "Visti tú",
+	"nimbus-featuredimage": "Úrvalsmynd",
+	"nimbus-featureduser": "Útvaldur brúkari",
+	"nimbus-login": "Rita inn",
+	"nimbus-logout": "Rita út",
+	"nimbus-more-actions": "Fleiri handlingar",
+	"nimbus-more-wikis": "Fleiri wikiir",
+	"nimbus-profile": "Vangamynd",
+	"nimbus-welcome": "Vælkomin $1"
+}
