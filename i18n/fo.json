@@ -5,6 +5,7 @@
 		]
 	},
 	"nimbus-desc": "Nimbus útsjónd",
+	"nimbus-advertise": "Lýsing",
 	"nimbus-contribute": "Luttak",
 	"nimbus-didyouknow": "Visti tú",
 	"nimbus-featuredimage": "Úrvalsmynd",
@@ -13,6 +14,10 @@
 	"nimbus-logout": "Rita út",
 	"nimbus-more-actions": "Fleiri handlingar",
 	"nimbus-more-wikis": "Fleiri wikiir",
+	"nimbus-pages-can-be-edited": "Henda síðan kann rættast.<br />\nEr henda síða ófullfíggjað? Er nakað galið?<br />\n<b>Rætta síðuna!</b>",
 	"nimbus-profile": "Vangamynd",
+	"nimbus-recent-contributors": "Hesir brúkarar hava nýliga rættað hesa síðuna",
+	"nimbus-recent-contributors-info": "Hesi fólk hava nýliga rættað hesa síðuna.",
+	"nimbus-signup": "Skráset teg",
 	"nimbus-welcome": "Vælkomin $1"
 }
