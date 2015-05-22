@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Рустам Нурыев"
+		]
+	},
+	"nimbus-advertise": "Реклама",
+	"nimbus-contribute": "Башҡарған эштәр",
+	"nimbus-didyouknow": "Һеҙ белеһегеҙме",
+	"nimbus-featuredimage": "Тәҡдим ителгән һүрәт",
+	"nimbus-featureduser": "Тәҡдим ителгән ҡатнашыусы",
+	"nimbus-login": "Танылыу",
+	"nimbus-logout": "Тамамлау",
+	"nimbus-more-actions": "Өҫтәлмә ғәмәлдәр",
+	"nimbus-more-wikis": "Башҡа вики-проекттар",
+	"nimbus-profile": "Профиль",
+	"nimbus-recent-contributors": "Был биткә һуңғы үҙгәртеү индереүселәр",
+	"nimbus-recent-contributors-info": "Был биткә күптән түгел түбәндәге кешеләр үҙгәреш индерҙе",
+	"nimbus-signup": "Теркәлеү",
+	"nimbus-welcome": "Рәхим итегеҙ, $1!"
+}
