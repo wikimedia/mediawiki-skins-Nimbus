@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bachounda"
+			"Bachounda",
+			"Oldstoneage"
 		]
 	},
 	"nimbus-desc": "Nimbus skin",
@@ -10,14 +11,14 @@
 	"nimbus-didyouknow": "عندك علم؟",
 	"nimbus-featuredimage": "تصويره مخيره",
 	"nimbus-featureduser": "مستخدم مخير",
-	"nimbus-login": "تسجيل الدخله",
+	"nimbus-login": "تسجيل تاع الدخول",
 	"nimbus-logout": "حاب تخرج ؟",
 	"nimbus-more-actions": "أكثر خيارات",
-	"nimbus-more-wikis": "أكثر ويكييات",
-	"nimbus-pages-can-be-edited": "هاد الباجة يمكنها تتعدل.<br />\nهاد الباجه ما هيش كامله ؟ يادرى كاين حاجه ما هيش نيشان ؟<br />\n<b>غيرها !</b>",
+	"nimbus-more-wikis": "شوف ويكيّات كتَر",
+	"nimbus-pages-can-be-edited": "هاد الباجة يمكنها تتعدل.<br />\nهاد الباجة ما هيش كاملة؟ يادرا كاين حاجة ما هيش نيشان؟<br />\n<b>بدّل فيها!</b>",
 	"nimbus-profile": "المعلومات الشخصيه",
-	"nimbus-recent-contributors": "مساهمين التواله في هاد الباجه",
-	"nimbus-recent-contributors-info": "أسموات الناس هوما اللي دارو ساهمات في  هاذ الباجه.",
+	"nimbus-recent-contributors": "مساهمين التوالا في هاد الباجة",
+	"nimbus-recent-contributors-info": "أسموات الناس هوما اللي دارو مساهمات ف  هاد الباجة.",
 	"nimbus-signup": "اصنع حساب",
 	"nimbus-welcome": "مرحبا بيك $1"
 }
