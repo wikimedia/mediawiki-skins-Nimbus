@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tacsipacsi"
+		]
+	},
+	"nimbus-advertise": "Hirdetés",
+	"nimbus-contribute": "Közreműködés",
+	"nimbus-didyouknow": "Tudtad, hogy…",
+	"nimbus-featuredimage": "Kiemelt kép",
+	"nimbus-featureduser": "Kiemelt felhasználó",
+	"nimbus-login": "Bejelentkezés",
+	"nimbus-logout": "Kijelentkezel?",
+	"nimbus-more-actions": "További műveletek",
+	"nimbus-more-wikis": "További wikik",
+	"nimbus-pages-can-be-edited": "Ez a lap szerkeszthető.<br />\nHiányos? Valami hibás?<br />\n<b>Változtass rajta!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "A lap legutóbbi közreműködői",
+	"nimbus-recent-contributors-info": "A következő emberek nemrég közreműködtek ebben a lapban.",
+	"nimbus-signup": "Regisztráció",
+	"nimbus-welcome": "Üdvözlünk, $1!"
+}

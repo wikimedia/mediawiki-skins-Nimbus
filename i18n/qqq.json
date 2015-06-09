@@ -6,11 +6,12 @@
 			"Shirayuki",
 			"Siebrand",
 			"Umherirrender",
-			"Liuxinyu970226"
+			"Liuxinyu970226",
+			"Tacsipacsi"
 		]
 	},
 	"morewikis": "{{notranslate}}",
-	"nimbus-desc": "{{desc|name=Nimbus|url=https://www.mediawiki.org/wiki/Extension:Nimbus}}",
+	"nimbus-desc": "{{desc|what=skin|name=Nimbus|url=https://www.mediawiki.org/wiki/Skin:Nimbus}}",
 	"nimbus-advertise": "Used as link text if the Advertise URL is not empty. Clicking the link will lead to a page where the viewer can get information on how to advertise on the wiki.\n{{Identical|Advertise}}",
 	"nimbus-advertise-url": "{{notranslate}}",
 	"nimbus-contribute": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by the following message:\n* {{msg-mw|Nimbus-pages-can-be-edited}}\n{{Identical|Contribute}}",
