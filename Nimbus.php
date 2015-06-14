@@ -8,18 +8,10 @@
  * @author David Pean <david.pean@gmail.com>
  * @author Inez Korczyński <korczynski@gmail.com>
  * @author Jack Phoenix <jack@countervandalism.net>
- * @copyright Copyright © 2008-2014 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
+ * @copyright Copyright © 2008-2015 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
- * @date 30 November 2014
- *
- * To install place the Nimbus folder (the folder containing this file!) into
- * skins/ and add this line to your wiki's LocalSettings.php:
- * require_once("$IP/skins/Nimbus/Nimbus.php");
+ * @date 15 June 2015
  */
-
-if( !defined( 'MEDIAWIKI' ) ) {
-	die( 'Not a valid entry point.' );
-}
 
 // Skin credits that will show up on Special:Version
 $wgExtensionCredits['skin'][] = array(
@@ -39,6 +31,8 @@ $wgValidSkinNames['nimbus'] = 'Nimbus';
 
 // Autoload the skin class, set up i18n, set up CSS & JS (via ResourceLoader)
 $wgAutoloadClasses['SkinNimbus'] = __DIR__ . '/Nimbus.skin.php';
+$wgAutoloadClasses['NimbusTemplate'] = __DIR__ . '/Nimbus.skin.php';
+
 $wgMessagesDirs['SkinNimbus'] = __DIR__ . '/i18n';
 
 $wgResourceModules['skins.nimbus'] = array(

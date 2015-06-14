@@ -9,6 +9,12 @@
  * it's in a really crappy state currently, but better than nothing.
  *
  * @file
+ * @author Aaron Wright <aaron.wright@gmail.com>
+ * @author David Pean <david.pean@gmail.com>
+ * @author Inez Korczyński <korczynski@gmail.com>
+ * @author Jack Phoenix <jack@countervandalism.net>
+ * @copyright Copyright © 2008-2015 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
+ * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 if ( !defined( 'MEDIAWIKI' ) ) {
 	die( -1 );
