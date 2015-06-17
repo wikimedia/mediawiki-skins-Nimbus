@@ -243,7 +243,7 @@ class NimbusTemplate extends BaseTemplate {
 			<div class="bottom-left-nav">
 			<?php
 			// Hook point for ShoutWikiAds
-			wfRunHooks( 'NimbusLeftSide' );
+			Hooks::run( 'NimbusLeftSide' );
 
 			if ( function_exists( 'wfRandomCasualGame' ) ) {
 				echo wfGetRandomGameUnit();
