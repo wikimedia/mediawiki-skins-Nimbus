@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pippinu"
+		]
+	},
+	"nimbus-desc": "La peddi Nimbus",
+	"nimbus-advertise": "Reclami",
+	"nimbus-contribute": "Cuntribbuìri",
+	"nimbus-didyouknow": "Lu sapivi?",
+	"nimbus-featuredimage": "Mmàggini ntâ vitrina",
+	"nimbus-featureduser": "Utenti in evidenza",
+	"nimbus-login": "Trasi",
+	"nimbus-logout": "Nèsciri?",
+	"nimbus-more-actions": "Autri azzioni",
+	"nimbus-more-wikis": "Autri wiki",
+	"nimbus-pages-can-be-edited": "Sta pàggina si po’ canciari.<br />\nManca quarchi’ cosa? Quarchi’ cosa è sbagghiata?<br />\n<b>Cànciala!</b>",
+	"nimbus-profile": "Prufilu",
+	"nimbus-recent-contributors": "Cuntribbutura ricenti a sta pàggina",
+	"nimbus-recent-contributors-info": "Sti genti cuntribbueru a sta pàggina di ricenti.",
+	"nimbus-signup": "Scrìviti",
+	"nimbus-welcome": "Bommegna, $1"
+}
