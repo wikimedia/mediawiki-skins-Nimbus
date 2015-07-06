@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Silovan"
+		]
+	},
+	"nimbus-advertise": "რეკლამა",
+	"nimbus-contribute": "ავტორი",
+	"nimbus-didyouknow": "გიჩქუდესო ნამჷ-და",
+	"nimbus-featuredimage": "გიშნაგორა სურათი",
+	"nimbus-featureduser": "გიშნაგორა მახვარებუ",
+	"nimbus-login": "მიშულა",
+	"nimbus-logout": "გიშულა?",
+	"nimbus-more-actions": "უმოს ქიმინჯალა",
+	"nimbus-more-wikis": "უმოსი ვიკი",
+	"nimbus-profile": "პროფილი",
+	"nimbus-recent-contributors": "თე ხასჷლაშ ეკონია რედაქტორეფი",
+	"nimbus-signup": "რეგისტრაცია",
+	"nimbus-welcome": "მოზოჯით, $1!"
+}
