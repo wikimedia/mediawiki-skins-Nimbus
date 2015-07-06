@@ -381,15 +381,25 @@ class NimbusTemplate extends BaseTemplate {
 	/**
 	 * Extract the link text and destination (href) from a MediaWiki message
 	 * and return them as an array.
+	 *
+	 * @param string $line Line from the sidebar message, such as ** mainpage|mainpage-description
+	 * @return array Array containing the 'text' (description) and 'href' (target URL) keys
 	 */
 	private function parseItem( $line ) {
+		$href = false;
+
+		// trim spaces and asterisks from line and then split it to maximum two chunks
 		$line_temp = explode( '|', trim( $line, '* ' ), 2 );
-		if ( count( $line_temp ) > 1 ) {
-			$line = $line_temp[1];
-			$link = wfMessage( $line_temp[0] )->inContentLanguage()->text();
+
+		// $line_temp now contains page name or URL as the 0th array element
+		// and the link description as the 1st array element
+		if ( count( $line_temp ) >= 2 && $line_temp[1] != '' ) {
+			$msgObj = wfMessage( $line_temp[0] );
+			$link = ( $msgObj->isDisabled() ? $line_temp[0] : trim( $msgObj->inContentLanguage()->text() ) );
+			$textObj = wfMessage( trim( $line_temp[1] ) );
+			$line = ( !$textObj->isDisabled() ? $textObj->text() : trim( $line_temp[1] ) );
 		} else {
-			$line = $line_temp[0];
-			$link = $line_temp[0];
+			$line = $link = trim( $line_temp[0] );
 		}
 
 		// Determine what to show as the human-readable link description
