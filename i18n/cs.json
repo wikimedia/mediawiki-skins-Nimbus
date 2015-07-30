@@ -3,7 +3,8 @@
 		"authors": [
 			"Vks",
 			"Juandev",
-			"Mormegil"
+			"Mormegil",
+			"Matěj Suchánek"
 		]
 	},
 	"nimbus-desc": "Vzhled Nimbus",
@@ -16,7 +17,7 @@
 	"nimbus-logout": "Odhlásit se?",
 	"nimbus-more-actions": "Více možností",
 	"nimbus-more-wikis": "Více wiki",
-	"nimbus-pages-can-be-edited": "Tato stránka může být editována.<br /> \nJe tato stránka nekompletní? Je zde něco špatně?<br /> \n<b>Změňte to!</b>",
+	"nimbus-pages-can-be-edited": "Tato stránka může být editována.<br />\n\nJe tato stránka nekompletní? Je zde něco špatně?<br />\n\n<b>Změňte to!</b>",
 	"nimbus-profile": "Profil",
 	"nimbus-recent-contributors": "Poslední přispivatelé do této stránky",
 	"nimbus-recent-contributors-info": "Následující lidé nedávno přispěli na tuto stránku.",
