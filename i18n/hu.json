@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tacsipacsi"
+			"Tacsipacsi",
+			"ViDam"
 		]
 	},
+	"nimbus-desc": "Nimbus felület",
 	"nimbus-advertise": "Hirdetés",
 	"nimbus-contribute": "Közreműködés",
 	"nimbus-didyouknow": "Tudtad, hogy…",
