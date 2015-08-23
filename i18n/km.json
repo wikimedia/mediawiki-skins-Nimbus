@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"គីមស៊្រុន"
+		]
+	},
+	"nimbus-advertise": "ផ្សាយពាណិជ្ជកម្ម",
+	"nimbus-contribute": "រួមចំណែក",
+	"nimbus-didyouknow": "តើអ្នកដឹងទេ",
+	"nimbus-featuredimage": "រូបភាពគួរកត់សម្គាល់",
+	"nimbus-featureduser": "អ្នកប្រើប្រាស់គួរកត់សម្គាល់",
+	"nimbus-login": "កត់ឈ្មោះចូល",
+	"nimbus-logout": "កត់ឈ្មោះចេញឬ?",
+	"nimbus-more-actions": "សកម្មភាពផ្សេងទៀត",
+	"nimbus-more-wikis": "វិគីផ្សេងទៀត",
+	"nimbus-pages-can-be-edited": "ទំព័រនេះអាចកែប្រែបាន។<br />\n\nតើទំព័រនេះមិនទាន់សរសេរចប់ឬ? តើមានខ្លឹមសារដែលមិនត្រឹមត្រូវឬ?<br />\n\n<b>សូមធ្វើការកែប្រែវាទៅ!</b>",
+	"nimbus-profile": "ប្រវត្តិរូប",
+	"nimbus-recent-contributors": "អ្នករូមចំណែកលើទំព័រនេះនាពេលថ្មីៗនេះ",
+	"nimbus-recent-contributors-info": "បុគ្គលដូចខាងក្រោមបានរួមចំណែកលើទំព័រនេះនាពេលថ្មីៗនេះ។",
+	"nimbus-signup": "ចុះ​ឈ្មោះ",
+	"nimbus-welcome": "សូមស្វាគមន៍ $1"
+}
