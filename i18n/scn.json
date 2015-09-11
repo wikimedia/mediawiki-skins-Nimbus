@@ -1,23 +1,24 @@
 {
 	"@metadata": {
 		"authors": [
-			"Pippinu"
+			"Pippinu",
+			"Sarvaturi"
 		]
 	},
 	"nimbus-desc": "La peddi Nimbus",
-	"nimbus-advertise": "Reclami",
-	"nimbus-contribute": "Cuntribbuìri",
+	"nimbus-advertise": "Riclami",
+	"nimbus-contribute": "Cuntribbuiri",
 	"nimbus-didyouknow": "Lu sapivi?",
 	"nimbus-featuredimage": "Mmàggini ntâ vitrina",
-	"nimbus-featureduser": "Utenti in evidenza",
+	"nimbus-featureduser": "Utenti n evidenza",
 	"nimbus-login": "Trasi",
 	"nimbus-logout": "Nèsciri?",
-	"nimbus-more-actions": "Autri azzioni",
-	"nimbus-more-wikis": "Autri wiki",
-	"nimbus-pages-can-be-edited": "Sta pàggina si po’ canciari.<br />\nManca quarchi’ cosa? Quarchi’ cosa è sbagghiata?<br />\n<b>Cànciala!</b>",
+	"nimbus-more-actions": "Àutri azzioni",
+	"nimbus-more-wikis": "Àutri wiki",
+	"nimbus-pages-can-be-edited": "Sta pàggina si pò canciari.<br />\nAmmanca quarchi cosa? Quarchi cosa è sbagghiata?<br />\n<b>Cànciala!</b>",
 	"nimbus-profile": "Prufilu",
 	"nimbus-recent-contributors": "Cuntribbutura ricenti a sta pàggina",
 	"nimbus-recent-contributors-info": "Sti genti cuntribbueru a sta pàggina di ricenti.",
 	"nimbus-signup": "Scrìviti",
-	"nimbus-welcome": "Bommegna, $1"
+	"nimbus-welcome": "Bimminutu, $1"
 }
