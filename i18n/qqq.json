@@ -27,5 +27,6 @@
 	"nimbus-recent-contributors": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by the message {{msg-mw|nimbus-recent-contributors-info}}.",
 	"nimbus-recent-contributors-info": "This message follows the heading {{msg-mw|Nimbus-recent-contributors}}.",
 	"nimbus-signup": "{{Identical|Sign up}}",
+	"nimbus-sidebar": "{{ignored}}\nUsed as Sidebar in Nimbus skin, similar to [[MediaWiki:Sidebar]]",
 	"nimbus-welcome": "&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username\n{{Identical|Welcome}}"
 }
