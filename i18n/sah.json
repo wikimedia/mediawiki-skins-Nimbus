@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"HalanTul"
+		]
+	},
+	"nimbus-desc": "Nimbus",
+	"nimbus-advertise": "Арбааһын",
+	"nimbus-contribute": "Суруйуум",
+	"nimbus-didyouknow": "Билэҕин дуо",
+	"nimbus-featuredimage": "Сүбэлэнэр ойуу",
+	"nimbus-featureduser": "Сүбэлэнэр кыттааччы",
+	"nimbus-login": "Киир",
+	"nimbus-logout": "Тахсаҕын?",
+	"nimbus-more-actions": "Эбии дьайыылар",
+	"nimbus-more-wikis": "Атын биикилэр",
+	"nimbus-pages-can-be-edited": "Бу сирэйи уларытыахха сөп.<br />\nТуга эрэ тиийбэт дуо? Туга эрэ алҕас суруллубут дуо?<br />\n<b>Уларыт!</b>",
+	"nimbus-profile": "Профиль",
+	"nimbus-recent-contributors": "Тиһэх көннөрүүнү оҥорбут киһи",
+	"nimbus-recent-contributors-info": "Бу дьон соторутааҕыта уларыппыттар.",
+	"nimbus-signup": "Бэлиэтэнии",
+	"nimbus-welcome": "Нөрүөн нөргүй, $1!"
+}
