@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eleferen",
-			"Okras"
+			"Okras",
+			"Kaganer"
 		]
 	},
 	"nimbus-desc": "Тема оформления Nimbus",
@@ -15,7 +16,7 @@
 	"nimbus-logout": "Выйти?",
 	"nimbus-more-actions": "Дополнительные действия",
 	"nimbus-more-wikis": "Другие вики-проекты",
-	"nimbus-pages-can-be-edited": "Эта страница может быть отредактирована.<br />\nОна является неполной? Здесь что-нибудь неправильно?<br />\n<b>Измените это!</b>",
+	"nimbus-pages-can-be-edited": "Эта страница может быть отредактирована.<br />\nОна неполна? Здесь что-нибудь неправильно?<br />\n<b>Измените это!</b>",
 	"nimbus-profile": "Профиль",
 	"nimbus-recent-contributors": "Внёсшие последний вклад в эту страницу",
 	"nimbus-recent-contributors-info": "Следующие люди недавно внесли вклад в эту страницу.",
