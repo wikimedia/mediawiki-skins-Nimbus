@@ -179,11 +179,6 @@ class NimbusTemplate extends BaseTemplate {
 	<div id="side-bar" class="noprint">
 		<div id="navigation">
 			<div id="navigation-title"><?php echo wfMessage( 'navigation' )->plain() ?></div>
-			<script type="text/javascript">
-				var submenu_array = new Array();
-				var menuitem_array = new Array();
-				var submenuitem_array = new Array();
-			</script>
 			<?php
 				$this->navmenu_array = array();
 				$this->navmenu = $this->getNavigationMenu();
@@ -467,23 +462,14 @@ class NimbusTemplate extends BaseTemplate {
 		global $wgContLang, $wgStylePath;
 
 		$menu_output = '';
-		$script_output = '';
-		$scriptIndent = "\t\t\t\t\t\t";
 		$output = '';
 		$count = 1;
 
 		if ( isset( $this->navmenu[$id]['children'] ) ) {
-			$script_output .= "\n{$scriptIndent}" . '<script type="text/javascript">/*<![CDATA[*/' . "\n";
 			if ( $level ) {
 				$menu_output .= '<div class="sub-menu" id="sub-menu' . $last_count . '" style="display:none;">';
-				$script_output .= $scriptIndent . "\t" . 'submenu_array["sub-menu' . $last_count . '"] = "' . $last_count . '";' . "\n";
-				$script_output .= $scriptIndent . "\t" . 'document.getElementById("sub-menu' . $last_count . '").onmouseout = NimbusSkin.clearMenu;' . "\n";
-				$script_output .= $scriptIndent . "\t" . 'if( document.getElementById("sub-menu' . $last_count . '").captureEvents ) document.getElementById("sub-menu' . $last_count . '").captureEvents(Event.MOUSEOUT);' . "\n";
 			}
 			foreach ( $this->navmenu[$id]['children'] as $child ) {
-				$mouseover = ' onmouseover="NimbusSkin.' . ( $level ? 'sub_' : '' ) . 'menuItemAction(\'' .
-					( $level ? $last_count . '_' : '_' ) . $count . '\');"';
-				$mouseout = ' onmouseout="NimbusSkin.clearBackground(\'_' . $count . '\')"' . "\n";
 				$menu_output .= "\n\t\t\t\t" . '<div class="' . ( $level ? 'sub-' : '' ) . 'menu-item' .
 					( ( $count == sizeof( $this->navmenu[$id]['children'] ) ) ? ' border-fix' : '' ) .
 					'" id="' . ( $level ? 'sub-' : '' ) . 'menu-item' .
@@ -492,19 +478,6 @@ class NimbusTemplate extends BaseTemplate {
 					( $level ? $last_count . '_' : '_' ) . $count . '" href="' .
 					( !empty( $this->navmenu[$child]['href'] ) ? htmlspecialchars( $this->navmenu[$child]['href'] ) : '#' ) . '">';
 
-				if ( !$level ) {
-					$script_output .= 'menuitem_array["menu-item' . $last_count . '_' . $count . '"] = "' . $last_count . '_' . $count . '";';
-					$script_output .= 'document.getElementById("menu-item' . $last_count . '_' . $count . '").onmouseover = NimbusSkin.menuItemAction;' . "\n";
-					$script_output .= 'if( document.getElementById("menu-item' . $last_count . '_' .$count . '").captureEvents) document.getElementById("menu-item' . $last_count . '_' . $count . '").captureEvents(Event.MOUSEOVER);' . "\n";
-					$script_output .= 'document.getElementById("menu-item' . $last_count . '_' . $count . '").onmouseout = NimbusSkin.clearBackground;' . "\n";
-					$script_output .= 'if( document.getElementById("menu-item' . $last_count . '_' . $count . '").captureEvents) document.getElementById("menu-item' . $last_count . '_' . $count . '").captureEvents(Event.MOUSEOUT);' . "\n";
-
-					$script_output .= 'document.getElementById("a-menu-item' . $last_count . '_' . $count . '").onmouseover = NimbusSkin.menuItemAction;if( document.getElementById("a-menu-item' . $last_count . '_' . $count . '").captureEvents) document.getElementById("a-menu-item' . $last_count . '_' . $count . '").captureEvents(Event.MOUSEOVER);' . "\n";
-				} else {
-					$script_output .= $scriptIndent . "\t" . 'submenuitem_array["sub-menu-item' . $last_count . '_' . $count . '"] = "' . $last_count . '_' . $count . '";' . "\n";
-					$script_output .= $scriptIndent . "\t" . 'document.getElementById("sub-menu-item' . $last_count . '_' . $count . '").onmouseover = NimbusSkin.sub_menuItemAction;' . "\n";
-					$script_output .= $scriptIndent . "\t" . 'if( document.getElementById("sub-menu-item' . $last_count . '_' . $count . '").captureEvents) document.getElementById("sub-menu-item' . $last_count . '_' . $count . '").captureEvents(Event.MOUSEOVER);' . "\n";
-				}
 				$menu_output .= $this->navmenu[$child]['text'];
 				// If a menu item has submenus, show an arrow so that the user
 				// knows that there are submenus available
@@ -527,12 +500,11 @@ class NimbusTemplate extends BaseTemplate {
 			if ( $level ) {
 				$menu_output .= '</div>';
 			}
-			$script_output .= $scriptIndent . '/*]]>*/</script>' . "\n";
 		}
 
-		if ( $menu_output . $script_output != '' ) {
+		if ( $menu_output != '' ) {
 			$output .= "<div id=\"menu{$last_count}\">";
-			$output .= $menu_output . $script_output;
+			$output .= $menu_output;
 			$output .= "</div>\n";
 		}
 
