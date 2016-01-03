@@ -158,7 +158,7 @@ class NimbusTemplate extends BaseTemplate {
 <?php
 	if ( $user->isLoggedIn() ) {
 		echo "\t\t\t" . '<div id="login-message">' .
-				wfMessage( 'nimbus-welcome', '<b>' . $user->getName() . '</b>' )->parse() .
+				wfMessage( 'nimbus-welcome', '<b>' . $user->getName() . '</b>', $user->getName() )->parse() .
 			'</div>
 			<a class="positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->plain() . '</span></a>
 			<a class="negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . wfMessage( 'nimbus-logout' )->plain() . '</span></a>';

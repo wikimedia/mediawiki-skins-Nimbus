@@ -28,5 +28,5 @@
 	"nimbus-recent-contributors-info": "This message follows the heading {{msg-mw|Nimbus-recent-contributors}}.",
 	"nimbus-signup": "{{Identical|Sign up}}",
 	"nimbus-sidebar": "{{ignored}}\nUsed as Sidebar in Nimbus skin, similar to [[MediaWiki:Sidebar]]",
-	"nimbus-welcome": "&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username\n{{Identical|Welcome}}"
+	"nimbus-welcome": "&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username\n{{Identical|Welcome}}\nParameters:\n*$1 - username, passed in with <b> tags, not used for GENDER\n*$2 - username, used for GENDER"
 }
