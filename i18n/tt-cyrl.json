@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ильнар"
+		]
+	},
+	"nimbus-desc": "Nimbus бизәлеше",
+	"nimbus-advertise": "Реклама",
+	"nimbus-contribute": "Кертем",
+	"nimbus-didyouknow": "Сез беләсезме",
+	"nimbus-featuredimage": "Тәкъдим ителгән сурәт",
+	"nimbus-featureduser": "Тәкъдим ителгән кулланучы",
+	"nimbus-login": "Керү",
+	"nimbus-logout": "Чыгаргамы?",
+	"nimbus-more-actions": "Өстәмә гамәлләр",
+	"nimbus-more-wikis": "Башка вики-проектлар",
+	"nimbus-pages-can-be-edited": "Әлеге битне үзгәртергә мөмкин.<br />\nУл тулы түгелме? Бәлки дөрес тә түгелдер?<br />\n<b>Төзәтегез!</b>",
+	"nimbus-profile": "Профиль",
+	"nimbus-recent-contributors": "Бу биткә соңгы төзәтмә кертүчеләр",
+	"nimbus-recent-contributors-info": "Күптән түгел генә, әлеге биткә, бу кешеләр төзәтмә керттеләр.",
+	"nimbus-signup": "Теркәлү",
+	"nimbus-welcome": "Рәхим итегез, $1"
+}
