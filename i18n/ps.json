@@ -17,5 +17,5 @@
 	"nimbus-profile": "پېژنليک",
 	"nimbus-recent-contributors": "د دې مخ وروستني ونډه وال",
 	"nimbus-signup": "نومليکل",
-	"nimbus-welcome": "ښه راغلاست $1"
+	"nimbus-welcome": "$1 {{GENDER:$2|ښه راغلې}}"
 }
