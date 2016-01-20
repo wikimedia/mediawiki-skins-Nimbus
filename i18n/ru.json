@@ -21,5 +21,5 @@
 	"nimbus-recent-contributors": "Внёсшие последний вклад в эту страницу",
 	"nimbus-recent-contributors-info": "Следующие люди недавно внесли вклад в эту страницу.",
 	"nimbus-signup": "Регистрация",
-	"nimbus-welcome": "Добро пожаловать, $1"
+	"nimbus-welcome": "{{GENDER:$2|Добро пожаловать}}, $1"
 }

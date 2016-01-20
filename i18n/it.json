@@ -19,5 +19,5 @@
 	"nimbus-recent-contributors": "Contributori recenti a questa pagina",
 	"nimbus-recent-contributors-info": "Le seguenti persone hanno contribuito di recente a questa pagina.",
 	"nimbus-signup": "Iscriviti",
-	"nimbus-welcome": "Benvenuto $1"
+	"nimbus-welcome": "{{GENDER:$2|Benvenuto|Benvenuta|Benvenuto/a}} $1"
 }

@@ -21,5 +21,5 @@
 	"nimbus-recent-contributors": "Ostatni edytorzy tej strony",
 	"nimbus-recent-contributors-info": "Te osoby ostatnio edytowały ten artykuł.",
 	"nimbus-signup": "Zarejestruj się",
-	"nimbus-welcome": "Witaj, $1"
+	"nimbus-welcome": "{{GENDER:$2|Witaj}} $1"
 }

@@ -19,5 +19,5 @@
 	"nimbus-recent-contributors": "Rezent Mataarbechter vun dëser Säit",
 	"nimbus-recent-contributors-info": "Dës Leit huet viru kuerzem un dëser Säit matgeschafft.",
 	"nimbus-signup": "Schreift Iech an",
-	"nimbus-welcome": "Wëllkomm $1"
+	"nimbus-welcome": "{{GENDER:$2|Wëllkomm}} $1"
 }

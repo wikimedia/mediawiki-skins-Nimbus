@@ -20,5 +20,5 @@
 	"nimbus-recent-contributors": "最近对此页的贡献",
 	"nimbus-recent-contributors-info": "以下的人最近对此页作出了贡献。",
 	"nimbus-signup": "注册",
-	"nimbus-welcome": "欢迎$1"
+	"nimbus-welcome": "{{GENDER:$2|欢迎}}$1"
 }
