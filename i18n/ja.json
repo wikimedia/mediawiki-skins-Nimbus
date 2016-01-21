@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shirayuki"
+			"Shirayuki",
+			"Otokoume"
 		]
 	},
 	"nimbus-desc": "ニンバス外装",
@@ -17,5 +18,5 @@
 	"nimbus-recent-contributors": "このページの最近の更新",
 	"nimbus-recent-contributors-info": "このページを最近更新したのは以下の人たちです。",
 	"nimbus-signup": "利用者登録",
-	"nimbus-welcome": "ようこそ、$1さん"
+	"nimbus-welcome": "{{GENDER:$2|ようこそ}}、$1 さん"
 }

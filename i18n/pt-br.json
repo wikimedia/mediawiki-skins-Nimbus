@@ -3,7 +3,8 @@
 		"authors": [
 			"Luckas",
 			"Luckas Blade",
-			"Cainamarques"
+			"Cainamarques",
+			"HenriqueCrang"
 		]
 	},
 	"nimbus-desc": "Tema Nimbus",
@@ -16,10 +17,10 @@
 	"nimbus-logout": "Sair",
 	"nimbus-more-actions": "Mais ações",
 	"nimbus-more-wikis": "Mais wikis",
-	"nimbus-pages-can-be-edited": "Criar",
+	"nimbus-pages-can-be-edited": "Essa página pode ser editada.<br />\n\nEssa página está incompleta? Existe algo errado?<br />\n\n<b>Altere-a!</b>",
 	"nimbus-profile": "Perfil",
 	"nimbus-recent-contributors": "Colaboradores recentes nesta página",
 	"nimbus-recent-contributors-info": "As seguintes pessoas contribuíram recentemente para esta página.",
 	"nimbus-signup": "Registar-se",
-	"nimbus-welcome": "Bem vindo $1"
+	"nimbus-welcome": "{{GENDER:$2|Bem-vindo|Bem-vinda}} $1"
 }
