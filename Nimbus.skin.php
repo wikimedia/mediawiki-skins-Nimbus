@@ -813,7 +813,7 @@ class NimbusTemplate extends BaseTemplate {
 			// In 1.18, we need the class *and* the title...w/o the title, the
 			// new, jQuery-ified version of the AJAX page watching code dies
 			// if the title attribute is not present
-			if ( !$his->skin->getUser()->isWatched( $title ) ) {
+			if ( !$this->skin->getUser()->isWatched( $title ) ) {
 				$output .= Linker::link(
 					$full_title,
 					wfMessage( 'watch' )->plain(),
