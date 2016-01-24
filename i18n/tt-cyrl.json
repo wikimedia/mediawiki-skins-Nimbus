@@ -19,5 +19,5 @@
 	"nimbus-recent-contributors": "Бу биткә соңгы төзәтмә кертүчеләр",
 	"nimbus-recent-contributors-info": "Күптән түгел генә, әлеге биткә, бу кешеләр төзәтмә керттеләр.",
 	"nimbus-signup": "Теркәлү",
-	"nimbus-welcome": "Рәхим итегез, $1"
+	"nimbus-welcome": "{{GENDER:$2|Рәхим итегез}}, $1"
 }
