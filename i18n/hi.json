@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Siddhartha Ghai",
-			"YmKavishwar"
+			"YmKavishwar",
+			"Rajat11"
 		]
 	},
 	"nimbus-desc": "निम्बस त्वचा",
@@ -12,7 +13,7 @@
 	"nimbus-featuredimage": "निर्वाचित चित्र",
 	"nimbus-featureduser": "निर्वाचित सदस्य",
 	"nimbus-login": "लॉगिन",
-	"nimbus-logout": "प्रस्थान करें?",
+	"nimbus-logout": "बंद करें?",
 	"nimbus-more-actions": "अधिक किर्याएँ",
 	"nimbus-more-wikis": "अधिक विकी",
 	"nimbus-pages-can-be-edited": "यह पृष्ठ सम्पादित किया जा सकता है।<br />\nक्या यह पृष्ठ अधूरा है? क्या कुछ ग़लत है?<br />\n<b>इसे ठीक करें!</b>",

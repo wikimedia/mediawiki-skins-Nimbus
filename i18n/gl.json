@@ -20,5 +20,5 @@
 	"nimbus-recent-contributors": "Colaboradores recentes nesta páxina",
 	"nimbus-recent-contributors-info": "As seguintes persoas colaboraron recentemente neste artigo.",
 	"nimbus-signup": "Crear unha conta",
-	"nimbus-welcome": "Benvido, $1"
+	"nimbus-welcome": "{{GENDER:$2|Benvido|Benvida}} $1"
 }
