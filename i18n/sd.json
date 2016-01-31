@@ -17,5 +17,5 @@
 	"nimbus-recent-contributors": "هن صفحي جا حاليہ ڀاڱيدار",
 	"nimbus-recent-contributors-info": "هيٺين ماڻهن تازو ئي هن صفحي لاءِ ڀاڱيداري نڀائي آهي.",
 	"nimbus-signup": "کاتو کوليو",
-	"nimbus-welcome": "$1، ڀلي ڪري آيا"
+	"nimbus-welcome": "{{GENDER:$2|ڀليڪار}} $1"
 }
