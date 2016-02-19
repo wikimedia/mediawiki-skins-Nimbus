@@ -4,7 +4,8 @@
 			"Base",
 			"Steve.rusyn",
 			"Ата",
-			"SteveR"
+			"SteveR",
+			"Piramidion"
 		]
 	},
 	"nimbus-desc": "Оформлення Nimbus",
@@ -22,5 +23,5 @@
 	"nimbus-recent-contributors": "Нові дописувачі цієї сторінки",
 	"nimbus-recent-contributors-info": "Такі люди нещодавно зробили внесок у цю сторінку.",
 	"nimbus-signup": "Зареєструватися",
-	"nimbus-welcome": "Вітаємо, $1!"
+	"nimbus-welcome": "{{GENDER:$2|Вітаємо}}, $1"
 }
