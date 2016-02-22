@@ -15,5 +15,5 @@
 	"nimbus-more-wikis": "Mai de wikis",
 	"nimbus-profile": "Perfil",
 	"nimbus-signup": "S'inscriure",
-	"nimbus-welcome": "{{GENDER:$1|Benvengut|Benvenguda}} $1"
+	"nimbus-welcome": "{{GENDER:$2|Benvengut|Benvenguda}} $1"
 }
