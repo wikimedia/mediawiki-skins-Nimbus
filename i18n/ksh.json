@@ -19,5 +19,5 @@
 	"nimbus-recent-contributors": "De neuste Beijdrähsch för heh di Sigg",
 	"nimbus-recent-contributors-info": "Heh di Lück han de neuste Beijdrähsch för heh di Sigg jeschrevve:",
 	"nimbus-signup": "Aanmällde",
-	"nimbus-welcome": "Wellkumme, $1."
+	"nimbus-welcome": "Wellkumme, $1.{{GENDER:$2|}}"
 }
