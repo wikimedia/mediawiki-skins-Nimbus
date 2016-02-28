@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Tacsipacsi",
-			"ViDam"
+			"ViDam",
+			"Máté"
 		]
 	},
 	"nimbus-desc": "Nimbus felület",
@@ -20,5 +21,5 @@
 	"nimbus-recent-contributors": "A lap legutóbbi közreműködői",
 	"nimbus-recent-contributors-info": "A következő emberek nemrég közreműködtek ebben a lapban.",
 	"nimbus-signup": "Regisztráció",
-	"nimbus-welcome": "Üdvözlünk, $1!"
+	"nimbus-welcome": "{{GENDER:$2|Üdvözlünk}}, $1!"
 }
