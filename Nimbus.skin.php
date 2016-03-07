@@ -1069,7 +1069,10 @@ class NimbusTemplate extends BaseTemplate {
 				unset( $tmp );
 				$nt = Title::newFromText( $l );
 				if ( $nt ) {
-					$langName = $wgContLang->getLanguageName( $nt->getInterwiki() );
+					$langName = Language::fetchLanguageName(
+						$nt->getInterwiki(),
+						$wgContLang->getCode()
+					);
 					$language_urls[] = array(
 						'href' => $nt->getFullURL(),
 						'text' => ( $langName != '' ? $langName : $l ),
