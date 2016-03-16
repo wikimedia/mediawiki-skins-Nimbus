@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sveinn í Felli"
+		]
+	},
+	"nimbus-desc": "Nimbus-skinn",
+	"nimbus-advertise": "Auglýsa",
+	"nimbus-contribute": "Taka þátt",
+	"nimbus-didyouknow": "Vissir þú",
+	"nimbus-featuredimage": "Áberandi mynd",
+	"nimbus-featureduser": "Áberandi notandi",
+	"nimbus-login": "Innskráning",
+	"nimbus-logout": "Skrá út?",
+	"nimbus-more-actions": "Fleiri aðgerðir",
+	"nimbus-more-wikis": "Fleiri wiki",
+	"nimbus-pages-can-be-edited": "Þessari síðu má breyta.<br />\n\nEr þessi síða ófullgerð? Er eitthvað rangt á henni?<br />\n\n<b>Breyttu því!</b>",
+	"nimbus-profile": "Notandasnið",
+	"nimbus-recent-contributors": "Aðilar með nýleg framlög á þessa síðu",
+	"nimbus-recent-contributors-info": "Eftirfarandi hafa nýverið komið með framlög á þessa síðu",
+	"nimbus-signup": "Nýskrá",
+	"nimbus-welcome": "{{GENDER:$1|Velkominn|Velkomin|Velkomin(n)}}, $1"
+}
