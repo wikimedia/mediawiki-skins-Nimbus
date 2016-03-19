@@ -20,5 +20,5 @@
 	"nimbus-recent-contributors": "Был биткә һуңғы үҙгәртеү индереүселәр",
 	"nimbus-recent-contributors-info": "Был биткә күптән түгел түбәндәге кешеләр үҙгәреш индерҙе",
 	"nimbus-signup": "Теркәлеү",
-	"nimbus-welcome": "Рәхим итегеҙ, $1!"
+	"nimbus-welcome": "$2-се биткә {{GENDER:$1|рәхим итегеҙ}}"
 }
