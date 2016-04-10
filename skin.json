@@ -1,6 +1,6 @@
 {
 	"name": "Nimbus",
-	"version": "3.2",
+	"version": "3.2.1",
 	"author": [
 		"Aaron Wright",
 		"David Pean",
@@ -34,10 +34,11 @@
 					"media": "screen"
 				}
 			},
-			"scripts": [
-				"nimbus/Menu.js"
-			],
 			"position": "top"
+		},
+		"skins.nimbus.menu": {
+			"scripts": "nimbus/Menu.js",
+			"position": "bottom"
 		}
 	},
 	"manifest_version": 1

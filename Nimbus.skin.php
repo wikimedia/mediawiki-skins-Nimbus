@@ -28,6 +28,17 @@ class SkinNimbus extends SkinTemplate {
 	public $skinname = 'nimbus', $stylename = 'nimbus',
 		$template = 'NimbusTemplate', $useHeadElement = true;
 
+	/**
+	 * Load the JavaScript required by the menu and whatnot.
+	 *
+	 * @param OutputPage $out
+	 */
+	public function initPage( OutputPage $out ) {
+		parent::initPage( $out );
+
+		$out->addModules( 'skins.nimbus.menu' );
+	}
+
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 
@@ -38,7 +49,6 @@ class SkinNimbus extends SkinTemplate {
 			'skins.monobook.styles',
 			'skins.nimbus'
 		) );
-		$out->addModuleScripts( 'skins.nimbus' );
 
 		// IE-specific CSS
 		#$out->addStyle( 'Nimbus/nimbus/Nimbus_IE.css', 'screen', 'IE' );
