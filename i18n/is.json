@@ -19,5 +19,5 @@
 	"nimbus-recent-contributors": "Aðilar með nýleg framlög á þessa síðu",
 	"nimbus-recent-contributors-info": "Eftirfarandi hafa nýverið komið með framlög á þessa síðu",
 	"nimbus-signup": "Nýskrá",
-	"nimbus-welcome": "{{GENDER:$1|Velkominn|Velkomin|Velkomin(n)}}, $1"
+	"nimbus-welcome": "{{GENDER:$2|Velkominn|Velkomin|Velkomin}} $1"
 }
