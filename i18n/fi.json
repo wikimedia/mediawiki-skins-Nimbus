@@ -3,7 +3,8 @@
 		"authors": [
 			"Jack Phoenix <jack@countervandalism.net>",
 			"Linnea",
-			"SuperPete"
+			"SuperPete",
+			"01miki10"
 		]
 	},
 	"nimbus-desc": "Nimbus-teema",
@@ -21,5 +22,5 @@
 	"nimbus-recent-contributors": "Tämän sivun tuoreimmat muokkaajat",
 	"nimbus-recent-contributors-info": "Seuraavat henkilöt ovat muokanneet tätä artikkelia äskettäin.",
 	"nimbus-signup": "Rekisteröidy",
-	"nimbus-welcome": "Tervetuloa $1"
+	"nimbus-welcome": "{{GENDER:$2|Tervetuloa}} $1"
 }
