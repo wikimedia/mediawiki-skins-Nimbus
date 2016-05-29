@@ -2,13 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Erdemaslancan",
-			"Mirzali"
+			"Mirzali",
+			"Kumkumuk"
 		]
 	},
+	"nimbus-desc": "Nimbus skin",
 	"nimbus-contribute": "İştıraqi",
 	"nimbus-login": "Cıkewtış",
 	"nimbus-logout": "Bıveciye?",
 	"nimbus-profile": "Profile",
 	"nimbus-signup": "Qeyd be",
-	"nimbus-welcome": "Xeyr ameyê $1"
+	"nimbus-welcome": "{{GENDER:$2|Xeyr ameya}} $1"
 }
