@@ -7,10 +7,19 @@
 		]
 	},
 	"nimbus-desc": "Nimbus skin",
+	"nimbus-advertise": "İlan kerdış",
 	"nimbus-contribute": "İştıraqi",
+	"nimbus-didyouknow": "Tı zanê",
+	"nimbus-featuredimage": "Bestiyaye resim",
+	"nimbus-featureduser": "Bestiyaye karber",
 	"nimbus-login": "Cıkewtış",
 	"nimbus-logout": "Bıveciye?",
+	"nimbus-more-actions": "Vêşi hereketi",
+	"nimbus-more-wikis": "Vêşi wiki",
+	"nimbus-pages-can-be-edited": "Şıma şenê ena pelantimar kerê<br />\n\nNa pela baş biya? Çiyo da xırab mı tey  est o?<br />\n\n<b>Bıvurnê! </b>",
 	"nimbus-profile": "Profile",
+	"nimbus-recent-contributors": "Peyên iştirakê ena pela",
+	"nimbus-recent-contributors-info": "Peyên iştirakê rna pela merdumi taqib kenê",
 	"nimbus-signup": "Qeyd be",
 	"nimbus-welcome": "{{GENDER:$2|Xeyr ameya}} $1"
 }
