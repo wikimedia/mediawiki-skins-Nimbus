@@ -250,8 +250,8 @@ class NimbusTemplate extends BaseTemplate {
 			// Hook point for ShoutWikiAds
 			Hooks::run( 'NimbusLeftSide' );
 
-			if ( function_exists( 'wfRandomCasualGame' ) ) {
-				echo wfGetRandomGameUnit();
+			if ( class_exists( 'RandomGameUnit' ) ) {
+				echo RandomGameUnit::getRandomGameUnit();
 			}
 			?>
 				<div class="bottom-left-nav-container">
@@ -261,7 +261,7 @@ class NimbusTemplate extends BaseTemplate {
 			<?php
 				echo $this->getInterlanguageLinksBox();
 
-				if ( function_exists( 'wfRandomImageByCategory' ) ) {
+				if ( class_exists( 'RandomImageByCategory' ) ) {
 					$randomImage = $wgOut->parse(
 						'<randomimagebycategory width="200" categories="Featured Image" />',
 						false
@@ -271,7 +271,7 @@ class NimbusTemplate extends BaseTemplate {
 					$randomImage . '</div>';
 				}
 
-				if ( function_exists( 'wfRandomFeaturedUser' ) ) {
+				if ( class_exists( 'RandomFeaturedUser' ) ) {
 					$randomUser = $wgOut->parse(
 						'<randomfeatureduser period="weekly" />',
 						false
