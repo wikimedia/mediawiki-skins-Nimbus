@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Priviet",
-			"아라"
+			"아라",
+			"Ykhwong"
 		]
 	},
 	"nimbus-desc": "님버스 스킨",
@@ -20,5 +21,5 @@
 	"nimbus-recent-contributors": "이 문서의 최근 기여자",
 	"nimbus-recent-contributors-info": "다음 사용자가 이 문서에 최근 기여했습니다.",
 	"nimbus-signup": "가입하기",
-	"nimbus-welcome": "$1 님, 환영합니다."
+	"nimbus-welcome": "$1님, {{GENDER:$2|환영합니다}}"
 }
