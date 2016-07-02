@@ -232,10 +232,12 @@ a.positive-button:visited, a.negative-button:visited {
 }
 
 /**
- * Center the logo image
- * @see http://bugzilla.shoutwiki.com/show_bug.cgi?id=236
+ * Center the logo image (ShoutWiki Bugzilla bug #236) and enforce a minimum
+ * height to prevent the navbar from obscuring content action tabs
+ * @see https://phabricator.shoutwiki.com/T60
  */
 #site-logo {
+	min-height: 150px;
 	width: 200px !important;
 }
 
