@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Avjoska"
+			"Avjoska",
+			"Pikne"
 		]
 	},
 	"nimbus-advertise": "Teata",
@@ -10,5 +11,5 @@
 	"nimbus-logout": "Logi välja?",
 	"nimbus-profile": "Profiil",
 	"nimbus-signup": "Registreeru",
-	"nimbus-welcome": "Tere tulemast, $1"
+	"nimbus-welcome": "{{GENDER:$2|Tere}} tulemast, $1"
 }
