@@ -19,7 +19,7 @@
 	"nimbus-pages-can-be-edited": "이 문서를 편집할 수 있습니다.<br />\n이 문서가 완전하지 못한가요? 잘못된 점이 있나요?<br />\n<b>바꿔주세요!</b>",
 	"nimbus-profile": "프로파일",
 	"nimbus-recent-contributors": "이 문서의 최근 기여자",
-	"nimbus-recent-contributors-info": "다음 사용자가 이 문서에 최근 기여했습니다.",
+	"nimbus-recent-contributors-info": "다음 사람들이 최근에 이 문서에 기여했습니다.",
 	"nimbus-signup": "가입하기",
 	"nimbus-welcome": "$1님, {{GENDER:$2|환영합니다}}"
 }
