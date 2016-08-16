@@ -2,9 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"පසිඳු කාවින්ද",
-			"DCLXVI"
+			"DCLXVI",
+			"StanProg"
 		]
 	},
+	"nimbus-advertise": "Реклама",
+	"nimbus-contribute": "Добавете своя принос",
+	"nimbus-didyouknow": "Знаете ли, че?",
+	"nimbus-featuredimage": "Избрана картинка",
+	"nimbus-featureduser": "Избран потребител",
 	"nimbus-login": "Влизане",
 	"nimbus-logout": "Излизане?",
 	"nimbus-more-actions": "Още действия",
