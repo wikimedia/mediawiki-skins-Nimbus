@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Zygimantus"
+			"Zygimantus",
+			"Eitvys200"
 		]
 	},
+	"nimbus-desc": "Nimbus išvaizda",
+	"nimbus-advertise": "Reklamuoti",
+	"nimbus-contribute": "Prisidėti",
 	"nimbus-didyouknow": "Ar žinote,",
 	"nimbus-featuredimage": "Rinktinis paveikslėlis",
 	"nimbus-login": "Prisijungti",
@@ -11,5 +15,8 @@
 	"nimbus-more-actions": "Daugiau veiksmų",
 	"nimbus-more-wikis": "Daugiau viki",
 	"nimbus-profile": "Profilis",
-	"nimbus-signup": "Sukurti paskyrą"
+	"nimbus-recent-contributors": "Naujausi šio puslapio įnašai",
+	"nimbus-recent-contributors-info": "Šie žmonės nesenai prisidėjo prie šio puslapio.",
+	"nimbus-signup": "Sukurti paskyrą",
+	"nimbus-welcome": "{{GENDER:$2|Sveiki atvykę}}, $1"
 }
