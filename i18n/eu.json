@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"පසිඳු කාවින්ද",
-			"Subi"
+			"Subi",
+			"Sator"
 		]
 	},
 	"nimbus-didyouknow": "Ba al zenekien",
@@ -10,5 +11,5 @@
 	"nimbus-more-actions": "Ekintza gehiago",
 	"nimbus-more-wikis": "Wiki gehiago",
 	"nimbus-profile": "Profila",
-	"nimbus-welcome": "Ongi etorri $1"
+	"nimbus-welcome": "{{GENDER:$2|Ongi etorri}} $1"
 }
