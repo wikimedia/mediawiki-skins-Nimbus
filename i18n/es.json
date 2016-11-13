@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Armando-Martin",
-			"Macofe"
+			"Macofe",
+			"Fitoschido"
 		]
 	},
 	"nimbus-desc": "Aparencia Nimbus",
@@ -11,8 +12,8 @@
 	"nimbus-didyouknow": "¿Sabía usted?",
 	"nimbus-featuredimage": "Imagen destacada",
 	"nimbus-featureduser": "Usuario destacado",
-	"nimbus-login": "Iniciar sesión",
-	"nimbus-logout": "¿Cerrar la sesión?",
+	"nimbus-login": "Acceder",
+	"nimbus-logout": "¿Salir?",
 	"nimbus-more-actions": "Más acciones",
 	"nimbus-more-wikis": "Más wikis",
 	"nimbus-pages-can-be-edited": "Se puede editar esta página.<br />\n¿Está incompleta esta página? ¿Hay algo mal?<br />\n<b>¡Cámbialo!</b>",
