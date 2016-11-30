@@ -19,5 +19,5 @@
 	"nimbus-recent-contributors": "Condrebbutore recende de sta pàgene",
 	"nimbus-recent-contributors-info": "Le crestiàne seguende onne condrebbuite recendemende a sta pàgene.",
 	"nimbus-signup": "Reggistrate",
-	"nimbus-welcome": "Bovègne $1"
+	"nimbus-welcome": "{{GENDER:$2|Bovègne}} $1"
 }
