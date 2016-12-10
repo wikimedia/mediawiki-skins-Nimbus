@@ -1,5 +1,9 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
 	"nimbus-desc": "Nimbus-drakt",
 	"nimbus-advertise": "Reklamer",
 	"nimbus-contribute": "Bidra",
@@ -15,5 +19,5 @@
 	"nimbus-recent-contributors": "Nylige bidrag til denne siden",
 	"nimbus-recent-contributors-info": "Følgende personer bidro nylig til denne siden.",
 	"nimbus-signup": "Registrer deg",
-	"nimbus-welcome": "Velkommen, $1"
+	"nimbus-welcome": "{{GENDER:$2|Velkommen}}, $1"
 }
