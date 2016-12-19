@@ -287,8 +287,6 @@ class NimbusTemplate extends BaseTemplate {
 	<div id="body-container">
 		<?php echo $this->actionBar(); echo "\n"; ?>
 		<div id="article">
-			<div id="mw-js-message" style="display:none;"></div>
-
 			<div id="article-body" class="mw-body">
 				<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div><?php } ?>
 				<div id="article-text" class="clearfix">
