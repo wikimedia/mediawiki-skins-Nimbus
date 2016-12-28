@@ -49,9 +49,6 @@ class SkinNimbus extends SkinTemplate {
 			'skins.monobook.styles',
 			'skins.nimbus'
 		) );
-
-		// IE-specific CSS
-		#$out->addStyle( 'Nimbus/nimbus/Nimbus_IE.css', 'screen', 'IE' );
 	}
 }
 
