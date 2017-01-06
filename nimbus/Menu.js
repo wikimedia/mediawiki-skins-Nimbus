@@ -336,19 +336,19 @@ $( function() {
 		}
 	} );
 
-	$( '#more-tab' ).bind( 'mouseover', function() {
+	$( '#more-tab' ).on( 'mouseover', function() {
 		NimbusSkin.show_actions( 'article-more-container', 'show' );
-	} ).bind( 'mouseout', function() {
+	} ).on( 'mouseout', function() {
 		NimbusSkin.delay_hide( 'article-more-container' );
 	} );
 
-	$( '#article-more-container' ).bind( 'mouseover', function() {
+	$( '#article-more-container' ).on( 'mouseover', function() {
 		clearTimeout( NimbusSkin._hide_timer );
-	} ).bind( 'mouseout', function() {
+	} ).on( 'mouseout', function() {
 		NimbusSkin.show_actions( 'article-more-container', 'hide' );
 	} );
 
-	$( '#sw-more-category' ).bind( 'click', function() {
+	$( '#sw-more-category' ).on( 'click', function() {
 		NimbusSkin.show_more_category( 'more-wikis-menu' );
 	} );
 } );
