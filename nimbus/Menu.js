@@ -5,6 +5,8 @@
  * @author Jack Phoenix <jack@countervandalism.net> - cleanup & removal of YUI dependency, etc.
  */
 /* global getElementsByClassName, window, document, setTimeout, clearTimeout */
+( function ( $ ) {
+
 var NimbusSkin = {
 	last_clicked: '',
 	m_timer: '',
@@ -313,7 +315,7 @@ $( function() {
 	} );
 
 	// Sub-menus...
-	$( 'div[id^="sub-menu_"]' ).each( function( idx, elem ) {
+	$( 'div[id^="sub-menu_"]' ).each( function() {
 		var id = $( this ).attr( 'id' );
 		NimbusSkin.submenu_array[id] = id.replace( /sub\-menu/gi, '' );
 
@@ -325,7 +327,7 @@ $( function() {
 	} );
 
 	// ...and their items
-	$( 'div[id^="sub-menu-item_"]' ).each( function( idx, elem ) {
+	$( 'div[id^="sub-menu-item_"]' ).each( function() {
 		var id = $( this ).attr( 'id' );
 		NimbusSkin.submenuitem_array[id] = id.replace( /sub\-menu\-item/gi, '' );
 
@@ -352,3 +354,5 @@ $( function() {
 		NimbusSkin.show_more_category( 'more-wikis-menu' );
 	} );
 } );
+
+}( jQuery ) );

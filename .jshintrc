@@ -18,9 +18,10 @@
 	// Legacy
 	"onevar": true,
 
-	/* Local */
-	"predef": [
-		"mediaWiki",
-		"jQuery"
-	]
+	"jquery": true,
+
+	"globals": {
+		"mediaWiki": false,
+		"Event": true
+	}
 }

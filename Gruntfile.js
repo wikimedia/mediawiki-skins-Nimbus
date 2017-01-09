@@ -1,14 +1,28 @@
 /*jshint node:true */
 module.exports = function ( grunt ) {
+	var conf = grunt.file.readJSON( 'skin.json' );
+	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
 	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 
 	grunt.initConfig( {
-		banana: {
-			all: 'i18n/'
-		},
-		jsonlint: {
+		jshint: {
+			options: {
+				jshintrc: true
+			},
 			all: [
+				'*.js',
+				'**/*.js',
+				'!node_modules/**'
+			]
+		},
+		banana: conf.MessagesDirs,
+		jsonlint: {
+			options: {
+				reporter: 'jshint'
+			},
+			all: [
+				'*.json',
 				'**/*.json',
 				'!node_modules/**',
 				'!vendor/**'
@@ -16,6 +30,6 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'test', [ 'jsonlint', 'banana' ] );
+	grunt.registerTask( 'test', [ 'jshint', 'jsonlint', 'banana' ] );
 	grunt.registerTask( 'default', 'test' );
 };
