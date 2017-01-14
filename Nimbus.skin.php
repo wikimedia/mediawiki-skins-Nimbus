@@ -124,7 +124,24 @@ class NimbusTemplate extends BaseTemplate {
 		$recent_changes_link = SpecialPage::getTitleFor( 'Recentchanges' );
 		$top_fans_link = SpecialPage::getTitleFor( 'TopUsers' );
 		$special_pages_link = SpecialPage::getTitleFor( 'Specialpages' );
-		$help_link = Title::newFromText( wfMessage( 'helppage' )->inContentLanguage()->text() );
+
+		// By default it's an (external) URL, hence not a valid Title.
+		// But because MediaWiki is by nature very customizable, someone
+		// might've changed it to point to a local page. Tricky!
+		// @see https://phabricator.wikimedia.org/T155319
+		$helpPage = $this->skin->msg( 'helppage' )->inContentLanguage()->plain();
+		if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $helpPage ) ) {
+			$help_link = Linker::makeExternalLink(
+				$helpPage,
+				$this->skin->msg( 'help' )->plain()
+			);
+		} else {
+			$help_link = Linker::linkKnown(
+				Title::newFromText( $helpPage ),
+				$this->skin->msg( 'help' )->plain()
+			);
+		}
+
 		$upload_file = SpecialPage::getTitleFor( 'Upload' );
 		$what_links_here = SpecialPage::getTitleFor( 'Whatlinkshere' );
 		$preferences_link = SpecialPage::getTitleFor( 'Preferences' );
@@ -228,8 +245,9 @@ class NimbusTemplate extends BaseTemplate {
 						) .
 						'<div class="cleared"></div>' . "\n";
 					}
+
+					echo $help_link;
 					?>
-					<a href="<?php echo htmlspecialchars( $help_link->getFullURL() ) ?>"><?php echo wfMessage( 'help' )->plain() ?></a>
 					<a href="<?php echo htmlspecialchars( $special_pages_link->getFullURL() ) ?>"><?php echo wfMessage( 'specialpages' )->plain() ?></a>
 					<div class="cleared"></div>
 				</div>
