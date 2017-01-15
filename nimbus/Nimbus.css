@@ -299,7 +299,6 @@ a.positive-button:visited, a.negative-button:visited {
 	text-decoration: none;
 }
 
-
 #article-tabs a:hover {
 	color: #3B4744;
 }
@@ -347,7 +346,6 @@ a.positive-button:visited, a.negative-button:visited {
 	line-height: 25px;
 	padding: 0px 10px;
 }
-
 
 .tab-off img, .tab-on img, .more-tab-on img, .more-tab-off img {
 	vertical-align: baseline;
@@ -688,145 +686,12 @@ input.search-button {
 }
 
 /* LISTPAGES */
-.listpages-left {
-	float: left;
-	border: 1px solid #DCDCDC;
-	width: 500px;
-}
-
-.listpages-link {
-	margin: 0px;
-	padding: 0px;
-}
-
-.listpages-item {
-	margin-top: 10px;
-}
-
-.listpages-item a {
-	text-decoration: underline;
-	font-weight: bold;
-}
-
-.listpages-image {
-	float: left;
-	margin-right: 10px;
-}
-
-.listpages-categories {
-	color: #78BA5D;
-	font-size: 10px;
-	font-weight: bold;
-}
-
-.listpages-categories a {
-	color: #78BA5D;
-	font-size: 10px;
-	text-decoration: none;
-	border-bottom: 1px dotted #78BA5D;
-}
-
-.listpages-date {
-	color: #888;
-	font-size: 10px;
-}
-
-.listpages-stats {
-	color: #666;
-	font-weight: bold;
-	font-size: 11px;
-}
-
-.listpages-stats img {
-	vertical-align: middle;
-	margin: -2px 1px 0px 2px;
-}
-
-.listpages-votebox {
-	margin: 0px 10px 3px 0px;
-	float: left;
-	text-align: center;
-	width: 25px;
-}
-
-.rating-total {
-	color: #666;
-	font-weight: bold;
-	font-size: 11px;
-	margin: 3px 0px 0px 0px;
-}
-
 .listpages-votebox-number {
-	background-color: #89C46F;
-	color: #FFFFFF;
-	margin: 0px 0px 2px 0px;
-	font-weight: bold;
 	padding: 3px 0px;
-}
-
-.listpages-votebox-text {
-	margin: -1px 0px 0px 0px;
-	font-size: 9px;
-	color: #777;
-	line-height: 9px;
 }
 
 .listpages-commentbox-number {
-	background-color: orange;
-	color: #FFFFFF;
-	font-weight: bold;
 	padding: 3px 0px;
-	margin: 0px 0px 2px;
-}
-
-.listpages-blurb {
-	margin: 0px 0px 2px 0px;
-}
-
-.listpages-blurb a {
-	font-size: 11px;
-	text-decoration: underline;
-}
-
-.listpages-nav-buttons {
-	margin: 10px 0px 0px 0px;
-}
-
-.listpages-blurb-size-small {
-	font-size: 11px;
-	line-height: 15px;
-}
-
-.listpages-blurb-size-medium {
-	font-size: 12px;
-	line-height: 16px;
-}
-
-.listpages-blurb-size-large {
-	font-size: 13px;
-	line-height: 17px;
-}
-
-.listpage-button {
-	background-color: #FAFAFA;
-	border: 1px solid #DCDCDC;
-	color: #376EA6;
-	font-size: 12px;
-	padding: 3px;
-	margin: 0px 3px 0px 0px;
-}
-
-.listpage-button-off {
-	background-color: #FAFAFA;
-	border: 1px solid #DCDCDC;
-	color: #797979;
-	font-size: 12px;
-	padding: 3px;
-	margin: 0px 3px 0px 0px;
-}
-
-.listpages-nav-buttons a {
-	margin: 0px 5px 0px 0px;
 }
 
 /** EXTENSIONS CSS FIXES **/
