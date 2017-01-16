@@ -263,13 +263,11 @@ var NimbusSkin = {
 		NimbusSkin.last_displayed = '';
 	},
 
-	show_more_category: function( el ) {
-		if ( NimbusSkin.show === 'false' ) {
-			document.getElementById( el ).style.display = 'block';
-			NimbusSkin.show = 'true';
+	show_more_category: function( el, toggle ) {
+		if ( toggle !== undefined ) {
+			$( '#' + el ).toggle( toggle );
 		} else {
-			document.getElementById( el ).style.display = 'none';
-			NimbusSkin.show = 'false';
+			$( '#' + el ).toggle();
 		}
 	},
 
@@ -350,8 +348,13 @@ $( function() {
 		NimbusSkin.show_actions( 'article-more-container', 'hide' );
 	} );
 
-	$( '#sw-more-category' ).on( 'click', function() {
+	$( '#sw-more-category' ).on( 'click', function( e ) {
 		NimbusSkin.show_more_category( 'more-wikis-menu' );
+		e.stopPropagation();
+	} );
+
+	$( 'body' ).on( 'click', function () {
+		NimbusSkin.show_more_category( 'more-wikis-menu', false );
 	} );
 } );
 
