@@ -71,8 +71,6 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return bool
 	 */
 	function showPageTitle() {
-		global $wgSupressPageTitle;
-
 		$nsArray = array();
 		// Suppress page title on NS_USER when SocialProfile ext. is installed
 		if ( class_exists( 'UserProfile' ) ) {
@@ -91,9 +89,7 @@ class NimbusTemplate extends BaseTemplate {
 
 		// Strangely enough this does *not* cause any errors even if $nsArray
 		// is empty...I was sure it'd cause one.
-		$nsCheck = !in_array( $this->skin->getTitle()->getNamespace(), $nsArray );
-
-		return (bool) ( !$wgSupressPageTitle && $nsCheck );
+		return (bool)!in_array( $this->skin->getTitle()->getNamespace(), $nsArray ) && ( bool ) ( !$wgSupressPageTitle && $nsCheck );
 	}
 
 	/**
@@ -104,7 +100,7 @@ class NimbusTemplate extends BaseTemplate {
 	 */
 	public function execute() {
 		global $wgContLang, $wgLogo, $wgOut, $wgStylePath;
-		global $wgLangToCentralMap, $wgSupressSubTitle, $wgSupressPageCategories;
+		global $wgLangToCentralMap;
 		global $wgUserLevels;
 
 		$this->skin = $this->data['skin'];
@@ -306,14 +302,14 @@ class NimbusTemplate extends BaseTemplate {
 				<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div><?php } ?>
 				<div id="article-text" class="clearfix">
 					<?php if ( $this->showPageTitle() ) { ?><h1 class="pagetitle"><?php $this->html( 'title' ) ?></h1><?php } ?>
-					<?php if ( !$wgSupressSubTitle ) { ?><p class='subtitle'><?php $this->msg( 'tagline' ) ?></p><?php } ?>
+					<p class='subtitle'><?php $this->msg( 'tagline' ) ?></p>
 					<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' ) ?></div>
 					<?php if ( $this->data['undelete'] ) { ?><div id="contentSub2"><?php $this->html( 'undelete' ) ?></div><?php } ?>
 					<?php if ( $this->data['newtalk'] ) { ?><div class="usermessage"><?php $this->html( 'newtalk' ) ?></div><?php } ?>
 					<!-- start content -->
 					<?php $this->html( 'bodytext' ) ?>
 					<?php $this->html( 'debughtml' ); ?>
-					<?php if ( $this->data['catlinks'] && !$wgSupressPageCategories ) { $this->html( 'catlinks' ); } ?>
+					<?php if ( $this->data['catlinks'] ) { $this->html( 'catlinks' ); } ?>
 					<!-- end content -->
 					<?php if ( $this->data['dataAfterContent'] ) { $this->html( 'dataAfterContent' ); } ?>
 				</div>
