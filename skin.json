@@ -1,6 +1,6 @@
 {
 	"name": "Nimbus",
-	"version": "3.2.2",
+	"version": "3.3",
 	"author": [
 		"Aaron Wright",
 		"David Pean",
@@ -39,6 +39,11 @@
 		"skins.nimbus.menu": {
 			"scripts": "nimbus/Menu.js",
 			"position": "bottom"
+		}
+	},
+	"ResourceModuleSkinStyles": {
+		"nimbus": {
+			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less"
 		}
 	},
 	"manifest_version": 1
