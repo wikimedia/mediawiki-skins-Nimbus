@@ -17,5 +17,8 @@
 	"nimbus-more-actions": "Още действия",
 	"nimbus-more-wikis": "Още уикита",
 	"nimbus-profile": "Профил",
-	"nimbus-signup": "Регистриране"
+	"nimbus-recent-contributors": "Неотдавнашни редактори на страницата",
+	"nimbus-recent-contributors-info": "Следните хора наскоро са допринасяли към страницата.",
+	"nimbus-signup": "Регистриране",
+	"nimbus-welcome": "{{GENDER:$2|Добре дошъл|Добре дошла}} $1"
 }
