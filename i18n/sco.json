@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"John Reid"
+			"John Reid",
+			"AmaryllisGardener"
 		]
 	},
 	"nimbus-desc": "Nimbus skin.",
@@ -19,5 +20,5 @@
 	"nimbus-recent-contributors": "Recynt contreebuters tae this page.",
 	"nimbus-recent-contributors-info": "The people ablo recyntlie contreebutit tae this page.",
 	"nimbus-signup": "Sign up",
-	"nimbus-welcome": "Walcome $1"
+	"nimbus-welcome": "{{GENDER:$2|Walcome}} $1"
 }
