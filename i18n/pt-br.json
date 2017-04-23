@@ -4,7 +4,8 @@
 			"Luckas",
 			"Luckas Blade",
 			"Cainamarques",
-			"HenriqueCrang"
+			"HenriqueCrang",
+			"Felipe L. Ewald"
 		]
 	},
 	"nimbus-desc": "Tema Nimbus",
@@ -14,10 +15,10 @@
 	"nimbus-featuredimage": "Imagem destacada",
 	"nimbus-featureduser": "Usuário destacado",
 	"nimbus-login": "Entrar",
-	"nimbus-logout": "Sair",
+	"nimbus-logout": "Sair?",
 	"nimbus-more-actions": "Mais ações",
 	"nimbus-more-wikis": "Mais wikis",
-	"nimbus-pages-can-be-edited": "Essa página pode ser editada.<br />\n\nEssa página está incompleta? Existe algo errado?<br />\n\n<b>Altere-a!</b>",
+	"nimbus-pages-can-be-edited": "Esta página pode ser editada.<br />\n\nEsta página está incompleta? Existe algo errado?<br />\n\n<b>Altere-a!</b>",
 	"nimbus-profile": "Perfil",
 	"nimbus-recent-contributors": "Colaboradores recentes nesta página",
 	"nimbus-recent-contributors-info": "As seguintes pessoas contribuíram recentemente para esta página.",
