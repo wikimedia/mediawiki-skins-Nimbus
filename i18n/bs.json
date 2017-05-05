@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Srdjan m"
+		]
+	},
+	"nimbus-advertise": "Reklamirajte se",
+	"nimbus-contribute": "Doprinesite",
+	"nimbus-didyouknow": "Jeste li znali",
+	"nimbus-featuredimage": "Izabrana slika",
+	"nimbus-featureduser": "Istaknuti korisnik",
+	"nimbus-login": "Prijava",
+	"nimbus-logout": "Da Vas odjavim?",
+	"nimbus-more-actions": "Više radnji",
+	"nimbus-more-wikis": "Više wikija",
+	"nimbus-pages-can-be-edited": "Ova stranica može se urediti.<br />\n\nJe li nedovršena? Je li nešto pogrešno?<br />\n\n<b>Izmijenite je!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-signup": "Registracija",
+	"nimbus-welcome": "{{GENDER:$2|Dobro došli}} $1"
+}
