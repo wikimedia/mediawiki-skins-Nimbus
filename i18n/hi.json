@@ -3,7 +3,8 @@
 		"authors": [
 			"Siddhartha Ghai",
 			"YmKavishwar",
-			"Rajat11"
+			"Rajat11",
+			"Sfic"
 		]
 	},
 	"nimbus-desc": "निम्बस त्वचा",
@@ -21,5 +22,5 @@
 	"nimbus-recent-contributors": "इस पृष्ठ के हाल के योगदानकर्ता",
 	"nimbus-recent-contributors-info": "निम्न व्यक्तियों ने हाल में इस पृष्ठ में योगदान दिया है।",
 	"nimbus-signup": "साइन अप करें",
-	"nimbus-welcome": "आपका स्वागत है, $1!"
+	"nimbus-welcome": "{{GENDER:$2|स्वागत है}} $1!"
 }
