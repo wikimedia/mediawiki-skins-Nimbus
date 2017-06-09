@@ -17,6 +17,7 @@
 	"nimbus-advertise-url": "{{notranslate}}",
 	"nimbus-contribute": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by the following message:\n* {{msg-mw|Nimbus-pages-can-be-edited}}\n{{Identical|Contribute}}",
 	"nimbus-didyouknow": "{{Identical|Did you know}}",
+	"nimbus-editthispage": "This is the \"edit\" link as used in the Nimbus skin.\n\n{{Identical|Edit this page}}",
 	"nimbus-featuredimage": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by a featured image at random.",
 	"nimbus-featureduser": "Used as HTML <code><nowiki><h2></nowiki></code> heading.\n\nThis heading is followed by a featured user at random.",
 	"nimbus-login": "{{Identical|Log in}}",

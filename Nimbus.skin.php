@@ -986,7 +986,7 @@ class NimbusTemplate extends BaseTemplate {
 							. wfMessage( 'nimbus-pages-can-be-edited' )->parse() .
 							Linker::link(
 								$title,
-								wfMessage( 'editthispage' )->plain(),
+								wfMessage( 'nimbus-editthispage' )->plain(),
 								array(
 									'class' => 'edit-action',
 									'title' => Linker::titleAttrib( 'ca-edit', 'withaccess' ),
