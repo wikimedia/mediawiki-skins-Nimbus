@@ -3,13 +3,15 @@
 		"authors": [
 			"Luckas",
 			"Luckas Blade",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Hamilton Abreu"
 		]
 	},
 	"nimbus-desc": "Tema Nimbus",
 	"nimbus-advertise": "Anuncie",
 	"nimbus-contribute": "Contribuir",
 	"nimbus-didyouknow": "Sabia que",
+	"nimbus-editthispage": "Editar esta página",
 	"nimbus-featuredimage": "Imagem destacada",
 	"nimbus-featureduser": "Utilizador destacado",
 	"nimbus-login": "Entrar",

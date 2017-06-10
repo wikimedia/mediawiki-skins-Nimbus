@@ -6,13 +6,15 @@
 			"Jack Phoenix <jack@countervandalism.net>",
 			"Urhixidur",
 			"Linedwell",
-			"Macofe"
+			"Macofe",
+			"Wladek92"
 		]
 	},
 	"nimbus-desc": "Habillage Nimbus pour MediaWiki",
 	"nimbus-advertise": "Faire de la publicité",
 	"nimbus-contribute": "Contribuer",
 	"nimbus-didyouknow": "Le saviez-vous ?",
+	"nimbus-editthispage": "Modifier cette page",
 	"nimbus-featuredimage": "Image en vedette",
 	"nimbus-featureduser": "Utilisateur en vedette",
 	"nimbus-login": "Connexion",

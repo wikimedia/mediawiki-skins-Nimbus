@@ -1,13 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Ontsed"
 		]
 	},
 	"nimbus-desc": "Tema Nimbus",
 	"nimbus-advertise": "Pubblicizza",
 	"nimbus-contribute": "Contribuisci",
 	"nimbus-didyouknow": "Lo sapevate",
+	"nimbus-editthispage": "Modifica questa pagina",
 	"nimbus-featuredimage": "Immagine in vetrina",
 	"nimbus-featureduser": "Utente in evidenza",
 	"nimbus-login": "Entra",

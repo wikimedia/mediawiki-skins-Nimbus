@@ -5,13 +5,15 @@
 			"Okras",
 			"Kaganer",
 			"Ләйсән",
-			"Putnik"
+			"Putnik",
+			"Facenapalm"
 		]
 	},
 	"nimbus-desc": "Тема оформления Nimbus",
 	"nimbus-advertise": "Реклама",
 	"nimbus-contribute": "Вклад",
 	"nimbus-didyouknow": "Знаете ли вы",
+	"nimbus-editthispage": "Править эту страницу",
 	"nimbus-featuredimage": "Рекомендуемое изображение",
 	"nimbus-featureduser": "Рекомендуемый участник",
 	"nimbus-login": "Войти",
