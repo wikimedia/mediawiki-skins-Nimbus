@@ -852,50 +852,6 @@ input.search-button {
 	color: #002BB8;
 }
 
-/** Import Video/Image **/
-.loading-message {
-	background-color: #F15A3A;
-	position: absolute;
-	z-index: 1000;
-	padding: 1px 3px;
-}
-
-.import-subtitle {
-	margin: 10px 0px 0px 0px;
-	font-size: 12px;
-	font-weight: normal;
-}
-
-.image-options, .video-options {
-	padding: 15px 0px;
-}
-
-.selected-photos, .selected-videos {
-	margin: 20px 0px;
-}
-
-.video-options-button, .image-options-button {
-	background-color: orange;
-	border: 1px solid orange;
-}
-
-.video-options-button a, .image-options-button a {
-	color: #FFF;
-	font-weight: normal;
-}
-
-.video-options-button a:hover, .image-options-button a:hover {
-	text-decoration: none;
-}
-
-.import-left-content {
-	width: 60%;
-}
-
-.import-search, .flickr-image-container, .youtube-video-container, .youtube-results {
-	width: 100%;
-}
-
 /** Top Lists **/
 .top-users {
 	margin: 15px 0px 0px !important;
