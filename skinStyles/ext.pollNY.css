@@ -1,0 +1,51 @@
+/** Polls **/
+.poll {
+	position: relative;
+}
+
+.poll-right {
+	padding-top: 8px;
+	position: relative;
+}
+
+.poll h1.pagetitle {
+	margin-bottom: 15px;
+}
+
+.create-poll-top h1 {
+	padding: 0px;
+	font-weight: bold;
+}
+
+.view-poll-top-links {
+	margin: 10px 0px 10px !important;
+}
+
+.view-poll-top-links a {
+	color: #002BB8;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.view-poll-text,
+.view-poll-user-name {
+	color: #002BB8;
+}
+
+.create-message h1,
+.create-poll-top h1,
+.create-poll-question-and-answer h1,
+.create-poll-image h1 {
+	border-bottom: none;
+	font-weight: bold;
+}
+
+.create-poll-top {
+	margin-top: 0;
+}
+
+.update-poll-left h1,
+.update-poll-right h1 {
+	border-bottom: none;
+	font-weight: bold;
+}
