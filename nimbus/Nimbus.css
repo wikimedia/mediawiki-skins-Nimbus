@@ -757,39 +757,17 @@ input.search-button {
 }
 
 /* Site Activity */
-.mp-friends-activity {
-	padding: 0px 0px 15px 0px;
-}
-
-.mp-friends-activity h2 {
-	letter-spacing: -1px;
-	color: #333;
-	font-size: 18px;
-	margin: 0px 0px 8px 0px !important;
-}
-
-.mp-activity-timestamp {
-	color: #999999;
-	font-size: 9px;
-	overflow: hidden;
-	margin: 0px 0px 0px 6px;
-}
-
 .mp-activity {
 	border-bottom: 1px solid #DCDCDC;
 	padding: 7px 0px;
 }
 
-.mp-activity-last {
-	padding: 7px 0px 0px 0px;
-}
-
-.mp-activity img, .mp-activity-bottom img {
+.mp-activity img {
 	vertical-align: middle;
 	margin: 0px 5px 0px 0px;
 }
 
-.mp-activity a, .mp-activity-bottom a {
+.mp-activity a {
 	text-decoration: none;
 }
 
