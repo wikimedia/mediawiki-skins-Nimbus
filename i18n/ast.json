@@ -8,6 +8,7 @@
 	"nimbus-advertise": "Anunciar",
 	"nimbus-contribute": "Contribuyir",
 	"nimbus-didyouknow": "¿Sabíes que...?",
+	"nimbus-editthispage": "Editar esta páxina",
 	"nimbus-featuredimage": "Imaxe destacada",
 	"nimbus-featureduser": "Usuariu destacáu",
 	"nimbus-login": "Entrar",
@@ -19,5 +20,5 @@
 	"nimbus-recent-contributors": "Collaboradores de recién nesta páxina",
 	"nimbus-recent-contributors-info": "Les siguientes persones collaboraron de recién nesta páxina.",
 	"nimbus-signup": "Date d'alta",
-	"nimbus-welcome": "Bienllegáu, $1"
+	"nimbus-welcome": "{{GENDER:$2|Bienveníu|Bienvenida}} $1"
 }
