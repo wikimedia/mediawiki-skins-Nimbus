@@ -89,7 +89,7 @@ class NimbusTemplate extends BaseTemplate {
 
 		// Strangely enough this does *not* cause any errors even if $nsArray
 		// is empty...I was sure it'd cause one.
-		return (bool)!in_array( $this->skin->getTitle()->getNamespace(), $nsArray ) && ( bool ) ( !$wgSupressPageTitle && $nsCheck );
+		return (bool)!in_array( $this->skin->getTitle()->getNamespace(), $nsArray );
 	}
 
 	/**
