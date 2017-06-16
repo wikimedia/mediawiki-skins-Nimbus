@@ -785,66 +785,25 @@ input.search-button {
 	background-color: #FFF;
 }
 
-/** Casual Game **/
-.poll-unit-title {
-	font-size: 12px;
-	line-height: 13px;
-	font-weight: bold;
-	color: #777;
-	margin: 0px 0px 8px 0px;
+/** Edit Profile **/
+.profile-tab-bar {
+	padding: 0px;
 }
 
-.poll-unit-choices a {
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 12px;
-	display: block;
+.profile-update-title {
+	padding: 0px;
 }
 
-.poll-unit-image {
-	margin: 0px 0px 8px 0px;
+.profile-tab-bar {
+	border-bottom: none;
 }
 
-.poll-unit-image img {
-	padding: 3px;
-	background-color: #FFF;
-	border: 1px solid #dcdcdc;
+.profile-tab {
+	border: none;
 }
 
-.poll-unit-choices input {
-	margin: 0px 5px 0px 0px;
-}
-
-.quiz-unit-image {
-	margin: 8px 0px 0px 0px;
-}
-
-.quiz-unit-image img {
-	padding: 3px;
-	background-color: #FFF;
-	border: 1px solid #DCDCDC;
-}
-
-.quiz-unit-title a {
-	font-size: 13px;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.pg-unit-title {
-	font-size: 12px;
-	line-height: 13px;
-	font-weight: bold;
-	color: #777;
-	margin: 0px 0px 8px 0px;
-}
-
-.pg-unit-pictures img {
-	float: left;
-	background-color: #FFF;
-	border: 1px solid #dcdcdc;
-	padding: 3px;
-	margin: 0px 3px 0px 0px;
+.profile-tab-on {
+	border: none;
 }
 
 /** BOTTOM NAV **/
