@@ -1,0 +1,37 @@
+/** User Page **/
+#points-level {
+	margin: 0px;
+}
+
+#profile-toggle-button {
+	top: -29px;
+}
+
+#profile-toggle-button a {
+	text-decoration: none;
+}
+
+#profile-toggle-button a:hover {
+	color: #c07c00;
+}
+
+/** Edit Profile **/
+.profile-tab-bar {
+	padding: 0px;
+}
+
+.profile-update-title {
+	padding: 0px;
+}
+
+.profile-tab-bar {
+	border-bottom: none;
+}
+
+.profile-tab {
+	border: none;
+}
+
+.profile-tab-on {
+	border: none;
+}

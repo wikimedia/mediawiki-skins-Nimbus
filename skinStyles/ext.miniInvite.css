@@ -1,0 +1,22 @@
+/** Invite Your Friends **/
+.invite-email-title {
+	color: #333333;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0px 0px 5px;
+}
+
+.invite-email-submessage {
+	color: #666;
+	font-size: 12px;
+}
+
+.email-field {
+	color: #666;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.email-field input {
+	width: 300px;
+}

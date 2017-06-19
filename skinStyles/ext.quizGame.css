@@ -1,0 +1,32 @@
+/** Quiz **/
+.quiz-leaderboard-top-links {
+	margin: 10px 0px !important;
+}
+
+.quiz-leaderboard-nav {
+	margin: 15px 0px 0px !important;
+}
+
+.view-quizzes-top-links {
+	margin: 10px 0px 10px !important;
+}
+
+.view-quizzes-top-links a {
+	color: #002BB8;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.view-quizzes-text,
+.view-quizzes-user-name {
+	color: #002BB8;
+}
+
+.quizgame-create-form h1 {
+	border-bottom: none;
+	font-weight: bold;
+}
+
+.create-message {
+	margin-top: 0px;
+}

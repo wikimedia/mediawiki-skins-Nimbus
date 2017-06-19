@@ -43,6 +43,16 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"nimbus": {
+			"+ext.blogPage": "skinStyles/ext.blogPage.css",
+			"+ext.blogPage.articlesHome": "skinStyles/ext.blogPage.articlesHome.css",
+			"+ext.blogPage.create.css": "skinStyles/ext.blogPage.create.css",
+			"+ext.miniInvite.css": "skinStyles/ext.miniInvite.css",
+			"+ext.pollNY.css": "skinStyles/ext.pollNY.css",
+			"+ext.quizGame.css": "skinStyles/ext.quizGame.css",
+			"+ext.socialprofile.userboard.boardblast.css": "skinStyles/ext.socialprofile.userboard.boardblast.css",
+			"+ext.socialprofile.usergifts.css": "skinStyles/ext.socialprofile.usergifts.css",
+			"+ext.socialprofile.userprofile.css": "skinStyles/ext.socialprofile.userprofile.css",
+			"+ext.socialprofile.userrelationship.css": "skinStyles/ext.socialprofile.userrelationship.css",
 			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less"
 		}
 	},

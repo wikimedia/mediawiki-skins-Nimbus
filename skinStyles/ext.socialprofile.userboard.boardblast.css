@@ -1,0 +1,5 @@
+/** Board **/
+#blast-friends-list div.blast-friend-unselected,
+#blast-friends-list div.blast-foe-unselected {
+	color: #002BB8;
+}

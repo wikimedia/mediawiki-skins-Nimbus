@@ -685,6 +685,11 @@ input.search-button {
 	padding: 0px 0px 10px 0px;
 }
 
+/** Comment Ignore List **/
+.comment_blocked_user {
+	margin: 10px 0px 0px 0px;
+}
+
 /* LISTPAGES */
 .listpages-votebox-number {
 	padding: 3px 0px;
@@ -696,25 +701,6 @@ input.search-button {
 
 /** EXTENSIONS CSS FIXES **/
 
-/** Polls **/
-.poll {
-	position: relative;
-}
-
-.poll-right {
-	padding-top: 8px;
-	position: relative;
-}
-
-.poll h1.pagetitle {
-	margin-bottom: 15px;
-}
-
-.create-poll-top h1 {
-	padding: 0px;
-	font-weight: bold;
-}
-
 /** Picture Game **/
 .pick-game-welcome-message h1,
 .uploadLeft h1,
@@ -723,8 +709,6 @@ input.search-button {
 .edit-image-one h1,
 .credit-box-edit h1,
 .edit-image-text h2,
-.update-poll-left h1,
-.update-poll-right h1,
 .credit-box h1 {
 	border-bottom: none;
 	font-weight: bold;
@@ -744,112 +728,17 @@ input.search-button {
 	margin: 0px;
 }
 
-/** Quiz **/
-.quiz-leaderboard-top-links {
-	margin: 10px 0px !important;
-}
-
-.quiz-leaderboard-nav {
-	margin: 15px 0px 0px !important;
-}
-
-.view-quizzes-top-links, .view-poll-top-links {
-	margin: 10px 0px 10px !important;
-}
-
-.view-quizzes-top-links a, .view-poll-top-links a {
-	color: #002BB8;
-	font-weight: bold;
-	text-decoration: none;
-}
-
-.view-quizzes-text,
-.view-quizzes-user-name,
-.view-poll-text,
-.view-poll-user-name {
-	color: #002BB8;
-}
-
-.quizgame-create-form h1,
-.create-message h1,
-.create-poll-top h1,
-.create-poll-question-and-answer h1,
-.create-poll-image h1 {
-	border-bottom: none;
-	font-weight: bold;
-}
-
-.create-message, .create-poll-top {
-	margin-top: 0px;
-}
-
 /** User Page **/
-#points-level {
-	margin: 0px;
-}
-
-.no-info-container {
+.no-info-container { /* shared between UserBoard & UserProfile */
 	background-color: #EFF3F0;
 }
 
-.relationship-action {
-	margin: 15px 0px;
-}
-
-.back-links {
+.back-links { /* used by practically all SocialProfile components */
 	padding: 15px 0px 0px 0px;
 }
 
-#honorific-level {
+#honorific-level { /* UserProfile & UserWelcome */
 	margin: 0px 0px 0px 10px;
-}
-
-#profile-toggle-button {
-	top: -29px;
-}
-
-#profile-toggle-button a {
-	text-decoration: none;
-}
-
-#profile-toggle-button a:hover {
-	color: #C07C00;
-}
-
-/** Gifts **/
-.g-give-all {
-	width: 27%;
-}
-
-.g-blue {
-	color: #002BB8 !important;
-}
-
-.g-describe {
-	padding-top: 15px;
-}
-
-/** Blog Page **/
-#blog-page-container h2 {
-	border-bottom: none;
-}
-
-#blog-page-middle h1.page-title {
-	margin: 0px !important;
-}
-
-#blog-page-middle #categories {
-	background-color: #F9F9F9;
-	border: 1px solid #AAAAAA;
-	clear: both;
-	margin-top: 1em;
-	padding: 5px;
-}
-
-/** Board **/
-#blast-friends-list div.blast-friend-unselected,
-#blast-friends-list div.blast-foe-unselected {
-	color: #002BB8;
 }
 
 /** Top Lists **/
@@ -980,27 +869,6 @@ input.search-button {
 	margin: 0px 3px 0px 0px;
 }
 
-/** Edit Profile **/
-.profile-tab-bar {
-	padding: 0px;
-}
-
-.profile-update-title {
-	padding: 0px;
-}
-
-.profile-tab-bar {
-	border-bottom: none;
-}
-
-.profile-tab {
-	border: none;
-}
-
-.profile-tab-on {
-	border: none;
-}
-
 /** BOTTOM NAV **/
 .bottom-left-nav {
 	margin: 15px 0px 0px 0px;
@@ -1054,42 +922,6 @@ input.search-button {
 	margin: 0px;
 }
 
-/** Invite Your Friends **/
-.invite-email-title {
-	color: #333333;
-	font-size: 14px;
-	font-weight: bold;
-	margin: 0px 0px 5px;
-}
-
-.invite-email-submessage {
-	color: #666;
-	font-size: 12px;
-}
-
-.email-field {
-	color: #666;
-	font-size: 12px;
-	font-weight: bold;
-}
-
-.email-field input {
-	width: 300px;
-}
-
-/** Comment Ignore List **/
-.comment_blocked_user {
-	margin: 10px 0px 0px 0px;
-}
-
-/** Articles Home **/
-.logged-in-articles h2, .side-articles h2 {
-	font-size: 1.5em;
-	letter-spacing: 0px;
-	color: #000;
-	font-weight: normal;
-}
-
 /** User Activity */
 .user-home-feed {
 	padding-top: 15px;
@@ -1102,8 +934,4 @@ input.search-button {
 
 .email-new-article-message {
 	padding: 15px 0px 0px 0px;
-}
-
-textarea#pageBody {
-	width: 80%;
 }

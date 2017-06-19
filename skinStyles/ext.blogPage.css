@@ -1,0 +1,16 @@
+/** Blog Page **/
+#blog-page-container h2 {
+	border-bottom: none;
+}
+
+#blog-page-middle h1.page-title {
+	margin: 0px !important;
+}
+
+#blog-page-middle #categories {
+	background-color: #f9f9f9;
+	border: 1px solid #aaa;
+	clear: both;
+	margin-top: 1em;
+	padding: 5px;
+}
