@@ -15,7 +15,7 @@ body {
  * unwanted for this skin, but we get it as a "nice" side-effect of loading
  * MonoBook's main RL module...
  */
-div.mw-body {
+div.mw-body-content {
 	border: 0;
 	margin: 0;
 	padding: 0;
