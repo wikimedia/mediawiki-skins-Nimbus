@@ -2,13 +2,15 @@
 	"@metadata": {
 		"authors": [
 			"Khaled",
-			"بدارين"
+			"بدارين",
+			"ديفيد"
 		]
 	},
 	"nimbus-desc": "مظهر نيمبوز",
 	"nimbus-advertise": "أعلان",
 	"nimbus-contribute": "المساهمة",
 	"nimbus-didyouknow": "هل تعلم",
+	"nimbus-editthispage": "عدل هذه الصفحة",
 	"nimbus-featuredimage": "صورة مميزة",
 	"nimbus-featureduser": "مستخدم مميز",
 	"nimbus-login": "تسجيل الدخول",
