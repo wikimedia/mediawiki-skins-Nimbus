@@ -15,10 +15,10 @@
 	"nimbus-logout": "Kaluar log?",
 	"nimbus-more-actions": "Peta lianna",
 	"nimbus-more-wikis": "Wiki lianna",
-	"nimbus-pages-can-be-edited": "Ieu kaca bisa diédit.<br/>\nEusi ieu kaca tacan lengkep? Aya anu salah?<br/>\n<b>Mangga édit!</b>",
+	"nimbus-pages-can-be-edited": "Ieu kaca bisa diédit.<br/>\nEusi ieu kaca can lengkep? Aya anu salah?<br />\n<b>Pék édit!</b>",
 	"nimbus-profile": "Profil",
 	"nimbus-recent-contributors": "Anu anyar ngédit ieu kaca",
 	"nimbus-recent-contributors-info": "Di handap ieu béréndélan anu anyar ngédit ieu kaca.",
 	"nimbus-signup": "Daptar",
-	"nimbus-welcome": "Bagéa, $1"
+	"nimbus-welcome": "{{GENDER:$2|Wilujeng sumping}} $1"
 }

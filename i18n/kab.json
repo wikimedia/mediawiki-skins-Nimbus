@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Belkacem77"
+		]
+	},
+	"nimbus-desc": "Acebbeḥ Nimbus",
+	"nimbus-advertise": "Eg adellel",
+	"nimbus-contribute": "Ttekki",
+	"nimbus-didyouknow": "Tezriḍ?",
+	"nimbus-editthispage": "Ẓreg asebter-agi",
+	"nimbus-featuredimage": "Tugna s yitran",
+	"nimbus-featureduser": "Aseqdac s yitran",
+	"nimbus-login": "Qqen",
+	"nimbus-logout": "Ffeɣ?",
+	"nimbus-more-actions": "Ugar n tigawin",
+	"nimbus-more-wikis": "Ugar n iwikiyen",
+	"nimbus-pages-can-be-edited": "Asebter-agi yezmer ad yettwaẓreg.<br />\n\nAsebter-agi d ummid? Llant kra n tuccḍiwin?<br />\n\n<b>Beddel-it!</b>",
+	"nimbus-profile": "Amaɣnu",
+	"nimbus-recent-contributors": "Ittekkiyen imaynuten ar usebter-agi",
+	"nimbus-recent-contributors-info": "Imdanen-a ttekkan tagara-agi deg usebter-a.",
+	"nimbus-signup": "Jerred",
+	"nimbus-welcome": "{{GENDER:$2|Anṣuf}} $1"
+}
