@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joedalton"
+		]
+	},
+	"nimbus-desc": "Nimbus-tema",
+	"nimbus-advertise": "Annoncer",
+	"nimbus-contribute": "Bidrage",
+	"nimbus-didyouknow": "Vidste du?",
+	"nimbus-editthispage": "Rediger denne side",
+	"nimbus-featuredimage": "Anbefalet billede",
+	"nimbus-featureduser": "Anbefalet bruger",
+	"nimbus-login": "Log på",
+	"nimbus-logout": "Log af?",
+	"nimbus-more-actions": "Flere handlinger",
+	"nimbus-more-wikis": "Flere wikier",
+	"nimbus-pages-can-be-edited": "Denne side kan redigeres.<br />\n\nEr denne side ufuldstændig? Er der noget galt?<br />\n\n<b>Ret det!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Seneste bidrag til denne side",
+	"nimbus-recent-contributors-info": "Følgende personer bidrog for nylig til denne side.",
+	"nimbus-signup": "Tilmeld dig",
+	"nimbus-welcome": "{{GENDER:$2|Velkommen}} $1"
+}
