@@ -3,13 +3,15 @@
 		"authors": [
 			"පසිඳු කාවින්ද",
 			"DCLXVI",
-			"StanProg"
+			"StanProg",
+			"ShockD"
 		]
 	},
 	"nimbus-desc": "Облик „Нимбус“",
 	"nimbus-advertise": "Реклама",
 	"nimbus-contribute": "Добавете своя принос",
 	"nimbus-didyouknow": "Знаете ли, че?",
+	"nimbus-editthispage": "Редактиране на страницата",
 	"nimbus-featuredimage": "Избрана картинка",
 	"nimbus-featureduser": "Избран потребител",
 	"nimbus-login": "Влизане",
