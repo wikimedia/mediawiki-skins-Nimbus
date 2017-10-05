@@ -143,6 +143,8 @@ class NimbusTemplate extends BaseTemplate {
 		$preferences_link = SpecialPage::getTitleFor( 'Preferences' );
 		$watchlist_link = SpecialPage::getTitleFor( 'Watchlist' );
 
+		$more_wikis = $this->buildMoreWikis();
+
 		$this->html( 'headelement' );
 ?><div id="container">
 	<div id="header" class="noprint">
@@ -152,13 +154,12 @@ class NimbusTemplate extends BaseTemplate {
 			</a>
 			<span id="sw-category">ShoutWiki</span>
 		</div>
+		<?php if ( $more_wikis ) { ?>
 		<div id="sw-more-category">
 			<div class="positive-button"><span><?php echo wfMessage( 'nimbus-more-wikis' )->plain() ?></span></div>
 		</div>
 		<div id="more-wikis-menu" style="display:none;">
 		<?php
-		$more_wikis = $this->buildMoreWikis();
-
 		$x = 1;
 		foreach ( $more_wikis as $link ) {
 			$ourClass = '';
@@ -174,6 +175,7 @@ class NimbusTemplate extends BaseTemplate {
 		}
 		?>
 		</div><!-- #more-wikis-menu -->
+		<?php } // if $more_wikis ?>
 		<div id="wiki-login">
 <?php
 	if ( $user->isLoggedIn() ) {
