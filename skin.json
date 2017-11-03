@@ -1,6 +1,6 @@
 {
 	"name": "Nimbus",
-	"version": "3.5.0",
+	"version": "3.5.1",
 	"author": [
 		"Aaron Wright",
 		"David Pean",
@@ -20,8 +20,8 @@
 		]
 	},
 	"AutoloadClasses": {
-		"NimbusTemplate": "Nimbus.skin.php",
-		"SkinNimbus": "Nimbus.skin.php"
+		"NimbusTemplate": "includes/NimbusTemplate.php",
+		"SkinNimbus": "includes/SkinNimbus.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
