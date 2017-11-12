@@ -2,7 +2,7 @@
  * Menu navigation and other JavaScript functions used by the Nimbus skin.
  *
  * @file
- * @author Jack Phoenix <jack@countervandalism.net> - cleanup & removal of YUI dependency, etc.
+ * @author Jack Phoenix - cleanup & removal of YUI dependency, etc.
  */
 /* global getElementsByClassName, window, document, setTimeout, clearTimeout */
 ( function ( $ ) {
