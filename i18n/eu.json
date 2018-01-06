@@ -4,13 +4,21 @@
 			"පසිඳු කාවින්ද",
 			"Subi",
 			"Sator",
-			"Gorkaazk"
+			"Gorkaazk",
+			"Mikel Ibaiba"
 		]
 	},
+	"nimbus-advertise": "Iragarri",
+	"nimbus-contribute": "Lagundu",
 	"nimbus-didyouknow": "Ba al zenekien",
+	"nimbus-editthispage": "Orrialde hau aldatu",
+	"nimbus-featuredimage": "Nabarmendutako irudia",
+	"nimbus-featureduser": "Nabarmendutako erabiltzailea",
 	"nimbus-login": "Hasi saioa",
+	"nimbus-logout": "Saioa itxi?",
 	"nimbus-more-actions": "Ekintza gehiago",
 	"nimbus-more-wikis": "Wiki gehiago",
 	"nimbus-profile": "Profila",
+	"nimbus-signup": "Eman izena",
 	"nimbus-welcome": "{{GENDER:$2|Ongi etorri}} $1"
 }

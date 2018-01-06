@@ -7,7 +7,8 @@
 			"Urhixidur",
 			"Linedwell",
 			"Macofe",
-			"Wladek92"
+			"Wladek92",
+			"Kenjiraw"
 		]
 	},
 	"nimbus-desc": "Habillage Nimbus pour MediaWiki",
@@ -20,8 +21,8 @@
 	"nimbus-login": "Connexion",
 	"nimbus-logout": "Se déconnecter?",
 	"nimbus-more-actions": "Plus d'actions",
-	"nimbus-more-wikis": "Plus de wikis",
-	"nimbus-pages-can-be-edited": "Cette page peuvent être modifiées.<br />\nCette page est-elle incomplète ? Y a-t-il autre chose qui ne va pas ?<br />\n<b>Changez-le !</b>",
+	"nimbus-more-wikis": "Davantage de wikis",
+	"nimbus-pages-can-be-edited": "Cette page peut être modifiée.<br />\n\nCette page est-elle incomplète ? Y a-t-il quelque chose qui ne va pas ?<br />\n\n<b>Changez-la !</b>",
 	"nimbus-profile": "Profil",
 	"nimbus-recent-contributors": "Contributeurs récents à cette page",
 	"nimbus-recent-contributors-info": "Les personnes suivantes ont récemment contribué à cette page.",
