@@ -5,13 +5,15 @@
 			"Simon Shek",
 			"Cwlin0416",
 			"Liuxinyu970226",
-			"LNDDYL"
+			"LNDDYL",
+			"Kly"
 		]
 	},
 	"nimbus-desc": "Nimbus 外觀",
 	"nimbus-advertise": "廣告",
 	"nimbus-contribute": "貢獻",
 	"nimbus-didyouknow": "您知道嗎",
+	"nimbus-editthispage": "編輯此頁面",
 	"nimbus-featuredimage": "精選圖片",
 	"nimbus-featureduser": "使用者專欄",
 	"nimbus-login": "登入",
