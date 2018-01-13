@@ -911,7 +911,7 @@ class NimbusTemplate extends BaseTemplate {
 			( $pageTitleId != $main_page->getArticleID() )
 		)
 		{
-			$key = wfMemcKey( 'recenteditors', 'list', $pageTitleId );
+			$key = $wgMemc->makeKey( 'recenteditors', 'list', $pageTitleId );
 			$data = $wgMemc->get( $key );
 			$editors = array();
 			if ( !$data ) {
