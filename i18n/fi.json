@@ -4,13 +4,15 @@
 			"Linnea",
 			"SuperPete",
 			"01miki10",
-			"Jack Phoenix"
+			"Jack Phoenix",
+			"Pyscowicz"
 		]
 	},
 	"nimbus-desc": "Nimbus-ulkoasu",
 	"nimbus-advertise": "Mainosta",
 	"nimbus-contribute": "Muokkaa",
 	"nimbus-didyouknow": "Tiesitkö, että...",
+	"nimbus-editthispage": "Muokkaa tätä sivua",
 	"nimbus-featuredimage": "Suositeltu kuva",
 	"nimbus-featureduser": "Suositeltu käyttäjä",
 	"nimbus-login": "Kirjaudu sisään",
