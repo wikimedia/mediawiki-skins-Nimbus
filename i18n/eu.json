@@ -8,6 +8,7 @@
 			"Mikel Ibaiba"
 		]
 	},
+	"nimbus-desc": "Nimbus azala",
 	"nimbus-advertise": "Iragarri",
 	"nimbus-contribute": "Lagundu",
 	"nimbus-didyouknow": "Ba al zenekien",
@@ -19,6 +20,8 @@
 	"nimbus-more-actions": "Ekintza gehiago",
 	"nimbus-more-wikis": "Wiki gehiago",
 	"nimbus-profile": "Profila",
+	"nimbus-recent-contributors": "Orri honetako azken laguntzaileak",
+	"nimbus-recent-contributors-info": "Orrialdera azkenaldian lagundu duten pertsonak.",
 	"nimbus-signup": "Eman izena",
 	"nimbus-welcome": "{{GENDER:$2|Ongi etorri}} $1"
 }
