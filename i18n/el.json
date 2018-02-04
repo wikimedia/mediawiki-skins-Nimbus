@@ -3,7 +3,8 @@
 		"authors": [
 			"Glavkos",
 			"ZaDiak",
-			"Protnet"
+			"Protnet",
+			"Nikosgranturismogt"
 		]
 	},
 	"nimbus-advertise": "Διαφημιστείτε",
@@ -13,7 +14,9 @@
 	"nimbus-featureduser": "Προτεινόμενος χρήστης",
 	"nimbus-login": "Είσοδος",
 	"nimbus-logout": "Αποσύνδεση;",
+	"nimbus-more-actions": "Περισσότερες ενέργειες",
 	"nimbus-more-wikis": "Περισσότερα wiki",
+	"nimbus-profile": "Προφίλ",
 	"nimbus-signup": "Εγγραφή",
-	"nimbus-welcome": "Καλώς όρισες $1"
+	"nimbus-welcome": "{{GENDER:$2|Καλωσόρισες}} $1"
 }
