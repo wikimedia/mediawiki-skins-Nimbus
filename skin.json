@@ -33,12 +33,10 @@
 				"nimbus/Nimbus.css": {
 					"media": "screen"
 				}
-			},
-			"position": "top"
+			}
 		},
 		"skins.nimbus.menu": {
-			"scripts": "nimbus/Menu.js",
-			"position": "bottom"
+			"scripts": "nimbus/Menu.js"
 		}
 	},
 	"ResourceModuleSkinStyles": {
