@@ -7,6 +7,7 @@
 	"nimbus-advertise": "ផ្សាយពាណិជ្ជកម្ម",
 	"nimbus-contribute": "រួមចំណែក",
 	"nimbus-didyouknow": "តើអ្នកដឹងទេ",
+	"nimbus-editthispage": "កែប្រែទំព័រនេះ",
 	"nimbus-featuredimage": "រូបភាពគួរកត់សម្គាល់",
 	"nimbus-featureduser": "អ្នកប្រើប្រាស់គួរកត់សម្គាល់",
 	"nimbus-login": "កត់ឈ្មោះចូល",
@@ -18,5 +19,5 @@
 	"nimbus-recent-contributors": "អ្នករូមចំណែកលើទំព័រនេះនាពេលថ្មីៗនេះ",
 	"nimbus-recent-contributors-info": "បុគ្គលដូចខាងក្រោមបានរួមចំណែកលើទំព័រនេះនាពេលថ្មីៗនេះ។",
 	"nimbus-signup": "ចុះ​ឈ្មោះ",
-	"nimbus-welcome": "សូមស្វាគមន៍ $1"
+	"nimbus-welcome": "{{GENDER:$2|សូមស្វាគមន៍}} $1"
 }
