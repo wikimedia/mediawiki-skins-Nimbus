@@ -1,10 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Milicevic01"
+			"Milicevic01",
+			"Zoranzoki21"
 		]
 	},
+	"nimbus-desc": "Tema Nimbus",
+	"nimbus-advertise": "Reklamirajte se",
+	"nimbus-contribute": "Doprinesite",
+	"nimbus-didyouknow": "Da li ste znali",
+	"nimbus-editthispage": "Uredi ovu stranicu",
+	"nimbus-featuredimage": "Izabrana slika",
+	"nimbus-featureduser": "Istaknuti korisnik",
+	"nimbus-login": "Prijavi me",
+	"nimbus-logout": "Da Vas odjavim?",
+	"nimbus-more-actions": "Više radnji",
 	"nimbus-more-wikis": "Više vikija",
 	"nimbus-pages-can-be-edited": "Ova stranica se može urediti.<br />\nDa li je ova stranica nedovršena? Da li je nešto pogrešno?<br />\n<b>Promeni je!</b>",
-	"nimbus-profile": "Profil"
+	"nimbus-profile": "Profil",
+	"nimbus-signup": "Otvori nalog",
+	"nimbus-welcome": "{{GENDER:$2|Dobro došli}} $1!"
 }
