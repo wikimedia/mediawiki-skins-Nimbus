@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Pippinu",
-			"Sarvaturi"
+			"Sarvaturi",
+			"S4b1nuz E.656"
 		]
 	},
 	"nimbus-desc": "La peddi Nimbus",
@@ -20,5 +21,5 @@
 	"nimbus-recent-contributors": "Cuntribbutura ricenti a sta pàggina",
 	"nimbus-recent-contributors-info": "Sti genti cuntribbueru a sta pàggina di ricenti.",
 	"nimbus-signup": "Scrìviti",
-	"nimbus-welcome": "Bimminutu, $1"
+	"nimbus-welcome": "{{GENDER:$1|Bimminutu|Bimminuta|Bimminutu/a}} $1"
 }

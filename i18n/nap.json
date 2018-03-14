@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"C.R."
+			"C.R.",
+			"S4b1nuz E.656"
 		]
 	},
 	"nimbus-desc": "Skin Nimbus",
@@ -19,5 +20,5 @@
 	"nimbus-recent-contributors": "Cuntribbutore 'e mò a sta paggena",
 	"nimbus-recent-contributors-info": "'E ccrestiane seguente hanno fatto cocche cuntribbuto mò mò a sta paggena.",
 	"nimbus-signup": "Riggistrateve",
-	"nimbus-welcome": "Bemmenuto, $1!"
+	"nimbus-welcome": "{{GENDER:$1|Bemmenuto|Bemmenuta}} $1"
 }
