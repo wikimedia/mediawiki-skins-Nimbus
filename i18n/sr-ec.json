@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Milicevic01",
-			"Acamicamacaraca"
+			"Acamicamacaraca",
+			"BadDog"
 		]
 	},
 	"nimbus-desc": "Тема Nimbus",
@@ -18,6 +19,8 @@
 	"nimbus-more-wikis": "Више викија",
 	"nimbus-pages-can-be-edited": "Ова страница се може уредити.<br />\nДа ли је ова страница недовршена? Да ли је нешто погрешно?<br />\n<b>Промени је!</b>",
 	"nimbus-profile": "Профил",
+	"nimbus-recent-contributors": "Скорашњи доприносиоци на овој страници",
+	"nimbus-recent-contributors-info": "Следеће особе су недавно доприносиле на овој страници.",
 	"nimbus-signup": "Отвори налог",
 	"nimbus-welcome": "{{GENDER:$2|Добро дошли}} $1!"
 }
