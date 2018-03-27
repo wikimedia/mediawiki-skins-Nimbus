@@ -6,7 +6,7 @@
  */
 class SkinNimbus extends SkinTemplate {
 	public $skinname = 'nimbus', $stylename = 'nimbus',
-		$template = 'NimbusTemplate', $useHeadElement = true;
+		$template = 'NimbusTemplate';
 
 	/**
 	 * Load the JavaScript required by the menu and whatnot.
