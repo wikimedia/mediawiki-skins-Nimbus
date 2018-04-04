@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ans"
+			"Ans",
+			"Horus"
 		]
 	},
-	"nimbus-logout": "ออกจากระบบ?"
+	"nimbus-logout": "ลงชื่อออก?"
 }
