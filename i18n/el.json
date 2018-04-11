@@ -10,6 +10,7 @@
 	"nimbus-advertise": "Διαφημιστείτε",
 	"nimbus-contribute": "Συμβάλλετε",
 	"nimbus-didyouknow": "Γνωρίζατε ότι",
+	"nimbus-editthispage": "Επεξεργαστείτε αυτό το λήμμα",
 	"nimbus-featuredimage": "Προτεινόμενη εικόνα",
 	"nimbus-featureduser": "Προτεινόμενος χρήστης",
 	"nimbus-login": "Είσοδος",
@@ -17,6 +18,7 @@
 	"nimbus-more-actions": "Περισσότερες ενέργειες",
 	"nimbus-more-wikis": "Περισσότερα wiki",
 	"nimbus-profile": "Προφίλ",
+	"nimbus-recent-contributors": "Πρόσφατες συνεισφορές σε αυτή τη σελίδα",
 	"nimbus-signup": "Εγγραφή",
 	"nimbus-welcome": "{{GENDER:$2|Καλωσόρισες}} $1"
 }
