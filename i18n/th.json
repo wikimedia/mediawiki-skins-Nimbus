@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Ans",
-			"Horus"
+			"Horus",
+			"Aefgh39622"
 		]
 	},
-	"nimbus-logout": "ลงชื่อออก?"
+	"nimbus-logout": "ออกจากระบบ?"
 }
