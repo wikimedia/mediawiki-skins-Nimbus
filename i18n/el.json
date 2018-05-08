@@ -7,6 +7,7 @@
 			"Nikosgranturismogt"
 		]
 	},
+	"nimbus-desc": "Θέμα Nimbus",
 	"nimbus-advertise": "Διαφημιστείτε",
 	"nimbus-contribute": "Συμβάλλετε",
 	"nimbus-didyouknow": "Γνωρίζατε ότι",
@@ -19,6 +20,7 @@
 	"nimbus-more-wikis": "Περισσότερα wiki",
 	"nimbus-profile": "Προφίλ",
 	"nimbus-recent-contributors": "Πρόσφατες συνεισφορές σε αυτή τη σελίδα",
+	"nimbus-recent-contributors-info": "Τα ακόλουθα άτομα έχουν συνεισφέρει πρόσφατα σε αυτή τη σελίδα.",
 	"nimbus-signup": "Εγγραφή",
 	"nimbus-welcome": "{{GENDER:$2|Καλωσόρισες}} $1"
 }
