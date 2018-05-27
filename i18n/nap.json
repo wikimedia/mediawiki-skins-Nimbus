@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"C.R.",
-			"S4b1nuz E.656"
+			"S4b1nuz E.656",
+			"Ruthven"
 		]
 	},
 	"nimbus-desc": "Skin Nimbus",
@@ -18,7 +19,7 @@
 	"nimbus-pages-can-be-edited": "Sta paggena può essere cagnata.<br />\nÈ sta paggena a metà? Sta cocchosa malamente?<br />\n<b>Cagna cagna!</b>",
 	"nimbus-profile": "Profilo",
 	"nimbus-recent-contributors": "Cuntribbutore 'e mò a sta paggena",
-	"nimbus-recent-contributors-info": "'E ccrestiane seguente hanno fatto cocche cuntribbuto mò mò a sta paggena.",
+	"nimbus-recent-contributors-info": "'E ccrestiane seguente hanno fatto quacche cuntribbuto fesco a sta paggena.",
 	"nimbus-signup": "Riggistrateve",
 	"nimbus-welcome": "{{GENDER:$1|Bemmenuto|Bemmenuta}} $1"
 }
