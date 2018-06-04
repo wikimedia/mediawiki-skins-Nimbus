@@ -115,7 +115,7 @@ class NimbusTemplate extends BaseTemplate {
 
 		$this->html( 'headelement' );
 ?><div id="container">
-	<div id="header" class="noprint">
+	<header id="header" class="noprint">
 		<div id="sw-logo">
 			<a href="<?php echo $central_url ?>">
 				<img src="<?php echo $wgStylePath ?>/Nimbus/nimbus/sw_logo.png" alt="" />
@@ -158,7 +158,7 @@ class NimbusTemplate extends BaseTemplate {
 	}
 ?>
 		</div><!-- #wiki-login -->
-	</div><!-- #header -->
+	</header><!-- #header -->
 	<div id="site-header" class="noprint">
 		<div id="site-logo">
 			<a href="<?php echo htmlspecialchars( $main_page_link->getFullURL() ) ?>" title="<?php echo Linker::titleAttrib( 'p-logo', 'withaccess' ) ?>" accesskey="<?php echo Linker::accesskey( 'p-logo' ) ?>" rel="nofollow">
@@ -166,7 +166,7 @@ class NimbusTemplate extends BaseTemplate {
 			</a>
 		</div>
 	</div>
-	<div id="side-bar" class="noprint">
+	<aside id="side-bar" class="noprint">
 		<div id="navigation">
 			<div id="navigation-title"><?php echo wfMessage( 'navigation' )->plain() ?></div>
 			<?php
@@ -265,11 +265,11 @@ class NimbusTemplate extends BaseTemplate {
 			?>
 </div>
 		</div>
-	</div>
+	</aside>
 	<div id="body-container">
 		<?php echo $this->actionBar(); echo "\n"; ?>
 		<div id="article">
-			<div id="article-body" class="mw-body-content">
+			<main id="article-body" class="mw-body-content">
 				<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div><?php } ?>
 				<div id="article-text" class="clearfix">
 					<?php if ( $this->showPageTitle() ) { ?><h1 class="pagetitle"><?php $this->html( 'title' ) ?></h1><?php } ?>
@@ -284,7 +284,7 @@ class NimbusTemplate extends BaseTemplate {
 					<!-- end content -->
 					<?php if ( $this->data['dataAfterContent'] ) { $this->html( 'dataAfterContent' ); } ?>
 				</div>
-			</div>
+			</main>
 		</div>
 	</div>
 	<?php echo $this->footer(); ?>
@@ -1017,7 +1017,7 @@ class NimbusTemplate extends BaseTemplate {
 			}
 		}
 
-		$footer .= '<div id="footer-bottom" class="noprint">
+		$footer .= '<footer id="footer-bottom" class="noprint">
 		<a href="' . htmlspecialchars( $main_page->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'mainpage' )->plain() . '</a>
 		<a href="' . htmlspecialchars( $about->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'about' )->parse() . '</a>
 		<a href="' . htmlspecialchars( $special->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'specialpages' )->plain() . '</a>
@@ -1032,7 +1032,7 @@ class NimbusTemplate extends BaseTemplate {
 				wfMessage( 'nimbus-advertise' )->plain() . '</a>';
 		}
 
-		$footer .= "\n\t</div>\n";
+		$footer .= "\n\t</footer>\n";
 
 		return $footer;
 	}
