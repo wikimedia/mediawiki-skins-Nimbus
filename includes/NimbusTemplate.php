@@ -124,7 +124,7 @@ class NimbusTemplate extends BaseTemplate {
 		</div>
 		<?php if ( $more_wikis ) { ?>
 		<div id="sw-more-category">
-			<div class="positive-button"><span><?php echo wfMessage( 'nimbus-more-wikis' )->plain() ?></span></div>
+			<div class="mw-skin-nimbus-button more-wikis-button"><span><?php echo wfMessage( 'nimbus-more-wikis' )->plain() ?></span></div>
 		</div>
 		<div id="more-wikis-menu" style="display:none;">
 		<?php
@@ -150,11 +150,11 @@ class NimbusTemplate extends BaseTemplate {
 		echo "\t\t\t" . '<div id="login-message">' .
 				wfMessage( 'nimbus-welcome', '<b>' . $user->getName() . '</b>', $user->getName() )->parse() .
 			'</div>
-			<a class="positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->plain() . '</span></a>
-			<a class="negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . wfMessage( 'nimbus-logout' )->plain() . '</span></a>';
+			<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->plain() . '</span></a>
+			<a class="mw-skin-nimbus-button negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . wfMessage( 'nimbus-logout' )->plain() . '</span></a>';
 	} else {
-		echo '<a class="positive-button" href="' . htmlspecialchars( $register_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-signup' )->plain() . '</span></a>
-		<a class="positive-button" href="' . htmlspecialchars( $login_link->getFullURL() ) . '" id="nimbusLoginButton"><span>' . wfMessage( 'nimbus-login' )->plain() . '</span></a>';
+		echo '<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $register_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-signup' )->plain() . '</span></a>
+		<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $login_link->getFullURL() ) . '" id="nimbusLoginButton"><span>' . wfMessage( 'nimbus-login' )->plain() . '</span></a>';
 	}
 ?>
 		</div><!-- #wiki-login -->
@@ -223,7 +223,7 @@ class NimbusTemplate extends BaseTemplate {
 			<div id="search-title"><?php echo wfMessage( 'search' )->plain() ?></div>
 			<form method="get" action="<?php echo $this->text( 'wgScript' ) ?>" name="search_form" id="searchform">
 				<input id="searchInput" type="text" class="search-field" name="search" value="" />
-				<input type="image" src="<?php echo $wgStylePath ?>/Nimbus/nimbus/search_button.gif" class="search-button" alt="search" />
+				<input type="submit" class="mw-skin-nimbus-button positive-button search-button" value="<?php echo wfMessage( 'search' ); ?>" />
 			</form>
 			<div class="cleared"></div>
 			<div class="bottom-left-nav">
@@ -787,8 +787,6 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return $output HTML for action bar
 	 */
 	function actionBar() {
-		global $wgStylePath;
-
 		$title = $this->skin->getTitle();
 		$full_title = Title::makeTitle( $title->getNamespace(), $title->getText() );
 
@@ -797,7 +795,7 @@ class NimbusTemplate extends BaseTemplate {
 		// watched (i.e. everything but the Special: namespace)
 		if ( $this->skin->getUser()->isLoggedIn() && $title->getNamespace() != NS_SPECIAL ) {
 			$output .= '<div id="article-controls">
-				<img src="' . $wgStylePath . '/Nimbus/nimbus/plus.gif" alt="" />';
+				<span class="mw-skin-nimbus-watchplus">+</span>';
 
 			// In 1.16, all we needed was the ID for AJAX page watching to work
 			// In 1.18, we need the class *and* the title...w/o the title, the
@@ -837,7 +835,7 @@ class NimbusTemplate extends BaseTemplate {
 
 		foreach ( $leftLinks as $key => $val ) {
 			// @todo FIXME: this code deserves to burn in hell
-			$output .= '<a href="' . htmlspecialchars( $val['href'] ) . '" class="' .
+			$output .= '<a href="' . htmlspecialchars( $val['href'] ) . '" class="mw-skin-nimbus-actiontab ' .
 				( ( strpos( $val['class'], 'selected' ) === 0 ) ? 'tab-on' : 'tab-off' ) .
 				( strpos( $val['class'], 'new' ) && ( strpos( $val['class'], 'new' ) > 0 ) ? ' tab-new' : '' ) . '"' .
 				( isset( $val['title'] ) ? ' title="' . htmlspecialchars( $val['title'] ) . '"' : '' ) .
@@ -848,7 +846,7 @@ class NimbusTemplate extends BaseTemplate {
 		}
 
 		if ( count( $moreLinks ) > 0 ) {
-			$output .= '<div class="more-tab-off" id="more-tab">
+			$output .= '<div class="mw-skin-nimbus-actiontab more-tab tab-off" id="more-tab">
 				<span>' . wfMessage( 'nimbus-more-actions' )->plain() . '</span>';
 
 			$output .= '<div class="article-more-actions" id="article-more-container" style="display:none">';

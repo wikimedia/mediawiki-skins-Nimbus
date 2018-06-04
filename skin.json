@@ -32,6 +32,15 @@
 			"styles": {
 				"nimbus/Nimbus.css": {
 					"media": "screen"
+				},
+				"resources/styles/skin.nimbus.buttons.less": {
+					"media": "screen"
+				},
+				"resources/styles/skin.nimbus.navigation.less": {
+					"media": "screen"
+				},
+				"resources/styles/skin.nimbus.actiontabs.less": {
+					"media": "screen"
 				}
 			}
 		},
