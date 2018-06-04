@@ -1,0 +1,21 @@
+// @TODO: Replace this CSS class instance with .visualClear
+// everywhere! Even better, make it so this entire skin
+// doesn't need CSS clear hacks.
+
+.cleared {
+	clear: both;
+}
+
+/* clearfix is used by many social tools and the skin itself and it's required
+to make certain things align properly */
+.clearfix {
+	display: inline-block;
+
+	&:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+	}
+}

@@ -33,6 +33,9 @@
 				"nimbus/Nimbus.css": {
 					"media": "screen"
 				},
+				"resources/extensions/extensions.less": {
+					"media": "screen"
+				},
 				"resources/styles/skin.nimbus.buttons.less": {
 					"media": "screen"
 				},
@@ -40,6 +43,18 @@
 					"media": "screen"
 				},
 				"resources/styles/skin.nimbus.actiontabs.less": {
+					"media": "screen"
+				},
+				"resources/styles/skin.nimbus.footer.less": {
+					"media": "screen"
+				},
+				"resources/styles/skin.nimbus.login.less": {
+					"media": "screen"
+				},
+				"resources/styles/skin.nimbus.hacks.clear.less": {
+					"media": "screen"
+				},
+				"resources/styles/skin.nimbus.hacks.shoutwiki.less": {
 					"media": "screen"
 				}
 			}
