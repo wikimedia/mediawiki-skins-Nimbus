@@ -50,17 +50,17 @@
 	},
 	"ResourceModuleSkinStyles": {
 		"nimbus": {
-			"+ext.blogPage": "skinStyles/ext.blogPage.css",
-			"+ext.blogPage.articlesHome": "skinStyles/ext.blogPage.articlesHome.css",
-			"+ext.blogPage.create.css": "skinStyles/ext.blogPage.create.css",
-			"+ext.miniInvite.css": "skinStyles/ext.miniInvite.css",
-			"+ext.pollNY.css": "skinStyles/ext.pollNY.css",
-			"+ext.quizGame.css": "skinStyles/ext.quizGame.css",
-			"+ext.socialprofile.userboard.boardblast.css": "skinStyles/ext.socialprofile.userboard.boardblast.css",
-			"+ext.socialprofile.usergifts.css": "skinStyles/ext.socialprofile.usergifts.css",
-			"+ext.socialprofile.userprofile.css": "skinStyles/ext.socialprofile.userprofile.css",
-			"+ext.socialprofile.userrelationship.css": "skinStyles/ext.socialprofile.userrelationship.css",
-			"+mediawiki.special.preferences.styles": "skinStyles/mediawiki.special.preferences.styles.less"
+			"+ext.blogPage": "resources/extensions/BlogPage/ext.blogPage.css",
+			"+ext.blogPage.articlesHome": "resources/extensions/BlogPage/articlesHome.css",
+			"+ext.blogPage.create.css": "resources/BlogPage/create.css",
+			"+ext.miniInvite.css": "resources/extensions/ext.miniInvite.css",
+			"+ext.pollNY.css": "resources/extensions/ext.pollNY.css",
+			"+ext.quizGame.css": "resources/extensions/ext.quizGame.css",
+			"+ext.socialprofile.userboard.boardblast.css": "resources/extensions/SocialProfile/userboard.boardblast.css",
+			"+ext.socialprofile.usergifts.css": "resources/extensions/SocialProfile/usergifts.css",
+			"+ext.socialprofile.userprofile.css": "resources/extensions/SocialProfile/userprofile.css",
+			"+ext.socialprofile.userrelationship.css": "resources/extensions/SocialProfile/userrelationship.css",
+			"+mediawiki.special.preferences.styles": "resources/mediawiki/special.preferences.styles.less"
 		}
 	},
 	"manifest_version": 1
