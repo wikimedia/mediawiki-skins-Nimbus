@@ -13,7 +13,7 @@
  * @author David Pean <david.pean@gmail.com>
  * @author Inez Korczyński <korczynski@gmail.com>
  * @author Jack Phoenix
- * @copyright Copyright © 2008-2017 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
+ * @copyright Copyright © 2008-2018 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 if ( !defined( 'MEDIAWIKI' ) ) {
@@ -254,13 +254,9 @@ class NimbusTemplate extends BaseTemplate {
 				}
 
 				if ( class_exists( 'RandomFeaturedUser' ) ) {
-					$randomUser = $wgOut->parse(
-						'<randomfeatureduser period="weekly" />',
-						false
-					);
 					echo '<div class="bottom-left-nav-container">
 						<h2>' . wfMessage( 'nimbus-featureduser' )->plain() . '</h2>' .
-						$randomUser . '</div>';
+						$this->get( 'nimbus-randomfeatureduser' ) . '</div>';
 				}
 			?>
 </div>
