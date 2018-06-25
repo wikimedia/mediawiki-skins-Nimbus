@@ -67,7 +67,7 @@
 		"nimbus": {
 			"+ext.blogPage": "resources/extensions/BlogPage/ext.blogPage.css",
 			"+ext.blogPage.articlesHome": "resources/extensions/BlogPage/articlesHome.css",
-			"+ext.blogPage.create.css": "resources/BlogPage/create.css",
+			"+ext.blogPage.create.css": "resources/extensions/BlogPage/create.css",
 			"+ext.miniInvite.css": "resources/extensions/ext.miniInvite.css",
 			"+ext.pollNY.css": "resources/extensions/ext.pollNY.css",
 			"+ext.quizGame.css": "resources/extensions/ext.quizGame.css",
