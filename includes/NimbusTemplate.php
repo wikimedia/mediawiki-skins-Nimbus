@@ -268,6 +268,7 @@ class NimbusTemplate extends BaseTemplate {
 			<main id="article-body" class="mw-body-content">
 				<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div><?php } ?>
 				<div id="article-text" class="clearfix">
+					<?php echo $this->getIndicators(); ?>
 					<?php if ( $this->showPageTitle() ) { ?><h1 class="pagetitle"><?php $this->html( 'title' ) ?></h1><?php } ?>
 					<p class='subtitle'><?php $this->msg( 'tagline' ) ?></p>
 					<div id="contentSub"<?php $this->html( 'userlangattributes' ) ?>><?php $this->html( 'subtitle' ) ?></div>
