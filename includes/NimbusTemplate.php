@@ -764,7 +764,7 @@ class NimbusTemplate extends BaseTemplate {
 			'edit', 'talk', 'viewsource', 'addsection', 'history'
 		);
 		$actions = $this->buildActionBar();
-		$moreLinks = null;
+		$moreLinks = [];
 
 		foreach ( $actions as $action => $value ) {
 			if ( in_array( $action, $left ) ) {
