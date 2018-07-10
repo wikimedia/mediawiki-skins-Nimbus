@@ -499,50 +499,14 @@ class NimbusTemplate extends BaseTemplate {
 	}
 
 	/**
-	 * Do some tab-related magic
-	 *
-	 * @param $title Object: instance of Title class
-	 * @param $message String: name of a MediaWiki: message
-	 * @param $selected Boolean?
-	 * @param $query String: empty by default, but if not empty, query to append (such as action=edit)
-	 * @param $checkEdit Boolean: false by default
+	 * Builds the content for the top navigation tabs (edit, history, etc.).
 	 *
 	 * @return array
 	 */
-	function tabAction( $title, $message, $selected, $query = '', $checkEdit = false ) {
-		$classes = array();
-		if ( $selected ) {
-			$classes[] = 'selected';
-		}
-		if ( $checkEdit && $title->getArticleId() == 0 ) {
-			$query = 'action=edit';
-			$classes[] = ' new';
-		}
-
-		$text = wfMessage( $message )->text();
-		if ( wfMessage( $message )->isDisabled() ) {
-			global $wgContLang;
-			$text = $wgContLang->getFormattedNsText(
-				MWNamespace::getSubject( $title->getNamespace() )
-			);
-		}
-
-		return array(
-			'class' => implode( ' ', $classes ),
-			'text' => $text,
-			'href' => $title->getLocalURL( $query )
-		);
-	}
-
-	/**
-	 * Builds the content for the top navigation tabs (edit, history, etc.).
-	 *
-	 * @return Array
-	 */
 	function buildActionBar() {
-		global $wgRequest, $wgOut;
-
-		$user = $this->skin->getUser();
+		$skin = $this->skin;
+		$request = $skin->getRequest();
+		$user = $skin->getUser();
 		/**
 		 * This function originally used to use $wgTitle, which worked
 		 * relatively fine.
@@ -554,199 +518,91 @@ class NimbusTemplate extends BaseTemplate {
 		 *
 		 * @see http://bugzilla.shoutwiki.com/show_bug.cgi?id=224
 		 */
-		$title = $this->skin->getTitle();
+		$title = $skin->getTitle();
 
-		$action = $wgRequest->getText( 'action' );
-		$section = $wgRequest->getText( 'section' );
-		$content_actions = array();
+		$content_actions = [];
 
-		if ( $title->getNamespace() != NS_SPECIAL ) {
-			$subjpage = $title->getSubjectPage();
-			$talkpage = $title->getTalkPage();
-			$nskey = $title->getNamespaceKey();
-			$prevent_active_tabs = ''; // Prevent E_NOTICE ;-)
+		// Oh hey, this one's protected...
+		$r = new ReflectionMethod( $skin, 'buildContentNavigationUrls' );
+		$r->setAccessible( true );
+		$content_navigation = $r->invoke( $skin );
+		// In an ideal world this would Just Work(TM):
+		// $content_actions = $this->buildContentActionUrls( $content_navigation );
+		// But of course it *doesn't* because that method is literally _the_ only
+		// private one in SkinTemplate...let's change that:
+		$r = new ReflectionMethod( $skin, 'buildContentActionUrls' );
+		$r->setAccessible( true );
+		$content_actions = $r->invoke( $skin, $content_navigation );
 
-			$content_actions[$nskey] = $this->tabAction(
-				$subjpage,
-				$nskey,
-				!$title->isTalkPage() && !$prevent_active_tabs,
-				'',
-				true
-			);
+		if ( !$title->inNamespace( NS_SPECIAL ) ) {
+			// "What links here" isn't a part of default core content actions so we need
+			// to add it there ourselves for all non-NS_SPECIAL namespaces
+			$whatlinkshereTitle = SpecialPage::getTitleFor( 'Whatlinkshere', $title->getPrefixedDBkey() );
+			$content_actions['whatlinkshere'] = [
+				'class' => $title->isSpecial( 'Whatlinkshere' ) ? 'selected' : false,
+				'text' => $skin->msg( 'whatlinkshere' )->plain(),
+				'href' => $whatlinkshereTitle->getLocalURL(),
+				'title' => Linker::titleAttrib( 't-whatlinkshere', 'withaccess' ),
+				'accesskey' => Linker::accesskey( 't-whatlinkshere' )
+			];
 
-			// $nskey is something like 'nstab-main' here
-			$msgObj = wfMessage( 'tooltip-ca-' . $nskey );
-			// Only core namespaces have tooltips (and accesskeys), so don't
-			// try to add those for NSes which don't have 'em, obviously!
-			if ( $msgObj->exists() ) {
-				$content_actions[$nskey]['title'] = Linker::titleAttrib( 'ca-' . $nskey, 'withaccess' );
-				$content_actions[$nskey]['accesskey'] = Linker::accesskey( 'ca-' . $nskey );
+			// We don't need the watch (or unwatch) link in the "More actions" menu
+			// as that link is already prominently exposed elsewhere in the UI
+			if ( isset( $content_actions['watch'] ) ) {
+				unset( $content_actions['watch'] );
 			}
-
-			$content_actions['talk'] = $this->tabAction(
-				$talkpage,
-				'talk',
-				$title->isTalkPage() && !$prevent_active_tabs,
-				'',
-				true
-			);
-			// Ugh, this is just nasty.
-			$content_actions['talk']['title'] = Linker::titleAttrib( 'ca-talk', 'withaccess' );
-			$content_actions['talk']['accesskey'] = Linker::accesskey( 'ca-talk' );
-
-			if ( $title->quickUserCan( 'edit' ) && ( $title->exists() || $title->quickUserCan( 'create' ) ) ) {
-				$isTalk = $title->isTalkPage();
-				$isTalkClass = $isTalk ? ' istalk' : '';
-
-				$content_actions['edit'] = array(
-					'class' => ( ( ( $action == 'edit' || $action == 'submit' ) && $section != 'new' ) ? 'selected' : '' ) . $isTalkClass,
-					'text' => ( $title->exists() ? wfMessage( 'edit' )->plain() : wfMessage( 'create' )->plain() ),
-					'href' => $title->getLocalURL( $this->skin->editUrlOptions() ),
-					'title' => Linker::titleAttrib( 'ca-edit', 'withaccess' ),
-					'accesskey' => Linker::accesskey( 'ca-edit' )
-				);
-
-				if ( $isTalk || $wgOut->showNewSectionLink() ) {
-					$content_actions['addsection'] = array(
-						'class' => $section == 'new' ? 'selected' : false,
-						'text' => wfMessage( 'addsection' )->plain(),
-						'href' => $title->getLocalURL( 'action=edit&section=new' ),
-						'title' => Linker::titleAttrib( 'ca-addsection', 'withaccess' ),
-						'accesskey' => Linker::accesskey( 'ca-addsection' )
-					);
-				}
-			} else {
-				$content_actions['viewsource'] = array(
-					'class' => ( $action == 'edit' ) ? 'selected' : false,
-					'text' => wfMessage( 'viewsource' )->plain(),
-					'href' => $title->getLocalURL( $this->skin->editUrlOptions() ),
-					'title' => Linker::titleAttrib( 'ca-viewsource', 'withaccess' ),
-					'accesskey' => Linker::accesskey( 'ca-viewsource' )
-				);
-			}
-
-			if ( $title->getArticleId() ) {
-				$content_actions['history'] = array(
-					'class' => ( $action == 'history' ) ? 'selected' : false,
-					'text' => wfMessage( 'history_short' )->plain(),
-					'href' => $title->getLocalURL( 'action=history' ),
-					'title' => Linker::titleAttrib( 'ca-history', 'withaccess' ),
-					'accesskey' => Linker::accesskey( 'ca-history' )
-				);
-
-				if ( $title->getNamespace() !== NS_MEDIAWIKI && $user->isAllowed( 'protect' ) ) {
-					if ( !$title->isProtected() ) {
-						$content_actions['protect'] = array(
-							'class' => ( $action == 'protect' ) ? 'selected' : false,
-							'text' => wfMessage( 'protect' )->plain(),
-							'href' => $title->getLocalURL( 'action=protect' ),
-							'title' => Linker::titleAttrib( 'ca-protect', 'withaccess' ),
-							'accesskey' => Linker::accesskey( 'ca-protect' )
-						);
-
-					} else {
-						$content_actions['unprotect'] = array(
-							'class' => ( $action == 'unprotect' ) ? 'selected' : false,
-							'text' => wfMessage( 'unprotect' )->plain(),
-							'href' => $title->getLocalURL( 'action=unprotect' ),
-							'title' => Linker::titleAttrib( 'ca-unprotect', 'withaccess' ),
-							'accesskey' => Linker::accesskey( 'ca-unprotect' )
-						);
-					}
-				}
-				if ( $user->isAllowed( 'delete' ) ) {
-					$content_actions['delete'] = array(
-						'class' => ( $action == 'delete' ) ? 'selected' : false,
-						'text' => wfMessage( 'delete' )->plain(),
-						'href' => $title->getLocalURL( 'action=delete' ),
-						'title' => Linker::titleAttrib( 'ca-delete', 'withaccess' ),
-						'accesskey' => Linker::accesskey( 'ca-delete' )
-					);
-				}
-				if ( $title->quickUserCan( 'move' ) ) {
-					$moveTitle = SpecialPage::getTitleFor( 'Movepage', $title->getPrefixedDBkey() );
-					$content_actions['move'] = array(
-						'class' => $title->isSpecial( 'Movepage' ) ? 'selected' : false,
-						'text' => wfMessage( 'move' )->plain(),
-						'href' => $moveTitle->getLocalURL(),
-						'title' => Linker::titleAttrib( 'ca-move', 'withaccess' ),
-						'accesskey' => Linker::accesskey( 'ca-move' )
-					);
-				}
-
-				$whatlinkshereTitle = SpecialPage::getTitleFor( 'Whatlinkshere', $title->getPrefixedDBkey() );
-				$content_actions['whatlinkshere'] = array(
-					'class' => $title->isSpecial( 'Whatlinkshere' ) ? 'selected' : false,
-					'text' => wfMessage( 'whatlinkshere' )->plain(),
-					'href' => $whatlinkshereTitle->getLocalURL(),
-					'title' => Linker::titleAttrib( 't-whatlinkshere', 'withaccess' ),
-					'accesskey' => Linker::accesskey( 't-whatlinkshere' )
-				);
-
-			} else {
-				// Article doesn't exist or is deleted
-				if ( $user->isAllowed( 'delete' ) ) {
-					$n = $title->isDeleted();
-					if ( $n ) {
-						$undelTitle = SpecialPage::getTitleFor( 'Undelete' );
-						$content_actions['undelete'] = array(
-							'class' => false,
-							'text' => wfMessage( 'undelete_short', $n )->parse(),
-							'href' => $undelTitle->getLocalURL( 'target=' . urlencode( $title->getPrefixedDBkey() ) )
-							#'href' => self::makeSpecialUrl( "Undelete/$this->thispage" )
-						);
-					}
-				}
+			if ( isset( $content_actions['unwatch'] ) ) {
+				unset( $content_actions['unwatch'] );
 			}
 		} else {
 			global $wgQuizID, $wgPictureGameID;
 
 			/* show special page tab */
-			if ( $title->isSpecial( 'QuizGameHome' ) && $wgRequest->getVal( 'questionGameAction' ) == 'editItem' ) {
+			if ( $title->isSpecial( 'QuizGameHome' ) && $request->getVal( 'questionGameAction' ) == 'editItem' ) {
 				$quiz = SpecialPage::getTitleFor( 'QuizGameHome' );
-				$content_actions[$title->getNamespaceKey()] = array(
+				$content_actions[$title->getNamespaceKey()] = [
 					'class' => 'selected',
-					'text' => wfMessage( 'nstab-special' )->plain(),
+					'text' => $skin->msg( 'nstab-special' )->plain(),
 					'href' => $quiz->getFullURL( 'questionGameAction=renderPermalink&permalinkID=' . $wgQuizID ),
-				);
+				];
 			} else {
-				$content_actions[$title->getNamespaceKey()] = array(
+				$content_actions[$title->getNamespaceKey()] = [
 					'class' => 'selected',
-					'text' => wfMessage( 'nstab-special' )->plain(),
-					'href' => $wgRequest->getRequestURL(), // @bug 2457, 2510
-				);
+					'text' => $skin->msg( 'nstab-special' )->plain(),
+					'href' => $request->getRequestURL(), // @bug 2457, 2510
+				];
 			}
 
 			// "Edit" tab on Special:QuizGameHome for question game administrators
 			if (
 				$title->isSpecial( 'QuizGameHome' ) &&
 				$user->isAllowed( 'quizadmin' ) &&
-				$wgRequest->getVal( 'questionGameAction' ) != 'createForm' &&
+				$request->getVal( 'questionGameAction' ) != 'createForm' &&
 				!empty( $wgQuizID )
 			)
 			{
 				$quiz = SpecialPage::getTitleFor( 'QuizGameHome' );
-				$content_actions['edit'] = array(
-					'class' => ( $wgRequest->getVal( 'questionGameAction' ) == 'editItem' ) ? 'selected' : false,
-					'text' => wfMessage( 'edit' )->plain(),
+				$content_actions['edit'] = [
+					'class' => ( $request->getVal( 'questionGameAction' ) == 'editItem' ) ? 'selected' : false,
+					'text' => $skin->msg( 'edit' )->plain(),
 					'href' => $quiz->getFullURL( 'questionGameAction=editItem&quizGameId=' . $wgQuizID ), // @bug 2457, 2510
-				);
+				];
 			}
 
 			// "Edit" tab on Special:PictureGameHome for picture game administrators
 			if (
 				$title->isSpecial( 'PictureGameHome' ) &&
 				$user->isAllowed( 'picturegameadmin' ) &&
-				$wgRequest->getVal( 'picGameAction' ) != 'startCreate' &&
+				$request->getVal( 'picGameAction' ) != 'startCreate' &&
 				!empty( $wgPictureGameID )
 			)
 			{
 				$picGame = SpecialPage::getTitleFor( 'PictureGameHome' );
-				$content_actions['edit'] = array(
-					'class' => ( $wgRequest->getVal( 'picGameAction' ) == 'editPanel' ) ? 'selected' : false,
-					'text' => wfMessage( 'edit' )->plain(),
+				$content_actions['edit'] = [
+					'class' => ( $request->getVal( 'picGameAction' ) == 'editPanel' ) ? 'selected' : false,
+					'text' => $skin->msg( 'edit' )->plain(),
 					'href' => $picGame->getFullURL( 'picGameAction=editPanel&id=' . $wgPictureGameID ), // @bug 2457, 2510
-				);
+				];
 			}
 		}
 
@@ -834,9 +690,10 @@ class NimbusTemplate extends BaseTemplate {
 			// @todo FIXME: this code deserves to burn in hell
 			$output .= '<a href="' . htmlspecialchars( $val['href'] ) . '" class="mw-skin-nimbus-actiontab ' .
 				( ( strpos( $val['class'], 'selected' ) === 0 ) ? 'tab-on' : 'tab-off' ) .
-				( strpos( $val['class'], 'new' ) && ( strpos( $val['class'], 'new' ) > 0 ) ? ' tab-new' : '' ) . '"' .
+				( preg_match( '/new/i', $val['class'] ) ? ' tab-new' : '' ) . '"' .
 				( isset( $val['title'] ) ? ' title="' . htmlspecialchars( $val['title'] ) . '"' : '' ) .
 				( isset( $val['accesskey'] ) ? ' accesskey="' . htmlspecialchars( $val['accesskey'] ) . '"' : '' ) .
+				( isset( $val['id'] ) ? ' id="' . htmlspecialchars( $val['id'] ) . '"' : '' ) .
 				' rel="nofollow">
 				<span>' . ucfirst( $val['text'] ) . '</span>
 			</a>';
@@ -857,8 +714,9 @@ class NimbusTemplate extends BaseTemplate {
 					$border_fix = '';
 				}
 
-				$output .= '<a href="' . htmlspecialchars( $val['href'] ) .
-					"\"{$border_fix} rel=\"nofollow\">" .
+				$output .= '<a href="' . htmlspecialchars( $val['href'] ) . '"' .
+					( isset( $val['id'] ) ? ' id="' . htmlspecialchars( $val['id'] ) . '"' : '' ) .
+					"{$border_fix} rel=\"nofollow\">" .
 					ucfirst( $val['text'] ) .
 				'</a>';
 
