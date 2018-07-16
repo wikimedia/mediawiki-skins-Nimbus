@@ -18,6 +18,8 @@
 	"nimbus-more-wikis": "Više vikija",
 	"nimbus-pages-can-be-edited": "Ova stranica se može urediti.<br />\nDa li je ova stranica nedovršena? Da li je nešto pogrešno?<br />\n<b>Promeni je!</b>",
 	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Skorašnji doprinosioci na ovoj stranici",
+	"nimbus-recent-contributors-info": "Sledeće osobe su nedavno doprinosile na ovoj stranici.",
 	"nimbus-signup": "Otvori nalog",
 	"nimbus-welcome": "{{GENDER:$2|Dobro došli}} $1!"
 }
