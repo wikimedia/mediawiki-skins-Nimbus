@@ -2,12 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Aursani",
-			"Mehtab ahmed"
+			"Mehtab ahmed",
+			"Tweety"
 		]
 	},
 	"nimbus-advertise": "اشتهار",
 	"nimbus-contribute": "ڀاڱيدار ٿيو",
-	"nimbus-didyouknow": "ڇا توهان کي خبر هئي",
+	"nimbus-didyouknow": "ڇا توهان ڄاڻو ٿا",
+	"nimbus-editthispage": "ھيءُ صفحو سنواريو",
+	"nimbus-featuredimage": "چونڊ تصوير",
+	"nimbus-featureduser": "چونڊ واپرائيندڙ",
 	"nimbus-login": "داخل ٿيو",
 	"nimbus-logout": "خارج ٿيندا؟",
 	"nimbus-more-actions": "وڌيڪ عمل",
