@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"AnakngAraw"
+			"AnakngAraw",
+			"Jojit fb"
 		]
 	},
 	"nimbus-desc": "Pabalat ng Nimbus",
@@ -10,7 +11,7 @@
 	"nimbus-didyouknow": "Alam ba ninyo",
 	"nimbus-featuredimage": "Tampok na larawan",
 	"nimbus-featureduser": "Tampok na tagagamit",
-	"nimbus-login": "Lumagda",
+	"nimbus-login": "Mag-login",
 	"nimbus-logout": "Umalis sa pagkakalagda?",
 	"nimbus-more-actions": "Marami pang mga galaw",
 	"nimbus-more-wikis": "Marami pang mga wiki",
