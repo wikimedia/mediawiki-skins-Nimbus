@@ -5,21 +5,21 @@
 			"Zoranzoki21"
 		]
 	},
-	"nimbus-desc": "Tema Nimbus",
-	"nimbus-advertise": "Reklamirajte se",
+	"nimbus-desc": "Tema „Nimbus”",
+	"nimbus-advertise": "Oglašavajte se",
 	"nimbus-contribute": "Doprinesite",
 	"nimbus-didyouknow": "Da li ste znali",
 	"nimbus-editthispage": "Uredi ovu stranicu",
 	"nimbus-featuredimage": "Izabrana slika",
-	"nimbus-featureduser": "Istaknuti korisnik",
+	"nimbus-featureduser": "Izabrani korisnik",
 	"nimbus-login": "Prijavi me",
-	"nimbus-logout": "Da Vas odjavim?",
+	"nimbus-logout": "Odjaviti?",
 	"nimbus-more-actions": "Više radnji",
 	"nimbus-more-wikis": "Više vikija",
 	"nimbus-pages-can-be-edited": "Ova stranica se može urediti.<br />\nDa li je ova stranica nedovršena? Da li je nešto pogrešno?<br />\n<b>Promeni je!</b>",
 	"nimbus-profile": "Profil",
-	"nimbus-recent-contributors": "Skorašnji doprinosioci na ovoj stranici",
+	"nimbus-recent-contributors": "Nedavni doprinosioci na ovoj stranici",
 	"nimbus-recent-contributors-info": "Sledeće osobe su nedavno doprinosile na ovoj stranici.",
-	"nimbus-signup": "Otvori nalog",
+	"nimbus-signup": "Registracija",
 	"nimbus-welcome": "{{GENDER:$2|Dobro došli}} $1!"
 }
