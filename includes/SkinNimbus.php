@@ -33,6 +33,11 @@ class SkinNimbus extends SkinTemplate {
 			// This MUST be done before the parent::prepareQuickTemplate() call!
 			$this->getOutput()->addModuleStyles( $parserOutput->getModuleStyles() );
 		}
+
+		if ( class_exists( 'RandomGameUnit' ) ) {
+			$this->getOutput()->addModuleStyles( 'ext.RandomGameUnit.css' );
+		}
+
 		$tpl = parent::prepareQuickTemplate();
 		$tpl->set( 'nimbus-randomfeatureduser', $po );
 		return $tpl;

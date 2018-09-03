@@ -232,7 +232,8 @@ class NimbusTemplate extends BaseTemplate {
 			Hooks::run( 'NimbusLeftSide' );
 
 			if ( class_exists( 'RandomGameUnit' ) ) {
-				$this->skin->getOutput()->addModuleStyles( 'ext.RandomGameUnit.css' );
+				// @note The CSS for this is loaded in SkinNimbus::prepareQuickTemplate();
+				// it *cannot* be loaded here!
 				echo RandomGameUnit::getRandomGameUnit();
 			}
 			?>
