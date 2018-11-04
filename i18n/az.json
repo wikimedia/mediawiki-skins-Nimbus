@@ -4,5 +4,6 @@
 			"Wertuose"
 		]
 	},
-	"nimbus-login": "Daxil ol"
+	"nimbus-login": "Daxil ol",
+	"nimbus-welcome": "Xoş gəlmisiniz, $1"
 }
