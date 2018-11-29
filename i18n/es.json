@@ -3,7 +3,8 @@
 		"authors": [
 			"Armando-Martin",
 			"Macofe",
-			"Fitoschido"
+			"Fitoschido",
+			"Tiberius1701"
 		]
 	},
 	"nimbus-desc": "Aparencia Nimbus",
@@ -19,8 +20,8 @@
 	"nimbus-more-wikis": "Más wikis",
 	"nimbus-pages-can-be-edited": "Se puede editar esta página.<br />\n¿Está incompleta esta página? ¿Hay algo mal?<br />\n<b>¡Cámbialo!</b>",
 	"nimbus-profile": "Perfil",
-	"nimbus-recent-contributors": "Colaboradores recientes a esta página",
-	"nimbus-recent-contributors-info": "Recientemente, las siguientes personas contribuyeron a esta página.",
+	"nimbus-recent-contributors": "Colaboradores recientes en esta página",
+	"nimbus-recent-contributors-info": "Recientemente, las siguientes personas contribuyeron en esta página.",
 	"nimbus-signup": "Registrarse",
 	"nimbus-welcome": "{{GENDER:$2|Bienvenido|Bienvenida}} $1"
 }
