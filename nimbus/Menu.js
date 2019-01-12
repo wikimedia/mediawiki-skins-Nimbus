@@ -84,7 +84,7 @@ var NimbusSkin = {
 		}
 
 		if ( source_id && NimbusSkin.menuitem_array[source_id] ) {
-			if ( document.getElementById( NimbusSkin.last_over ) ) {
+			if ( NimbusSkin.last_over !== '' && document.getElementById( NimbusSkin.last_over ) ) {
 				document.getElementById( NimbusSkin.last_over ).style.backgroundColor = '#FFF';
 			}
 			NimbusSkin.last_over = source_id;
@@ -249,6 +249,11 @@ var NimbusSkin = {
 	},
 
 	doClearAll: function() {
+		// Otherwise the NimbusSkin.displayed_menus[0] line below causes a TypeError about
+		// NimbusSkin.displayed_menus[0] being undefined
+		if ( !NimbusSkin.displayed_menus.length ) {
+			return;
+		}
 		var epicElement = document.getElementById( 'menu-item' + NimbusSkin.displayed_menus[0].substr( NimbusSkin.displayed_menus[0].indexOf( '_' ) ) ),
 			the_last_displayed, exit;
 		if ( NimbusSkin.displayed_menus.length && epicElement ) {
