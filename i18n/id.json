@@ -2,14 +2,25 @@
 	"@metadata": {
 		"authors": [
 			"Farras",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"William Surya Permana"
 		]
 	},
 	"nimbus-desc": "Kulit Nimbus",
 	"nimbus-advertise": "Beriklan",
 	"nimbus-contribute": "Berkontribusi",
 	"nimbus-didyouknow": "Tahukah Anda",
+	"nimbus-editthispage": "Sunting halaman ini",
+	"nimbus-featuredimage": "Gambar pilihan",
+	"nimbus-featureduser": "Pengguna pilihan",
 	"nimbus-login": "Masuk log",
 	"nimbus-logout": "Keluar log?",
-	"nimbus-profile": "Profil"
+	"nimbus-more-actions": "Tindakan lainnya",
+	"nimbus-more-wikis": "Wiki lainnya",
+	"nimbus-pages-can-be-edited": "Halaman ini bisa disunting.<br />\n\nApakah halaman ini tidak lengkap? Apakah ada yang salah?<br />\n\n<b>Ubahlah!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Kontribusi terbaru di halaman ini",
+	"nimbus-recent-contributors-info": "Orang-orang berikut baru saja berkontribusi di halaman ini.",
+	"nimbus-signup": "Daftar",
+	"nimbus-welcome": "{{GENDER:$2|Selamat datang}}, $1"
 }
