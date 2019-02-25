@@ -13,7 +13,7 @@
  * @author David Pean <david.pean@gmail.com>
  * @author Inez Korczyński <korczynski@gmail.com>
  * @author Jack Phoenix
- * @copyright Copyright © 2008-2018 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
+ * @copyright Copyright © 2008-2019 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 if ( !defined( 'MEDIAWIKI' ) ) {
@@ -89,22 +89,7 @@ class NimbusTemplate extends BaseTemplate {
 		$top_fans_link = SpecialPage::getTitleFor( 'TopUsers' );
 		$special_pages_link = SpecialPage::getTitleFor( 'Specialpages' );
 
-		// By default it's an (external) URL, hence not a valid Title.
-		// But because MediaWiki is by nature very customizable, someone
-		// might've changed it to point to a local page. Tricky!
-		// @see https://phabricator.wikimedia.org/T155319
-		$helpPage = $this->skin->msg( 'helppage' )->inContentLanguage()->plain();
-		if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $helpPage ) ) {
-			$help_link = Linker::makeExternalLink(
-				$helpPage,
-				$this->skin->msg( 'help' )->plain()
-			);
-		} else {
-			$help_link = Linker::linkKnown(
-				Title::newFromText( $helpPage ),
-				$this->skin->msg( 'help' )->plain()
-			);
-		}
+		$help_link = $this->skin->helpLink();
 
 		$upload_file = SpecialPage::getTitleFor( 'Upload' );
 		$what_links_here = SpecialPage::getTitleFor( 'Whatlinkshere' );
@@ -747,10 +732,6 @@ class NimbusTemplate extends BaseTemplate {
 		$title = Title::makeTitle( $titleObj->getNamespace(), $titleObj->getText() );
 		$pageTitleId = $titleObj->getArticleID();
 		$main_page = Title::newMainPage();
-		$about = Title::newFromText( wfMessage( 'aboutpage' )->inContentLanguage()->text() );
-		$special = SpecialPage::getTitleFor( 'Specialpages' );
-		$help = SpecialPage::getTitleFor( 'Userlogin', 'signup' );
-		$disclaimerPage = Title::newFromText( wfMessage( 'disclaimerpage' )->inContentLanguage()->text() );
 
 		$footerShow = array( NS_MAIN, NS_FILE );
 		if ( defined( 'NS_VIDEO' ) ) {
@@ -873,19 +854,12 @@ class NimbusTemplate extends BaseTemplate {
 			}
 		}
 
-		$footer .= '<footer id="footer-bottom" class="noprint">
-		<a href="' . htmlspecialchars( $main_page->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'mainpage' )->plain() . '</a>
-		<a href="' . htmlspecialchars( $about->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'about' )->parse() . '</a>
-		<a href="' . htmlspecialchars( $special->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'specialpages' )->plain() . '</a>
-		<a href="' . htmlspecialchars( $help->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'help' )->plain() . '</a>
-		<a href="' . htmlspecialchars( $disclaimerPage->getLocalURL() ) . '" rel="nofollow">' . wfMessage( 'disclaimers' )->plain() . '</a>';
-
-		// "Advertise" link on the footer, but only if a URL has been specified
-		// in the MediaWiki:Nimbus-advertise-url system message
-		$adMsg = wfMessage( 'nimbus-advertise-url' )->inContentLanguage();
-		if ( !$adMsg->isDisabled() ) {
-			$footer .= "\n" . '<a href="' . $adMsg->text() . '" rel="nofollow">' .
-				wfMessage( 'nimbus-advertise' )->plain() . '</a>';
+		$footer .= '<footer id="footer-bottom" class="noprint">';
+		foreach ( $this->getFooterLinks() as $category => $links ) {
+			foreach ( $links as $link ) {
+				$footer .= $this->get( $link );
+				$footer .= "\n";
+			}
 		}
 
 		$footer .= "\n\t</footer>\n";

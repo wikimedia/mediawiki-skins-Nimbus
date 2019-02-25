@@ -30,5 +30,7 @@
 	"nimbus-recent-contributors-info": "This message follows the heading {{msg-mw|Nimbus-recent-contributors}}.",
 	"nimbus-signup": "{{Identical|Sign up}}",
 	"nimbus-sidebar": "{{ignored}}\nUsed as Sidebar in Nimbus skin, similar to [[MediaWiki:Sidebar]]",
+	"nimbus-specialpages": "Footer link text; the URL of this link will be [[MediaWiki:Nimbus-specialpages-url]]",
+	"nimbus-specialpages-url": "Footer link target page; the title of this link will be [[MediaWiki:Nimbus-specialpages]]",
 	"nimbus-welcome": "&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username\n{{Identical|Welcome}}\nParameters:\n*$1 - username, passed in with &lt;b> tags, not used for GENDER\n*$2 - username, used for GENDER"
 }

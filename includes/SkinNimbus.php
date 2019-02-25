@@ -20,6 +20,69 @@ class SkinNimbus extends SkinTemplate {
 	}
 
 	/**
+	 * Gets the link to the wiki's about page.
+	 *
+	 * @return string HTML
+	 */
+	function aboutLink() {
+		// Core uses 'aboutsite' here but we want just 'about'
+		return $this->footerLink( 'about', 'aboutpage' );
+	}
+
+	/**
+	 * Gets the link to [[Special:SpecialPages]].
+	 *
+	 * @return string HTML
+	 */
+	function specialPagesLink() {
+		return $this->footerLink( 'nimbus-specialpages', 'nimbus-specialpages-url' );
+	}
+
+	/**
+	 * Gets the link to the wiki's help page.
+	 *
+	 * @return string HTML
+	 */
+	function helpLink() {
+		// By default it's an (external) URL, hence not a valid Title.
+		// But because MediaWiki is by nature very customizable, someone
+		// might've changed it to point to a local page. Tricky!
+		// @see https://phabricator.wikimedia.org/T155319
+		$helpPage = $this->msg( 'helppage' )->inContentLanguage()->plain();
+		if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $helpPage ) ) {
+			$helpLink = Linker::makeExternalLink(
+				$helpPage,
+				$this->msg( 'help' )->plain()
+			);
+		} else {
+			$helpLink = Linker::linkKnown(
+				Title::newFromText( $helpPage ),
+				$this->msg( 'help' )->plain()
+			);
+		}
+		return $helpLink;
+		// This doesn't work with the default value of 'helppage' which points to an external URL
+		// return $this->footerLink( 'help', 'helppage' );
+	}
+
+	/**
+	 * Gets the link to the wiki's "advertise on this wiki" page, but only if
+	 * the link has been configured to be visible (=[[MediaWiki:Nimbus-advertise-url]]
+	 * exists and has content).
+	 *
+	 * @return string HTML
+	 */
+	function advertiseLink() {
+		$link = '';
+		$adMsg = wfMessage( 'nimbus-advertise-url' )->inContentLanguage();
+		if ( !$adMsg->isDisabled() ) {
+			$link = '<a href="' . $adMsg->text() . '" rel="nofollow">' .
+				wfMessage( 'nimbus-advertise' )->plain() . '</a>';
+		}
+		return $link;
+	}
+
+	/**
 	 * Initialize various variables and generate the template
 	 *
 	 * @see https://phabricator.wikimedia.org/T198109
@@ -39,6 +102,41 @@ class SkinNimbus extends SkinTemplate {
 		}
 
 		$tpl = parent::prepareQuickTemplate();
+		$originalFooterLinks = $tpl->get( 'footerlinks' );
+
+		$tpl->set( 'mainpage', $this->mainPageLink() );
+		$tpl->set( 'specialpages', $this->specialPagesLink() );
+		$tpl->set( 'help', $this->helpLink() );
+		$tpl->set( 'advertise', $this->advertiseLink() );
+
+		// Can't lazily just overwrite 'footerlinks' because that way we'd also end up
+		// overwriting any and all extension-added links as well!
+		$originalFooterLinks = $tpl->get( 'footerlinks' );
+
+		// Filter out "last modified on <date>" from footer items, we render that differently
+		// and only for certain (NS_MAIN etc.) pages
+		$originalFooterLinks['info'] = array_diff( $originalFooterLinks['info'], [ 'lastmod' ] );
+
+		// Filter out duplicate entries, we don't want two "Privacy Policy" or
+		// "About" (etc.) links in the footer
+		$a = array_diff( $originalFooterLinks['places'], [ 'privacy', 'about', 'disclaimer' ] );
+		$originalFooterLinks['places'] = array_merge(
+			[
+				'mainpage',
+				'about',
+				'specialpages',
+				'help',
+				'disclaimer',
+				'advertise',
+			],
+			$a
+		);
+
+		$tpl->set( 'footerlinks', [
+			'info' => $originalFooterLinks['info'],
+			'places' => $originalFooterLinks['places']
+		] );
+
 		$tpl->set( 'nimbus-randomfeatureduser', $po );
 		return $tpl;
 	}
