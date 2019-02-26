@@ -1,0 +1,10 @@
+/**
+ * Need to set this so that the "Group" menu on Special:ListUsers and probably
+ * many other things remain usable
+ * @see /skins/Vector/skinStyles/ooui.less (this is literally copied from there and adapted a bit)
+ */
+.oo-ui-defaultOverlay,
+.skin-nimbus .oo-ui-windowManager-modal > .oo-ui-dialog,
+.skin-nimbus .ve-ui-overlay-global {
+	z-index: 7;
+}
