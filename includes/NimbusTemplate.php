@@ -221,29 +221,34 @@ class NimbusTemplate extends BaseTemplate {
 				// it *cannot* be loaded here!
 				echo RandomGameUnit::getRandomGameUnit();
 			}
+
+			$dykTemplate = Title::makeTitle( NS_TEMPLATE, 'Didyouknow' );
+			if ( $dykTemplate->exists() ) {
 			?>
 				<div class="bottom-left-nav-container">
 					<h2><?php echo wfMessage( 'nimbus-didyouknow' )->plain() ?></h2>
 					<?php echo $wgOut->parse( '{{Didyouknow}}' ) ?>
 				</div>
 			<?php
-				echo $this->getInterlanguageLinksBox();
+			}
 
-				if ( class_exists( 'RandomImageByCategory' ) ) {
-					$randomImage = $wgOut->parse(
-						'<randomimagebycategory width="200" categories="Featured Image" />',
-						false
-					);
-					echo '<div class="bottom-left-nav-container">
-					<h2>' . wfMessage( 'nimbus-featuredimage' )->plain() . '</h2>' .
-					$randomImage . '</div>';
-				}
+			echo $this->getInterlanguageLinksBox();
 
-				if ( class_exists( 'RandomFeaturedUser' ) ) {
-					echo '<div class="bottom-left-nav-container">
-						<h2>' . wfMessage( 'nimbus-featureduser' )->plain() . '</h2>' .
-						$this->get( 'nimbus-randomfeatureduser' ) . '</div>';
-				}
+			if ( class_exists( 'RandomImageByCategory' ) ) {
+				$randomImage = $wgOut->parse(
+					'<randomimagebycategory width="200" categories="Featured Image" />',
+					false
+				);
+				echo '<div class="bottom-left-nav-container">
+				<h2>' . wfMessage( 'nimbus-featuredimage' )->plain() . '</h2>' .
+				$randomImage . '</div>';
+			}
+
+			if ( class_exists( 'RandomFeaturedUser' ) ) {
+				echo '<div class="bottom-left-nav-container">
+					<h2>' . wfMessage( 'nimbus-featureduser' )->plain() . '</h2>' .
+					$this->get( 'nimbus-randomfeatureduser' ) . '</div>';
+			}
 			?>
 </div>
 		</div>
