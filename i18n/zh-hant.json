@@ -23,7 +23,7 @@
 	"nimbus-pages-can-be-edited": "此頁面可以編輯。<br />\n\n此頁不完整？或者有什麼錯誤？<br />\n\n<b>修改它吧！</b>",
 	"nimbus-profile": "基本資料",
 	"nimbus-recent-contributors": "此頁面最近的貢獻者",
-	"nimbus-recent-contributors-info": "以下為最近於此頁面貢獻的使用者。",
+	"nimbus-recent-contributors-info": "以下為最近對此頁面做出貢獻的使用者。",
 	"nimbus-signup": "註冊",
 	"nimbus-welcome": "{{GENDER:$2|歡迎}}$1"
 }
