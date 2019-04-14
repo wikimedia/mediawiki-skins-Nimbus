@@ -3,7 +3,8 @@
 		"authors": [
 			"Khaled",
 			"بدارين",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"nimbus-desc": "مظهر نيمبوز",
@@ -17,10 +18,10 @@
 	"nimbus-logout": "تسجيل الخروج",
 	"nimbus-more-actions": "المزيد من الخيارات",
 	"nimbus-more-wikis": "المزيد من الويكيات",
-	"nimbus-pages-can-be-edited": "يمكن تعديل الصحة.<br />\nهل هذه الصفحة غير مكتملة؟ هل هناك شئ خاطئ؟<br />\n<b>قم بتصويبه!</b>",
+	"nimbus-pages-can-be-edited": "يمكن تعديل الصفحة.<br />\n\nهل هذه الصفحة غير مكتملة؟ هل هناك شئ خاطئ؟<br />\n\n<b>قم بتصويبه!</b>",
 	"nimbus-profile": "المعلومات الشخصية",
 	"nimbus-recent-contributors": "أحدث مساهمات الصفحة",
-	"nimbus-recent-contributors-info": "الأشخاص التالية اسمائهم قامو مؤخرا بالمساهمة في هذه الصفحة.",
+	"nimbus-recent-contributors-info": "الأشخاص التالية أسمائهم قامو مؤخرا بالمساهمة في هذه الصفحة.",
 	"nimbus-signup": "أنشئ حسابًا",
 	"nimbus-welcome": "{{GENDER:$2|أهلاً بك}} $1"
 }
