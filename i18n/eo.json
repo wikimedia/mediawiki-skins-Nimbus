@@ -1,8 +1,23 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robin van der Vliet"
+			"Robin van der Vliet",
+			"Mirin"
 		]
 	},
-	"nimbus-logout": "Ĉu elsaluti?"
+	"nimbus-desc": "Etoso Nimbus",
+	"nimbus-advertise": "Reklami",
+	"nimbus-contribute": "Kontribui",
+	"nimbus-didyouknow": "Ĉu vi scias",
+	"nimbus-editthispage": "Redakti ĉi tiun paĝon",
+	"nimbus-featuredimage": "Elstara bildo",
+	"nimbus-featureduser": "Elstara uzanto",
+	"nimbus-login": "Ensaluti",
+	"nimbus-logout": "Ĉu elsaluti?",
+	"nimbus-more-actions": "Pli da agoj",
+	"nimbus-more-wikis": "Pli da vikioj",
+	"nimbus-pages-can-be-edited": "Ĉi tiu paĝo povas esti redaktata.<br />\n\nĈu la paĝo estas ne kompleta? Ĉu io ajn malĝusta?<br />\n\n<b>Ŝanĝu ĝin!</b>",
+	"nimbus-profile": "Profilo",
+	"nimbus-signup": "Registriĝi",
+	"nimbus-welcome": "{{GENDER:$2|Bonvenon}}, $1"
 }
