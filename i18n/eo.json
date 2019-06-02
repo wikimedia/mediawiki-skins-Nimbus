@@ -18,6 +18,8 @@
 	"nimbus-more-wikis": "Pli da vikioj",
 	"nimbus-pages-can-be-edited": "Ĉi tiu paĝo povas esti redaktata.<br />\n\nĈu la paĝo estas ne kompleta? Ĉu io ajn malĝusta?<br />\n\n<b>Ŝanĝu ĝin!</b>",
 	"nimbus-profile": "Profilo",
+	"nimbus-recent-contributors": "Ĵusaj kontribuintoj al ĉi tiu paĝo",
+	"nimbus-recent-contributors-info": "Jen ĵusaj kontribuintoj al ĉi tiu paĝo.",
 	"nimbus-signup": "Registriĝi",
 	"nimbus-welcome": "{{GENDER:$2|Bonvenon}}, $1"
 }
