@@ -731,7 +731,7 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return $footer The generated footer, including recent editors
 	 */
 	function footer() {
-		global $wgMemc, $wgUploadPath;
+		global $wgActorTableSchemaMigrationStage, $wgMemc, $wgUploadPath;
 
 		$titleObj = $this->getSkin()->getTitle();
 		$title = Title::makeTitle( $titleObj->getNamespace(), $titleObj->getText() );
@@ -757,26 +757,40 @@ class NimbusTemplate extends BaseTemplate {
 			if ( !$data ) {
 				wfDebug( __METHOD__ . ": Loading recent editors for page {$pageTitleId} from DB\n" );
 				$dbw = wfGetDB( DB_MASTER );
+
+				// This code based on the core /includes/api/ApiQueryContributors.php code
+				$revQuery = MediaWiki\MediaWikiServices::getInstance()->getRevisionStore()->getQueryInfo();
+
+				// For SCHEMA_COMPAT_READ_NEW, target indexes on the
+				// revision_actor_temp table, otherwise on the revision table.
+				$pageField = ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_NEW )
+					? 'revactor_page' : 'rev_page';
+				$idField = ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_NEW )
+					? 'revactor_actor' : $revQuery['fields']['rev_user'];
+				$userNameField = $revQuery['fields']['rev_user_text'];
+
 				$res = $dbw->select(
-					'revision',
-					array( 'DISTINCT rev_user', 'rev_user_text' ),
-					array(
-						'rev_page' => $pageTitleId,
-						'rev_user <> 0',
-						"rev_user_text <> 'MediaWiki default'"
-					),
+					$revQuery['tables'],
+					[ "DISTINCT $idField" ],
+					[
+						$pageField => $pageTitleId,
+						ActorMigration::newMigration()->isNotAnon( $revQuery['fields']['rev_user'] ),
+						$userNameField . " <> 'MediaWiki default'"
+					],
 					__METHOD__,
-					array( 'ORDER BY' => 'rev_user_text ASC', 'LIMIT' => 8 )
+					[ 'ORDER BY' => $userNameField . ' ASC', 'LIMIT' => 8 ],
+					$revQuery['joins']
 				);
 
 				foreach ( $res as $row ) {
 					// Prevent blocked users from appearing
-					$user = User::newFromId( $row->rev_user );
+					$user = ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_NEW )
+						? User::newFromActorId( $row->$idField ) : User::newFromId( $row->rev_user );
 					if ( !$user->isBlocked() ) {
-						$editors[] = array(
-							'user_id' => $row->rev_user,
-							'user_name' => $row->rev_user_text
-						);
+						$editors[] = [
+							'user_id' => $user->getId(),
+							'user_name' => $user->getName()
+						];
 					}
 				}
 
