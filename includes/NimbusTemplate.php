@@ -39,7 +39,7 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return bool
 	 */
 	function showPageTitle() {
-		$nsArray = array();
+		$nsArray = [];
 		// Suppress page title on NS_USER when SocialProfile ext. is installed
 		if ( class_exists( 'UserProfile' ) ) {
 			$nsArray[] = NS_USER;
@@ -155,7 +155,7 @@ class NimbusTemplate extends BaseTemplate {
 		<div id="navigation">
 			<div id="navigation-title"><?php echo wfMessage( 'navigation' )->plain() ?></div>
 			<?php
-				$this->navmenu_array = array();
+				$this->navmenu_array = [];
 				$this->navmenu = $this->getNavigationMenu();
 				echo $this->printMenu( 0 );
 			?>
@@ -170,10 +170,10 @@ class NimbusTemplate extends BaseTemplate {
 					echo Linker::link(
 						$recent_changes_link,
 						wfMessage( 'recentchanges' )->text(),
-						array(
+						[
 							'title' => Linker::titleAttrib( 'n-recentchanges', 'withaccess' ),
 							'accesskey' => Linker::accesskey( 'n-recentchanges' )
-						)
+						]
 					) . "\n" .
 					'<div class="cleared"></div>' . "\n";
 
@@ -181,18 +181,18 @@ class NimbusTemplate extends BaseTemplate {
 						echo Linker::link(
 							$watchlist_link,
 							wfMessage( 'watchlist' )->text(),
-							array(
+							[
 								'title' => Linker::titleAttrib( 'pt-watchlist', 'withaccess' ),
 								'accesskey' => Linker::accesskey( 'pt-watchlist' )
-							)
+							]
 						) . "\n" .
 						Linker::link(
 							$preferences_link,
 							wfMessage( 'preferences' )->text(),
-							array(
+							[
 								'title' => Linker::titleAttrib( 'pt-preferences', 'withaccess' ),
 								'accesskey' => Linker::accesskey( 'pt-preferences' )
-							)
+							]
 						) .
 						'<div class="cleared"></div>' . "\n";
 					}
@@ -295,17 +295,17 @@ class NimbusTemplate extends BaseTemplate {
 		$message = trim( wfMessage( $message_key )->text() );
 
 		if ( wfMessage( $message_key )->isDisabled() ) {
-			return array();
+			return [];
 		}
 
 		$lines = array_slice( explode( "\n", $message ), 0, 150 );
 
 		if ( count( $lines ) == 0 ) {
-			return array();
+			return [];
 		}
 
-		$nodes = array();
-		$nodes[] = array();
+		$nodes = [];
+		$nodes[] = [];
 		$lastDepth = 0;
 		$i = 0;
 		foreach ( $lines as $line ) {
@@ -401,29 +401,29 @@ class NimbusTemplate extends BaseTemplate {
 			}
 		}
 
-		return array(
+		return [
 			'text' => $text,
 			'href' => $href
-		);
+		];
 	}
 
 	/**
 	 * Generate and return "More Wikis" menu, showing links to related wikis.
 	 *
-	 * @return Array: "More Wikis" menu
+	 * @return array "More Wikis" menu
 	 */
 	private function buildMoreWikis() {
 		$messageKey = 'morewikis';
 		$message = trim( wfMessage( $messageKey )->text() );
 
 		if ( wfMessage( $messageKey )->isDisabled() ) {
-			return array();
+			return [];
 		}
 
 		$lines = array_slice( explode( "\n", $message ), 0, 150 );
 
 		if ( count( $lines ) == 0 ) {
-			return array();
+			return [];
 		}
 
 		foreach ( $lines as $line ) {
@@ -606,10 +606,10 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return array
 	 */
 	function getActionBarLinks() {
-		$left = array(
+		$left = [
 			$this->skin->getTitle()->getNamespaceKey(),
 			'edit', 'talk', 'viewsource', 'addsection', 'history'
-		);
+		];
 		$actions = $this->buildActionBar();
 		$moreLinks = [];
 
@@ -621,7 +621,7 @@ class NimbusTemplate extends BaseTemplate {
 			}
 		}
 
-		return array( $leftLinks, $moreLinks );
+		return [ $leftLinks, $moreLinks ];
 	}
 
 	/**
@@ -649,25 +649,25 @@ class NimbusTemplate extends BaseTemplate {
 				$output .= Linker::link(
 					$full_title,
 					wfMessage( 'watch' )->plain(),
-					array(
+					[
 						'id' => 'ca-watch',
 						'class' => 'mw-watchlink',
 						'title' => Linker::titleAttrib( 'ca-watch', 'withaccess' ),
 						'accesskey' => Linker::accesskey( 'ca-watch' )
-					),
-					array( 'action' => 'watch' )
+					],
+					[ 'action' => 'watch' ]
 				);
 			} else {
 				$output .= Linker::link(
 					$full_title,
 					wfMessage( 'unwatch' )->plain(),
-					array(
+					[
 						'id' => 'ca-unwatch',
 						'class' => 'mw-watchlink',
 						'title' => Linker::titleAttrib( 'ca-unwatch', 'withaccess' ),
 						'accesskey' => Linker::accesskey( 'ca-unwatch' )
-					),
-					array( 'action' => 'unwatch' )
+					],
+					[ 'action' => 'unwatch' ]
 				);
 			}
 			$output .= '</div>';
@@ -738,7 +738,7 @@ class NimbusTemplate extends BaseTemplate {
 		$pageTitleId = $titleObj->getArticleID();
 		$main_page = Title::newMainPage();
 
-		$footerShow = array( NS_MAIN, NS_FILE );
+		$footerShow = [ NS_MAIN, NS_FILE ];
 		if ( defined( 'NS_VIDEO' ) ) {
 			$footerShow[] = NS_VIDEO;
 		}
@@ -753,7 +753,7 @@ class NimbusTemplate extends BaseTemplate {
 		{
 			$key = $wgMemc->makeKey( 'recenteditors', 'list', $pageTitleId );
 			$data = $wgMemc->get( $key );
-			$editors = array();
+			$editors = [];
 			if ( !$data ) {
 				wfDebug( __METHOD__ . ": Loading recent editors for page {$pageTitleId} from DB\n" );
 				$dbw = wfGetDB( DB_MASTER );
@@ -812,32 +812,32 @@ class NimbusTemplate extends BaseTemplate {
 							Linker::link(
 								$title,
 								wfMessage( 'nimbus-editthispage' )->plain(),
-								array(
+								[
 									'class' => 'edit-action',
 									'title' => Linker::titleAttrib( 'ca-edit', 'withaccess' ),
 									'accesskey' => Linker::accesskey( 'ca-edit' )
-								),
-								array( 'action' => 'edit' )
+								],
+								[ 'action' => 'edit' ]
 							) .
 							Linker::link(
 								$title->getTalkPage(),
 								wfMessage( 'talkpage' )->plain(),
-								array(
+								[
 									'class' => 'discuss-action',
 									'title' => Linker::titleAttrib( 'ca-talk', 'withaccess' ),
 									'accesskey' => Linker::accesskey( 'ca-talk' )
-								)
+								]
 							) .
 							Linker::link(
 								$title,
 								wfMessage( 'pagehist' )->plain(),
-								array(
+								[
 									'rel' => 'archives',
 									'class' => 'page-history-action',
 									'title' => Linker::titleAttrib( 'ca-history', 'withaccess' ),
 									'accesskey' => Linker::accesskey( 'ca-history' )
-								),
-								array( 'action' => 'history' )
+								],
+								[ 'action' => 'history' ]
 							);
 				$footer .= '</div>';
 
@@ -853,10 +853,10 @@ class NimbusTemplate extends BaseTemplate {
 						$user_title = Title::makeTitle( NS_USER, $editor['user_name'] );
 
 						$footer .= '<a href="' . htmlspecialchars( $user_title->getFullURL() ) . '" rel="nofollow">';
-						$footer .= $avatar->getAvatarURL( array(
+						$footer .= $avatar->getAvatarURL( [
 							'alt' => htmlspecialchars( $editor['user_name'] ),
 							'title' => htmlspecialchars( $editor['user_name'] )
-						) );
+						] );
 						$footer .= '</a>';
 
 						if ( $x == count( $editors ) || $x != 1 && $x % $per_row == 0 ) {
@@ -897,7 +897,7 @@ class NimbusTemplate extends BaseTemplate {
 		$output = '';
 
 		# Language links
-		$language_urls = array();
+		$language_urls = [];
 
 		if ( !$wgHideInterlanguageLinks ) {
 			foreach ( $wgOut->getLanguageLinks() as $l ) {
@@ -910,11 +910,11 @@ class NimbusTemplate extends BaseTemplate {
 						$nt->getInterwiki(),
 						$wgContLang->getCode()
 					);
-					$language_urls[] = array(
+					$language_urls[] = [
 						'href' => $nt->getFullURL(),
 						'text' => ( $langName != '' ? $langName : $l ),
 						'class' => $class
-					);
+					];
 				}
 			}
 		}
