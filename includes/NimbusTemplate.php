@@ -16,9 +16,6 @@
  * @copyright Copyright © 2008-2019 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
-if ( !defined( 'MEDIAWIKI' ) ) {
-	die( -1 );
-}
 
 /**
  * Main skin class.
