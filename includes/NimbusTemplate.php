@@ -64,17 +64,18 @@ class NimbusTemplate extends BaseTemplate {
 	 * outputs a formatted page.
 	 */
 	public function execute() {
-		global $wgContLang, $wgLogo, $wgOut, $wgStylePath;
+		global $wgLogo, $wgOut, $wgStylePath;
 		global $wgLangToCentralMap;
 		global $wgUserLevels;
 
 		$this->skin = $this->data['skin'];
 
 		$user = $this->skin->getUser();
+		$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
 
 		// This trick copied over from Monaco.php to allow localized central wiki URLs
-		$central_url = !empty( $wgLangToCentralMap[$wgContLang->getCode()] ) ?
-						$wgLangToCentralMap[$wgContLang->getCode()] :
+		$central_url = !empty( $wgLangToCentralMap[$contLang->getCode()] ) ?
+						$wgLangToCentralMap[$contLang->getCode()] :
 						'http://www.shoutwiki.com/';
 
 		$register_link = SpecialPage::getTitleFor( 'Userlogin', 'signup' );
@@ -434,13 +435,14 @@ class NimbusTemplate extends BaseTemplate {
 	 * Prints the sidebar menu & all necessary JS
 	 */
 	private function printMenu( $id, $last_count = '', $level = 0 ) {
-		global $wgContLang, $wgStylePath;
+		global $wgStylePath;
 
 		$menu_output = '';
 		$output = '';
 		$count = 1;
 
 		if ( isset( $this->navmenu[$id]['children'] ) ) {
+			$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
 			if ( $level ) {
 				$menu_output .= '<div class="sub-menu" id="sub-menu' . $last_count . '" style="display:none;">';
 			}
@@ -462,7 +464,7 @@ class NimbusTemplate extends BaseTemplate {
 				)
 				{
 					$menu_output .= '<img src="' . $wgStylePath . '/Nimbus/nimbus/right_arrow' .
-						( $wgContLang->isRTL() ? '_rtl' : '' ) .
+						( $contLang->isRTL() ? '_rtl' : '' ) .
 						'.gif" alt="" class="sub-menu-button" />';
 				}
 				$menu_output .= '</a>';
@@ -889,7 +891,7 @@ class NimbusTemplate extends BaseTemplate {
 	 * (.bottom-left-nav-container).
 	 */
 	function getInterlanguageLinksBox() {
-		global $wgContLang, $wgHideInterlanguageLinks, $wgOut;
+		global $wgHideInterlanguageLinks, $wgOut;
 
 		$output = '';
 
@@ -897,6 +899,7 @@ class NimbusTemplate extends BaseTemplate {
 		$language_urls = [];
 
 		if ( !$wgHideInterlanguageLinks ) {
+			$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
 			foreach ( $wgOut->getLanguageLinks() as $l ) {
 				$tmp = explode( ':', $l, 2 );
 				$class = 'interwiki-' . $tmp[0];
@@ -905,7 +908,7 @@ class NimbusTemplate extends BaseTemplate {
 				if ( $nt ) {
 					$langName = Language::fetchLanguageName(
 						$nt->getInterwiki(),
-						$wgContLang->getCode()
+						$contLang->getCode()
 					);
 					$language_urls[] = [
 						'href' => $nt->getFullURL(),
