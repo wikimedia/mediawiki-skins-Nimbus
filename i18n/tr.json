@@ -2,11 +2,25 @@
 	"@metadata": {
 		"authors": [
 			"Karduelis",
-			"Kincki"
+			"Kincki",
+			"BaRaN6161 TURK"
 		]
 	},
+	"nimbus-desc": "Nimbus görünümü",
+	"nimbus-advertise": "Duyuru yap",
+	"nimbus-contribute": "Katkıda bulunun",
+	"nimbus-didyouknow": "Biliyor muydun",
+	"nimbus-editthispage": "Bu sayfayı düzenle",
+	"nimbus-featuredimage": "Özellikli resim",
+	"nimbus-featureduser": "Öne çıkan kullanıcı",
 	"nimbus-login": "Oturum aç",
+	"nimbus-logout": "Çıkış yapılsın mı?",
+	"nimbus-more-actions": "Daha fazla işlem",
+	"nimbus-more-wikis": "Daha fazla wiki",
 	"nimbus-pages-can-be-edited": "Bu sayfa düzenlenebilir.<br />\n\nBu sayfa tamamlanmamış mı? Yanlış bir şey var mı?<br />\n\n<b>Değiştir!</b>",
 	"nimbus-profile": "Profil",
-	"nimbus-welcome": "Hoşgeldiniz $1"
+	"nimbus-recent-contributors": "Bu sayfaya en son katkıda bulunanlar",
+	"nimbus-recent-contributors-info": "Aşağıdaki kullanıcılar yakın zamanda bu sayfaya katkıda bulundu.",
+	"nimbus-signup": "Kaydol",
+	"nimbus-welcome": "{{GENDER:$2|Hoşgeldiniz}} $1"
 }
