@@ -172,8 +172,6 @@ class SkinNimbus extends SkinTemplate {
 	 * @return ParserOutput
 	 */
 	public function parseRandomFeaturedUserTag( $text ) {
-		global $wgParser;
-
 		$out = $this->getOutput();
 		if ( is_null( $out->getTitle() ) ) {
 			throw new MWException( 'Empty $mTitle in ' . __METHOD__ );
@@ -181,7 +179,8 @@ class SkinNimbus extends SkinTemplate {
 
 		$popts = $out->parserOptions();
 
-		$parserOutput = $wgParser->getFreshParser()->parse(
+		$parser = MediaWiki\MediaWikiServices::getInstance()->getParser();
+		$parserOutput = $parser->getFreshParser()->parse(
 			$text, $out->getTitle(), $popts,
 			false, true, $out->getRevisionId()
 		);
