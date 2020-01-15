@@ -11,6 +11,9 @@
 	"license-name": "GPL-2.0-or-later",
 	"descriptionmsg": "nimbus-desc",
 	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
 	"ValidSkinNames": {
 		"nimbus": "Nimbus"
 	},

@@ -225,7 +225,7 @@ class NimbusTemplate extends BaseTemplate {
 			?>
 				<div class="bottom-left-nav-container">
 					<h2><?php echo wfMessage( 'nimbus-didyouknow' )->plain() ?></h2>
-					<?php echo $wgOut->parse( '{{Didyouknow}}' ) ?>
+					<?php echo $wgOut->parseAsInterface( '{{Didyouknow}}' ) ?>
 				</div>
 			<?php
 			}
@@ -233,7 +233,7 @@ class NimbusTemplate extends BaseTemplate {
 			echo $this->getInterlanguageLinksBox();
 
 			if ( class_exists( 'RandomImageByCategory' ) ) {
-				$randomImage = $wgOut->parse(
+				$randomImage = $wgOut->parseAsInterface(
 					'<randomimagebycategory width="200" categories="Featured Image" />',
 					false
 				);
