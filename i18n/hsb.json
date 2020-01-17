@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Michawiki"
+			"Michawiki",
+			"J budissin"
 		]
 	},
 	"nimbus-desc": "Drasta Nimbus",
@@ -16,7 +17,7 @@
 	"nimbus-more-wikis": "Dalše wikije",
 	"nimbus-pages-can-be-edited": "Strony na {{GRAMMAR:lokatiw|{{SITENAME}}}} dadźa so wobdźěłać.<br />\nJe tuta strona njedospołna? Je něšto wopak?<br />\n<b>Změń to prošu!</b>",
 	"nimbus-profile": "Profil",
-	"nimbus-recent-contributors": "Najnowši wobdźěłowarjo tuteje strony",
+	"nimbus-recent-contributors": "Njedawni wobdźěłarjo tuteje strony",
 	"nimbus-recent-contributors-info": "Slědowacy wužiwarjo su njedawno k tutej stronje přinošowali.",
 	"nimbus-signup": "Registrować",
 	"nimbus-welcome": "Witaj $1"
