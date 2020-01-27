@@ -13,7 +13,7 @@
  * @author David Pean <david.pean@gmail.com>
  * @author Inez Korczyński <korczynski@gmail.com>
  * @author Jack Phoenix
- * @copyright Copyright © 2008-2019 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
+ * @copyright Copyright © 2008-2020 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -730,7 +730,7 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return $footer The generated footer, including recent editors
 	 */
 	function footer() {
-		global $wgActorTableSchemaMigrationStage, $wgMemc, $wgUploadPath;
+		global $wgMemc, $wgUploadPath;
 
 		$titleObj = $this->getSkin()->getTitle();
 		$title = Title::makeTitle( $titleObj->getNamespace(), $titleObj->getText() );
@@ -757,34 +757,25 @@ class NimbusTemplate extends BaseTemplate {
 				wfDebug( __METHOD__ . ": Loading recent editors for page {$pageTitleId} from DB\n" );
 				$dbw = wfGetDB( DB_MASTER );
 
-				// This code based on the core /includes/api/ApiQueryContributors.php code
-				$revQuery = MediaWiki\MediaWikiServices::getInstance()->getRevisionStore()->getQueryInfo();
-
-				// For SCHEMA_COMPAT_READ_NEW, target indexes on the
-				// revision_actor_temp table, otherwise on the revision table.
-				$pageField = ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_NEW )
-					? 'revactor_page' : 'rev_page';
-				$idField = ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_NEW )
-					? 'revactor_actor' : $revQuery['fields']['rev_user'];
-				$userNameField = $revQuery['fields']['rev_user_text'];
-
 				$res = $dbw->select(
-					$revQuery['tables'],
-					[ "DISTINCT $idField" ],
+					[ 'revision_actor_temp', 'revision', 'actor' ],
+					[ 'DISTINCT revactor_actor' ],
 					[
-						$pageField => $pageTitleId,
-						ActorMigration::newMigration()->isNotAnon( $revQuery['fields']['rev_user'] ),
-						$userNameField . " <> 'MediaWiki default'"
+						'revactor_page' => $pageTitleId,
+						'actor_user IS NOT NULL',
+						"actor_name <> 'MediaWiki default'"
 					],
 					__METHOD__,
-					[ 'ORDER BY' => $userNameField . ' ASC', 'LIMIT' => 8 ],
-					$revQuery['joins']
+					[ 'ORDER BY' => 'actor_name ASC', 'LIMIT' => 8 ],
+					[
+						'actor' => [ 'JOIN', 'actor_id = revactor_actor' ],
+						'revision_actor_temp' => [ 'JOIN', 'revactor_rev = rev_id' ]
+					]
 				);
 
 				foreach ( $res as $row ) {
 					// Prevent blocked users from appearing
-					$user = ( $wgActorTableSchemaMigrationStage & SCHEMA_COMPAT_READ_NEW )
-						? User::newFromActorId( $row->$idField ) : User::newFromId( $row->rev_user );
+					$user = User::newFromActorId( $row->revactor_actor );
 					if ( !$user->isBlocked() ) {
 						$editors[] = [
 							'user_id' => $user->getId(),
