@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nirajan pant"
+			"Nirajan pant",
+			"हिमाल सुबेदी"
 		]
 	},
 	"nimbus-advertise": "विज्ञापन अरऽ",
@@ -13,6 +14,6 @@
 	"nimbus-more-wikis": "झिक्क विकिइन",
 	"nimbus-pages-can-be-edited": "येइ पन्नालाइ सम्पादन अद्द सकिन्छ।<br />\n\nक्या यो पन्ना अपुरोइ छ? याँ केइ गल्ती छ कि?<br />\n\n<b>येइलाई बदेलऽ!</b>",
 	"nimbus-profile": "प्रोफाइल",
-	"nimbus-signup": "साइन अप",
+	"nimbus-signup": "खाता खाेल्नुहाेस्",
 	"nimbus-welcome": "{{GENDER:$2|स्वागतम्}} $1"
 }
