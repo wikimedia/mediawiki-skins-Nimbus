@@ -3,7 +3,8 @@
 		"authors": [
 			"Shirayuki",
 			"Otokoume",
-			"Hinaloe"
+			"Hinaloe",
+			"Aefgh39622"
 		]
 	},
 	"nimbus-desc": "ニンバス外装",
@@ -11,6 +12,8 @@
 	"nimbus-contribute": "投稿",
 	"nimbus-didyouknow": "ご存じでしたか",
 	"nimbus-editthispage": "このページを編集",
+	"nimbus-featuredimage": "秀逸な画像",
+	"nimbus-featureduser": "秀逸な利用者",
 	"nimbus-login": "ログイン",
 	"nimbus-logout": "ログアウトしますか?",
 	"nimbus-more-actions": "その他の操作",
