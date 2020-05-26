@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Diki Ananta",
 			"NoiX180"
 		]
 	},
@@ -9,7 +10,7 @@
 	"nimbus-didyouknow": "Panjenengan ngerti, ta?",
 	"nimbus-editthispage": "Besut kaca iki",
 	"nimbus-featuredimage": "Gambar pinilih",
-	"nimbus-featureduser": "Panganggo pinilih",
+	"nimbus-featureduser": "Naraguna pinilih",
 	"nimbus-login": "Mlebu log",
 	"nimbus-logout": "Metu log?",
 	"nimbus-more-actions": "Laku liyané",
