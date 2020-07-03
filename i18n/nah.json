@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Akapochtli",
 			"Taresi"
 		]
 	},
 	"nimbus-desc": "Ēhuayōtl Nimbus",
-	"nimbus-welcome": "Ximopanōlti $1"
+	"nimbus-welcome": "Ximopanolti $1"
 }
