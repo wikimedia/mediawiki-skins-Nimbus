@@ -305,7 +305,7 @@
 	// Top-level menus
 		$( 'div[id^="menu-item_"]' ).each( function ( idx, elem ) {
 			var id = $( elem ).attr( 'id' );
-			NimbusSkin.menuitem_array[ id ] = id.replace( /menu\-item/gi, '' );
+			NimbusSkin.menuitem_array[ id ] = id.replace( /menu-item/gi, '' );
 
 			$( this ).on( 'mouseover', NimbusSkin.menuItemAction );
 			$( this ).on( 'mouseout', NimbusSkin.clearBackground );
@@ -323,7 +323,7 @@
 		// Sub-menus...
 		$( 'div[id^="sub-menu_"]' ).each( function () {
 			var id = $( this ).attr( 'id' );
-			NimbusSkin.submenu_array[ id ] = id.replace( /sub\-menu/gi, '' );
+			NimbusSkin.submenu_array[ id ] = id.replace( /sub-menu/gi, '' );
 
 			$( this ).on( 'mouseout', NimbusSkin.clearMenu );
 
@@ -335,7 +335,7 @@
 		// ...and their items
 		$( 'div[id^="sub-menu-item_"]' ).each( function () {
 			var id = $( this ).attr( 'id' );
-			NimbusSkin.submenuitem_array[ id ] = id.replace( /sub\-menu\-item/gi, '' );
+			NimbusSkin.submenuitem_array[ id ] = id.replace( /sub-menu-item/gi, '' );
 
 			$( this ).on( 'mouseover', NimbusSkin.sub_menuItemAction );
 
