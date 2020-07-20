@@ -10,7 +10,6 @@
 		"no-redeclare": "off",
 		"no-undef": "off",
 		"no-underscore-dangle": "off",
-		"no-unmodified-loop-condition": "off",
 		"no-unused-vars": "off",
 		"vars-on-top": "off",
 		"no-jquery/no-class-state": "off",

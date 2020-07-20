@@ -262,8 +262,7 @@
 			if ( NimbusSkin.displayed_menus.length && epicElement ) {
 				epicElement.style.backgroundColor = '#FFF';
 			}
-			exit = false;
-			while ( !exit && NimbusSkin.displayed_menus.length > 0 ) {
+			while ( NimbusSkin.displayed_menus.length > 0 ) {
 				the_last_displayed = NimbusSkin.displayed_menus.pop();
 				NimbusSkin.doClear( the_last_displayed, '' );
 			}
