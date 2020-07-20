@@ -7,7 +7,6 @@
 	],
 	"rules": {
 		"camelcase": "off",
-		"no-redeclare": "off",
 		"no-undef": "off",
 		"no-underscore-dangle": "off",
 		"no-unused-vars": "off",

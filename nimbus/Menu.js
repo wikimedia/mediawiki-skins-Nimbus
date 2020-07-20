@@ -4,7 +4,7 @@
  * @file
  * @author Jack Phoenix - cleanup & removal of YUI dependency, etc.
  */
-/* global getElementsByClassName, window, document, setTimeout, clearTimeout */
+/* global getElementsByClassName */
 ( function ( $ ) {
 
 	var NimbusSkin = {
