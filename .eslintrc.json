@@ -1,0 +1,26 @@
+{
+	"root": true,
+	"extends": [
+		"wikimedia/client",
+		"wikimedia/mediawiki",
+		"wikimedia/jquery"
+	],
+	"rules": {
+		"brace-style": "off",
+		"camelcase": "off",
+		"computed-property-spacing": "off",
+		"indent": "off",
+		"keyword-spacing": "off",
+		"max-statements-per-line": "off",
+		"no-redeclare": "off",
+		"no-undef": "off",
+		"no-underscore-dangle": "off",
+		"no-unmodified-loop-condition": "off",
+		"no-unused-vars": "off",
+		"no-useless-escape": "off",
+		"space-before-function-paren": "off",
+		"vars-on-top": "off",
+		"no-jquery/no-class-state": "off",
+		"no-jquery/no-global-selector": "off"
+	}
+}
