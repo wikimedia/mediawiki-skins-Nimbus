@@ -96,7 +96,7 @@
 
 		check_item_in_array: function ( item ) {
 			var sub_menu_item = 'sub-menu' + item,
-				exit, count, the_last_displayed;
+				exit, the_last_displayed;
 
 			clearTimeout( NimbusSkin.m_timer );
 
@@ -108,7 +108,6 @@
 				NimbusSkin.do_menuItemAction( item );
 			} else {
 				exit = false;
-				count = 0;
 				while ( !exit && NimbusSkin.displayed_menus.length > 0 ) {
 					the_last_displayed = NimbusSkin.displayed_menus.pop();
 					if ( ( sub_menu_item.indexOf( the_last_displayed ) === -1 ) ) {
@@ -118,7 +117,6 @@
 						exit = true;
 						NimbusSkin.do_menuItemAction( item );
 					}
-					count++;
 				}
 
 				NimbusSkin.do_menuItemAction( item );
@@ -226,20 +224,12 @@
 		},
 
 		clearMenu: function ( e ) {
-			var source_id = '*';
-
 			if ( !e ) {
 				e = window.event;
 			}
 			e.cancelBubble = true;
 			if ( e.stopPropagation ) {
 				e.stopPropagation();
-			}
-
-			try {
-				source_id = e.target.id;
-			} catch ( ex ) {
-				source_id = e.srcElement.id;
 			}
 
 			clearTimeout( NimbusSkin.m_timer );
@@ -258,7 +248,7 @@
 		},
 
 		doClearAll: function () {
-			var epicElement, the_last_displayed, exit;
+			var epicElement, the_last_displayed;
 			// Otherwise the NimbusSkin.displayed_menus[0] line below causes a TypeError about
 			// NimbusSkin.displayed_menus[0] being undefined
 

@@ -8,7 +8,6 @@
 	"rules": {
 		"camelcase": "off",
 		"no-underscore-dangle": "off",
-		"no-unused-vars": "off",
 		"no-jquery/no-class-state": "off",
 		"no-jquery/no-global-selector": "off"
 	}
