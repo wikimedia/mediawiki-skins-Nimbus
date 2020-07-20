@@ -1,7 +1,6 @@
 {
 	"extends": "stylelint-config-wikimedia",
 	"rules": {
-		"declaration-block-no-duplicate-properties": null,
 		"declaration-no-important": null,
 		"declaration-property-value-blacklist": null,
 		"no-descending-specificity": null,
