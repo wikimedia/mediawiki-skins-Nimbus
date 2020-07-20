@@ -23,7 +23,7 @@
 }
 
 .quizgame-create-form h1 {
-	border-bottom: none;
+	border-bottom: 0;
 	font-weight: bold;
 }
 

@@ -36,7 +36,7 @@
 .create-poll-top h1,
 .create-poll-question-and-answer h1,
 .create-poll-image h1 {
-	border-bottom: none;
+	border-bottom: 0;
 	font-weight: bold;
 }
 
@@ -46,6 +46,6 @@
 
 .update-poll-left h1,
 .update-poll-right h1 {
-	border-bottom: none;
+	border-bottom: 0;
 	font-weight: bold;
 }

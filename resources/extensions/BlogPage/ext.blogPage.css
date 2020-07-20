@@ -1,6 +1,6 @@
 /** Blog Page **/
 #blog-page-container h2 {
-	border-bottom: none;
+	border-bottom: 0;
 }
 
 #blog-page-middle h1.page-title {

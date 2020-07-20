@@ -25,13 +25,13 @@
 }
 
 .profile-tab-bar {
-	border-bottom: none;
+	border-bottom: 0;
 }
 
 .profile-tab {
-	border: none;
+	border: 0;
 }
 
 .profile-tab-on {
-	border: none;
+	border: 0;
 }

@@ -30,7 +30,7 @@ div.mw-body-content {
 }
 
 #siteNotice {
-	border: none;
+	border: 0;
 	padding: 0px;
 }
 
@@ -237,7 +237,7 @@ input.search-button {
 }
 
 .border-fix {
-	border-bottom: none !important;
+	border-bottom: 0 !important;
 }
 
 .sub-menu {
