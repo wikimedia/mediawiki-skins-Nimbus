@@ -8,7 +8,6 @@
 		"declaration-property-value-blacklist": null,
 		"no-descending-specificity": null,
 		"no-duplicate-selectors": null,
-		"selector-max-id": null,
-		"string-quotes": null
+		"selector-max-id": null
 	}
 }
