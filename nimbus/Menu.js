@@ -5,7 +5,7 @@
  * @author Jack Phoenix - cleanup & removal of YUI dependency, etc.
  */
 /* global getElementsByClassName */
-( function ( $ ) {
+( function () {
 
 	var NimbusSkin = {
 		last_clicked: '',
@@ -376,4 +376,4 @@
 		} );
 	} );
 
-}( jQuery ) );
+}() );
