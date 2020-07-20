@@ -1,8 +1,6 @@
 {
 	"extends": "stylelint-config-wikimedia",
 	"rules": {
-		"color-hex-case": null,
-		"color-hex-length": null,
 		"declaration-block-no-duplicate-properties": null,
 		"declaration-no-important": null,
 		"declaration-property-value-blacklist": null,
