@@ -62,6 +62,8 @@
 
 		// Skin Navigation
 		menuItemAction: function ( e ) {
+			var source_id = '*';
+
 			clearTimeout( NimbusSkin.m_timer );
 
 			if ( !e ) {
@@ -72,7 +74,6 @@
 				e.stopPropagation();
 			}
 
-			var source_id = '*';
 			try {
 				source_id = e.target.id;
 			} catch ( ex ) {
@@ -94,9 +95,10 @@
 		},
 
 		check_item_in_array: function ( item ) {
-			clearTimeout( NimbusSkin.m_timer );
 			var sub_menu_item = 'sub-menu' + item,
 				exit, count, the_last_displayed;
+
+			clearTimeout( NimbusSkin.m_timer );
 
 			if (
 				NimbusSkin.last_displayed === '' ||
@@ -132,6 +134,9 @@
 		},
 
 		sub_menuItemAction: function ( e ) {
+			var source_id = '*',
+				second_start, second_uscore;
+
 			clearTimeout( NimbusSkin.m_timer );
 
 			if ( !e ) {
@@ -142,8 +147,6 @@
 				e.stopPropagation();
 			}
 
-			var source_id = '*',
-				second_start, second_uscore;
 			try {
 				source_id = e.target.id;
 			} catch ( ex ) {
@@ -174,6 +177,8 @@
 		},
 
 		clearBackground: function ( e ) {
+			var source_id = '*';
+
 			if ( !e ) {
 				e = window.event;
 			}
@@ -182,7 +187,6 @@
 				e.stopPropagation();
 			}
 
-			var source_id = '*';
 			try {
 				source_id = e.target.id;
 			} catch ( ex ) {
@@ -200,6 +204,8 @@
 		},
 
 		resetMenuBackground: function ( e ) {
+			var source_id = '*';
+
 			if ( !e ) {
 				e = window.event;
 			}
@@ -208,7 +214,6 @@
 				e.stopPropagation();
 			}
 
-			var source_id = '*';
 			try {
 				source_id = e.target.id;
 			} catch ( ex ) {
@@ -221,6 +226,8 @@
 		},
 
 		clearMenu: function ( e ) {
+			var source_id = '*';
+
 			if ( !e ) {
 				e = window.event;
 			}
@@ -229,7 +236,6 @@
 				e.stopPropagation();
 			}
 
-			var source_id = '*';
 			try {
 				source_id = e.target.id;
 			} catch ( ex ) {
@@ -252,13 +258,18 @@
 		},
 
 		doClearAll: function () {
-		// Otherwise the NimbusSkin.displayed_menus[0] line below causes a TypeError about
-		// NimbusSkin.displayed_menus[0] being undefined
+			var epicElement, the_last_displayed, exit;
+			// Otherwise the NimbusSkin.displayed_menus[0] line below causes a TypeError about
+			// NimbusSkin.displayed_menus[0] being undefined
+
 			if ( !NimbusSkin.displayed_menus.length ) {
 				return;
 			}
-			var epicElement = document.getElementById( 'menu-item' + NimbusSkin.displayed_menus[ 0 ].substr( NimbusSkin.displayed_menus[ 0 ].indexOf( '_' ) ) ),
-				the_last_displayed, exit;
+			epicElement = document.getElementById(
+				'menu-item' +
+				NimbusSkin.displayed_menus[ 0 ]
+					.substr( NimbusSkin.displayed_menus[ 0 ].indexOf( '_' ) )
+			);
 			if ( NimbusSkin.displayed_menus.length && epicElement ) {
 				epicElement.style.backgroundColor = '#FFF';
 			}
