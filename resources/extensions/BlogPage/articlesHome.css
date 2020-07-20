@@ -1,7 +1,8 @@
 /** Articles Home **/
-.logged-in-articles h2, .side-articles h2 {
+.logged-in-articles h2,
+.side-articles h2 {
 	font-size: 1.5em;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	color: #000;
 	font-weight: normal;
 }

@@ -1,14 +1,14 @@
 /** Quiz **/
 .quiz-leaderboard-top-links {
-	margin: 10px 0px !important;
+	margin: 10px 0 !important;
 }
 
 .quiz-leaderboard-nav {
-	margin: 15px 0px 0px !important;
+	margin: 15px 0 0 !important;
 }
 
 .view-quizzes-top-links {
-	margin: 10px 0px 10px !important;
+	margin: 10px 0 10px !important;
 }
 
 .view-quizzes-top-links a {
@@ -28,5 +28,5 @@
 }
 
 .create-message {
-	margin-top: 0px;
+	margin-top: 0;
 }

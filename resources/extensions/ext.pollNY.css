@@ -13,12 +13,12 @@
 }
 
 .create-poll-top h1 {
-	padding: 0px;
+	padding: 0;
 	font-weight: bold;
 }
 
 .view-poll-top-links {
-	margin: 10px 0px 10px !important;
+	margin: 10px 0 10px !important;
 }
 
 .view-poll-top-links a {

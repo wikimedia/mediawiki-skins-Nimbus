@@ -1,6 +1,6 @@
 /** User Page **/
 #points-level {
-	margin: 0px;
+	margin: 0;
 }
 
 #profile-toggle-button {
@@ -17,11 +17,11 @@
 
 /** Edit Profile **/
 .profile-tab-bar {
-	padding: 0px;
+	padding: 0;
 }
 
 .profile-update-title {
-	padding: 0px;
+	padding: 0;
 }
 
 .profile-tab-bar {

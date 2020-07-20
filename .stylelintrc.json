@@ -1,21 +1,13 @@
 {
 	"extends": "stylelint-config-wikimedia",
 	"rules": {
-		"block-closing-brace-empty-line-before": null,
 		"color-hex-case": null,
 		"color-hex-length": null,
 		"declaration-block-no-duplicate-properties": null,
-		"declaration-colon-space-after": null,
 		"declaration-no-important": null,
 		"declaration-property-value-blacklist": null,
-		"indentation": null,
-		"length-zero-no-unit": null,
 		"no-descending-specificity": null,
 		"no-duplicate-selectors": null,
-		"no-missing-end-of-source-newline": null,
-		"number-leading-zero": null,
-		"selector-combinator-space-after": null,
-		"selector-list-comma-newline-after": null,
 		"selector-max-id": null,
 		"string-quotes": null
 	}
