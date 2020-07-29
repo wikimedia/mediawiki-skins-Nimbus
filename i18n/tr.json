@@ -3,7 +3,8 @@
 		"authors": [
 			"BaRaN6161 TURK",
 			"Karduelis",
-			"Kincki"
+			"Kincki",
+			"LuCKY"
 		]
 	},
 	"nimbus-desc": "Nimbus görünümü",
@@ -22,5 +23,5 @@
 	"nimbus-recent-contributors": "Bu sayfaya en son katkıda bulunanlar",
 	"nimbus-recent-contributors-info": "Aşağıdaki kullanıcılar yakın zamanda bu sayfaya katkıda bulundu.",
 	"nimbus-signup": "Kaydol",
-	"nimbus-welcome": "{{GENDER:$2|Hoşgeldiniz}} $1"
+	"nimbus-welcome": "{{GENDER:$2|Hoş geldiniz}} $1"
 }
