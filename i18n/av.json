@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Gazimagomedov"
+			"Gazimagomedov",
+			"Soul Train"
 		]
 	},
 	"nimbus-desc": "Куцалъул тема - Nimbus",
@@ -11,7 +12,7 @@
 	"nimbus-featuredimage": "Беццараб сурат",
 	"nimbus-featureduser": "Веццарав гӀахьалчи",
 	"nimbus-login": "Жаниве лъугьине",
-	"nimbus-logout": "КъватӀиве инзейиш?",
+	"nimbus-logout": "КъватӀире лъугьинищ?",
 	"nimbus-more-actions": "Жегиги хӀалтӀаби",
 	"nimbus-more-wikis": "Цогидал вики-проектал",
 	"nimbus-pages-can-be-edited": "Гьаб гьумер хисизабизе бегьула.<br />\nЛъугӀараб гьечӀиш? Мекъаб жо бугиш?<br />\n<b>Батани хисизабе!</b>",
