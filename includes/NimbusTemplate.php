@@ -84,7 +84,6 @@ class NimbusTemplate extends BaseTemplate {
 		$profile_link = Title::makeTitle( NS_USER, $user->getName() );
 		$main_page_link = Title::newMainPage();
 		$recent_changes_link = SpecialPage::getTitleFor( 'Recentchanges' );
-		$top_fans_link = SpecialPage::getTitleFor( 'TopUsers' );
 		$special_pages_link = SpecialPage::getTitleFor( 'Specialpages' );
 
 		$help_link = $this->skin->helpLink();
@@ -162,6 +161,7 @@ class NimbusTemplate extends BaseTemplate {
 				<?php
 					// Only show the link to Special:TopUsers if wAvatar class exists and $wgUserLevels is an array
 					if ( class_exists( 'wAvatar' ) && is_array( $wgUserLevels ) ) {
+						$top_fans_link = SpecialPage::getTitleFor( 'TopUsers' );
 						echo '<a href="' . htmlspecialchars( $top_fans_link->getFullURL() ) . '">' . wfMessage( 'topusers' )->plain() . '</a>';
 					}
 
