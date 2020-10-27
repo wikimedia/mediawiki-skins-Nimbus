@@ -480,7 +480,7 @@ class NimbusTemplate extends BaseTemplate {
 		}
 
 		if ( $menu_output != '' ) {
-			$output .= "<div id=\"menu{$last_count}\">";
+			$output .= "<div class=\"sub-menu-container\" id=\"menu{$last_count}\">";
 			$output .= $menu_output;
 			$output .= "</div>\n";
 		}
