@@ -16,7 +16,7 @@
  * @copyright Copyright © 2008-2020 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
-
+use MediaWiki\MediaWikiServices;
 /**
  * Main skin class.
  * @ingroup Skins
@@ -71,7 +71,7 @@ class NimbusTemplate extends BaseTemplate {
 		$this->skin = $this->data['skin'];
 
 		$user = $this->skin->getUser();
-		$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		// This trick copied over from Monaco.php to allow localized central wiki URLs
 		$central_url = !empty( $wgLangToCentralMap[$contLang->getCode()] ) ?
@@ -442,7 +442,7 @@ class NimbusTemplate extends BaseTemplate {
 		$count = 1;
 
 		if ( isset( $this->navmenu[$id]['children'] ) ) {
-			$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
+			$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 			if ( $level ) {
 				$menu_output .= '<div class="sub-menu" id="sub-menu' . $last_count . '" style="display:none;">';
 			}
@@ -730,7 +730,7 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return $footer The generated footer, including recent editors
 	 */
 	function footer() {
-		global $wgMemc, $wgUploadPath;
+		global $wgUploadPath;
 
 		$titleObj = $this->getSkin()->getTitle();
 		$title = Title::makeTitle( $titleObj->getNamespace(), $titleObj->getText() );
@@ -743,6 +743,7 @@ class NimbusTemplate extends BaseTemplate {
 		}
 		$footer = '';
 
+		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
 		// Show the list of recent editors and their avatars if the page is in
 		// one of the allowed namespaces and it is not the main page
 		if (
@@ -750,8 +751,8 @@ class NimbusTemplate extends BaseTemplate {
 			( $pageTitleId != $main_page->getArticleID() )
 		)
 		{
-			$key = $wgMemc->makeKey( 'recenteditors', 'list', $pageTitleId );
-			$data = $wgMemc->get( $key );
+			$key = $cache->makeKey( 'recenteditors', 'list', $pageTitleId );
+			$data = $cache->get( $key );
 			$editors = [];
 			if ( !$data ) {
 				wfDebug( __METHOD__ . ": Loading recent editors for page {$pageTitleId} from DB\n" );
@@ -784,8 +785,8 @@ class NimbusTemplate extends BaseTemplate {
 					}
 				}
 
-				// Cache in memcached for five minutes
-				$wgMemc->set( $key, $editors, 60 * 5 );
+				// Cache for five minutes
+				$cache->set( $key, $editors, 60 * 5 );
 			} else {
 				wfDebug( __METHOD__ . ": Loading recent editors for page {$pageTitleId} from cache\n" );
 				$editors = $data;
@@ -890,7 +891,7 @@ class NimbusTemplate extends BaseTemplate {
 		$language_urls = [];
 
 		if ( !$wgHideInterlanguageLinks ) {
-			$contLang = MediaWiki\MediaWikiServices::getInstance()->getContentLanguage();
+			$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 			foreach ( $wgOut->getLanguageLinks() as $l ) {
 				$tmp = explode( ':', $l, 2 );
 				$class = 'interwiki-' . $tmp[0];
