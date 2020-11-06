@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
  * @ingroup Skins
@@ -104,7 +106,11 @@ class SkinNimbus extends SkinTemplate {
 		$tpl = parent::prepareQuickTemplate();
 		$originalFooterLinks = $tpl->get( 'footerlinks' );
 
-		$tpl->set( 'mainpage', $this->mainPageLink() );
+		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+		$tpl->set( 'mainpage', $linkRenderer->makeKnownLink(
+			Title::newMainPage(),
+			$this->msg( 'mainpage' )->text()
+		) );
 		$tpl->set( 'specialpages', $this->specialPagesLink() );
 		$tpl->set( 'help', $this->helpLink() );
 		$tpl->set( 'advertise', $this->advertiseLink() );
@@ -186,17 +192,5 @@ class SkinNimbus extends SkinTemplate {
 		);
 
 		return $parserOutput;
-	}
-
-	function setupSkinUserCss( OutputPage $out ) {
-		parent::setupSkinUserCss( $out );
-
-		// Add CSS
-		$out->addModuleStyles( [
-			'mediawiki.skinning.interface',
-			'mediawiki.skinning.content.externallinks',
-			'skins.monobook.styles',
-			'skins.nimbus'
-		] );
 	}
 }
