@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jaroslav Cerny",
 			"Juandev",
 			"Matěj Suchánek",
 			"Mormegil",
@@ -11,6 +12,7 @@
 	"nimbus-advertise": "Propagovat",
 	"nimbus-contribute": "Přispět",
 	"nimbus-didyouknow": "Víte že",
+	"nimbus-editthispage": "Editovat tuto stránku",
 	"nimbus-featuredimage": "Nejlepší obrázek",
 	"nimbus-featureduser": "Nejlepší uživatel",
 	"nimbus-login": "Přihlásit se",
