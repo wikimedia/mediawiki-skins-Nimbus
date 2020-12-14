@@ -1,8 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Seipinne",
 			"Yupik"
 		]
 	},
-	"nimbus-editthispage": "Mute taam siijđo"
+	"nimbus-editthispage": "Mute taam siijđo",
+	"nimbus-login": "Čäälit jieijâd siisâ",
+	"nimbus-logout": "Čäälit jieijâd olgos?",
+	"nimbus-more-wikis": "Lase wikih"
 }
