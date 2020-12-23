@@ -12,10 +12,23 @@
 	"descriptionmsg": "nimbus-desc",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.34.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"ValidSkinNames": {
-		"nimbus": "Nimbus"
+		"nimbus": {
+			"class": "SkinNimbus",
+			"args": [
+				{
+					"name": "nimbus",
+					"styles": [
+						"mediawiki.skinning.interface",
+						"mediawiki.skinning.content.externallinks",
+						"skins.monobook.styles",
+						"skins.nimbus"
+					]
+				}
+			]
+		}
 	},
 	"MessagesDirs": {
 		"SkinNimbus": [
