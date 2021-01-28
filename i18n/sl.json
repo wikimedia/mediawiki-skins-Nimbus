@@ -20,5 +20,5 @@
 	"nimbus-recent-contributors": "Nedavni prispevki k strani",
 	"nimbus-recent-contributors-info": "Naslednji ljudje so nedavno prispevali k tej strani.",
 	"nimbus-signup": "Registracija",
-	"nimbus-welcome": "$1, {{GENDER:$2|dobrodošel|dobrodošla}}"
+	"nimbus-welcome": "Pozdravljeni, $1"
 }
