@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bikarhêner",
+			"Ghybu"
+		]
+	},
+	"nimbus-editthispage": "Vê rûpelê biguherîne",
+	"nimbus-featuredimage": "Wêneya bijare",
+	"nimbus-featureduser": "Bikarhênerê bijare",
+	"nimbus-login": "Têkeve",
+	"nimbus-logout": "Derdikevî?",
+	"nimbus-more-actions": "Zêdetir kiryar",
+	"nimbus-more-wikis": "Zêdetir wîkî",
+	"nimbus-profile": "Profîl",
+	"nimbus-signup": "Qeyd bibe",
+	"nimbus-welcome": "{{GENDER:$2|Bi xêr hatî}} $1"
+}
