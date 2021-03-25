@@ -91,7 +91,6 @@
 			"+ext.socialprofile.usergifts.css": "resources/extensions/SocialProfile/usergifts.css",
 			"+ext.socialprofile.userprofile.css": "resources/extensions/SocialProfile/userprofile.css",
 			"+ext.socialprofile.userrelationship.css": "resources/extensions/SocialProfile/userrelationship.css",
-			"+mediawiki.special.preferences.styles": "resources/mediawiki/special.preferences.styles.less",
 			"+oojs-ui-core.styles": "resources/ooui.less"
 		}
 	},
