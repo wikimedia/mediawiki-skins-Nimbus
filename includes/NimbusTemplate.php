@@ -13,7 +13,7 @@
  * @author David Pean <david.pean@gmail.com>
  * @author Inez Korczyński <korczynski@gmail.com>
  * @author Jack Phoenix
- * @copyright Copyright © 2008-2020 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
+ * @copyright Copyright © 2008-2021 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 use MediaWiki\MediaWikiServices;
@@ -71,7 +71,9 @@ class NimbusTemplate extends BaseTemplate {
 		$this->skin = $this->data['skin'];
 
 		$user = $this->skin->getUser();
-		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
+		$services = MediaWikiServices::getInstance();
+		$contLang = $services->getContentLanguage();
+		$linkRenderer = $services->getLinkRenderer();
 
 		// This trick copied over from Monaco.php to allow localized central wiki URLs
 		$central_url = !empty( $wgLangToCentralMap[$contLang->getCode()] ) ?
@@ -165,7 +167,7 @@ class NimbusTemplate extends BaseTemplate {
 						echo '<a href="' . htmlspecialchars( $top_fans_link->getFullURL() ) . '">' . wfMessage( 'topusers' )->plain() . '</a>';
 					}
 
-					echo Linker::link(
+					echo $linkRenderer->makeLink(
 						$recent_changes_link,
 						wfMessage( 'recentchanges' )->text(),
 						[
@@ -176,7 +178,7 @@ class NimbusTemplate extends BaseTemplate {
 					'<div class="cleared"></div>' . "\n";
 
 					if ( $user->isLoggedIn() ) {
-						echo Linker::link(
+						echo $linkRenderer->makeLink(
 							$watchlist_link,
 							wfMessage( 'watchlist' )->text(),
 							[
@@ -184,7 +186,7 @@ class NimbusTemplate extends BaseTemplate {
 								'accesskey' => Linker::accesskey( 'pt-watchlist' )
 							]
 						) . "\n" .
-						Linker::link(
+						$linkRenderer->makeLink(
 							$preferences_link,
 							wfMessage( 'preferences' )->text(),
 							[
@@ -645,9 +647,9 @@ class NimbusTemplate extends BaseTemplate {
 			// new, jQuery-ified version of the AJAX page watching code dies
 			// if the title attribute is not present
 			if ( !$this->skin->getUser()->isWatched( $title ) ) {
-				$output .= Linker::link(
+				$output .= MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
 					$full_title,
-					wfMessage( 'watch' )->plain(),
+					wfMessage( 'watch' )->text(),
 					[
 						'id' => 'ca-watch',
 						'class' => 'mw-watchlink',
@@ -657,9 +659,9 @@ class NimbusTemplate extends BaseTemplate {
 					[ 'action' => 'watch' ]
 				);
 			} else {
-				$output .= Linker::link(
+				$output .= MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
 					$full_title,
-					wfMessage( 'unwatch' )->plain(),
+					wfMessage( 'unwatch' )->text(),
 					[
 						'id' => 'ca-unwatch',
 						'class' => 'mw-watchlink',
@@ -743,7 +745,10 @@ class NimbusTemplate extends BaseTemplate {
 		}
 		$footer = '';
 
-		$cache = MediaWikiServices::getInstance()->getMainWANObjectCache();
+		$services = MediaWikiServices::getInstance();
+		$cache = $services->getMainWANObjectCache();
+		$linkRenderer = $services->getLinkRenderer();
+
 		// Show the list of recent editors and their avatars if the page is in
 		// one of the allowed namespaces and it is not the main page
 		if (
@@ -800,9 +805,9 @@ class NimbusTemplate extends BaseTemplate {
 					<div id="footer-actions">
 						<h2>' . wfMessage( 'nimbus-contribute' )->plain() . '</h2>'
 							. wfMessage( 'nimbus-pages-can-be-edited' )->parse() .
-							Linker::link(
+							$linkRenderer->makeLink(
 								$title,
-								wfMessage( 'nimbus-editthispage' )->plain(),
+								wfMessage( 'nimbus-editthispage' )->text(),
 								[
 									'class' => 'edit-action',
 									'title' => Linker::titleAttrib( 'ca-edit', 'withaccess' ),
@@ -810,18 +815,18 @@ class NimbusTemplate extends BaseTemplate {
 								],
 								[ 'action' => 'edit' ]
 							) .
-							Linker::link(
+							$linkRenderer->makeLink(
 								$title->getTalkPage(),
-								wfMessage( 'talkpage' )->plain(),
+								wfMessage( 'talkpage' )->text(),
 								[
 									'class' => 'discuss-action',
 									'title' => Linker::titleAttrib( 'ca-talk', 'withaccess' ),
 									'accesskey' => Linker::accesskey( 'ca-talk' )
 								]
 							) .
-							Linker::link(
+							$linkRenderer->makeLink(
 								$title,
-								wfMessage( 'pagehist' )->plain(),
+								wfMessage( 'pagehist' )->text(),
 								[
 									'rel' => 'archives',
 									'class' => 'page-history-action',

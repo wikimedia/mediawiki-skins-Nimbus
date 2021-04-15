@@ -57,9 +57,9 @@ class SkinNimbus extends SkinTemplate {
 				$this->msg( 'help' )->plain()
 			);
 		} else {
-			$helpLink = Linker::linkKnown(
+			$helpLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeKnownLink(
 				Title::newFromText( $helpPage ),
-				$this->msg( 'help' )->plain()
+				$this->msg( 'help' )->text()
 			);
 		}
 		return $helpLink;
@@ -185,7 +185,7 @@ class SkinNimbus extends SkinTemplate {
 
 		$popts = $out->parserOptions();
 
-		$parser = MediaWiki\MediaWikiServices::getInstance()->getParser();
+		$parser = MediaWikiServices::getInstance()->getParser();
 		$parserOutput = $parser->getFreshParser()->parse(
 			$text, $out->getTitle(), $popts,
 			false, true, $out->getRevisionId()
