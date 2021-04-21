@@ -874,6 +874,9 @@ class NimbusTemplate extends BaseTemplate {
 			foreach ( $links as $link ) {
 				$footer .= $this->get( $link );
 				$footer .= "\n";
+				if ( $link === 'copyright' ) {
+					$footer .= '<br />';
+				}
 			}
 		}
 
