@@ -1,4 +1,4 @@
-#wiki-login {
+#wiki-login:not( .mw-skin-nimbus-button ) {
 	margin: 12px 0 0 0;
 	float: right;
 	padding: 0 5px 0 10px;
@@ -24,4 +24,14 @@
 			color: #333;
 		}
 	}
+}
+
+/* This literally exists only for Echo support, namely to position the
+ * "Profile" and "Log out?" buttons displayed to a registered user correctly when Echo is installed
+ */
+#mw-skin-nimbus-button-container {
+	display: inline-block;
+	position: relative;
+	/* Calculated using the patented "It Looks Good To Me™" method of determining an element's proper position */
+	top: -10px;
 }

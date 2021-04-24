@@ -1,0 +1,21 @@
+div#echo {
+	display: inline-flex;
+	/* Give it a bit of spacing */
+	margin-right: 0.5em;
+}
+
+div#echo li {
+	/* Hide those pesky white list indicators */
+	list-style: none;
+}
+
+div#echo li#pt-notifications-notice,
+div#echo li#pt-notifications-alert {
+	display: inline-block;
+}
+
+div#echo li#pt-notifications-alert .mw-echo-notifications-badge:after,
+div#echo li#pt-notifications-notice .mw-echo-notifications-badge:after {
+	font-size: 1em;
+	margin-right: 0.5em;
+}

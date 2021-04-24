@@ -84,6 +84,8 @@
 			"+ext.blogPage": "resources/extensions/BlogPage/ext.blogPage.css",
 			"+ext.blogPage.articlesHome": "resources/extensions/BlogPage/articlesHome.css",
 			"+ext.blogPage.create.css": "resources/extensions/BlogPage/create.css",
+			"ext.echo.ui": "resources/extensions/Echo/echo.ui.overlay.css",
+			"+ext.echo.styles.badge": "resources/extensions/Echo/echo.ui.css",
 			"+ext.miniInvite.css": "resources/extensions/ext.miniInvite.css",
 			"+ext.pollNY.css": "resources/extensions/ext.pollNY.css",
 			"+ext.quizGame.css": "resources/extensions/ext.quizGame.css",

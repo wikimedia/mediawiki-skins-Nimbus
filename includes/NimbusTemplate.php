@@ -131,11 +131,53 @@ class NimbusTemplate extends BaseTemplate {
 		<div id="wiki-login">
 <?php
 	if ( $user->isLoggedIn() ) {
+		// By default Echo is not available for anons and making it work for anons is *possible*
+		// but requires a lot of hacking
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) ) {
+			// FILTHY HACK!
+			// We don't run the core PersonalUrls hook at all in Nimbus, but Echo uses
+			// that hook to properly build the notification icons with the correct # of
+			// real notifications etc.
+			// So instead we build a fake $personal_urls array (to prevent E_NOTICEs in Echo
+			// code, which expects some of these array indexes to be present, which they
+			// are normally), call the Echo method and then do our magic on the now-populated
+			// $personal_urls variable. Messy as hell, but it works!
+			$personal_urls = [
+				'userpage' => [],
+				'mytalk' => [
+					'text' => '',
+					'class' => ''
+				]
+			];
+			$t = $this->skin->getTitle();
+			EchoHooks::onPersonalUrls( $personal_urls, $t, $this->skin );
+			// Don't need these anymore after this point
+			unset( $personal_urls['userpage'], $personal_urls['mytalk'] );
+		?>
+		<div id="echo" role="log">
+			<?php
+			foreach ( $personal_urls as $key => $arr ) {
+				echo '<li id="pt-' . Sanitizer::escapeIdForAttribute( $key ) . '">';
+				echo Html::element( 'a', [
+					'href' => $arr['href'],
+					'class' => implode( ' ', $arr['class'] ),
+					'data-counter-num' => $arr['data']['counter-num'],
+					'data-counter-text' => $arr['data']['counter-text'],
+				] );
+				echo '</li>';
+			}
+			?>
+		</div>
+		<?php
+		} // "is Echo installed?" test
+
 		echo "\t\t\t" . '<div id="login-message">' .
 				wfMessage( 'nimbus-welcome', '<b>' . $user->getName() . '</b>', $user->getName() )->parse() .
 			'</div>
-			<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->plain() . '</span></a>
-			<a class="mw-skin-nimbus-button negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . wfMessage( 'nimbus-logout' )->plain() . '</span></a>';
+			<div id="mw-skin-nimbus-button-container">
+				<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->plain() . '</span></a>
+				<a class="mw-skin-nimbus-button negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . wfMessage( 'nimbus-logout' )->plain() . '</span></a>
+			</div>';
 	} else {
 		echo '<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $register_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-signup' )->plain() . '</span></a>
 		<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $login_link->getFullURL() ) . '" id="nimbusLoginButton"><span>' . wfMessage( 'nimbus-login' )->plain() . '</span></a>';
