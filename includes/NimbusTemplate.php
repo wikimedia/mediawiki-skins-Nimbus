@@ -771,14 +771,13 @@ class NimbusTemplate extends BaseTemplate {
 	/**
 	 * Returns the footer for a page
 	 *
-	 * @return $footer The generated footer, including recent editors
+	 * @return string The generated footer, including recent editors
 	 */
 	function footer() {
 		global $wgUploadPath;
 
-		$titleObj = $this->getSkin()->getTitle();
-		$title = Title::makeTitle( $titleObj->getNamespace(), $titleObj->getText() );
-		$pageTitleId = $titleObj->getArticleID();
+		$title = $this->getSkin()->getTitle();
+		$pageTitleId = $title->getArticleID();
 		$main_page = Title::newMainPage();
 
 		$footerShow = [ NS_MAIN, NS_FILE ];
@@ -794,7 +793,7 @@ class NimbusTemplate extends BaseTemplate {
 		// Show the list of recent editors and their avatars if the page is in
 		// one of the allowed namespaces and it is not the main page
 		if (
-			in_array( $titleObj->getNamespace(), $footerShow ) &&
+			in_array( $title->getNamespace(), $footerShow ) &&
 			( $pageTitleId != $main_page->getArticleID() )
 		)
 		{
