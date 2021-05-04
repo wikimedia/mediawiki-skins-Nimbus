@@ -32,5 +32,6 @@
 	"nimbus-sidebar": "{{ignored}}\nUsed as Sidebar in Nimbus skin, similar to [[MediaWiki:Sidebar]]",
 	"nimbus-specialpages": "{{notranslate}}\nFooter link text; the URL of this link will be [[MediaWiki:Nimbus-specialpages-url]]",
 	"nimbus-specialpages-url": "{{notranslate}}\nFooter link target page; the title of this link will be {{msg-mw|Nimbus-specialpages}}",
+	"nimbus-talkpage": "In the Nimbus skin this is the text for link to discuss the page, at the bottom of the page for pages in the main, file and video namespaces (excluding the Main Page). Identical to the {{msg-mw|talkpage}} message used by the Cologne Blue skin.",
 	"nimbus-welcome": "&lt;b&gt;&lt;/b&gt; tags are passed as $1 along with the actual username\n{{Identical|Welcome}}\nParameters:\n*$1 - username, passed in with &lt;b> tags, not used for GENDER\n*$2 - username, used for GENDER"
 }

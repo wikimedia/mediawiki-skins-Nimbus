@@ -858,7 +858,7 @@ class NimbusTemplate extends BaseTemplate {
 							) .
 							$linkRenderer->makeLink(
 								$title->getTalkPage(),
-								wfMessage( 'talkpage' )->text(),
+								wfMessage( 'nimbus-talkpage' )->text(),
 								[
 									'class' => 'discuss-action',
 									'title' => Linker::titleAttrib( 'ca-talk', 'withaccess' ),

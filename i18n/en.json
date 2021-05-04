@@ -23,5 +23,6 @@
 	"nimbus-sidebar": "* navigation\n\n** mainpage|mainpage-description\n\n** portal-url|portal\n\n** currentevents-url|currentevents\n\n** recentchanges-url|recentchanges\n\n** randompage-url|randompage\n\n** helppage|help",
 	"nimbus-specialpages": "{{int:specialpages}}",
 	"nimbus-specialpages-url": "Special:SpecialPages",
+	"nimbus-talkpage": "Discuss this page",
 	"nimbus-welcome": "{{GENDER:$2|Welcome}} $1"
 }
