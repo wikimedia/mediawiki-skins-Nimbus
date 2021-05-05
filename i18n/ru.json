@@ -4,6 +4,7 @@
 			"Eleferen",
 			"Facenapalm",
 			"Kaganer",
+			"Kareyac",
 			"Okras",
 			"Putnik",
 			"Ләйсән"
@@ -25,5 +26,6 @@
 	"nimbus-recent-contributors": "Внёсшие последний вклад в эту страницу",
 	"nimbus-recent-contributors-info": "Следующие люди недавно внесли вклад в эту страницу.",
 	"nimbus-signup": "Регистрация",
+	"nimbus-talkpage": "Обсудить эту страницу",
 	"nimbus-welcome": "{{GENDER:$2|Добро пожаловать}}, $1"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Cainamarques",
+			"Eduardoaddad",
 			"Felipe L. Ewald",
 			"HenriqueCrang",
 			"Luckas",
@@ -24,5 +25,6 @@
 	"nimbus-recent-contributors": "Colaboradores recentes nesta página",
 	"nimbus-recent-contributors-info": "As seguintes pessoas contribuíram recentemente para esta página.",
 	"nimbus-signup": "Registar-se",
+	"nimbus-talkpage": "Discutir sobre esta página",
 	"nimbus-welcome": "{{GENDER:$2|Bem-vindo|Bem-vinda}} $1"
 }

@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"Joseph",
 			"Karduelis",
 			"Kincki",
 			"LuCKY",
@@ -24,5 +25,6 @@
 	"nimbus-recent-contributors": "Bu sayfaya en son katkıda bulunanlar",
 	"nimbus-recent-contributors-info": "Aşağıdaki kullanıcılar yakın zamanda bu sayfaya katkıda bulundu.",
 	"nimbus-signup": "Kaydol",
+	"nimbus-talkpage": "Bu sayfayı tartış",
 	"nimbus-welcome": "{{GENDER:$2|Hoş geldiniz}} $1"
 }
