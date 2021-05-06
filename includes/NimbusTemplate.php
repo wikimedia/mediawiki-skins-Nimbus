@@ -130,7 +130,7 @@ class NimbusTemplate extends BaseTemplate {
 		<?php } // if $more_wikis ?>
 		<div id="wiki-login">
 <?php
-	if ( $user->isLoggedIn() ) {
+	if ( $user->isRegistered() ) {
 		// By default Echo is not available for anons and making it work for anons is *possible*
 		// but requires a lot of hacking
 		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) ) {
@@ -219,7 +219,7 @@ class NimbusTemplate extends BaseTemplate {
 					) . "\n" .
 					'<div class="cleared"></div>' . "\n";
 
-					if ( $user->isLoggedIn() ) {
+					if ( $user->isRegistered() ) {
 						echo $linkRenderer->makeLink(
 							$watchlist_link,
 							wfMessage( 'watchlist' )->text(),
@@ -680,7 +680,7 @@ class NimbusTemplate extends BaseTemplate {
 		$output = '<div id="action-bar" class="noprint">';
 		// Watch/unwatch link for registered users on namespaces that can be
 		// watched (i.e. everything but the Special: namespace)
-		if ( $this->skin->getUser()->isLoggedIn() && $title->getNamespace() != NS_SPECIAL ) {
+		if ( $this->skin->getUser()->isRegistered() && $title->getNamespace() != NS_SPECIAL ) {
 			$output .= '<div id="article-controls">
 				<span class="mw-skin-nimbus-watchplus">+</span>';
 
