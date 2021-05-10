@@ -8,7 +8,7 @@
 	"nimbus-advertise": "ДӀакхайкхо",
 	"nimbus-contribute": "Ккъинхьегам",
 	"nimbus-didyouknow": "Хаий шуна",
-	"nimbus-editthispage": "Нисъе хӀара агӀо",
+	"nimbus-editthispage": "Нисйе хӀара агӀо",
 	"nimbus-featuredimage": "Магийна сурт",
 	"nimbus-featureduser": "Магийна декъашхо",
 	"nimbus-login": "ЧугӀо",
@@ -16,6 +16,6 @@
 	"nimbus-more-actions": "Кхин тӀе дийриш",
 	"nimbus-more-wikis": "Кхин вики-проекташ",
 	"nimbus-profile": "Профиль",
-	"nimbus-signup": "ДӀаяздар кхоллар",
+	"nimbus-signup": "ДӀайаздар кхоллар",
 	"nimbus-welcome": "{{GENDER:$2|Марша догӀийла}}, $1"
 }
