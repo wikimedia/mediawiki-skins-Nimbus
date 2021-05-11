@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Emma Franzen",
 			"Hamilton Abreu",
 			"Luckas",
 			"Luckas Blade",
@@ -23,5 +24,6 @@
 	"nimbus-recent-contributors": "Contribuidores recentes desta página",
 	"nimbus-recent-contributors-info": "As seguintes pessoas contribuíram recentemente para esta página.",
 	"nimbus-signup": "Registar-se",
+	"nimbus-talkpage": "Discuta esta página",
 	"nimbus-welcome": "{{GENDER:$2|Bem-vindo|Bem-vinda|Bem-vindo(a)}} $1"
 }

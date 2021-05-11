@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Narazeni",
 			"Silovan"
 		]
 	},
@@ -16,5 +17,6 @@
 	"nimbus-profile": "პროფილი",
 	"nimbus-recent-contributors": "თე ხასჷლაშ ეკონია რედაქტორეფი",
 	"nimbus-signup": "რეგისტრაცია",
+	"nimbus-talkpage": "მოჩამილი ხასჷლაშ სხუნუა",
 	"nimbus-welcome": "{{GENDER:$2|მოზოჯით}} $1!"
 }
