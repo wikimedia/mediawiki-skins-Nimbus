@@ -133,7 +133,7 @@ class NimbusTemplate extends BaseTemplate {
 	if ( $user->isRegistered() ) {
 		// By default Echo is not available for anons and making it work for anons is *possible*
 		// but requires a lot of hacking
-		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) ) {
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) && method_exists( 'EchoHooks', 'onPersonalUrls' ) ) {
 			// FILTHY HACK!
 			// We don't run the core PersonalUrls hook at all in Nimbus, but Echo uses
 			// that hook to properly build the notification icons with the correct # of
