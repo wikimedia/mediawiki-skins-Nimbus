@@ -3,6 +3,7 @@
 		"authors": [
 			"Chrumps",
 			"Misiek95",
+			"Rail",
 			"Sp5uhe"
 		]
 	},
@@ -22,5 +23,6 @@
 	"nimbus-recent-contributors": "Ostatni edytorzy tej strony",
 	"nimbus-recent-contributors-info": "Te osoby ostatnio edytowały ten artykuł.",
 	"nimbus-signup": "Zarejestruj się",
+	"nimbus-talkpage": "Dyskusja",
 	"nimbus-welcome": "{{GENDER:$2|Witaj}} $1"
 }
