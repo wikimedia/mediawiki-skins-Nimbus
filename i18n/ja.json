@@ -4,7 +4,8 @@
 			"Aefgh39622",
 			"Hinaloe",
 			"Otokoume",
-			"Shirayuki"
+			"Shirayuki",
+			"しぃ"
 		]
 	},
 	"nimbus-desc": "ニンバス外装",
@@ -23,5 +24,6 @@
 	"nimbus-recent-contributors": "このページの最近の更新",
 	"nimbus-recent-contributors-info": "このページを最近更新したのは以下の人たちです。",
 	"nimbus-signup": "利用者登録",
+	"nimbus-talkpage": "このページについて議論する",
 	"nimbus-welcome": "{{GENDER:$2|ようこそ}}、$1 さん"
 }
