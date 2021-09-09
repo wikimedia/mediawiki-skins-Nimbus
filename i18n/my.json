@@ -5,7 +5,12 @@
 		]
 	},
 	"nimbus-contribute": "ပံ့ပိုးရန်",
+	"nimbus-didyouknow": "သင်သိပါသလား",
+	"nimbus-editthispage": "ဤစာမျက်နှာကို တည်းဖြတ်ရန်",
+	"nimbus-featuredimage": "အထူးဓာတ်ပုံ",
 	"nimbus-login": "အကောင့်ထဲဝင်ရန်",
 	"nimbus-logout": "ထွက်မည်လော?",
-	"nimbus-signup": "မှတ်ပုံတင်ရန်"
+	"nimbus-profile": "ပရိုဖိုင်",
+	"nimbus-signup": "မှတ်ပုံတင်ရန်",
+	"nimbus-welcome": "{{GENDER:$2|ကြိုဆိုပါသည်}}၊ $1"
 }
