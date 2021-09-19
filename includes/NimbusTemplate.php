@@ -802,7 +802,7 @@ class NimbusTemplate extends BaseTemplate {
 			$editors = [];
 			if ( !$data ) {
 				wfDebug( __METHOD__ . ": Loading recent editors for page {$pageTitleId} from DB\n" );
-				$dbw = wfGetDB( DB_MASTER );
+				$dbw = wfGetDB( DB_PRIMARY );
 
 				$res = $dbw->select(
 					[ 'revision_actor_temp', 'revision', 'actor' ],

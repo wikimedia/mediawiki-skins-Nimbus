@@ -12,7 +12,7 @@
 	"descriptionmsg": "nimbus-desc",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.35.0"
+		"MediaWiki": ">= 1.35.3"
 	},
 	"ValidSkinNames": {
 		"nimbus": {
