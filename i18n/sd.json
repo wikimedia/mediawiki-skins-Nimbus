@@ -6,20 +6,20 @@
 			"Tweety"
 		]
 	},
-	"nimbus-advertise": "اشتهار",
-	"nimbus-contribute": "ڀاڱيدار ٿيو",
+	"nimbus-advertise": "اشتھار ھلايو",
+	"nimbus-contribute": "ڀاڱيداري ڪريو",
 	"nimbus-didyouknow": "ڇا توهان ڄاڻو ٿا",
-	"nimbus-editthispage": "ھيءُ صفحو سنواريو",
+	"nimbus-editthispage": "ھي صفحو سنواريو",
 	"nimbus-featuredimage": "چونڊ تصوير",
 	"nimbus-featureduser": "چونڊ واپرائيندڙ",
 	"nimbus-login": "داخل ٿيو",
 	"nimbus-logout": "ٻاھر نڪرندئو؟",
 	"nimbus-more-actions": "وڌيڪ عمل",
 	"nimbus-more-wikis": "وڌيڪ وڪيز",
-	"nimbus-pages-can-be-edited": "هيءُ صفحو سنواري سگھجي ٿو. <br />\n\nڇا هيءُ صفحو نامڪمل آهي؟ ڇا ان ۾ ڪا خامي آهي؟ <br />\n\n<b>ان کي سنواريو!</b>",
-	"nimbus-profile": "خدوخال",
-	"nimbus-recent-contributors": "هن صفحي جا حاليہ ڀاڱيدار",
-	"nimbus-recent-contributors-info": "هيٺين ماڻهن تازو ئي هن صفحي لاءِ ڀاڱيداري نڀائي آهي.",
+	"nimbus-pages-can-be-edited": "هيءُ صفحو سنواري سگهجي ٿو. <br />\n\nڇا هيءُ صفحو نامڪمل آهي؟ ڇا ان ۾ ڪا خامي آهي؟ <br />\n\n<b>ان کي بدلايو!</b>",
+	"nimbus-profile": "پروفائيل",
+	"nimbus-recent-contributors": "هن صفحي جا ھاڻوڪا ڀاڱيدار",
+	"nimbus-recent-contributors-info": "هيٺين ماڻھن تازو هن صفحي لاءِ ڀاڱيداري ڪئي آهي.",
 	"nimbus-signup": "کاتو کوليو",
 	"nimbus-welcome": "{{GENDER:$2|ڀليڪار}} $1"
 }
