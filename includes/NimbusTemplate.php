@@ -823,7 +823,7 @@ class NimbusTemplate extends BaseTemplate {
 				foreach ( $res as $row ) {
 					// Prevent blocked users from appearing
 					$user = User::newFromActorId( $row->revactor_actor );
-					if ( !$user->isBlocked() ) {
+					if ( !$user->getBlock() ) {
 						$editors[] = [
 							'user_id' => $user->getId(),
 							'user_name' => $user->getName()
