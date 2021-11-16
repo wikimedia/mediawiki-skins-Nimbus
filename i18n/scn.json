@@ -3,13 +3,15 @@
 		"authors": [
 			"Pippinu",
 			"S4b1nuz E.656",
-			"Sarvaturi"
+			"Sarvaturi",
+			"Ajeje Brazorf"
 		]
 	},
 	"nimbus-desc": "La peddi Nimbus",
 	"nimbus-advertise": "Riclami",
 	"nimbus-contribute": "Cuntribbuiri",
 	"nimbus-didyouknow": "Lu sapivi?",
+	"nimbus-editthispage": "Cancia sta pàggina",
 	"nimbus-featuredimage": "Mmàggini ntâ vitrina",
 	"nimbus-featureduser": "Utenti n evidenza",
 	"nimbus-login": "Trasi",
@@ -21,5 +23,5 @@
 	"nimbus-recent-contributors": "Cuntribbutura ricenti a sta pàggina",
 	"nimbus-recent-contributors-info": "Sti genti cuntribbueru a sta pàggina di ricenti.",
 	"nimbus-signup": "Scrìviti",
-	"nimbus-welcome": "{{GENDER:$1|Bimminutu|Bimminuta|Bimminutu/a}} $1"
+	"nimbus-welcome": "{{GENDER:$2|Bimminutu|Bimminuta|Bimminutu/a}} $1"
 }
