@@ -6,5 +6,21 @@
 			"Horus"
 		]
 	},
-	"nimbus-logout": "ออกจากระบบ?"
+	"nimbus-desc": "สกินนิมบัส",
+	"nimbus-advertise": "โฆษณา",
+	"nimbus-contribute": "มีส่วนร่วม",
+	"nimbus-didyouknow": "คุณรู้หรือไม่",
+	"nimbus-editthispage": "แก้ไขหน้านี้",
+	"nimbus-featuredimage": "ภาพคัดสรร",
+	"nimbus-featureduser": "ผู้ใช้คัดสรร",
+	"nimbus-login": "เข้าสู่ระบบ",
+	"nimbus-logout": "ออกจากระบบ?",
+	"nimbus-more-actions": "การกระทำเพิ่มเติม",
+	"nimbus-more-wikis": "วิกิเพิ่มเติม",
+	"nimbus-pages-can-be-edited": "หน้านี้สามารถแก้ไขได้<br />\n\nหน้านี้ไม่สมบูรณ์หรือมีอะไรผิดหรือเปล่า<br />\n\n<b>แก้เลย!</b>",
+	"nimbus-profile": "โปรไฟล์",
+	"nimbus-recent-contributors": "ผู้มีส่วนร่วมล่าสุดกับหน้านี้",
+	"nimbus-recent-contributors-info": "บุคคลต่อไปนี้มีส่วนร่วมกับหน้านี้เมื่อล่าสุด",
+	"nimbus-signup": "สมัครสมาชิก",
+	"nimbus-welcome": "{{GENDER:$2|ยินดีต้อนรับ}} $1"
 }

@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Reda Benkhadra"
+		]
+	},
+	"nimbus-welcome": "{{GENDER:$2|مرحبا بيك}} $1"
+}

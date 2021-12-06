@@ -1,9 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wertuose"
+			"Wertuose",
+			"NMW03"
 		]
 	},
 	"nimbus-login": "Daxil ol",
-	"nimbus-welcome": "Xoş gəlmisiniz, $1"
+	"nimbus-welcome": "{{GENDER:$2|Xoş gəlmisiniz}}, $1"
 }

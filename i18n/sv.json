@@ -3,7 +3,8 @@
 		"authors": [
 			"Jopparn",
 			"Lokal Profil",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Sabelöga"
 		]
 	},
 	"nimbus-desc": "Nimbus-utseende",
@@ -16,8 +17,8 @@
 	"nimbus-login": "Logga in",
 	"nimbus-logout": "Logga ut?",
 	"nimbus-more-actions": "Fler åtgärder",
-	"nimbus-more-wikis": "Fler wikis",
-	"nimbus-pages-can-be-edited": "Denna sida kan redigeras.<br />\nÄr denna sida ofullständig? Är något fel?<br />\n<b>Ändra det!</b>",
+	"nimbus-more-wikis": "Fler wikier",
+	"nimbus-pages-can-be-edited": "Denna sida kan redigeras.<br />\n\nÄr denna sida ofullständig? Är något fel?<br />\n\n<b>Ändra det!</b>",
 	"nimbus-profile": "Profil",
 	"nimbus-recent-contributors": "Senaste bidragsgivare till denna sida",
 	"nimbus-recent-contributors-info": "Följande personer har nyligen bidragit till denna sida.",
