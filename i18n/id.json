@@ -3,7 +3,8 @@
 		"authors": [
 			"Farras",
 			"William Surya Permana",
-			"පසිඳු කාවින්ද"
+			"පසිඳු කාවින්ද",
+			"Daud I.F. Argana"
 		]
 	},
 	"nimbus-desc": "Kulit Nimbus",
@@ -22,5 +23,6 @@
 	"nimbus-recent-contributors": "Kontribusi terbaru di halaman ini",
 	"nimbus-recent-contributors-info": "Orang-orang berikut baru saja berkontribusi di halaman ini.",
 	"nimbus-signup": "Daftar",
+	"nimbus-talkpage": "Bicarakan halaman ini",
 	"nimbus-welcome": "{{GENDER:$2|Selamat datang}}, $1"
 }
