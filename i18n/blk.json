@@ -4,6 +4,7 @@
 			"Khun Kt"
 		]
 	},
+	"nimbus-advertise": "ကျောႏညာႏ",
 	"nimbus-contribute": "စွဲးကမ်း",
 	"nimbus-didyouknow": "နာꩻသေနေဟောင်း?",
 	"nimbus-editthispage": "မွဉ်းဖျင် လိတ်မဲ့ငါယို",
@@ -13,5 +14,6 @@
 	"nimbus-more-actions": "ခွုမ်မာꩻချက်အထဲင်းဖိုင်ႏ",
 	"nimbus-more-wikis": "ဝီခီ အလင်ဖိုင်ႏ",
 	"nimbus-profile": "ပရိုဖုဲင်",
-	"nimbus-signup": "ဒင်ႏမတ်ပိုင်တိဉ်"
+	"nimbus-signup": "ဒင်ႏမတ်ပိုင်တိဉ်",
+	"nimbus-welcome": "{{GENDER:$2|ကျိုႏဆွုမ်ႏဒျာႏသြ}} $1"
 }
