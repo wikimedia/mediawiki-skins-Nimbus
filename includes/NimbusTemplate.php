@@ -554,19 +554,7 @@ class NimbusTemplate extends BaseTemplate {
 		 */
 		$title = $skin->getTitle();
 
-		$content_actions = [];
-
-		// Oh hey, this one's protected...
-		$r = new ReflectionMethod( $skin, 'buildContentNavigationUrls' );
-		$r->setAccessible( true );
-		$content_navigation = $r->invoke( $skin );
-		// In an ideal world this would Just Work(TM):
-		// $content_actions = $this->buildContentActionUrls( $content_navigation );
-		// But of course it *doesn't* because that method is literally _the_ only
-		// private one in SkinTemplate...let's change that:
-		$r = new ReflectionMethod( $skin, 'buildContentActionUrls' );
-		$r->setAccessible( true );
-		$content_actions = $r->invoke( $skin, $content_navigation );
+		$content_actions = $this->get( 'content_actions' );
 
 		if ( !$title->inNamespace( NS_SPECIAL ) ) {
 			// "What links here" isn't a part of default core content actions so we need
@@ -675,12 +663,14 @@ class NimbusTemplate extends BaseTemplate {
 	 */
 	function actionBar() {
 		$title = $this->skin->getTitle();
+		$user = $this->skin->getUser();
 		$full_title = Title::makeTitle( $title->getNamespace(), $title->getText() );
+		$services = MediaWikiServices::getInstance();
 
 		$output = '<div id="action-bar" class="noprint">';
 		// Watch/unwatch link for registered users on namespaces that can be
 		// watched (i.e. everything but the Special: namespace)
-		if ( $this->skin->getUser()->isRegistered() && $title->getNamespace() != NS_SPECIAL ) {
+		if ( $user->isRegistered() && $title->getNamespace() != NS_SPECIAL ) {
 			$output .= '<div id="article-controls">
 				<span class="mw-skin-nimbus-watchplus">+</span>';
 
@@ -688,8 +678,8 @@ class NimbusTemplate extends BaseTemplate {
 			// In 1.18, we need the class *and* the title...w/o the title, the
 			// new, jQuery-ified version of the AJAX page watching code dies
 			// if the title attribute is not present
-			if ( !$this->skin->getUser()->isWatched( $title ) ) {
-				$output .= MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
+			if ( !$services->getWatchlistManager()->isWatched( $user, $title ) ) {
+				$output .= $services->getLinkRenderer()->makeLink(
 					$full_title,
 					wfMessage( 'watch' )->text(),
 					[
@@ -701,7 +691,7 @@ class NimbusTemplate extends BaseTemplate {
 					[ 'action' => 'watch' ]
 				);
 			} else {
-				$output .= MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
+				$output .= $services->getLinkRenderer()->makeLink(
 					$full_title,
 					wfMessage( 'unwatch' )->text(),
 					[
