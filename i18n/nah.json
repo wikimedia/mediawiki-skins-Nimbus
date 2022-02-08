@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Akapochtli",
-			"Taresi"
+			"Taresi",
+			"Languaeditor"
 		]
 	},
 	"nimbus-desc": "Ēhuayōtl Nimbus",
-	"nimbus-welcome": "Ximopanolti $1"
+	"nimbus-welcome": "{{GENDER:$2|Mah kwalli xiwallaw|Mah kwalli xiwallaw}} $1"
 }
