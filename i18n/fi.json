@@ -3,6 +3,7 @@
 		"authors": [
 			"01miki10",
 			"Jack Phoenix",
+			"Korjaus1",
 			"Linnea",
 			"Pyscowicz",
 			"SuperPete"
@@ -24,5 +25,6 @@
 	"nimbus-recent-contributors": "Tämän sivun tuoreimmat muokkaajat",
 	"nimbus-recent-contributors-info": "Seuraavat henkilöt ovat muokanneet tätä artikkelia äskettäin.",
 	"nimbus-signup": "Rekisteröidy",
+	"nimbus-talkpage": "Keskustele tästä sivusta",
 	"nimbus-welcome": "{{GENDER:$2|Tervetuloa}} $1"
 }
