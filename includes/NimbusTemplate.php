@@ -133,7 +133,15 @@ class NimbusTemplate extends BaseTemplate {
 	if ( $user->isRegistered() ) {
 		// By default Echo is not available for anons and making it work for anons is *possible*
 		// but requires a lot of hacking
-		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) && method_exists( 'EchoHooks', 'onPersonalUrls' ) ) {
+		// This if ( class_exists() ) loop exists so that we can support both MW 1.39+
+		// (namespaced class name) and also older MWs (notably 1.35)
+		// @see T306806
+		if ( class_exists( 'MediaWiki\Extension\Notifications\Hooks' ) ) {
+			$echoHooksClass = MediaWiki\Extension\Notifications\Hooks::class;
+		} else {
+			$echoHooksClass = EchoHooks::class;
+		}
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) && method_exists( $echoHooksClass, 'onPersonalUrls' ) ) {
 			// FILTHY HACK!
 			// We don't run the core PersonalUrls hook at all in Nimbus, but Echo uses
 			// that hook to properly build the notification icons with the correct # of
@@ -150,7 +158,7 @@ class NimbusTemplate extends BaseTemplate {
 				]
 			];
 			$t = $this->skin->getTitle();
-			EchoHooks::onPersonalUrls( $personal_urls, $t, $this->skin );
+			$echoHooksClass::onPersonalUrls( $personal_urls, $t, $this->skin );
 			// Don't need these anymore after this point
 			unset( $personal_urls['userpage'], $personal_urls['mytalk'] );
 		?>
