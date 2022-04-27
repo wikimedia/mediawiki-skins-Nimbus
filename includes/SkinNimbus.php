@@ -76,10 +76,13 @@ class SkinNimbus extends SkinTemplate {
 	 */
 	function advertiseLink() {
 		$link = '';
-		$adMsg = wfMessage( 'nimbus-advertise-url' )->inContentLanguage();
+		$adMsg = $this->msg( 'nimbus-advertise-url' )->inContentLanguage();
 		if ( !$adMsg->isDisabled() ) {
-			$link = '<a href="' . $adMsg->text() . '" rel="nofollow">' .
-				wfMessage( 'nimbus-advertise' )->plain() . '</a>';
+			$url = Sanitizer::validateAttributes( [ 'href' => $adMsg->text() ], [ 'href' ] )['href'] ?? false;
+			if ( $url ) {
+				$link = '<a href="' . htmlspecialchars( $url, ENT_QUOTES ) . '" rel="nofollow">' .
+					$this->msg( 'nimbus-advertise' )->escaped() . '</a>';
+			}
 		}
 		return $link;
 	}
