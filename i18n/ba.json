@@ -3,7 +3,8 @@
 		"authors": [
 			"Sagan",
 			"Ләйсән",
-			"Рустам Нурыев"
+			"Рустам Нурыев",
+			"Amire80"
 		]
 	},
 	"nimbus-desc": "Nimbus биҙәлеше темаһы",
@@ -21,5 +22,5 @@
 	"nimbus-recent-contributors": "Был биткә һуңғы үҙгәртеү индереүселәр",
 	"nimbus-recent-contributors-info": "Был биткә күптән түгел түбәндәге кешеләр үҙгәреш индерҙе",
 	"nimbus-signup": "Теркәлеү",
-	"nimbus-welcome": "{{GENDER:$2|Рәхим итегеҙ}},$1"
+	"nimbus-welcome": "{{GENDER:$2|Рәхим итегеҙ}}, $1"
 }
