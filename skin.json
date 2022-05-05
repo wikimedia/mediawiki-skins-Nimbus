@@ -1,5 +1,6 @@
 {
 	"name": "Nimbus",
+	"namemsg": "skinname-nimbus",
 	"version": "3.6.0",
 	"author": [
 		"Aaron Wright",
