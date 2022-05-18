@@ -2,18 +2,25 @@
 	"@metadata": {
 		"authors": [
 			"Fulup",
-			"Y-M D"
+			"Y-M D",
+			"Huñvreüs"
 		]
 	},
 	"nimbus-desc": "Gwiskadur Nimbus",
 	"nimbus-advertise": "Ober bruderezh",
 	"nimbus-contribute": "Kemer perzh",
 	"nimbus-didyouknow": "Ha gouzout a raec'h",
+	"nimbus-editthispage": "Kemmañ ar bajenn-mañ",
+	"nimbus-featuredimage": "Skeudenn lakaet a-wel",
+	"nimbus-featureduser": "Implijer lakaet a-wel",
 	"nimbus-login": "Kevreañ",
 	"nimbus-logout": "Digevreañ ?",
 	"nimbus-more-actions": "Obererezhioù ouzhpenn",
 	"nimbus-more-wikis": "Wikioù ouzhpenn",
+	"nimbus-pages-can-be-edited": "Gallout a reer kemmañ ar bajenn-mañ.<br />\n\nN’eo ket klok ar bajenn-mañ? Un dra faos zo?<br />\n\n<b>Kemmit anezhi!</b>",
 	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors-info": "Ar re-se o deus kemmet ar bajenn-mañ n’eus ket pell zo.",
 	"nimbus-signup": "En em enskrivañ",
-	"nimbus-welcome": "Degemer mat $1"
+	"nimbus-talkpage": "Pajenn gaozeal",
+	"nimbus-welcome": "{{GENDER:$2|Degemer mat}} $1"
 }
