@@ -6,5 +6,6 @@
 	},
 	"nimbus-editthispage": "Redaktar ca pagino",
 	"nimbus-login": "Eniro",
-	"nimbus-signup": "Registragez"
+	"nimbus-signup": "Registragez",
+	"nimbus-welcome": "{{GENDER:$2|Bonveno}} $1"
 }
