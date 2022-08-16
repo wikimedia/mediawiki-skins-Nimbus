@@ -2,23 +2,26 @@
 	"@metadata": {
 		"authors": [
 			"AnakngAraw",
-			"Jojit fb"
+			"Jojit fb",
+			"Ianlopez1115"
 		]
 	},
 	"nimbus-desc": "Pabalat ng Nimbus",
 	"nimbus-advertise": "Ipatalastas",
 	"nimbus-contribute": "Mag-ambag",
 	"nimbus-didyouknow": "Alam ba ninyo",
+	"nimbus-editthispage": "Baguhin ang pahinang ito",
 	"nimbus-featuredimage": "Tampok na larawan",
 	"nimbus-featureduser": "Tampok na tagagamit",
 	"nimbus-login": "Mag-login",
 	"nimbus-logout": "Umalis sa pagkakalagda?",
 	"nimbus-more-actions": "Marami pang mga galaw",
 	"nimbus-more-wikis": "Marami pang mga wiki",
-	"nimbus-pages-can-be-edited": "Mapapatnugutan ang mga pahina ng {{SITENAME}}.<br />\nHindi pa ba kumpleto ang pahinang ito? Mayroon bang anumang kamalian?<br />\n<b>Baguhin ito!</b>",
+	"nimbus-pages-can-be-edited": "Mapapatnugutan ang pahina na ito.<br />\nHindi pa ba kumpleto ang pahinang ito? Mayroon bang anumang kamalian?<br />\n<b>Baguhin ito!</b>",
 	"nimbus-profile": "Balangkas ng katangian",
 	"nimbus-recent-contributors": "Kamakailang mga tagapag-ambag sa pahinang ito",
 	"nimbus-recent-contributors-info": "Ang sumusunod na mga tao ay kamakailang nag-ambag sa pahinang ito.",
 	"nimbus-signup": "Magparehistro",
-	"nimbus-welcome": "Maligayang pagdating $1"
+	"nimbus-talkpage": "Pag-usapan ang pahinang ito",
+	"nimbus-welcome": "{{GENDER:$2|Maligayang pagdating}} $1"
 }
