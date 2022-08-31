@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
+			"Bada Kaji",
 			"हिमाल सुबेदी"
 		]
 	},
+	"nimbus-contribute": "योगदान गर्नुहोस्",
 	"nimbus-logout": "निर्गमन"
 }
