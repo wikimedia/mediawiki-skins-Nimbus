@@ -12,7 +12,10 @@
 	"descriptionmsg": "nimbus-desc",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.35.3"
+		"MediaWiki": ">= 1.39"
+	},
+	"ConfigRegistry": {
+		"nimbus": "GlobalVarConfig::newInstance"
 	},
 	"ValidSkinNames": {
 		"nimbus": {
@@ -20,10 +23,8 @@
 			"args": [
 				{
 					"name": "nimbus",
+					"bodyOnly": true,
 					"styles": [
-						"mediawiki.skinning.interface",
-						"mediawiki.skinning.content.externallinks",
-						"skins.monobook.styles",
 						"skins.nimbus"
 					]
 				}
@@ -45,6 +46,21 @@
 	},
 	"ResourceModules": {
 		"skins.nimbus": {
+			"class": "ResourceLoaderSkinModule",
+			"features": {
+				"content-links": true,
+				"content-links-external": true,
+				"content-media": true,
+				"interface-message-box": true,
+				"interface-category": true,
+				"content-tables": true,
+				"i18n-ordered-lists": true,
+				"i18n-all-lists-margins": true,
+				"i18n-headings": true,
+				"elements": true,
+				"interface": true,
+				"logo": true
+			},
 			"styles": {
 				"nimbus/Nimbus.css": {
 					"media": "screen"
@@ -96,5 +112,11 @@
 			"+oojs-ui-core.styles": "resources/ooui.less"
 		}
 	},
-	"manifest_version": 1
+	"config": {
+		"NimbusRecentEditors": {
+			"value": false,
+			"description": "Show recent editors in the footer."
+		}
+	},
+	"manifest_version": 2
 }
