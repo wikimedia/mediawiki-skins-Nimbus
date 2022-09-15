@@ -96,8 +96,6 @@ class NimbusTemplate extends BaseTemplate {
 		$watchlist_link = SpecialPage::getTitleFor( 'Watchlist' );
 
 		$more_wikis = $this->buildMoreWikis();
-
-		$this->html( 'headelement' );
 ?><div id="container">
 	<header id="header" class="noprint">
 		<div id="sw-logo">
@@ -328,11 +326,6 @@ class NimbusTemplate extends BaseTemplate {
 	<?php echo $this->footer(); ?>
 </div><!-- #container -->
 <?php
-		$this->printTrail();
-		echo "\n";
-		echo Html::closeElement( 'body' );
-		echo "\n";
-		echo Html::closeElement( 'html' );
 	} // end of execute() method
 
 	/**
@@ -792,6 +785,7 @@ class NimbusTemplate extends BaseTemplate {
 		// one of the allowed namespaces and it is not the main page
 		if (
 			in_array( $title->getNamespace(), $footerShow ) &&
+			$this->getSkin()->getConfig()->get( 'NimbusRecentEditors' ) &&
 			( $pageTitleId != $main_page->getArticleID() )
 		)
 		{
