@@ -9,6 +9,7 @@
 	"nimbus-advertise": "Oglašujte",
 	"nimbus-contribute": "Prispevajte",
 	"nimbus-didyouknow": "Ali ste vedeli",
+	"nimbus-editthispage": "Uredi stran",
 	"nimbus-featuredimage": "Izbrana slika",
 	"nimbus-featureduser": "Izbrani uporabnik",
 	"nimbus-login": "Prijava",
@@ -20,5 +21,6 @@
 	"nimbus-recent-contributors": "Nedavni prispevki k strani",
 	"nimbus-recent-contributors-info": "Naslednji ljudje so nedavno prispevali k tej strani.",
 	"nimbus-signup": "Registracija",
+	"nimbus-talkpage": "Pogovor o strani",
 	"nimbus-welcome": "{{GENDER:$2|Pozdravljeni}}, $1"
 }
