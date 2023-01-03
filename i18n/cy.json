@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Afalau"
+		]
+	},
+	"nimbus-desc": "Gwedd Nimbus",
+	"nimbus-advertise": "Hysbysebu",
+	"nimbus-contribute": "Cyfrannu",
+	"nimbus-didyouknow": "A wyddoch chi?",
+	"nimbus-editthispage": "Golygu'r dudalen hon",
+	"nimbus-featuredimage": "Delwedd ddethol",
+	"nimbus-featureduser": "Defnyddiwr dethol",
+	"nimbus-login": "Mewngofnodi",
+	"nimbus-logout": "Allgofnodi?",
+	"nimbus-more-actions": "Rhagor o opsiynau",
+	"nimbus-more-wikis": "Mwy o wiciau",
+	"nimbus-profile": "Proffil",
+	"nimbus-recent-contributors": "Cyfranwyr diweddar i'r dudalen hon",
+	"nimbus-signup": "Cofrestru",
+	"nimbus-talkpage": "Trafod y dudalen hon",
+	"nimbus-welcome": "{{GENDER:$2|Croeso}} $1"
+}
