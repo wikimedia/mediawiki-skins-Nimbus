@@ -950,14 +950,16 @@ class NimbusTemplate extends BaseTemplate {
 		$language_urls = [];
 
 		if ( !$wgHideInterlanguageLinks ) {
-			$contLang = MediaWikiServices::getInstance()->getContentLanguage();
+			$services = MediaWikiServices::getInstance();
+			$contLang = $services->getContentLanguage();
+			$languageNameUtils = $services->getLanguageNameUtils();
 			foreach ( $wgOut->getLanguageLinks() as $l ) {
 				$tmp = explode( ':', $l, 2 );
 				$class = 'interwiki-' . $tmp[0];
 				unset( $tmp );
 				$nt = Title::newFromText( $l );
 				if ( $nt ) {
-					$langName = Language::fetchLanguageName(
+					$langName = $languageNameUtils->getLanguageName(
 						$nt->getInterwiki(),
 						$contLang->getCode()
 					);
