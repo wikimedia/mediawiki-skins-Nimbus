@@ -8,5 +8,6 @@
 	"nimbus-editthispage": "Mute taam siijđo",
 	"nimbus-login": "Čáládât siisâ",
 	"nimbus-logout": "Čáládât olgos?",
-	"nimbus-more-wikis": "Lase wikih"
+	"nimbus-more-wikis": "Lase wikih",
+	"nimbus-welcome": "{{GENDER:$1|Tiervâpuáttim}} $1"
 }
