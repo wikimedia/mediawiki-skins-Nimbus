@@ -4,5 +4,6 @@
 			"Yupik"
 		]
 	},
-	"nimbus-login": "Čálit sisa"
+	"nimbus-login": "Čálit sisa",
+	"nimbus-welcome": "{{GENDER:$2|Bures boahtin}} $1"
 }
