@@ -78,7 +78,7 @@ class SkinNimbus extends SkinTemplate {
 		$link = '';
 		$adMsg = $this->msg( 'nimbus-advertise-url' )->inContentLanguage();
 		if ( !$adMsg->isDisabled() ) {
-			$url = Sanitizer::validateAttributes( [ 'href' => $adMsg->text() ], [ 'href' ] )['href'] ?? false;
+			$url = Sanitizer::validateAttributes( [ 'href' => $adMsg->text() ], [ 'href' => true ] )['href'] ?? false;
 			if ( $url ) {
 				$link = '<a href="' . htmlspecialchars( $url, ENT_QUOTES ) . '" rel="nofollow">' .
 					$this->msg( 'nimbus-advertise' )->escaped() . '</a>';
