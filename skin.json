@@ -89,6 +89,9 @@
 				},
 				"resources/styles/skin.nimbus.hacks.shoutwiki.less": {
 					"media": "screen"
+				},
+				"resources/styles/print.less": {
+					"media": "print"
 				}
 			}
 		},
