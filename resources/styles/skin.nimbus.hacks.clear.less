@@ -1,12 +1,13 @@
-// @TODO: Replace this CSS class instance with .visualClear
-// everywhere! Even better, make it so this entire skin
-// doesn't need CSS clear hacks.
-
-.cleared {
+// @todo FIXME: make it so this entire skin doesn't need CSS clear hacks.
+// Don't remove this because this is used by many social tools etc.
+// and no longer defined by MW core
+// @see https://phabricator.wikimedia.org/T280609
+.visualClear {
 	clear: both;
 }
 
-/* clearfix is used by many social tools and the skin itself and it's required
+/* clearfix was originally used by many social tools (this isn't true anymore as of 2023)
+and is still used by the skin itself and it's required
 to make certain things align properly */
 .clearfix {
 	display: inline-block;

@@ -119,7 +119,7 @@ class NimbusTemplate extends BaseTemplate {
 			echo "<a href=\"{$link['href']}\"" . $ourClass .
 				">{$link['text']}</a>\n";
 			if ( $x > 1 && $x % 2 == 0 ) {
-				echo '<div class="cleared"></div>' . "\n";
+				echo '<div class="visualClear"></div>' . "\n";
 			}
 			$x++;
 		}
@@ -223,7 +223,7 @@ class NimbusTemplate extends BaseTemplate {
 							'accesskey' => Linker::accesskey( 'n-recentchanges' )
 						]
 					) . "\n" .
-					'<div class="cleared"></div>' . "\n";
+					'<div class="visualClear"></div>' . "\n";
 
 					if ( $user->isRegistered() ) {
 						echo $linkRenderer->makeLink(
@@ -242,13 +242,13 @@ class NimbusTemplate extends BaseTemplate {
 								'accesskey' => Linker::accesskey( 'pt-preferences' )
 							]
 						) .
-						'<div class="cleared"></div>' . "\n";
+						'<div class="visualClear"></div>' . "\n";
 					}
 
 					echo $help_link;
 					?>
 					<a href="<?php echo htmlspecialchars( $special_pages_link->getFullURL() ) ?>"><?php echo wfMessage( 'specialpages' )->escaped() ?></a>
-					<div class="cleared"></div>
+					<div class="visualClear"></div>
 				</div>
 			</div>
 		</div>
@@ -258,7 +258,7 @@ class NimbusTemplate extends BaseTemplate {
 				<input id="searchInput" type="text" class="search-field" name="search" value="" />
 				<input type="submit" class="mw-skin-nimbus-button positive-button search-button" value="<?php echo wfMessage( 'search' )->escaped(); ?>" />
 			</form>
-			<div class="cleared"></div>
+			<div class="visualClear"></div>
 			<div class="bottom-left-nav">
 			<?php
 			// Hook point for ShoutWikiAds
@@ -752,7 +752,7 @@ class NimbusTemplate extends BaseTemplate {
 			</div>';
 		}
 
-		$output .= '<div class="cleared"></div>
+		$output .= '<div class="visualClear"></div>
 			</div>
 		</div>';
 
