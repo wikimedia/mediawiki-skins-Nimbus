@@ -303,7 +303,7 @@ class NimbusTemplate extends BaseTemplate {
 	</aside>
 	<div id="body-container">
 		<?php echo $this->actionBar(); echo "\n"; ?>
-		<div id="article">
+		<div id="article" data-mw-ve-target-container>
 			<main id="article-body" class="mw-body-content">
 				<?php if ( $this->data['sitenotice'] ) { ?><div id="siteNotice"><?php $this->html( 'sitenotice' ) ?></div><?php } ?>
 				<div id="article-text" class="clearfix">
@@ -638,10 +638,18 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return array
 	 */
 	function getActionBarLinks() {
-		$left = [
-			$this->skin->getTitle()->getNamespaceKey(),
-			'edit', 'talk', 'viewsource', 'addsection', 'history'
-		];
+		if ( ExtensionRegistry::getInstance()->isLoaded( 'VisualEditor' ) ) {
+			$left = [
+				$this->skin->getTitle()->getNamespaceKey(),
+				'edit', 've-edit', 'talk', 'viewsource', 'addsection', 'history'
+			];
+		} else {
+			// Same as above but without 've-edit' in the array
+			$left = [
+				$this->skin->getTitle()->getNamespaceKey(),
+				'edit', 'talk', 'viewsource', 'addsection', 'history'
+			];
+		}
 		$actions = $this->buildActionBar();
 		$moreLinks = [];
 
