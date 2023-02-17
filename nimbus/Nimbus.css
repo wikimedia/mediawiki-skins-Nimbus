@@ -275,14 +275,3 @@ input.search-button {
 	color: #333333;
 	font-size: 12px;
 }
-
-/** Legacy **/
-#title-linktabs {
-	position: absolute;
-	top: 5px;
-	right: 0px;
-}
-
-#title-linktabs img {
-	margin: 0px 0px 0px 3px;
-}
