@@ -91,7 +91,7 @@ class SkinNimbus extends SkinTemplate {
 	 * Initialize various variables and generate the template
 	 *
 	 * @see https://phabricator.wikimedia.org/T198109
-	 * @return NimbusTemplate The template to be executed by outputPage
+	 * @return QuickTemplate The template to be executed by outputPage
 	 */
 	protected function prepareQuickTemplate() {
 		$parserOutput = $this->getRandomFeaturedUser();
@@ -156,7 +156,7 @@ class SkinNimbus extends SkinTemplate {
 	 * running SocialProfile at all).
 	 *
 	 * @see https://phabricator.wikimedia.org/T198109
-	 * @return string|null
+	 * @return ParserOutput|null
 	 */
 	function getRandomFeaturedUser() {
 		if ( class_exists( 'RandomFeaturedUser' ) ) {

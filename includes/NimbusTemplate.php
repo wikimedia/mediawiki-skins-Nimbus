@@ -23,9 +23,14 @@ use MediaWiki\MediaWikiServices;
  */
 class NimbusTemplate extends BaseTemplate {
 	/**
-	 * @var Skin
+	 * @var SkinNimbus
 	 */
 	public $skin;
+
+	/**
+	 * @var array Sidebar navigation menu structure, V3-style, parsed with getNavigationMenu()
+	 */
+	public $navmenu;
 
 	/**
 	 * Should we show the page title (the <h1> HTML element) for the current
@@ -54,7 +59,7 @@ class NimbusTemplate extends BaseTemplate {
 
 		// Strangely enough this does *not* cause any errors even if $nsArray
 		// is empty...I was sure it'd cause one.
-		return (bool)!in_array( $this->skin->getTitle()->getNamespace(), $nsArray );
+		return !in_array( $this->skin->getTitle()->getNamespace(), $nsArray );
 	}
 
 	/**
@@ -137,8 +142,10 @@ class NimbusTemplate extends BaseTemplate {
 		if ( class_exists( 'MediaWiki\Extension\Notifications\Hooks' ) ) {
 			$echoHooksClass = MediaWiki\Extension\Notifications\Hooks::class;
 		} else {
+			// @phan-suppress-next-line PhanUndeclaredClassReference
 			$echoHooksClass = EchoHooks::class;
 		}
+		// @phan-suppress-next-line PhanUndeclaredClassReference
 		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) && method_exists( $echoHooksClass, 'onPersonalUrls' ) ) {
 			// FILTHY HACK!
 			// We don't run the core PersonalUrls hook at all in Nimbus, but Echo uses
@@ -156,12 +163,16 @@ class NimbusTemplate extends BaseTemplate {
 				]
 			];
 			$t = $this->skin->getTitle();
+			// Apparently the upstream method is gone but as of MW 1.39 that's not a problem,
+			// it looks like it's a 1.40/1.41+ problem?
+			// @phan-suppress-next-line PhanUndeclaredStaticMethod
 			$echoHooksClass::onPersonalUrls( $personal_urls, $t, $this->skin );
 			// Don't need these anymore after this point
 			unset( $personal_urls['userpage'], $personal_urls['mytalk'] );
 		?>
 		<div id="echo" role="log">
 			<?php
+			// @phan-suppress-next-line PhanEmptyForeach $personal_urls is _not_ empty if we get this far
 			foreach ( $personal_urls as $key => $arr ) {
 				echo '<li id="pt-' . Sanitizer::escapeIdForAttribute( $key ) . '">';
 				echo Html::element( 'a', [
@@ -193,7 +204,7 @@ class NimbusTemplate extends BaseTemplate {
 	</header><!-- #header -->
 	<div id="site-header" class="noprint">
 		<div id="site-logo">
-			<a href="<?php echo htmlspecialchars( $main_page_link->getFullURL() ) ?>" title="<?php echo Linker::titleAttrib( 'p-logo', 'withaccess' ) ?>" accesskey="<?php echo Linker::accesskey( 'p-logo' ) ?>" rel="nofollow">
+			<a href="<?php echo htmlspecialchars( $main_page_link->getFullURL() ) ?>" title="<?php echo htmlspecialchars( Linker::titleAttrib( 'p-logo', 'withaccess' ), ENT_QUOTES ) ?>" accesskey="<?php echo htmlspecialchars( Linker::accesskey( 'p-logo' ), ENT_QUOTES ) ?>" rel="nofollow">
 				<img src="<?php echo $wgLogo ?>" alt="" />
 			</a>
 		</div>
@@ -202,7 +213,6 @@ class NimbusTemplate extends BaseTemplate {
 		<div id="navigation">
 			<div id="navigation-title"><?php echo wfMessage( 'navigation' )->escaped() ?></div>
 			<?php
-				$this->navmenu_array = [];
 				$this->navmenu = $this->getNavigationMenu();
 				echo $this->printMenu( 0 );
 			?>
@@ -332,6 +342,8 @@ class NimbusTemplate extends BaseTemplate {
 	 * Parse MediaWiki-style messages called 'v3sidebar' to array of links,
 	 * saving hierarchy structure.
 	 * Message parsing is limited to first 150 lines only.
+	 *
+	 * @return array
 	 */
 	private function getNavigationMenu() {
 		$message_key = 'nimbus-sidebar';
@@ -361,6 +373,7 @@ class NimbusTemplate extends BaseTemplate {
 			$node['depth'] = strrpos( $line, '*' ) + 1;
 
 			if ( $node['depth'] == $lastDepth ) {
+				// @phan-suppress-next-line PhanTypeInvalidDimOffset
 				$node['parentIndex'] = $nodes[$i]['parentIndex'];
 			} elseif ( $node['depth'] == $lastDepth + 1 ) {
 				$node['parentIndex'] = $i;
@@ -378,6 +391,7 @@ class NimbusTemplate extends BaseTemplate {
 						$node['parentIndex'] = 0;
 						break;
 					}
+					// @phan-suppress-next-line PhanTypeInvalidDimOffset
 					if ( $nodes[$x]['depth'] == $node['depth'] - 1 ) {
 						$node['parentIndex'] = $x;
 						break;
@@ -386,6 +400,7 @@ class NimbusTemplate extends BaseTemplate {
 			}
 
 			$nodes[$i + 1] = $node;
+			// @phan-suppress-next-line PhanTypePossiblyInvalidDimOffset
 			$nodes[$node['parentIndex']]['children'][] = $i+1;
 			$lastDepth = $node['depth'];
 			$i++;
@@ -469,6 +484,7 @@ class NimbusTemplate extends BaseTemplate {
 			return [];
 		}
 
+		$moreWikis = [];
 		foreach ( $lines as $line ) {
 			$moreWikis[] = $this->parseItem( $line );
 		}
@@ -479,7 +495,7 @@ class NimbusTemplate extends BaseTemplate {
 	/**
 	 * Prints the sidebar menu & all necessary JS
 	 */
-	private function printMenu( $id, $last_count = '', $level = 0 ) {
+	private function printMenu( int $id, $last_count = '', int $level = 0 ) {
 		global $wgStylePath;
 
 		$menu_output = '';
@@ -498,7 +514,7 @@ class NimbusTemplate extends BaseTemplate {
 						( $level ? $last_count . '_' : '_' ) . $count . '">';
 				$menu_output .= "\n\t\t\t\t\t" . '<a id="' . ( $level ? 'a-sub-' : 'a-' ) . 'menu-item' .
 					( $level ? $last_count . '_' : '_' ) . $count . '" href="' .
-					( !empty( $this->navmenu[$child]['href'] ) ? htmlspecialchars( $this->navmenu[$child]['href'] ) : '#' ) . '">';
+					( !empty( $this->navmenu[$child]['href'] ) ? $this->navmenu[$child]['href'] : '#' ) . '">';
 
 				$menu_output .= $this->navmenu[$child]['text'];
 				// If a menu item has submenus, show an arrow so that the user
@@ -651,6 +667,7 @@ class NimbusTemplate extends BaseTemplate {
 			];
 		}
 		$actions = $this->buildActionBar();
+		$leftLinks = [];
 		$moreLinks = [];
 
 		foreach ( $actions as $action => $value ) {
@@ -728,7 +745,7 @@ class NimbusTemplate extends BaseTemplate {
 				( isset( $val['accesskey'] ) ? ' accesskey="' . htmlspecialchars( $val['accesskey'] ) . '"' : '' ) .
 				( isset( $val['id'] ) ? ' id="' . htmlspecialchars( $val['id'] ) . '"' : '' ) .
 				' rel="nofollow">
-				<span>' . ucfirst( $val['text'] ) . '</span>
+				<span>' . ucfirst( htmlspecialchars( $val['text'], ENT_QUOTES ) ) . '</span>
 			</a>';
 		}
 
@@ -750,7 +767,7 @@ class NimbusTemplate extends BaseTemplate {
 				$output .= '<a href="' . htmlspecialchars( $val['href'] ) . '"' .
 					( isset( $val['id'] ) ? ' id="' . htmlspecialchars( $val['id'] ) . '"' : '' ) .
 					"{$border_fix} rel=\"nofollow\">" .
-					ucfirst( $val['text'] ) .
+					ucfirst( htmlspecialchars( $val['text'], ENT_QUOTES ) ) .
 				'</a>';
 
 				$more_links_count++;
@@ -948,6 +965,8 @@ class NimbusTemplate extends BaseTemplate {
 	 * Cheap ripoff from /skins/Games/Games.skin.php on 2 July 2013 with only
 	 * one minor change for Nimbus: the addition of the wrapper div
 	 * (.bottom-left-nav-container).
+	 *
+	 * @return string HTML suitable for output
 	 */
 	function getInterlanguageLinksBox() {
 		global $wgHideInterlanguageLinks, $wgOut;
