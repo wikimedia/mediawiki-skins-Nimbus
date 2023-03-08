@@ -738,9 +738,21 @@ class NimbusTemplate extends BaseTemplate {
 
 		foreach ( $leftLinks as $key => $val ) {
 			// @todo FIXME: this code deserves to burn in hell
-			$output .= '<a href="' . htmlspecialchars( $val['href'] ) . '" class="mw-skin-nimbus-actiontab ' .
-				( ( strpos( $val['class'], 'selected' ) === 0 ) ? 'tab-on' : 'tab-off' ) .
-				( preg_match( '/new/i', $val['class'] ) ? ' tab-new' : '' ) . '"' .
+			$href = $val['href'] ?? '#';
+			$additionalClasses = [];
+			if ( isset( $val['class'] ) && $val['class'] ) {
+				if ( strpos( $val['class'], 'selected' ) === 0 ) {
+					$additionalClasses[] = 'tab-on';
+				} else {
+					$additionalClasses[] = 'tab-off';
+				}
+				if ( preg_match( '/new/i', $val['class'] ) ) {
+					$additionalClasses[] = 'tab-new';
+				}
+			}
+
+			$output .= '<a href="' . htmlspecialchars( $href ) . '" class="mw-skin-nimbus-actiontab ' .
+					implode( ' ', $additionalClasses ) . '"' .
 				( isset( $val['title'] ) ? ' title="' . htmlspecialchars( $val['title'] ) . '"' : '' ) .
 				( isset( $val['accesskey'] ) ? ' accesskey="' . htmlspecialchars( $val['accesskey'] ) . '"' : '' ) .
 				( isset( $val['id'] ) ? ' id="' . htmlspecialchars( $val['id'] ) . '"' : '' ) .
