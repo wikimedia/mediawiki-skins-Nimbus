@@ -81,7 +81,7 @@
 			}
 
 			if ( source_id.indexOf( 'a-' ) === 0 ) {
-				source_id = source_id.substr( 2 );
+				source_id = source_id.slice( 2 );
 			}
 
 			if ( source_id && NimbusSkin.menuitem_array[ source_id ] ) {
@@ -156,16 +156,16 @@
 
 				if ( source_id.indexOf( '_' ) ) {
 					if ( source_id.indexOf( '_', source_id.indexOf( '_' ) ) ) {
-						second_start = source_id.substr( 4 + source_id.indexOf( '_' ) - 1 );
+						second_start = source_id.slice( 4 + source_id.indexOf( '_' ) - 1 );
 						second_uscore = second_start.indexOf( '_' );
 						try {
-							source_id = source_id.substr( 4, source_id.indexOf( '_' ) + second_uscore - 1 );
+							source_id = source_id.slice( 4, 4 + source_id.indexOf( '_' ) + second_uscore - 1 );
 							if ( NimbusSkin.menuitem_array[ source_id ] ) {
 								document.getElementById( source_id ).style.backgroundColor = '#FFFCA9';
 							}
 						} catch ( ex ) {}
 					} else {
-						source_id = source_id.substr( 4 );
+						source_id = source_id.slice( 4 );
 						if ( NimbusSkin.menuitem_array[ source_id ] ) {
 							document.getElementById( source_id ).style.backgroundColor = '#FFFCA9';
 						}
@@ -218,7 +218,7 @@
 				source_id = e.srcElement.id;
 			}
 
-			source_id = source_id.substr( 2 );
+			source_id = source_id.slice( 2 );
 
 			document.getElementById( source_id ).style.backgroundColor = '#FFFCA9';
 		},
@@ -258,7 +258,7 @@
 			epicElement = document.getElementById(
 				'menu-item' +
 				NimbusSkin.displayed_menus[ 0 ]
-					.substr( NimbusSkin.displayed_menus[ 0 ].indexOf( '_' ) )
+					.slice( NimbusSkin.displayed_menus[ 0 ].indexOf( '_' ) )
 			);
 			if ( NimbusSkin.displayed_menus.length && epicElement ) {
 				epicElement.style.backgroundColor = '#FFF';
