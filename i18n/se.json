@@ -4,6 +4,7 @@
 			"Yupik"
 		]
 	},
+	"nimbus-didyouknow": "Dihtetgo ahte...",
 	"nimbus-login": "Čálit sisa",
 	"nimbus-welcome": "{{GENDER:$2|Bures boahtin}} $1"
 }
