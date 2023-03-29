@@ -14,8 +14,8 @@ div#echo li#pt-notifications-alert {
 	display: inline-block;
 }
 
-div#echo li#pt-notifications-alert .mw-echo-notifications-badge:after,
-div#echo li#pt-notifications-notice .mw-echo-notifications-badge:after {
+div#echo li#pt-notifications-alert .mw-echo-notifications-badge::after,
+div#echo li#pt-notifications-notice .mw-echo-notifications-badge::after {
 	font-size: 1em;
 	margin-right: 0.5em;
 }
