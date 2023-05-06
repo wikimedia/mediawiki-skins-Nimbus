@@ -272,7 +272,7 @@ class NimbusTemplate extends BaseTemplate {
 			<div class="bottom-left-nav">
 			<?php
 			// Hook point for ShoutWikiAds
-			Hooks::run( 'NimbusLeftSide' );
+			MediaWikiServices::getInstance()->getHookContainer()->run( 'NimbusLeftSide' );
 
 			if ( class_exists( 'RandomGameUnit' ) ) {
 				// @note The CSS for this is loaded in SkinNimbus::prepareQuickTemplate();
