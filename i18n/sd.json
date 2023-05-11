@@ -6,6 +6,7 @@
 			"Tweety"
 		]
 	},
+	"nimbus-desc": "نمبس کَل",
 	"nimbus-advertise": "اشتھار ھلايو",
 	"nimbus-contribute": "ڀاڱيداري ڪريو",
 	"nimbus-didyouknow": "ڇا توهان ڄاڻو ٿا",
@@ -21,5 +22,6 @@
 	"nimbus-recent-contributors": "هن صفحي جا ھاڻوڪا ڀاڱيدار",
 	"nimbus-recent-contributors-info": "هيٺين ماڻھن تازو هن صفحي لاءِ ڀاڱيداري ڪئي آهي.",
 	"nimbus-signup": "کاتو کوليو",
+	"nimbus-talkpage": "ھن صفحي بابت گفتگو ڪريو",
 	"nimbus-welcome": "{{GENDER:$2|ڀليڪار}} $1"
 }
