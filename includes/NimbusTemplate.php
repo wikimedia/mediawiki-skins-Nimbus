@@ -69,7 +69,7 @@ class NimbusTemplate extends BaseTemplate {
 	 * outputs a formatted page.
 	 */
 	public function execute() {
-		global $wgLogo, $wgOut, $wgStylePath;
+		global $wgLogo, $wgStylePath;
 		global $wgLangToCentralMap;
 		global $wgUserLevels;
 
@@ -285,7 +285,7 @@ class NimbusTemplate extends BaseTemplate {
 			?>
 				<div class="bottom-left-nav-container">
 					<h2><?php echo wfMessage( 'nimbus-didyouknow' )->escaped() ?></h2>
-					<?php echo $wgOut->parseAsInterface( '{{Didyouknow}}' ) ?>
+					<?php echo $this->skin->getOutput()->parseAsInterface( '{{Didyouknow}}' ) ?>
 				</div>
 			<?php
 			}
@@ -293,7 +293,7 @@ class NimbusTemplate extends BaseTemplate {
 			echo $this->getInterlanguageLinksBox();
 
 			if ( class_exists( 'RandomImageByCategory' ) ) {
-				$randomImage = $wgOut->parseAsInterface(
+				$randomImage = $this->skin->getOutput()->parseAsInterface(
 					'<randomimagebycategory width="200" categories="Featured Image" />',
 					false
 				);
@@ -981,7 +981,7 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return string HTML suitable for output
 	 */
 	function getInterlanguageLinksBox() {
-		global $wgHideInterlanguageLinks, $wgOut;
+		global $wgHideInterlanguageLinks;
 
 		$output = '';
 
@@ -992,7 +992,7 @@ class NimbusTemplate extends BaseTemplate {
 			$services = MediaWikiServices::getInstance();
 			$contLang = $services->getContentLanguage();
 			$languageNameUtils = $services->getLanguageNameUtils();
-			foreach ( $wgOut->getLanguageLinks() as $l ) {
+			foreach ( $this->skin->getOutput()->getLanguageLinks() as $l ) {
 				$tmp = explode( ':', $l, 2 );
 				$class = 'interwiki-' . $tmp[0];
 				unset( $tmp );
