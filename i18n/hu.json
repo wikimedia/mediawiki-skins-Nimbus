@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Krisztina",
 			"Máté",
 			"Tacsipacsi",
 			"ViDam"
@@ -10,6 +11,7 @@
 	"nimbus-advertise": "Hirdetés",
 	"nimbus-contribute": "Közreműködés",
 	"nimbus-didyouknow": "Tudtad, hogy…",
+	"nimbus-editthispage": "Lap szerkesztése",
 	"nimbus-featuredimage": "Kiemelt kép",
 	"nimbus-featureduser": "Kiemelt felhasználó",
 	"nimbus-login": "Bejelentkezés",
