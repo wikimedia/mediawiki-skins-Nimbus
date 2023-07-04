@@ -3,13 +3,15 @@
 		"authors": [
 			"Máté",
 			"Tacsipacsi",
-			"ViDam"
+			"ViDam",
+			"Krisztina"
 		]
 	},
 	"nimbus-desc": "Nimbus felület",
 	"nimbus-advertise": "Hirdetés",
 	"nimbus-contribute": "Közreműködés",
 	"nimbus-didyouknow": "Tudtad, hogy…",
+	"nimbus-editthispage": "Lap szerkesztése",
 	"nimbus-featuredimage": "Kiemelt kép",
 	"nimbus-featureduser": "Kiemelt felhasználó",
 	"nimbus-login": "Bejelentkezés",
