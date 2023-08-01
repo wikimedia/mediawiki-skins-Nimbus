@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"nimbus-desc": "Izgled „Nimbus”",
+	"nimbus-advertise": "Reklamirajte se",
+	"nimbus-contribute": "Doprinesite",
+	"nimbus-didyouknow": "Jeste li znali",
+	"nimbus-editthispage": "Uredi ovu stranicu",
+	"nimbus-featuredimage": "Izabrana slika",
+	"nimbus-featureduser": "Izabrani korisnik",
+	"nimbus-login": "Prijava",
+	"nimbus-logout": "Da Vas odjavim?",
+	"nimbus-more-actions": "Više mogućnosti",
+	"nimbus-more-wikis": "Više wikija",
+	"nimbus-pages-can-be-edited": "Ova stranica se može urediti.<br />\nNedovršena je? Da li je nešto pogrešno?<br />\n<b>Promijeni je!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Nedavni doprinosioci na ovoj stranici",
+	"nimbus-recent-contributors-info": "Sljedeće osobe su nedavno doprinosile na ovoj stranici.",
+	"nimbus-signup": "Registracija",
+	"nimbus-talkpage": "Razgovor o ovoj stranici",
+	"nimbus-welcome": "{{GENDER:$2|Dobro došli}} $1"
+}
