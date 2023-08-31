@@ -826,7 +826,7 @@ class NimbusTemplate extends BaseTemplate {
 			( $pageTitleId != $main_page->getArticleID() )
 		)
 		{
-			$key = $cache->makeKey( 'recenteditors', 'list', $pageTitleId );
+			$key = $cache->makeKey( 'nimbus', 'recenteditors', 'list', $pageTitleId );
 			$data = $cache->get( $key );
 			$editors = [];
 			if ( !$data ) {
