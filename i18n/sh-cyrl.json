@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"nimbus-desc": "Тема „Нимбус”",
+	"nimbus-advertise": "Оглашавајте се",
+	"nimbus-contribute": "Допринесите",
+	"nimbus-didyouknow": "Јесте ли знали",
+	"nimbus-editthispage": "Уреди ову страницу",
+	"nimbus-featuredimage": "Изабрана слика",
+	"nimbus-featureduser": "Изабрани корисник",
+	"nimbus-login": "Пријави ме",
+	"nimbus-logout": "Одјавити се?",
+	"nimbus-more-actions": "Више радњи",
+	"nimbus-more-wikis": "Више викија",
+	"nimbus-pages-can-be-edited": "Ова страница се може уредити.<br />\nНедовршена је? Да ли је нешто погрешно?<br />\n<b>Промијени је!</b>",
+	"nimbus-profile": "Профил",
+	"nimbus-recent-contributors": "Недавни доприносиоци на овој страници",
+	"nimbus-recent-contributors-info": "Следеће особе су недавно доприносиле на овој страници.",
+	"nimbus-signup": "Регистрација",
+	"nimbus-welcome": "{{GENDER:$2|Добро дошли}} $1"
+}
