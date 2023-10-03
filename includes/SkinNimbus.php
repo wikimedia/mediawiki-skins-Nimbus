@@ -188,8 +188,8 @@ class SkinNimbus extends SkinTemplate {
 
 		$popts = $out->parserOptions();
 
-		$parser = MediaWikiServices::getInstance()->getParser();
-		$parserOutput = $parser->getFreshParser()->parse(
+		$parser = MediaWikiServices::getInstance()->getParserFactory()->getInstance();
+		$parserOutput = $parser->parse(
 			$text, $out->getTitle(), $popts,
 			false, true, $out->getRevisionId()
 		);
