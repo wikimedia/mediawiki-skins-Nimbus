@@ -307,6 +307,15 @@ class NimbusTemplate extends BaseTemplate {
 					<h2>' . wfMessage( 'nimbus-featureduser' )->escaped() . '</h2>' .
 					$this->get( 'nimbus-randomfeatureduser' ) . '</div>';
 			}
+
+			// This is a crude hack (in a way), but it works
+			// @see https://phabricator.wikimedia.org/T216851
+			if ( class_exists( 'NewsBox' ) ) {
+				echo '<div class="bottom-left-nav-container">
+				<h2>' . $this->skin->msg( 'newsbox-title' )->escaped() . '</h2>' .
+					// @phan-suppress-next-line PhanUndeclaredClassMethod One day phan will understand class_exists...one day.
+					NewsBox::getNewsBoxHTML( $this->skin ) . '</div>';
+			}
 			?>
 </div>
 		</div>
