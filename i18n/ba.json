@@ -4,23 +4,24 @@
 			"Sagan",
 			"Ләйсән",
 			"Рустам Нурыев",
-			"Amire80"
+			"Amire80",
+			"З. ӘЙЛЕ"
 		]
 	},
-	"nimbus-desc": "Nimbus биҙәлеше темаһы",
+	"nimbus-desc": "Nimbus биҙәлеш темаһы",
 	"nimbus-advertise": "Реклама",
-	"nimbus-contribute": "Башҡарған эштәр",
-	"nimbus-didyouknow": "Һеҙ белеһегеҙме",
+	"nimbus-contribute": "Индергән өлөш",
+	"nimbus-didyouknow": "Беләһегеҙме?",
 	"nimbus-featuredimage": "Тәҡдим ителгән һүрәт",
 	"nimbus-featureduser": "Тәҡдим ителгән ҡатнашыусы",
 	"nimbus-login": "Танылыу",
-	"nimbus-logout": "Тамамлау",
-	"nimbus-more-actions": "Өҫтәлмә ғәмәлдәр",
+	"nimbus-logout": "Тамамларғамы?",
+	"nimbus-more-actions": "Өҫтәмә ғәмәлдәр",
 	"nimbus-more-wikis": "Башҡа вики-проекттар",
-	"nimbus-pages-can-be-edited": "Был битте мөхәррирләргә ярай.<br />\nТулы түгелме? Нимәлер дөрөҫ түгелдер?<br />\n<b>Үҙгәртегеҙ!</b>",
+	"nimbus-pages-can-be-edited": "Был битте мөхәррирләргә ярай.<br />\n\nТулы түгелме? Нимәлер дөрөҫ түгелме?<br />\n\n<b>Үҙгәртегеҙ!</b>",
 	"nimbus-profile": "Профиль",
 	"nimbus-recent-contributors": "Был биткә һуңғы үҙгәртеү индереүселәр",
-	"nimbus-recent-contributors-info": "Был биткә күптән түгел түбәндәге кешеләр үҙгәреш индерҙе",
+	"nimbus-recent-contributors-info": "Был битте күптән түгел түбәндәге кешеләр үҙгәртте.",
 	"nimbus-signup": "Теркәлеү",
 	"nimbus-welcome": "{{GENDER:$2|Рәхим итегеҙ}}, $1"
 }
