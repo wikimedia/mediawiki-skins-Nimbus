@@ -136,53 +136,37 @@ class NimbusTemplate extends BaseTemplate {
 	if ( $user->isRegistered() ) {
 		// By default Echo is not available for anons and making it work for anons is *possible*
 		// but requires a lot of hacking
-		// This if ( class_exists() ) loop exists so that we can support both MW 1.39+
-		// (namespaced class name) and also older MWs (notably 1.35)
-		// @see T306806
-		if ( class_exists( 'MediaWiki\Extension\Notifications\Hooks' ) ) {
-			$echoHooksClass = MediaWiki\Extension\Notifications\Hooks::class;
-		} else {
-			// @phan-suppress-next-line PhanUndeclaredClassReference
-			$echoHooksClass = EchoHooks::class;
-		}
-		// @phan-suppress-next-line PhanUndeclaredClassReference
-		if ( ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) && method_exists( $echoHooksClass, 'onPersonalUrls' ) ) {
-			// FILTHY HACK!
-			// We don't run the core PersonalUrls hook at all in Nimbus, but Echo uses
-			// that hook to properly build the notification icons with the correct # of
-			// real notifications etc.
-			// So instead we build a fake $personal_urls array (to prevent E_NOTICEs in Echo
-			// code, which expects some of these array indexes to be present, which they
-			// are normally), call the Echo method and then do our magic on the now-populated
-			// $personal_urls variable. Messy as hell, but it works!
-			$personal_urls = [
-				'userpage' => [],
-				'mytalk' => [
-					'text' => '',
-					'class' => ''
-				]
-			];
-			$t = $this->skin->getTitle();
-			// Apparently the upstream method is gone but as of MW 1.39 that's not a problem,
-			// it looks like it's a 1.40/1.41+ problem?
-			// @phan-suppress-next-line PhanUndeclaredStaticMethod
-			$echoHooksClass::onPersonalUrls( $personal_urls, $t, $this->skin );
-			// Don't need these anymore after this point
-			unset( $personal_urls['userpage'], $personal_urls['mytalk'] );
+		if (
+			ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) &&
+			method_exists( MediaWiki\Extension\Notifications\Hooks::class, 'onSkinTemplateNavigationUniversal' )
+		) {
+			// New*est* Echo (as of October 2023), REL1_39 and newer (post-3a351cfb4fab9fb9d81ecdcb2638f29c843c26be)
+			$personal_urls = [];
+			// @phan-suppress-next-line PhanUndeclaredStaticMethod Obviously *not* undefined if we're here.
+			MediaWiki\Extension\Notifications\Hooks::onSkinTemplateNavigationUniversal( $this->skin, $personal_urls );
+			// @phan-suppress-next-line PhanImpossibleCondition Shush, phan. This is a filthy hack, I know.
+			if ( isset( $personal_urls['notifications'] ) && $personal_urls['notifications'] ) {
+				$personal_urls = $personal_urls['notifications'];
+			}
 		?>
 		<div id="echo" role="log">
 			<?php
-			// @phan-suppress-next-line PhanEmptyForeach $personal_urls is _not_ empty if we get this far
-			foreach ( $personal_urls as $key => $arr ) {
-				echo '<li id="pt-' . Sanitizer::escapeIdForAttribute( $key ) . '">';
-				echo Html::element( 'a', [
-					'href' => $arr['href'],
-					'class' => implode( ' ', $arr['class'] ),
-					'data-counter-num' => $arr['data']['counter-num'],
-					'data-counter-text' => $arr['data']['counter-text'],
-				] );
-				echo '</li>';
-			}
+				foreach ( $personal_urls as $key => $arr ) {
+					echo '<li id="pt-' . Sanitizer::escapeIdForAttribute( $key ) . '">';
+					$classes = '';
+					if ( isset( $arr['link-class'] ) && $arr['link-class'] ) {
+						// Newest Echo code (as of October 2023) calls it 'link-class'
+						$classes = $arr['link-class'];
+					}
+					echo Html::element( 'a', [
+						'href' => $arr['href'],
+						// @phan-suppress-next-line PhanParamSpecial1
+						'class' => implode( ' ', $classes ),
+						'data-counter-num' => $arr['data']['counter-num'],
+						'data-counter-text' => $arr['data']['counter-text'],
+					] );
+					echo '</li>';
+				}
 			?>
 		</div>
 		<?php
