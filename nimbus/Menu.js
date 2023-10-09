@@ -302,7 +302,7 @@
 	};
 
 	$( function () {
-	// Top-level menus
+		// Top-level menus
 		$( 'div[id^="menu-item_"]' ).each( function ( idx, elem ) {
 			var id = $( elem ).attr( 'id' );
 			NimbusSkin.menuitem_array[ id ] = id.replace( /menu-item/gi, '' );
