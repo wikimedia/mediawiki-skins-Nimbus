@@ -119,7 +119,11 @@
 	"config": {
 		"NimbusRecentEditors": {
 			"value": false,
-			"description": "Show recent editors in the footer."
+			"description": "Show recent editors' avatars in the page footer (for pages in the namespaces defined in $wgNimbusRecentEditorsNamespaces, by default: NS_MAIN, NS_FILE and NS_VIDEO)? Note that this requires the SocialProfile extension to be installed."
+		},
+		"NimbusRecentEditorsNamespaces": {
+			"value": [ 0, 6, 400 ],
+			"description": "Namespaces for which the \"recent editors' avatars\" feature ($wgNimbusRecentEditors) is enabled; by default these are 0 (NS_MAIN), 6 (NS_FILE) and 400 (NS_VIDEO, defined by the Video extension)"
 		}
 	},
 	"manifest_version": 2

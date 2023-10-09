@@ -804,10 +804,6 @@ class NimbusTemplate extends BaseTemplate {
 		$pageTitleId = $title->getArticleID();
 		$main_page = Title::newMainPage();
 
-		$footerShow = [ NS_MAIN, NS_FILE ];
-		if ( defined( 'NS_VIDEO' ) ) {
-			$footerShow[] = NS_VIDEO;
-		}
 		$footer = '';
 
 		$services = MediaWikiServices::getInstance();
@@ -817,8 +813,8 @@ class NimbusTemplate extends BaseTemplate {
 		// Show the list of recent editors and their avatars if the page is in
 		// one of the allowed namespaces and it is not the main page
 		if (
-			in_array( $title->getNamespace(), $footerShow ) &&
 			$config->get( 'NimbusRecentEditors' ) &&
+			in_array( $title->getNamespace(), $config->get( 'NimbusRecentEditorsNamespaces' ) ) &&
 			( $pageTitleId != $main_page->getArticleID() )
 		)
 		{
