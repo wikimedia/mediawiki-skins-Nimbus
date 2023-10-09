@@ -111,7 +111,7 @@ class NimbusTemplate extends BaseTemplate {
 		</div>
 		<?php if ( $more_wikis ) { ?>
 		<div id="sw-more-category">
-			<div class="mw-skin-nimbus-button more-wikis-button"><span><?php echo wfMessage( 'nimbus-more-wikis' )->escaped() ?></span></div>
+			<div class="mw-skin-nimbus-button more-wikis-button"><span><?php echo $this->skin->msg( 'nimbus-more-wikis' )->escaped() ?></span></div>
 		</div>
 		<div id="more-wikis-menu" style="display:none;">
 		<?php
@@ -173,15 +173,15 @@ class NimbusTemplate extends BaseTemplate {
 		} // "is Echo installed?" test
 
 		echo "\t\t\t" . '<div id="login-message">' .
-				wfMessage( 'nimbus-welcome', '<b>' . $user->getName() . '</b>', $user->getName() )->parse() .
+				$this->skin->msg( 'nimbus-welcome', '<b>' . $user->getName() . '</b>', $user->getName() )->parse() .
 			'</div>
 			<div id="mw-skin-nimbus-button-container">
-				<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-profile' )->escaped() . '</span></a>
-				<a class="mw-skin-nimbus-button negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . wfMessage( 'nimbus-logout' )->escaped() . '</span></a>
+				<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . $this->skin->msg( 'nimbus-profile' )->escaped() . '</span></a>
+				<a class="mw-skin-nimbus-button negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . $this->skin->msg( 'nimbus-logout' )->escaped() . '</span></a>
 			</div>';
 	} else {
-		echo '<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $register_link->getFullURL() ) . '" rel="nofollow"><span>' . wfMessage( 'nimbus-signup' )->escaped() . '</span></a>
-		<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $login_link->getFullURL() ) . '" id="nimbusLoginButton"><span>' . wfMessage( 'nimbus-login' )->escaped() . '</span></a>';
+		echo '<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $register_link->getFullURL() ) . '" rel="nofollow"><span>' . $this->skin->msg( 'nimbus-signup' )->escaped() . '</span></a>
+		<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $login_link->getFullURL() ) . '" id="nimbusLoginButton"><span>' . $this->skin->msg( 'nimbus-login' )->escaped() . '</span></a>';
 	}
 ?>
 		</div><!-- #wiki-login -->
@@ -195,7 +195,7 @@ class NimbusTemplate extends BaseTemplate {
 	</div>
 	<aside id="side-bar" class="noprint">
 		<div id="navigation">
-			<div id="navigation-title"><?php echo wfMessage( 'navigation' )->escaped() ?></div>
+			<div id="navigation-title"><?php echo $this->skin->msg( 'navigation' )->escaped() ?></div>
 			<?php
 				$this->navmenu = $this->getNavigationMenu();
 				echo $this->printMenu( 0 );
@@ -206,12 +206,12 @@ class NimbusTemplate extends BaseTemplate {
 					// Only show the link to Special:TopUsers if wAvatar class exists and $wgUserLevels is an array
 					if ( class_exists( 'wAvatar' ) && is_array( $wgUserLevels ) ) {
 						$top_fans_link = SpecialPage::getTitleFor( 'TopUsers' );
-						echo '<a href="' . htmlspecialchars( $top_fans_link->getFullURL() ) . '">' . wfMessage( 'topusers' )->escaped() . '</a>';
+						echo '<a href="' . htmlspecialchars( $top_fans_link->getFullURL() ) . '">' . $this->skin->msg( 'topusers' )->escaped() . '</a>';
 					}
 
 					echo $linkRenderer->makeLink(
 						$recent_changes_link,
-						wfMessage( 'recentchanges' )->text(),
+						$this->skin->msg( 'recentchanges' )->text(),
 						[
 							'title' => Linker::titleAttrib( 'n-recentchanges', 'withaccess' ),
 							'accesskey' => Linker::accesskey( 'n-recentchanges' )
@@ -222,7 +222,7 @@ class NimbusTemplate extends BaseTemplate {
 					if ( $user->isRegistered() ) {
 						echo $linkRenderer->makeLink(
 							$watchlist_link,
-							wfMessage( 'watchlist' )->text(),
+							$this->skin->msg( 'watchlist' )->text(),
 							[
 								'title' => Linker::titleAttrib( 'pt-watchlist', 'withaccess' ),
 								'accesskey' => Linker::accesskey( 'pt-watchlist' )
@@ -230,7 +230,7 @@ class NimbusTemplate extends BaseTemplate {
 						) . "\n" .
 						$linkRenderer->makeLink(
 							$preferences_link,
-							wfMessage( 'preferences' )->text(),
+							$this->skin->msg( 'preferences' )->text(),
 							[
 								'title' => Linker::titleAttrib( 'pt-preferences', 'withaccess' ),
 								'accesskey' => Linker::accesskey( 'pt-preferences' )
@@ -241,16 +241,16 @@ class NimbusTemplate extends BaseTemplate {
 
 					echo $help_link;
 					?>
-					<a href="<?php echo htmlspecialchars( $special_pages_link->getFullURL() ) ?>"><?php echo wfMessage( 'specialpages' )->escaped() ?></a>
+					<a href="<?php echo htmlspecialchars( $special_pages_link->getFullURL() ) ?>"><?php echo $this->skin->msg( 'specialpages' )->escaped() ?></a>
 					<div class="visualClear"></div>
 				</div>
 			</div>
 		</div>
 		<div id="search-box">
-			<div id="search-title"><?php echo wfMessage( 'search' )->escaped() ?></div>
+			<div id="search-title"><?php echo $this->skin->msg( 'search' )->escaped() ?></div>
 			<form method="get" action="<?php echo $this->text( 'wgScript' ) ?>" name="search_form" id="searchform">
 				<input id="searchInput" type="text" class="search-field" name="search" value="" />
-				<input type="submit" class="mw-skin-nimbus-button positive-button search-button" value="<?php echo wfMessage( 'search' )->escaped(); ?>" />
+				<input type="submit" class="mw-skin-nimbus-button positive-button search-button" value="<?php echo $this->skin->msg( 'search' )->escaped(); ?>" />
 			</form>
 			<div class="visualClear"></div>
 			<div class="bottom-left-nav">
@@ -268,7 +268,7 @@ class NimbusTemplate extends BaseTemplate {
 			if ( $dykTemplate->exists() ) {
 			?>
 				<div class="bottom-left-nav-container">
-					<h2><?php echo wfMessage( 'nimbus-didyouknow' )->escaped() ?></h2>
+					<h2><?php echo $this->skin->msg( 'nimbus-didyouknow' )->escaped() ?></h2>
 					<?php echo $this->skin->getOutput()->parseAsInterface( '{{Didyouknow}}' ) ?>
 				</div>
 			<?php
@@ -282,13 +282,13 @@ class NimbusTemplate extends BaseTemplate {
 					false
 				);
 				echo '<div class="bottom-left-nav-container">
-				<h2>' . wfMessage( 'nimbus-featuredimage' )->escaped() . '</h2>' .
+				<h2>' . $this->skin->msg( 'nimbus-featuredimage' )->escaped() . '</h2>' .
 				$randomImage . '</div>';
 			}
 
 			if ( class_exists( 'RandomFeaturedUser' ) ) {
 				echo '<div class="bottom-left-nav-container">
-					<h2>' . wfMessage( 'nimbus-featureduser' )->escaped() . '</h2>' .
+					<h2>' . $this->skin->msg( 'nimbus-featureduser' )->escaped() . '</h2>' .
 					$this->get( 'nimbus-randomfeatureduser' ) . '</div>';
 			}
 
@@ -340,9 +340,9 @@ class NimbusTemplate extends BaseTemplate {
 	 */
 	private function getNavigationMenu() {
 		$message_key = 'nimbus-sidebar';
-		$message = trim( wfMessage( $message_key )->text() );
+		$message = trim( $this->skin->msg( $message_key )->text() );
 
-		if ( wfMessage( $message_key )->isDisabled() ) {
+		if ( $this->skin->msg( $message_key )->isDisabled() ) {
 			return [];
 		}
 
@@ -418,25 +418,25 @@ class NimbusTemplate extends BaseTemplate {
 		// $line_temp now contains page name or URL as the 0th array element
 		// and the link description as the 1st array element
 		if ( count( $line_temp ) >= 2 && $line_temp[1] != '' ) {
-			$msgObj = wfMessage( $line_temp[0] );
+			$msgObj = $this->skin->msg( $line_temp[0] );
 			$link = ( $msgObj->isDisabled() ? $line_temp[0] : trim( $msgObj->inContentLanguage()->escaped() ) );
-			$textObj = wfMessage( trim( $line_temp[1] ) );
+			$textObj = $this->skin->msg( trim( $line_temp[1] ) );
 			$line = ( !$textObj->isDisabled() ? $textObj->escaped() : trim( $line_temp[1] ) );
 		} else {
 			$line = $link = trim( $line_temp[0] );
 		}
 
 		// Determine what to show as the human-readable link description
-		if ( wfMessage( $line )->isDisabled() ) {
+		if ( $this->skin->msg( $line )->isDisabled() ) {
 			// It's *not* the name of a MediaWiki message, so display it as-is
 			$text = $line;
 		} else {
 			// Guess what -- it /is/ a MediaWiki message!
-			$text = wfMessage( $line )->escaped();
+			$text = $this->skin->msg( $line )->escaped();
 		}
 
 		if ( $link != null ) {
-			if ( wfMessage( $line_temp[0] )->isDisabled() ) {
+			if ( $this->skin->msg( $line_temp[0] )->isDisabled() ) {
 				$link = $line_temp[0];
 			}
 			if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $link ) ) {
@@ -465,9 +465,9 @@ class NimbusTemplate extends BaseTemplate {
 	 */
 	private function buildMoreWikis() {
 		$messageKey = 'morewikis';
-		$message = trim( wfMessage( $messageKey )->escaped() );
+		$message = trim( $this->skin->msg( $messageKey )->escaped() );
 
-		if ( wfMessage( $messageKey )->isDisabled() ) {
+		if ( $this->skin->msg( $messageKey )->isDisabled() ) {
 			return [];
 		}
 
@@ -681,8 +681,9 @@ class NimbusTemplate extends BaseTemplate {
 	 * @return string HTML for action bar
 	 */
 	function actionBar() {
-		$title = $this->skin->getTitle();
-		$user = $this->skin->getUser();
+		$skin = $this->skin;
+		$title = $skin->getTitle();
+		$user = $skin->getUser();
 		$full_title = Title::makeTitle( $title->getNamespace(), $title->getText() );
 		$services = MediaWikiServices::getInstance();
 
@@ -700,7 +701,7 @@ class NimbusTemplate extends BaseTemplate {
 			if ( !$services->getWatchlistManager()->isWatched( $user, $title ) ) {
 				$output .= $services->getLinkRenderer()->makeLink(
 					$full_title,
-					wfMessage( 'watch' )->text(),
+					$skin->msg( 'watch' )->text(),
 					[
 						'id' => 'ca-watch',
 						'class' => 'mw-watchlink',
@@ -712,7 +713,7 @@ class NimbusTemplate extends BaseTemplate {
 			} else {
 				$output .= $services->getLinkRenderer()->makeLink(
 					$full_title,
-					wfMessage( 'unwatch' )->text(),
+					$skin->msg( 'unwatch' )->text(),
 					[
 						'id' => 'ca-unwatch',
 						'class' => 'mw-watchlink',
@@ -756,7 +757,7 @@ class NimbusTemplate extends BaseTemplate {
 
 		if ( count( $moreLinks ) > 0 ) {
 			$output .= '<div class="mw-skin-nimbus-actiontab more-tab tab-off" id="more-tab">
-				<span>' . wfMessage( 'nimbus-more-actions' )->escaped() . '</span>';
+				<span>' . $skin->msg( 'nimbus-more-actions' )->escaped() . '</span>';
 
 			$output .= '<div class="article-more-actions" id="article-more-container" style="display:none">';
 
@@ -797,7 +798,9 @@ class NimbusTemplate extends BaseTemplate {
 	function footer() {
 		global $wgUploadPath;
 
-		$title = $this->getSkin()->getTitle();
+		$skin = $this->getSkin();
+		$title = $skin->getTitle();
+		$config = $skin->getConfig();
 		$pageTitleId = $title->getArticleID();
 		$main_page = Title::newMainPage();
 
@@ -815,7 +818,7 @@ class NimbusTemplate extends BaseTemplate {
 		// one of the allowed namespaces and it is not the main page
 		if (
 			in_array( $title->getNamespace(), $footerShow ) &&
-			$this->getSkin()->getConfig()->get( 'NimbusRecentEditors' ) &&
+			$config->get( 'NimbusRecentEditors' ) &&
 			( $pageTitleId != $main_page->getArticleID() )
 		)
 		{
@@ -884,11 +887,11 @@ class NimbusTemplate extends BaseTemplate {
 			if ( count( $editors ) > 0 ) {
 				$footer .= '<div id="footer-container" class="noprint">
 					<div id="footer-actions">
-						<h2>' . wfMessage( 'nimbus-contribute' )->escaped() . '</h2>'
-							. wfMessage( 'nimbus-pages-can-be-edited' )->parse() .
+						<h2>' . $skin->msg( 'nimbus-contribute' )->escaped() . '</h2>'
+							. $skin->msg( 'nimbus-pages-can-be-edited' )->parse() .
 							$linkRenderer->makeLink(
 								$title,
-								wfMessage( 'nimbus-editthispage' )->text(),
+								$skin->msg( 'nimbus-editthispage' )->text(),
 								[
 									'class' => 'edit-action',
 									'title' => Linker::titleAttrib( 'ca-edit', 'withaccess' ),
@@ -898,7 +901,7 @@ class NimbusTemplate extends BaseTemplate {
 							) .
 							$linkRenderer->makeLink(
 								$title->getTalkPage(),
-								wfMessage( 'nimbus-talkpage' )->text(),
+								$skin->msg( 'nimbus-talkpage' )->text(),
 								[
 									'class' => 'discuss-action',
 									'title' => Linker::titleAttrib( 'ca-talk', 'withaccess' ),
@@ -907,7 +910,7 @@ class NimbusTemplate extends BaseTemplate {
 							) .
 							$linkRenderer->makeLink(
 								$title,
-								wfMessage( 'pagehist' )->text(),
+								$skin->msg( 'pagehist' )->text(),
 								[
 									'rel' => 'archives',
 									'class' => 'page-history-action',
@@ -922,8 +925,8 @@ class NimbusTemplate extends BaseTemplate {
 				global $wgUserLevels;
 				if ( class_exists( 'wAvatar' ) && is_array( $wgUserLevels ) ) {
 					$footer .= '<div id="footer-contributors">
-						<h2>' . wfMessage( 'nimbus-recent-contributors' )->escaped() . '</h2>'
-						. wfMessage( 'nimbus-recent-contributors-info' )->escaped() . '<br /><br />';
+						<h2>' . $skin->msg( 'nimbus-recent-contributors' )->escaped() . '</h2>'
+						. $skin->msg( 'nimbus-recent-contributors-info' )->escaped() . '<br /><br />';
 
 					foreach ( $editors as $editor ) {
 						$avatar = new wAvatar( $editor['user_id'], 'm' );
@@ -1006,7 +1009,7 @@ class NimbusTemplate extends BaseTemplate {
 
 		if ( count( $language_urls ) ) {
 			$output = '<div class="bottom-left-nav-container">';
-			$output .= '<h2>' . wfMessage( 'otherlanguages' )->escaped() . '</h2>';
+			$output .= '<h2>' . $this->skin->msg( 'otherlanguages' )->escaped() . '</h2>';
 			$output .= '<div class="interlanguage-links">' . "\n" . '<ul>' . "\n";
 			foreach ( $language_urls as $langlink ) {
 				$output .= '<li class="' . htmlspecialchars( $langlink['class'] ) . '">
