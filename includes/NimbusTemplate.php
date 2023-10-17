@@ -734,7 +734,7 @@ class NimbusTemplate extends BaseTemplate {
 			// @todo FIXME: this code deserves to burn in hell
 			$href = $val['href'] ?? '#';
 			$additionalClasses = [];
-			if ( isset( $val['class'] ) && $val['class'] ) {
+			if ( isset( $val['class'] ) ) {
 				if ( strpos( $val['class'], 'selected' ) === 0 ) {
 					$additionalClasses[] = 'tab-on';
 				} else {
