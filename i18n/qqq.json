@@ -12,6 +12,7 @@
 		]
 	},
 	"morewikis": "{{notranslate}}",
+	"nimbus-prefs-talkpage": "Link to the skin's talk page on MediaWiki.org; it is shown before the preview link in skin preferences on Special:Preferences. Inspired by [https://phabricator.wikimedia.org/T307113 T307113].",
 	"skinname-nimbus": "{{name}}",
 	"nimbus-desc": "{{desc|what=skin|name=Nimbus|url=https://www.mediawiki.org/wiki/Skin:Nimbus}}",
 	"nimbus-advertise": "Used as link text if the Advertise URL is not empty. Clicking the link will lead to a page where the viewer can get information on how to advertise on the wiki.\n{{Identical|Advertise}}",
