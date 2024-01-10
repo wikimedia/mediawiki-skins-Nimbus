@@ -124,11 +124,11 @@ class SkinNimbus extends SkinTemplate {
 
 		// Filter out "last modified on <date>" from footer items, we render that differently
 		// and only for certain (NS_MAIN etc.) pages
-		$originalFooterLinks['info'] = array_diff( $originalFooterLinks['info'], [ 'lastmod' ] );
+		$originalFooterLinks['info'] = array_diff( $originalFooterLinks['info'] ?? [], [ 'lastmod' ] );
 
 		// Filter out duplicate entries, we don't want two "Privacy Policy" or
 		// "About" (etc.) links in the footer
-		$a = array_diff( $originalFooterLinks['places'], [ 'privacy', 'about', 'disclaimer' ] );
+		$a = array_diff( $originalFooterLinks['places'] ?? [], [ 'privacy', 'about', 'disclaimer' ] );
 		$originalFooterLinks['places'] = array_merge(
 			[
 				'mainpage',
