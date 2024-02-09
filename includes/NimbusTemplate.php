@@ -610,7 +610,7 @@ class NimbusTemplate extends BaseTemplate {
 				$title->isSpecial( 'QuizGameHome' ) &&
 				$user->isAllowed( 'quizadmin' ) &&
 				$request->getVal( 'questionGameAction' ) != 'createForm' &&
-				!empty( $wgQuizID )
+				$wgQuizID
 			)
 			{
 				$quiz = SpecialPage::getTitleFor( 'QuizGameHome' );
@@ -626,7 +626,7 @@ class NimbusTemplate extends BaseTemplate {
 				$title->isSpecial( 'PictureGameHome' ) &&
 				$user->isAllowed( 'picturegameadmin' ) &&
 				$request->getVal( 'picGameAction' ) != 'startCreate' &&
-				!empty( $wgPictureGameID )
+				$wgPictureGameID
 			)
 			{
 				$picGame = SpecialPage::getTitleFor( 'PictureGameHome' );
