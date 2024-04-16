@@ -507,9 +507,13 @@ class NimbusTemplate extends BaseTemplate {
 						( $level ? $last_count . '_' : '_' ) . $count . '">';
 				$menu_output .= "\n\t\t\t\t\t" . '<a id="' . ( $level ? 'a-sub-' : 'a-' ) . 'menu-item' .
 					( $level ? $last_count . '_' : '_' ) . $count . '" href="' .
-					( !empty( $this->navmenu[$child]['href'] ) ? $this->navmenu[$child]['href'] : '#' ) . '">';
+					// Escaping this is just additional paranoia, see T361450
+					( !empty( $this->navmenu[$child]['href'] ) ? htmlspecialchars( $this->navmenu[$child]['href'], ENT_QUOTES ) : '#' ) . '">';
 
-				$menu_output .= $this->navmenu[$child]['text'];
+				// Escaping this is very much necessary and not doing that results in
+				// somewhat trivially exploitable XSS; see T361450
+				$menu_output .= htmlspecialchars( $this->navmenu[$child]['text'], ENT_QUOTES );
+
 				// If a menu item has submenus, show an arrow so that the user
 				// knows that there are submenus available
 				if (
