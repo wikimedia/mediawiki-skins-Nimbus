@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Умар"
+			"Умар",
+			"Исмаил Садуев"
 		]
 	},
 	"nimbus-desc": "Кечйаран тема Nimbus",
 	"nimbus-advertise": "ДӀакхайкхо",
 	"nimbus-contribute": "Ккъинхьегам",
 	"nimbus-didyouknow": "Хаий шуна",
-	"nimbus-editthispage": "Нисйе хӀара агӀо",
+	"nimbus-editthispage": "ХӀара агӀо нисйан",
 	"nimbus-featuredimage": "Магийна сурт",
 	"nimbus-featureduser": "Магийна декъашхо",
 	"nimbus-login": "ЧугӀо",
