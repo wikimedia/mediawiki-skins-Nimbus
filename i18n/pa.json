@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tow"
+			"Tow",
+			"Cabal"
 		]
 	},
 	"nimbus-contribute": "ਯੋਗਦਾਨ ਪਾਓ",
 	"nimbus-didyouknow": "ਕੀ ਤੁਸੀੰ ਜਾਣਦੇ ਹੋ",
-	"nimbus-login": "ਦਾਖ਼ਲਾ",
-	"nimbus-logout": "ਵਿਦਾਈ?",
+	"nimbus-login": "ਦਾਖ਼ਲ ਹੋਵੋ",
+	"nimbus-logout": "ਬਾਹਰ ਜਾਣਾ?",
 	"nimbus-signup": "ਭਰਤੀ ਹੋਵੋ"
 }
