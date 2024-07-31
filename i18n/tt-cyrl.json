@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ильнар"
+			"Ильнар",
+			"Don Alessandro"
 		]
 	},
 	"nimbus-desc": "Nimbus бизәлеше",
@@ -12,7 +13,7 @@
 	"nimbus-featuredimage": "Тәкъдим ителгән сурәт",
 	"nimbus-featureduser": "Тәкъдим ителгән кулланучы",
 	"nimbus-login": "Керү",
-	"nimbus-logout": "Чыгаргамы?",
+	"nimbus-logout": "Чыгарга телисезме?",
 	"nimbus-more-actions": "Өстәмә гамәлләр",
 	"nimbus-more-wikis": "Башка вики-проектлар",
 	"nimbus-pages-can-be-edited": "Әлеге битне үзгәртергә мөмкин.<br />\nУл тулы түгелме? Бәлки дөрес тә түгелдер?<br />\n<b>Төзәтегез!</b>",

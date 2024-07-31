@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Avjoska",
-			"Pikne"
+			"Pikne",
+			"Jack Phoenix"
 		]
 	},
 	"nimbus-advertise": "Teata",
@@ -11,5 +12,6 @@
 	"nimbus-logout": "Logi välja?",
 	"nimbus-profile": "Profiil",
 	"nimbus-signup": "Registreeru",
+	"nimbus-talkpage": "Selle lehekülje arutelu",
 	"nimbus-welcome": "{{GENDER:$2|Tere}} tulemast, $1"
 }
