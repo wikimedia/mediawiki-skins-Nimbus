@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jack Phoenix",
 			"Kizule",
 			"Milicevic01",
 			"Zoranzoki21"
@@ -22,5 +23,6 @@
 	"nimbus-recent-contributors": "Nedavni doprinosioci na ovoj stranici",
 	"nimbus-recent-contributors-info": "Sledeće osobe su nedavno doprinosile na ovoj stranici.",
 	"nimbus-signup": "Registracija",
+	"nimbus-talkpage": "Diskutuj o ovoj stranici",
 	"nimbus-welcome": "{{GENDER:$2|Dobro došli}} $1!"
 }

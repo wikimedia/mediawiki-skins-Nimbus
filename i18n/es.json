@@ -3,6 +3,7 @@
 		"authors": [
 			"Armando-Martin",
 			"Fitoschido",
+			"Jack Phoenix",
 			"Jakeukalane",
 			"Macofe",
 			"Tiberius1701"
@@ -24,5 +25,6 @@
 	"nimbus-recent-contributors": "Colaboradores recientes en esta página",
 	"nimbus-recent-contributors-info": "Recientemente, las siguientes personas contribuyeron en esta página.",
 	"nimbus-signup": "Registrarse",
+	"nimbus-talkpage": "Discutir esta página",
 	"nimbus-welcome": "{{GENDER:$2|Bienvenido|Bienvenida}} $1"
 }
