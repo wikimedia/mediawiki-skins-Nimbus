@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Kghbln",
-			"Metalhead64"
+			"Metalhead64",
+			"Justman10000"
 		]
 	},
 	"nimbus-desc": "Ermöglicht die Nutzung der Benutzeroberfläche Nimbus",
 	"nimbus-advertise": "Inserieren",
-	"nimbus-contribute": "Mitmachen",
+	"nimbus-contribute": "Beitragen",
 	"nimbus-didyouknow": "Wusstest du",
 	"nimbus-editthispage": "Diese Seite bearbeiten",
 	"nimbus-featuredimage": "Interessantes Bild",
