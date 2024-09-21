@@ -827,7 +827,7 @@ class NimbusTemplate extends BaseTemplate {
 			$editors = [];
 			if ( !$data ) {
 				wfDebug( __METHOD__ . ": Loading recent editors for page {$pageTitleId} from DB\n" );
-				$dbw = wfGetDB( DB_PRIMARY );
+				$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
 				if ( version_compare( MW_VERSION, '1.39', '<' ) ) {
 					$res = $dbw->select(
