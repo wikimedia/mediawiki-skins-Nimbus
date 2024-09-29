@@ -829,43 +829,24 @@ class NimbusTemplate extends BaseTemplate {
 				wfDebug( __METHOD__ . ": Loading recent editors for page {$pageTitleId} from DB\n" );
 				$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 
-				if ( version_compare( MW_VERSION, '1.39', '<' ) ) {
-					$res = $dbw->select(
-						[ 'revision_actor_temp', 'revision', 'actor' ],
-						[ 'DISTINCT revactor_actor' ],
-						[
-							'revactor_page' => $pageTitleId,
-							'actor_user IS NOT NULL',
-							"actor_name <> 'MediaWiki default'"
-						],
-						__METHOD__,
-						[ 'ORDER BY' => 'actor_name ASC', 'LIMIT' => 8 ],
-						[
-							'actor' => [ 'JOIN', 'actor_id = revactor_actor' ],
-							'revision_actor_temp' => [ 'JOIN', 'revactor_rev = rev_id' ]
-						]
-					);
-				} else {
-					$res = $dbw->select(
-						[ 'revision', 'actor' ],
-						[ 'DISTINCT rev_actor' ],
-						[
-							'rev_page' => $pageTitleId,
-							'actor_user IS NOT NULL',
-							"actor_name <> 'MediaWiki default'"
-						],
-						__METHOD__,
-						[ 'ORDER BY' => 'actor_name ASC', 'LIMIT' => 8 ],
-						[
-							'actor' => [ 'JOIN', 'actor_id = rev_actor' ]
-						]
-					);
-				}
+				$res = $dbw->select(
+					[ 'revision', 'actor' ],
+					[ 'DISTINCT rev_actor' ],
+					[
+						'rev_page' => $pageTitleId,
+						'actor_user IS NOT NULL',
+						"actor_name <> 'MediaWiki default'"
+					],
+					__METHOD__,
+					[ 'ORDER BY' => 'actor_name ASC', 'LIMIT' => 8 ],
+					[
+						'actor' => [ 'JOIN', 'actor_id = rev_actor' ]
+					]
+				);
 
 				foreach ( $res as $row ) {
 					// Prevent blocked users from appearing
-					$actorColumnName = ( version_compare( MW_VERSION, '1.39', '<' ) ? 'revactor_actor' : 'rev_actor' );
-					$user = User::newFromActorId( $row->$actorColumnName );
+					$user = User::newFromActorId( $row->rev_actor );
 					if ( !$user->getBlock() ) {
 						$editors[] = [
 							'user_id' => $user->getId(),
