@@ -134,12 +134,14 @@ class NimbusTemplate extends BaseTemplate {
 		<div id="wiki-login">
 <?php
 	if ( $user->isRegistered() ) {
-		// By default Echo is not available for anons and making it work for anons is *possible*
-		// but requires a lot of hacking
-		if (
+		$hasEcho = (
 			ExtensionRegistry::getInstance()->isLoaded( 'Echo' ) &&
 			method_exists( MediaWiki\Extension\Notifications\Hooks::class, 'onSkinTemplateNavigationUniversal' )
-		) {
+		);
+
+		// By default Echo is not available for anons and making it work for anons is *possible*
+		// but requires a lot of hacking
+		if ( $hasEcho ) {
 			// New*est* Echo (as of October 2023), REL1_39 and newer (post-3a351cfb4fab9fb9d81ecdcb2638f29c843c26be)
 			$personal_urls = [];
 			// @phan-suppress-next-line PhanUndeclaredStaticMethod Obviously *not* undefined if we're here.
@@ -175,7 +177,7 @@ class NimbusTemplate extends BaseTemplate {
 		echo "\t\t\t" . '<div id="login-message">' .
 				$this->skin->msg( 'nimbus-welcome', '<b>' . $user->getName() . '</b>', $user->getName() )->parse() .
 			'</div>
-			<div id="mw-skin-nimbus-button-container">
+			<div id="mw-skin-nimbus-button-container" class="' . ( $hasEcho ? 'mw-skin-nimbus-has-echo' : 'mw-skin-nimbus-no-echo' ) . '">
 				<a class="mw-skin-nimbus-button positive-button" href="' . htmlspecialchars( $profile_link->getFullURL() ) . '" rel="nofollow"><span>' . $this->skin->msg( 'nimbus-profile' )->escaped() . '</span></a>
 				<a class="mw-skin-nimbus-button negative-button" href="' . htmlspecialchars( $logout_link->getFullURL() ) . '"><span>' . $this->skin->msg( 'nimbus-logout' )->escaped() . '</span></a>
 			</div>';
