@@ -22,6 +22,53 @@ class SkinNimbus extends SkinTemplate {
 	}
 
 	/**
+	 * Sporked from MW core includes/skin/Skin.php as of MW 1.39.
+	 * The only real difference compared to the footerLink method there
+	 * is that this also integrates the guts of the footerLinkTitle() method.
+	 *
+	 * @see https://phabricator.wikimedia.org/T326109
+	 *
+	 * Given a pair of message keys for link and text label,
+	 * return an HTML link for use in the footer.
+	 *
+	 * @param string $desc The i18n message key for the link text.
+	 * 		The content of this message will be the visible text label.
+	 * 		If this is set to nonexisting message key or the message is
+	 * 		disabled, the link will not be generated, empty string will
+	 * 		be returned in the stead.
+	 * @param string $page The i18n message key for the page to link to.
+	 * 		The content of this message will be the destination page for
+	 * 		the footer link. Given a message key 'Privacypage' with content
+	 * 		'Project:Privacy policy', the link will lead to the wiki page with
+	 * 		the title of the content.
+	 *
+	 * @return string HTML anchor
+	 */
+	public function footerLink( $desc, $page ) {
+		// If the link description has been disabled in the default language,
+		if ( $this->msg( $desc )->inContentLanguage()->isDisabled() ) {
+			// then it is disabled, for all languages.
+			return '';
+		}
+
+		// Otherwise, we display the link for the user, described in their
+		// language (which may or may not be the same as the default language),
+		// but we make the link target be the one site-wide page.
+		$title = Title::newFromText( $this->msg( $page )->inContentLanguage()->text() );
+		if ( !$title ) {
+			return '';
+		}
+
+		// Similar to Skin::addToSidebarPlain
+		// Optimization: Avoid LinkRenderer here as it requires extra DB info
+		// to add unneeded classes even for makeKnownLink (T313462).
+		return Html::element( 'a',
+			[ 'href' => $title->fixSpecialName()->getLinkURL() ],
+			$this->msg( $desc )->text()
+		);
+	}
+
+	/**
 	 * Gets the link to the wiki's about page.
 	 *
 	 * @return string HTML
