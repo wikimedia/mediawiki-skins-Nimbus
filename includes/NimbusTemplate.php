@@ -510,10 +510,12 @@ class NimbusTemplate extends BaseTemplate {
 				$menu_output .= "\n\t\t\t\t\t" . '<a id="' . ( $level ? 'a-sub-' : 'a-' ) . 'menu-item' .
 					( $level ? $last_count . '_' : '_' ) . $count . '" href="' .
 					// Escaping this is just additional paranoia, see T361450
+					// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 					( !empty( $this->navmenu[$child]['href'] ) ? htmlspecialchars( $this->navmenu[$child]['href'], ENT_QUOTES ) : '#' ) . '">';
 
 				// Escaping this is very much necessary and not doing that results in
 				// somewhat trivially exploitable XSS; see T361450
+				// @phan-suppress-next-line SecurityCheck-DoubleEscaped
 				$menu_output .= htmlspecialchars( $this->navmenu[$child]['text'], ENT_QUOTES );
 
 				// If a menu item has submenus, show an arrow so that the user
