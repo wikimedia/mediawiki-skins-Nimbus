@@ -5,9 +5,17 @@
 			"Tow"
 		]
 	},
+	"nimbus-advertise": "ਇਸ਼ਤਿਹਾਰ ਦਿਓ",
 	"nimbus-contribute": "ਯੋਗਦਾਨ ਪਾਓ",
 	"nimbus-didyouknow": "ਕੀ ਤੁਸੀੰ ਜਾਣਦੇ ਹੋ",
+	"nimbus-editthispage": "ਇਹ ਸਫ਼ਾ ਸੋਧੋ",
+	"nimbus-featuredimage": "ਵਿਸ਼ੇਸ਼ ਚਿੱਤਰ",
+	"nimbus-featureduser": "ਵਿਸ਼ੇਸ਼ ਵਰਤੋਂਕਾਰ",
 	"nimbus-login": "ਦਾਖ਼ਲ ਹੋਵੋ",
 	"nimbus-logout": "ਬਾਹਰ ਜਾਣਾ?",
-	"nimbus-signup": "ਭਰਤੀ ਹੋਵੋ"
+	"nimbus-more-actions": "ਹੋਰ ਕਾਰਵਾਈਆਂ",
+	"nimbus-more-wikis": "ਹੋਰ ਵਿਕੀਆਂ",
+	"nimbus-signup": "ਭਰਤੀ ਹੋਵੋ",
+	"nimbus-talkpage": "ਇਸ ਸਫ਼ੇ ਬਾਰੇ ਚਰਚਾ ਕਰੋ",
+	"nimbus-welcome": "{{GENDER:$2|ਜੀ ਆਇਆਂ ਨੂੰ}} $1!"
 }
