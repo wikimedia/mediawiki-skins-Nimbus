@@ -6,6 +6,7 @@
 	},
 	"nimbus-editthispage": "Бул баракты түзөтүү",
 	"nimbus-login": "Кирүү",
+	"nimbus-logout": "Чыгуу?",
 	"nimbus-signup": "Катталуу",
 	"nimbus-welcome": "{{GENDER:$2|Кош келиңиз}} $1"
 }
