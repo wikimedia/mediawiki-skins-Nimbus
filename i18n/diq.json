@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Erdemaslancan",
+			"GolyatGeri",
 			"Kumkumuk",
 			"Mirzali",
 			"Orbot707"
@@ -23,5 +24,6 @@
 	"nimbus-recent-contributors": "Peyên iştirakê ena pela",
 	"nimbus-recent-contributors-info": "Peyên iştirakê rna pela merdumi taqib kenê",
 	"nimbus-signup": "Qeyd be",
+	"nimbus-talkpage": "Ena perla werêne",
 	"nimbus-welcome": "{{GENDER:$2|Xeyr ameya}} $1"
 }
