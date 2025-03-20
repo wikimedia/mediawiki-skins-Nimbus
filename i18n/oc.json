@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cedric31"
+			"Cedric31",
+			"Lhanars"
 		]
 	},
 	"nimbus-desc": "Aparéncia Nimbus de MediaWiki",
@@ -10,7 +11,7 @@
 	"nimbus-didyouknow": "O sabiatz ?",
 	"nimbus-featuredimage": "Imatge remirable",
 	"nimbus-login": "Connexion",
-	"nimbus-logout": "Se desconnectar ?",
+	"nimbus-logout": "Continuar la desconnexion?",
 	"nimbus-more-actions": "Mai d'accions",
 	"nimbus-more-wikis": "Mai de wikis",
 	"nimbus-profile": "Perfil",
