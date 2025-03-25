@@ -6,7 +6,8 @@
 			"Felipe L. Ewald",
 			"HenriqueCrang",
 			"Luckas",
-			"Luckas Blade"
+			"Luckas Blade",
+			"TheEduGobi"
 		]
 	},
 	"nimbus-desc": "Tema Nimbus",
@@ -24,7 +25,7 @@
 	"nimbus-profile": "Perfil",
 	"nimbus-recent-contributors": "Colaboradores recentes nesta página",
 	"nimbus-recent-contributors-info": "As seguintes pessoas contribuíram recentemente para esta página.",
-	"nimbus-signup": "Registar-se",
+	"nimbus-signup": "Registrar-se",
 	"nimbus-talkpage": "Discutir sobre esta página",
 	"nimbus-welcome": "{{GENDER:$2|Bem-vindo|Bem-vinda}} $1"
 }
