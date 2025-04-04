@@ -13,7 +13,7 @@
  * @author David Pean <david.pean@gmail.com>
  * @author Inez Korczyński <korczynski@gmail.com>
  * @author Jack Phoenix
- * @copyright Copyright © 2008-2023 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
+ * @copyright Copyright © 2008-2025 Aaron Wright, David Pean, Inez Korczyński, Jack Phoenix
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
@@ -446,7 +446,9 @@ class NimbusTemplate extends BaseTemplate {
 			if ( $this->skin->msg( $line_temp[0] )->isDisabled() ) {
 				$link = $line_temp[0];
 			}
-			if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $link ) ) {
+
+			$urlProtocols = MediaWikiServices::getInstance()->getUrlUtils()->validProtocols();
+			if ( preg_match( '/^(?:' . $urlProtocols . ')/', $link ) ) {
 				$href = $link;
 			} else {
 				$title = Title::newFromText( $link );

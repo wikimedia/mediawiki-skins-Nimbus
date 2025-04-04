@@ -100,14 +100,16 @@ class SkinNimbus extends SkinTemplate {
 		// But because MediaWiki is by nature very customizable, someone
 		// might've changed it to point to a local page. Tricky!
 		// @see https://phabricator.wikimedia.org/T155319
+		$services = MediaWikiServices::getInstance();
+		$urlProtocols = $services->getUrlUtils()->validProtocols();
 		$helpPage = $this->msg( 'helppage' )->inContentLanguage()->plain();
-		if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $helpPage ) ) {
+		if ( preg_match( '/^(?:' . $urlProtocols . ')/', $helpPage ) ) {
 			$helpLink = Linker::makeExternalLink(
 				$helpPage,
 				$this->msg( 'help' )->plain()
 			);
 		} else {
-			$helpLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeKnownLink(
+			$helpLink = $services->getLinkRenderer()->makeKnownLink(
 				Title::newFromText( $helpPage ),
 				$this->msg( 'help' )->text()
 			);
