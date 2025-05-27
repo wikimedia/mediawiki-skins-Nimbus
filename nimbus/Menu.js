@@ -21,7 +21,7 @@
 		submenuitem_array: [],
 
 		submenu: function ( id ) {
-			var on_tabs, x;
+			let on_tabs, x;
 
 			// Clear all tab classes
 			on_tabs = getElementsByClassName( document, 'a', 'tab-on' );
@@ -50,7 +50,7 @@
 		},
 
 		editMenuToggle: function () {
-			var submenu = document.getElementById( 'edit-sub-menu-id' );
+			const submenu = document.getElementById( 'edit-sub-menu-id' );
 
 			if ( submenu.style.display === 'block' ) {
 				submenu.style.display = 'none';
@@ -62,7 +62,7 @@
 
 		// Skin Navigation
 		menuItemAction: function ( e ) {
-			var source_id = '*';
+			let source_id = '*';
 
 			clearTimeout( NimbusSkin.m_timer );
 
@@ -95,14 +95,14 @@
 		},
 
 		check_item_in_array: function ( item ) {
-			var sub_menu_item = 'sub-menu' + item,
+			let sub_menu_item = 'sub-menu' + item,
 				exit, the_last_displayed;
 
 			clearTimeout( NimbusSkin.m_timer );
 
 			if (
 				NimbusSkin.last_displayed === '' ||
-			( ( sub_menu_item.indexOf( NimbusSkin.last_displayed ) !== -1 ) &&
+			( ( sub_menu_item.includes( NimbusSkin.last_displayed ) ) &&
 				( sub_menu_item !== NimbusSkin.last_displayed ) )
 			) {
 				NimbusSkin.do_menuItemAction( item );
@@ -110,7 +110,7 @@
 				exit = false;
 				while ( !exit && NimbusSkin.displayed_menus.length > 0 ) {
 					the_last_displayed = NimbusSkin.displayed_menus.pop();
-					if ( ( sub_menu_item.indexOf( the_last_displayed ) === -1 ) ) {
+					if ( ( !sub_menu_item.includes( the_last_displayed ) ) ) {
 						NimbusSkin.doClear( the_last_displayed, '' );
 					} else {
 						NimbusSkin.displayed_menus.push( the_last_displayed );
@@ -132,7 +132,7 @@
 		},
 
 		sub_menuItemAction: function ( e ) {
-			var source_id = '*',
+			let source_id = '*',
 				second_start, second_uscore;
 
 			clearTimeout( NimbusSkin.m_timer );
@@ -175,7 +175,7 @@
 		},
 
 		clearBackground: function ( e ) {
-			var source_id = '*';
+			let source_id = '*';
 
 			if ( !e ) {
 				e = window.event;
@@ -202,7 +202,7 @@
 		},
 
 		resetMenuBackground: function ( e ) {
-			var source_id = '*';
+			let source_id = '*';
 
 			if ( !e ) {
 				e = window.event;
@@ -234,7 +234,7 @@
 
 			clearTimeout( NimbusSkin.m_timer );
 			NimbusSkin.m_timer = setTimeout(
-				function () {
+				() => {
 					NimbusSkin.doClearAll();
 				},
 				200
@@ -248,7 +248,7 @@
 		},
 
 		doClearAll: function () {
-			var epicElement, the_last_displayed;
+			let epicElement, the_last_displayed;
 			// Otherwise the NimbusSkin.displayed_menus[0] line below causes a TypeError about
 			// NimbusSkin.displayed_menus[0] being undefined
 
@@ -295,16 +295,16 @@
 		},
 
 		delay_hide: function ( el ) {
-			NimbusSkin._hide_timer = setTimeout( function () {
+			NimbusSkin._hide_timer = setTimeout( () => {
 				NimbusSkin.show_actions( el, 'hide' );
 			}, 500 );
 		}
 	};
 
-	$( function () {
+	$( () => {
 		// Top-level menus
 		$( 'div[id^="menu-item_"]' ).each( function ( idx, elem ) {
-			var id = $( elem ).attr( 'id' );
+			const id = $( elem ).attr( 'id' );
 			NimbusSkin.menuitem_array[ id ] = id.replace( /menu-item/gi, '' );
 
 			$( this ).on( 'mouseover', NimbusSkin.menuItemAction );
@@ -322,7 +322,7 @@
 
 		// Sub-menus...
 		$( 'div[id^="sub-menu_"]' ).each( function () {
-			var id = $( this ).attr( 'id' );
+			const id = $( this ).attr( 'id' );
 			NimbusSkin.submenu_array[ id ] = id.replace( /sub-menu/gi, '' );
 
 			$( this ).on( 'mouseout', NimbusSkin.clearMenu );
@@ -334,7 +334,7 @@
 
 		// ...and their items
 		$( 'div[id^="sub-menu-item_"]' ).each( function () {
-			var id = $( this ).attr( 'id' );
+			const id = $( this ).attr( 'id' );
 			NimbusSkin.submenuitem_array[ id ] = id.replace( /sub-menu-item/gi, '' );
 
 			$( this ).on( 'mouseover', NimbusSkin.sub_menuItemAction );
@@ -344,24 +344,24 @@
 			}
 		} );
 
-		$( '#more-tab' ).on( 'mouseover', function () {
+		$( '#more-tab' ).on( 'mouseover', () => {
 			NimbusSkin.show_actions( 'article-more-container', 'show' );
-		} ).on( 'mouseout', function () {
+		} ).on( 'mouseout', () => {
 			NimbusSkin.delay_hide( 'article-more-container' );
 		} );
 
-		$( '#article-more-container' ).on( 'mouseover', function () {
+		$( '#article-more-container' ).on( 'mouseover', () => {
 			clearTimeout( NimbusSkin._hide_timer );
-		} ).on( 'mouseout', function () {
+		} ).on( 'mouseout', () => {
 			NimbusSkin.show_actions( 'article-more-container', 'hide' );
 		} );
 
-		$( '#sw-more-category' ).on( 'click', function ( e ) {
+		$( '#sw-more-category' ).on( 'click', ( e ) => {
 			NimbusSkin.show_more_category( 'more-wikis-menu' );
 			e.stopPropagation();
 		} );
 
-		$( 'body' ).on( 'click', function () {
+		$( 'body' ).on( 'click', () => {
 			NimbusSkin.show_more_category( 'more-wikis-menu', false );
 		} );
 	} );
