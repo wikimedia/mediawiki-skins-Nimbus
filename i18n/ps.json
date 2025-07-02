@@ -1,21 +1,26 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
 	"nimbus-desc": "نيمبوس پوښۍ",
 	"nimbus-advertise": "خبرتيا کول",
 	"nimbus-contribute": "ونډه اخيستل",
 	"nimbus-didyouknow": "آيا ته پوهېدې",
+	"nimbus-editthispage": "دا مخ سمول",
 	"nimbus-featuredimage": "غوره شوی انځور",
 	"nimbus-featureduser": "غوره شوی کارن",
 	"nimbus-login": "ننوتل",
 	"nimbus-logout": "وتل؟",
 	"nimbus-more-actions": "نورې کړنې",
 	"nimbus-more-wikis": "نورې ويکي گانې",
+	"nimbus-pages-can-be-edited": "دا مخ سمېدای شي.<br />\n\nايا دا مخ بشپړ نه دی؟ ايا دلته کومه ستونزه شته؟br />\n\n<b> بدل يې کړئ!</b>",
 	"nimbus-profile": "پېژنليک",
 	"nimbus-recent-contributors": "د دې مخ وروستني ونډه وال",
+	"nimbus-recent-contributors-info": "لاندې کسانو په دې وروستیو کې پدې پاڼه کې ونډه اخیستې ده.",
 	"nimbus-signup": "نومليکل",
+	"nimbus-talkpage": "دا مخ شنل",
 	"nimbus-welcome": "$1 {{GENDER:$2|ښه راغلې}}"
 }
