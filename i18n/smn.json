@@ -9,5 +9,5 @@
 	"nimbus-login": "Čáládât siisâ",
 	"nimbus-logout": "Čáládât olgos?",
 	"nimbus-more-wikis": "Lase wikih",
-	"nimbus-welcome": "{{GENDER:$1|Tiervâpuáttim}} $1"
+	"nimbus-welcome": "{{GENDER:$2|Tiervâpuáttim}} $1"
 }
