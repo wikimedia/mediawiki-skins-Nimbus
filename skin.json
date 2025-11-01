@@ -16,7 +16,7 @@
 		"MediaWiki": ">= 1.40"
 	},
 	"ConfigRegistry": {
-		"nimbus": "GlobalVarConfig::newInstance"
+		"nimbus": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"ValidSkinNames": {
 		"nimbus": {
