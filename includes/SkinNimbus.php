@@ -146,10 +146,12 @@ class SkinNimbus extends SkinTemplate {
 	 * @return QuickTemplate The template to be executed by outputPage
 	 */
 	protected function prepareQuickTemplate() {
-		$parserOutput = $this->getRandomFeaturedUser();
+		$parserOutputAndOptions = $this->getRandomFeaturedUser();
 		$po = '';
-		if ( $parserOutput !== null ) {
-			$po = $parserOutput->getText();
+		if ( $parserOutputAndOptions !== null ) {
+			[ $parserOutput, $popts ] = $parserOutputAndOptions;
+			/** @var $parserOutput ParserOutput */
+			$po = $parserOutput->runOutputPipeline( $popts )->getContentHolderText();
 			// This MUST be done before the parent::prepareQuickTemplate() call!
 			$this->getOutput()->addModuleStyles( $parserOutput->getModuleStyles() );
 		}
@@ -208,7 +210,7 @@ class SkinNimbus extends SkinTemplate {
 	 * running SocialProfile at all).
 	 *
 	 * @see https://phabricator.wikimedia.org/T198109
-	 * @return ParserOutput|null
+	 * @return array{0: ParserOutput, 1: ParserOptions}|null
 	 */
 	function getRandomFeaturedUser() {
 		if ( class_exists( 'RandomFeaturedUser' ) ) {
@@ -230,7 +232,7 @@ class SkinNimbus extends SkinTemplate {
 	 *
 	 * @param string $text
 	 * @throws MWException
-	 * @return ParserOutput
+	 * @return array{0: ParserOutput, 1: ParserOptions}
 	 */
 	public function parseRandomFeaturedUserTag( $text ) {
 		$out = $this->getOutput();
@@ -238,7 +240,7 @@ class SkinNimbus extends SkinTemplate {
 			throw new MWException( 'Empty $mTitle in ' . __METHOD__ );
 		}
 
-		$popts = $out->parserOptions();
+		$popts = ParserOptions::newFromContext( $out->getContext() );
 
 		$parser = MediaWikiServices::getInstance()->getParserFactory()->getInstance();
 		$parserOutput = $parser->parse(
@@ -246,6 +248,6 @@ class SkinNimbus extends SkinTemplate {
 			false, true, $out->getRevisionId()
 		);
 
-		return $parserOutput;
+		return [ $parserOutput, $popts ];
 	}
 }

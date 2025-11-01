@@ -13,7 +13,7 @@
 	"descriptionmsg": "nimbus-desc",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.40"
+		"MediaWiki": ">= 1.43"
 	},
 	"ConfigRegistry": {
 		"nimbus": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
