@@ -1,6 +1,14 @@
 <?php
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Context\RequestContext;
+use MediaWiki\Html\Html;
+use MediaWiki\Linker\LinkRenderer;
+use MediaWiki\Output\OutputPage;
+use MediaWiki\Parser\ParserFactory;
+use MediaWiki\Parser\ParserOptions;
+use MediaWiki\Title\Title;
+use MediaWiki\Utils\UrlUtils;
 
 /**
  * Inherit main code from SkinTemplate, set the CSS and template filter.
@@ -9,6 +17,18 @@ use MediaWiki\MediaWikiServices;
 class SkinNimbus extends SkinTemplate {
 	public $skinname = 'nimbus', $stylename = 'nimbus',
 		$template = 'NimbusTemplate';
+
+	/**
+	 * @inheritDoc
+	 */
+	public function __construct(
+		private readonly LinkRenderer $linkRenderer,
+		private readonly ParserFactory $parserFactory,
+		private readonly UrlUtils $urlUtils,
+		array $options = [],
+	) {
+		parent::__construct( $options );
+	}
 
 	/**
 	 * Load the JavaScript required by the menu and whatnot.
@@ -97,14 +117,17 @@ class SkinNimbus extends SkinTemplate {
 		// But because MediaWiki is by nature very customizable, someone
 		// might've changed it to point to a local page. Tricky!
 		// @see https://phabricator.wikimedia.org/T155319
+
+		$urlProtocols = $this->urlUtils->validProtocols();
 		$helpPage = $this->msg( 'helppage' )->inContentLanguage()->plain();
-		if ( preg_match( '/^(?:' . wfUrlProtocols() . ')/', $helpPage ) ) {
-			$helpLink = Linker::makeExternalLink(
+		if ( preg_match( '/^(?:' . $urlProtocols . ')/', $helpPage ) ) {
+			$helpLink = $this->linkRenderer->makeExternalLink(
 				$helpPage,
-				$this->msg( 'help' )->plain()
+				$this->msg( 'help' )->plain(),
+				RequestContext::getMain()->getTitle()
 			);
 		} else {
-			$helpLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeKnownLink(
+			$helpLink = $this->linkRenderer->makeKnownLink(
 				Title::newFromText( $helpPage ),
 				$this->msg( 'help' )->text()
 			);
@@ -125,11 +148,14 @@ class SkinNimbus extends SkinTemplate {
 		$link = '';
 		$adMsg = $this->msg( 'nimbus-advertise-url' )->inContentLanguage();
 		if ( !$adMsg->isDisabled() ) {
-			$url = Sanitizer::validateAttributes( [ 'href' => $adMsg->text() ], [ 'href' => true ] )['href'] ?? false;
-			if ( $url ) {
-				$link = '<a href="' . htmlspecialchars( $url, ENT_QUOTES ) . '" rel="nofollow">' .
-					$this->msg( 'nimbus-advertise' )->escaped() . '</a>';
-			}
+			$link = Html::element(
+				'a',
+				[
+					'href' => Skin::makeInternalOrExternalUrl( $adMsg->text() ),
+					'rel' => 'nofollow',
+				],
+				$this->msg( 'nimbus-advertise' )->text()
+			);
 		}
 		return $link;
 	}
@@ -156,8 +182,7 @@ class SkinNimbus extends SkinTemplate {
 		$tpl = parent::prepareQuickTemplate();
 		$originalFooterLinks = $tpl->get( 'footerlinks' );
 
-		$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
-		$tpl->set( 'mainpage', $linkRenderer->makeKnownLink(
+		$tpl->set( 'mainpage', $this->linkRenderer->makeKnownLink(
 			Title::newMainPage(),
 			$this->msg( 'mainpage' )->text()
 		) );
@@ -216,12 +241,12 @@ class SkinNimbus extends SkinTemplate {
 	}
 
 	/**
-	 * Based on REL1_31 OutputPage#parse with changes to make it return a
-	 * ParserOutput and not a string.
+	 * Based on REL1_31 OutputPage#parse with changes to make it return the
+	 * ParserOutput and the ParserOptions and not a string.
 	 *
 	 * @see https://phabricator.wikimedia.org/T198109
 	 *
-	 * Parse wikitext and return ParserOutput.
+	 * Parse wikitext and return the ParserOutput and the ParserOptions.
 	 *
 	 * @param string $text
 	 * @throws MWException
@@ -235,7 +260,7 @@ class SkinNimbus extends SkinTemplate {
 
 		$popts = $out->parserOptions();
 
-		$parser = MediaWikiServices::getInstance()->getParserFactory()->getInstance();
+		$parser = $this->parserFactory->getInstance();
 		$parserOutput = $parser->parse(
 			$text, $out->getTitle(), $popts,
 			false, true, $out->getRevisionId()

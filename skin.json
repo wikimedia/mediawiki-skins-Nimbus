@@ -21,6 +21,11 @@
 	"ValidSkinNames": {
 		"nimbus": {
 			"class": "SkinNimbus",
+			"services": [
+				"LinkRenderer",
+				"ParserFactory",
+				"UrlUtils"
+			],
 			"args": [
 				{
 					"name": "nimbus",
