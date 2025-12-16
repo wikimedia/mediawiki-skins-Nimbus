@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bennylin"
+		]
+	},
+	"nimbus-advertise": "ꦔꦶꦏ꧀ꦭꦤ꧀",
+	"nimbus-contribute": "ꦚꦸꦩ꧀ꦧꦁ",
+	"nimbus-didyouknow": "ꦱꦩ꧀ꦥꦺꦪꦤ꧀ꦔꦼꦂꦠꦶ​ꦲꦺꦴꦫ",
+	"nimbus-editthispage": "ꦧꦼꦱꦸꦠ꧀ꦏꦕ​ꦲꦶꦏꦶ",
+	"nimbus-featuredimage": "ꦒꦩ꧀ꦧꦂ​ꦥꦼꦛꦶꦁꦔꦤ꧀",
+	"nimbus-featureduser": "ꦤꦫꦒꦸꦤ​ꦥꦼꦛꦶꦁꦔꦤ꧀",
+	"nimbus-login": "ꦩ꧀ꦊꦧꦸ​ꦭꦺꦴꦒ꧀",
+	"nimbus-logout": "ꦩꦼꦠꦸ​ꦭꦺꦴꦒ꧀?",
+	"nimbus-more-actions": "ꦲꦏ꧀ꦱꦶ​ꦭꦸꦮꦶꦃ​ꦲꦏꦺꦃ",
+	"nimbus-more-wikis": "ꦮꦶꦏꦶ​ꦭꦶꦪꦤꦺ",
+	"nimbus-pages-can-be-edited": "ꦏꦕ​ꦲꦶꦏꦶ​ꦱꦒꦼꦢ꧀ꦢꦶꦧꦼꦱꦸꦠ꧀꧉<br />\nꦲꦥ​ꦏꦕ​ꦲꦶꦏꦶ​ꦲꦺꦴꦫ​ꦗꦔꦼꦥ꧀? ꦲꦥ​ꦲꦤ​ꦱꦶꦁ​ꦱꦭꦃ​ꦲꦶꦱꦶꦤꦺ?<br />\n<b>ꦧꦼꦱꦸꦠ꧀ꦠꦼꦤ꧀!</b>",
+	"nimbus-profile": "ꦥꦿꦺꦴꦥ꦳ꦶꦭ꧀",
+	"nimbus-recent-contributors": "ꦏꦺꦴꦤ꧀ꦠꦿꦶꦧꦸꦱꦶ​ꦮꦶꦮꦶꦠ꧀ꦠꦤ꧀ꦲꦶꦁ​ꦏꦕ​ꦲꦶꦏꦶ",
+	"nimbus-recent-contributors-info": "ꦤꦫꦒꦸꦤ​ꦲꦶꦁ​ꦔꦶꦱꦺꦴꦂ​ꦲꦶꦏꦶ​ꦮꦶꦮꦶꦠ꧀ꦲꦩ꧀ꦧꦼꦱꦸꦠ꧀ꦲꦶꦁ​ꦏꦕ​ꦲꦶꦏꦶ꧉",
+	"nimbus-signup": "ꦤ꧀ꦝꦥ꧀ꦠꦂ",
+	"nimbus-talkpage": "ꦉꦩ꧀ꦧꦸꦒ꧀ꦒꦏꦺ​ꦏꦕ​ꦲꦶꦏꦶ",
+	"nimbus-welcome": "{{GENDER:$2|ꦱꦸꦒꦼꦁ​ꦫꦮꦸꦃ}}​$1"
+}
