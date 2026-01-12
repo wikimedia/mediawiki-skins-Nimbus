@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ChrisPtDe"
+			"ChrisPtDe",
+			"L'Arpetani"
 		]
 	},
 	"nimbus-desc": "Habelyâjo « Nimbus »",
@@ -14,10 +15,10 @@
 	"nimbus-logout": "Sè dèbranchiér ?",
 	"nimbus-more-actions": "Més d’accions",
 	"nimbus-more-wikis": "Més de vouiquis",
-	"nimbus-pages-can-be-edited": "Les pâges de {{SITENAME}} pôvont étre changiêyes.<br />\nCela pâge est-el encomplèta ? Y at n’ôtra chousa que vat pas ?<br />\n<b>Changiéd-lo !</b>",
+	"nimbus-pages-can-be-edited": "Cela pâge pôt étre changiêe.<br />\n\nEst-o que cela pâge est encomplèta ? Y at-o quârque-ren que vat pas ?<br />\n\n<b>Changiéd-la !</b>",
 	"nimbus-profile": "Profil",
 	"nimbus-recent-contributors": "Novéls contributors a cela pâge",
 	"nimbus-recent-contributors-info": "Dês pou cetes gens ont contribuâ a cela pâge.",
 	"nimbus-signup": "Enscrîde-vos",
-	"nimbus-welcome": "Benvegnua $1"
+	"nimbus-welcome": "Benvegnua {{GENDER:$2|}}$1"
 }
