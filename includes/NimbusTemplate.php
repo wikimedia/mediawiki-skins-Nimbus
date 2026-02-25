@@ -167,7 +167,6 @@ class NimbusTemplate extends BaseTemplate {
 					}
 					echo Html::element( 'a', [
 						'href' => $arr['href'],
-						// @phan-suppress-next-line PhanParamSpecial1
 						'class' => implode( ' ', $classes ),
 						'data-counter-num' => $arr['data']['counter-num'],
 						'data-counter-text' => $arr['data']['counter-text'],
@@ -400,7 +399,6 @@ class NimbusTemplate extends BaseTemplate {
 			}
 
 			$nodes[$i + 1] = $node;
-			// @phan-suppress-next-line PhanTypePossiblyInvalidDimOffset
 			$nodes[$node['parentIndex']]['children'][] = $i+1;
 			$lastDepth = $node['depth'];
 			$i++;
