@@ -9,6 +9,7 @@
 	"nimbus-advertise": "Wozjewić",
 	"nimbus-contribute": "Přinošować",
 	"nimbus-didyouknow": "Sy ty wědźał",
+	"nimbus-editthispage": "Tutu stronu wobdźěłać",
 	"nimbus-featuredimage": "Zajimawy wobraz",
 	"nimbus-featureduser": "Zajimawy wužiwar",
 	"nimbus-login": "Přizjewić",
@@ -20,5 +21,6 @@
 	"nimbus-recent-contributors": "Njedawni wobdźěłarjo tuteje strony",
 	"nimbus-recent-contributors-info": "Slědowacy wužiwarjo su njedawno k tutej stronje přinošowali.",
 	"nimbus-signup": "Registrować",
+	"nimbus-talkpage": "Tutu stronu diskutować",
 	"nimbus-welcome": "{{GENDER:$2|Witaj}} $1"
 }
