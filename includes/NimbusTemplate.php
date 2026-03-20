@@ -509,7 +509,7 @@ class NimbusTemplate extends BaseTemplate {
 			}
 			foreach ( $this->navmenu[$id]['children'] as $child ) {
 				$menu_output .= "\n\t\t\t\t" . '<div class="' . ( $level ? 'sub-' : '' ) . 'menu-item' .
-					( ( $count == sizeof( $this->navmenu[$id]['children'] ) ) ? ' border-fix' : '' ) .
+					( ( $count == count( $this->navmenu[$id]['children'] ) ) ? ' border-fix' : '' ) .
 					'" id="' . ( $level ? 'sub-' : '' ) . 'menu-item' .
 						( $level ? $last_count . '_' : '_' ) . $count . '">';
 				$menu_output .= "\n\t\t\t\t\t" . '<a id="' . ( $level ? 'a-sub-' : 'a-' ) . 'menu-item' .
@@ -527,7 +527,7 @@ class NimbusTemplate extends BaseTemplate {
 				// knows that there are submenus available
 				if (
 					isset( $this->navmenu[$child]['children'] ) &&
-					sizeof( $this->navmenu[$child]['children'] )
+					count( $this->navmenu[$child]['children'] )
 				)
 				{
 					$menu_output .= '<img src="' . $wgStylePath . '/Nimbus/nimbus/right_arrow' .
