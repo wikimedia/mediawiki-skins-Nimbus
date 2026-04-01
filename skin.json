@@ -13,7 +13,7 @@
 	"descriptionmsg": "nimbus-desc",
 	"type": "skin",
 	"requires": {
-		"MediaWiki": ">= 1.43"
+		"MediaWiki": ">= 1.46"
 	},
 	"ConfigRegistry": {
 		"nimbus": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
@@ -29,6 +29,17 @@
 			"args": [
 				{
 					"name": "nimbus",
+					"menus": [
+						"associated-pages",
+						"languages",
+						"views",
+						"actions",
+						"variants",
+						"user-page",
+						"user-interface-preferences",
+						"notifications",
+						"user-menu"
+					],
 					"bodyOnly": true,
 					"styles": [
 						"skins.nimbus"

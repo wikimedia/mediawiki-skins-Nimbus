@@ -577,7 +577,14 @@ class NimbusTemplate extends BaseTemplate {
 		 */
 		$title = $skin->getTitle();
 
-		$content_actions = $this->get( 'content_actions' );
+		// TODO: This flattened list contains everything.
+		$ca = $this->get( 'content_navigation' );
+		$content_actions = array_merge(
+			$ca[ 'views' ],
+			$ca[ 'associated-pages' ],
+			$ca[ 'actions' ],
+			$ca[ 'variants' ]
+		);
 
 		if ( !$title->inNamespace( NS_SPECIAL ) ) {
 			// "What links here" isn't a part of default core content actions so we need
@@ -662,20 +669,19 @@ class NimbusTemplate extends BaseTemplate {
 	function getActionBarLinks() {
 		if ( ExtensionRegistry::getInstance()->isLoaded( 'VisualEditor' ) ) {
 			$left = [
-				$this->skin->getTitle()->getNamespaceKey(),
+				'main',
 				'edit', 've-edit', 'talk', 'viewsource', 'addsection', 'history'
 			];
 		} else {
 			// Same as above but without 've-edit' in the array
 			$left = [
-				$this->skin->getTitle()->getNamespaceKey(),
+				'main',
 				'edit', 'talk', 'viewsource', 'addsection', 'history'
 			];
 		}
 		$actions = $this->buildActionBar();
 		$leftLinks = [];
 		$moreLinks = [];
-
 		foreach ( $actions as $action => $value ) {
 			if ( in_array( $action, $left ) ) {
 				$leftLinks[$action] = $value;
