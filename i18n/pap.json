@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kallmemel"
+		]
+	},
+	"nimbus-desc": "Diseño Nimbus",
+	"nimbus-contribute": "Kontribuí",
+	"nimbus-didyouknow": "Bo tabata sa",
+	"nimbus-editthispage": "Editá e página aki",
+	"nimbus-featuredimage": "Imágen destaká",
+	"nimbus-featureduser": "Usadó destaká",
+	"nimbus-login": "Inisiá seshon",
+	"nimbus-logout": "Terminá seshon?",
+	"nimbus-more-actions": "Mas akshon",
+	"nimbus-more-wikis": "Mas wiki",
+	"nimbus-pages-can-be-edited": "E página aki por wòrdu editá.<br /> \n\nE página aki ta inkompleto? Tin algu robes?<br /> \n\n<b>Kambi'é!</b>",
+	"nimbus-profile": "Perfil",
+	"nimbus-recent-contributors": "Kontribuidónan resien na página aki",
+	"nimbus-signup": "Registrá",
+	"nimbus-welcome": "{{GENDER:$2|Bonbiní}} $1"
+}
