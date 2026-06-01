@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"HakanIST",
 			"Joseph",
 			"Karduelis",
 			"Kincki",
@@ -10,6 +11,8 @@
 			"Rapsar"
 		]
 	},
+	"nimbus-prefs-talkpage": "[[mw:Skin talk:Nimbus|{{int:talk}}]]",
+	"skinname-nimbus": "Nimbus",
 	"nimbus-desc": "Nimbus görünümü",
 	"nimbus-advertise": "Duyuru yap",
 	"nimbus-contribute": "Katkıda bulun",
