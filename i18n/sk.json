@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"nimbus-prefs-talkpage": "[[mw:Skin talk:Nimbus|{{int:talk}}]]",
+	"skinname-nimbus": "Nimbus",
+	"nimbus-desc": "Téma vzhľadu Nimbus",
+	"nimbus-advertise": "Inzerujte",
+	"nimbus-contribute": "Prispieť",
+	"nimbus-didyouknow": "Vedeli ste",
+	"nimbus-editthispage": "Upraviť túto stránku",
+	"nimbus-featuredimage": "Odporúčaný obrázok",
+	"nimbus-featureduser": "Odporúčaný používateľ",
+	"nimbus-login": "Prihlásiť sa",
+	"nimbus-logout": "Odhlásiť sa?",
+	"nimbus-more-actions": "Ďalšie akcie",
+	"nimbus-more-wikis": "Ďalšie wiki",
+	"nimbus-pages-can-be-edited": "Túto stránku je možné upravovať.<br />\n\nJe táto stránka neúplná? Je na nej niečo zlé?<br />\n\n<b>Zmeňte to!</b>",
+	"nimbus-profile": "Profil",
+	"nimbus-recent-contributors": "Nedávni prispievatelia k tejto stránke",
+	"nimbus-recent-contributors-info": "Nasledujúci ľudia nedávno prispeli k tejto stránke.",
+	"nimbus-signup": "Zaregistrovať sa",
+	"nimbus-talkpage": "Diskutovať o tejto stránke",
+	"nimbus-welcome": "{{GENDER:$2|Vitajte}} $1"
+}
