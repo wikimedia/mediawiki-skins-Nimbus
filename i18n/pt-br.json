@@ -8,7 +8,8 @@
 			"HenriqueCrang",
 			"Luckas",
 			"Luckas Blade",
-			"TheEduGobi"
+			"TheEduGobi",
+			"NenhumaFênix"
 		]
 	},
 	"nimbus-desc": "Tema Nimbus",
@@ -28,5 +29,5 @@
 	"nimbus-recent-contributors-info": "As seguintes pessoas contribuíram recentemente para esta página.",
 	"nimbus-signup": "Registrar-se",
 	"nimbus-talkpage": "Discutir sobre esta página",
-	"nimbus-welcome": "{{GENDER:$2|Bem-vindo|Bem-vinda}} $1"
+	"nimbus-welcome": "{{GENDER:$2|Bem-vindo|Bem-vinda|Bem-vindo(a)}} $1"
 }
