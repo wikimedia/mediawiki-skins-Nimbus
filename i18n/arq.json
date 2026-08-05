@@ -5,20 +5,24 @@
 			"Oldstoneage"
 		]
 	},
-	"nimbus-desc": "Nimbus skin",
+	"nimbus-prefs-talkpage": "[[mw:Skin talk:Nimbus|{{int:talk}}]]",
+	"skinname-nimbus": "نيمبوز",
+	"nimbus-desc": "مظهر نيمبوز",
 	"nimbus-advertise": "دير إعلان",
 	"nimbus-contribute": "ساهم",
 	"nimbus-didyouknow": "عندك علم؟",
+	"nimbus-editthispage": "عدّل هالصفحة",
 	"nimbus-featuredimage": "تصويره مخيره",
 	"nimbus-featureduser": "مستخدم مخير",
 	"nimbus-login": "تسجيل تاع الدخول",
 	"nimbus-logout": "حاب تخرج ؟",
 	"nimbus-more-actions": "أكثر خيارات",
 	"nimbus-more-wikis": "شوف ويكيّات كتَر",
-	"nimbus-pages-can-be-edited": "هاد الباجة يمكنها تتعدل.<br />\nهاد الباجة ما هيش كاملة؟ يادرا كاين حاجة ما هيش نيشان؟<br />\n<b>بدّل فيها!</b>",
+	"nimbus-pages-can-be-edited": "هالصفحة تتعدل.<br />\n\nواش هالصفحة ناقصة؟ واش فيها حاجة غالطة؟<br />\n\n<b>بدّلها!</b>",
 	"nimbus-profile": "المعلومات الشخصيه",
-	"nimbus-recent-contributors": "مساهمين التوالا في هاد الباجة",
-	"nimbus-recent-contributors-info": "أسموات الناس هوما اللي دارو مساهمات ف  هاد الباجة.",
+	"nimbus-recent-contributors": "مساهمين التوالا في هاد الصفحه",
+	"nimbus-recent-contributors-info": "أسموات الناس هوما اللي دارو مساهمات ف  هاد الصفحه.",
 	"nimbus-signup": "اصنع حساب",
-	"nimbus-welcome": "مرحبا بيك $1"
+	"nimbus-talkpage": "ناقش على هاد الصفحه",
+	"nimbus-welcome": "{{GENDER:$2|أهلا}} $1"
 }
