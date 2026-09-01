@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"nimbus-desc": "maqaarka Nimbus",
+	"nimbus-advertise": "Xayaysii",
+	"nimbus-contribute": "Wax ku darsiga",
+	"nimbus-didyouknow": "Ma ogtahay",
+	"nimbus-editthispage": "Wax ka badal boggaan",
+	"nimbus-featuredimage": "Sawirka la xushay",
+	"nimbus-featureduser": "Isticmaalaha la xushay",
+	"nimbus-login": "Soo gal",
+	"nimbus-logout": "Ma ka baxaysaa?",
+	"nimbus-more-actions": "Ficillo dheeraad ah",
+	"nimbus-more-wikis": "Wikiyo dheeraad ah",
+	"nimbus-pages-can-be-edited": "Boggan waa la tafatiri karaa.<br />\n\nBoggu ma dhammaystirna? Ma jiraan wax khaldan?<br />\n\n<b>Beddel!</b>",
+	"nimbus-profile": "Profile-ka",
+	"nimbus-recent-contributors": "Ka qaybqaatayaashii u dambeeyay ee boggan",
+	"nimbus-recent-contributors-info": "Dadka soo socda ayaa dhawaan wax ka geystay boggan.",
+	"nimbus-signup": "Is diiwaangeli",
+	"nimbus-talkpage": "Ka wada hadal boggan",
+	"nimbus-welcome": "{{GENDER:$2|Soo dhawoow}} $1"
+}
